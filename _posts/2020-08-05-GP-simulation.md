@@ -2,7 +2,7 @@
 layout: post
 title: "Gaussian Process Simulation"
 author: "James Bowden"
-categories: ML
+categories: bytes, ML
 tags: [learning resources, research]
 image: gp.jpg
 ---
