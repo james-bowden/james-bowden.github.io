@@ -6,7 +6,9 @@ paginate:            5
 # Build settings
 markdown:            kramdown
 highlighter:         rouge
-permalink:           none
+baseurl:             ""
+url:                 "james-bowden.github.io"
+permalink:           /:title
 plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
 sass:
