@@ -14,7 +14,7 @@ sass:
   style: :nested
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-# title:		           "Millennial"
+title:		           "James Bowden"
 # description:	       "a Jekyll theme for running a blog or publication"
 # author:              "Paul Le"
 
@@ -22,4 +22,4 @@ sass:
 #feed:
 #  path: rss-feed.xml
 
-theme: jekyll-theme-cayman
+# theme: jekyll-theme-cayman
