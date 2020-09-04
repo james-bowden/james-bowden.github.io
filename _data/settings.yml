@@ -7,11 +7,11 @@ disqus:
 google-ID: ''
 
 menu:
-- {name: 'Home', link: '{{site.github_url}}'}
-- {name: 'About', folder: 'pages/about', file: 'index.html'}
+- {name: 'Home', folder: '/', file: ''}
+- {name: 'About', folder: 'pages/about', file: ''}
 - {name: 'Resume', folder: 'assets', file: 'BowdenJames_Resume_08.20.pdf'}
-- {name: 'Teaching', folder: 'pages', file: 'teaching.html'}
-- {name: 'Bowden Bytes', folder: 'pages', file: 'blog.html'}
+- {name: 'Teaching', folder: 'pages/teaching', file: ''}
+- {name: 'Bowden Bytes', folder: 'pages/bytes', file: ''}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
