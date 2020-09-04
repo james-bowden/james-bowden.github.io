@@ -7,7 +7,7 @@ disqus:
 google-ID: ''
 
 menu:
-- {name: 'Home'}
+- {name: 'Home', link: site.github_url}
 - {name: 'About', folder: 'pages', file: 'about.html'}
 - {name: 'Teaching', folder: 'pages', file: 'teaching.html'}
 - {name: 'Bowden Bytes', folder: 'pages', file: 'blog.html'}
