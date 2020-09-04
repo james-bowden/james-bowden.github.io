@@ -7,7 +7,7 @@ disqus:
 google-ID: ''
 
 menu:
-- {name: 'Home', folder: '/', file: ''}
+- {name: 'Home', file: ''}
 - {name: 'About', folder: 'pages/about', file: ''}
 - {name: 'Resume', folder: 'assets', file: 'BowdenJames_Resume_08.20.pdf'}
 - {name: 'Teaching', folder: 'pages/teaching', file: ''}
