@@ -9,7 +9,7 @@ google-ID: ''
 menu:
 - {name: 'Home', folder: 'pages', file: 'home.html'}
 - {name: 'About', folder: 'pages', file: 'about.html'}
-- {name: 'Resources', folder: 'pages', file: 'resources.html'}
+- {name: 'Teaching', folder: 'pages', file: 'teaching.html'}
 - {name: 'Bowden Bytes', folder: 'pages', file: 'blog.html'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
