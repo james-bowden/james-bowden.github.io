@@ -8,7 +8,7 @@ google-ID: ''
 
 menu:
 - {name: 'Home', link: '{{site.github_url}}'}
-- {name: 'About', folder: 'pages', file: 'about.html'}
+- {name: 'About', folder: 'pages/about', file: 'index.html'}
 - {name: 'Resume', folder: 'assets', file: 'BowdenJames_Resume_08.20.pdf'}
 - {name: 'Teaching', folder: 'pages', file: 'teaching.html'}
 - {name: 'Bowden Bytes', folder: 'pages', file: 'blog.html'}
