@@ -5,4 +5,6 @@ layout: page
 
 *Last updated: August 2020*
 
-<embed src="{{site.github_url}}/assets/BowdenJames_Resume_08.20.pdf" width="790 px" height="1200px" />
+<center>
+<embed src="{{site.github_url}}/assets/BowdenJames_Resume_08.20.pdf#toolbar=0&navpanes=0&scrollbar=0&statusbar=0" width="790 px" height="1200px" />
+</center>
