@@ -8,10 +8,10 @@ google-ID: 'UA-177242959-1'
 
 menu:
 - {name: 'Home'}
-- {name: 'About', folder: 'pages/about', file: 'index.html'}
-- {name: 'Resume', folder: 'assets', file: 'BowdenJames_Resume_08.20.pdf'}
-- {name: 'Teaching', folder: 'pages/teaching', file: 'index.html'}
-- {name: 'Bowden Bytes', folder: 'pages/bytes', file: 'index.html'}
+- {name: 'About', folder: 'about'}
+# - {name: 'Resume', folder: 'assets', file: 'BowdenJames_Resume_08.20.pdf'}
+- {name: 'Teaching', folder: 'teaching'}
+- {name: 'Bowden Bytes', folder: 'bytes'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
