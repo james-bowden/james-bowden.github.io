@@ -9,7 +9,7 @@ google-ID: 'UA-177242959-1'
 menu:
 - {name: 'Home'}
 - {name: 'About', folder: 'about'}
-# - {name: 'Resume', folder: 'assets', file: 'BowdenJames_Resume_08.20.pdf'}
+- {name: 'Resume', folder: 'resume'}
 - {name: 'Teaching', folder: 'teaching'}
 - {name: 'Bowden Bytes', folder: 'bytes'}
 
