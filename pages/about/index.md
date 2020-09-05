@@ -2,9 +2,7 @@
 layout: page
 title: About
 ---
-<table{
-border : 0px solid #000000;
-}>
+<table border : 0px solid #000000>
 <tbody>
 <tr>
 <td><img style="width: 330px; height: 400px; border-radius: 10px; border: 0px solid;" src="{{site.github_url}}/assets/img/James Bowden portrait.jpeg"></td>
