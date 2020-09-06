@@ -22,7 +22,7 @@ title: About
 
 <center>
 <div>
-<img style="width: 50%; border-radius: 10px; border: 0px solid;" src="{{site.github_url}}/assets/img/James Bowden portrait.jpeg">
+<img style="width: 100%; border-radius: 10px; border: 0px solid;" src="{{site.github_url}}/assets/img/James Bowden portrait.jpeg">
 </div>
 </center>
 
