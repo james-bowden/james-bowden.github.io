@@ -8,7 +8,7 @@ layout: default
   </h1>
 
   <span class="post-date">
-    {{ site.data.settings.post_date_prefix }}
+<!--     {{ site.data.settings.post_date_prefix }} -->
     {% assign d = page.date | date: "%-d"  %}
     {{ page.date | date: "%B" }}
     {% case d %}
@@ -17,12 +17,12 @@ layout: default
       {% when '3' or '23' %}{{ d }}rd
       {% else %}{{ d }}th{% endcase %},
     {{ page.date | date: "%Y" }}
-    by
+<!--     by
     {% if page.author %}
       {{ page.author }}
     {% else %}
       {{ site.author }}
-    {% endif %}
+    {% endif %} -->
   </span>
 
   {% if page.image %}
