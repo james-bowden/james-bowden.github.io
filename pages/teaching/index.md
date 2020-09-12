@@ -5,7 +5,7 @@ title: Teaching
 
 Quite a bit of my knowledge has come from informal education--mentors, friends, Google, and ***lots*** of trial and error. I care deeply about passing on what I've learned in order to help make CS and data science (and related endeavors) more approachable fields for both traditional computer scientists and "non"-computer scientists.
 
-**TA, Intro Programming (CS 1)**: [Caltech] [Fall 2020]. TA for the first CS course that students take at Caltech. **[Python]**
+**Teaching Assistant, CS 1 (Intro Programming)**: [Caltech] [Fall 2020]. TA for the first CS course that students take at Caltech. **[Python]**
 
 **Web Scraping Tutorials**: [Caltech CS Education (CS 42)] [Summer 2020]. Wrote, got professor/peer feedback on, and revised tutorials as a part of CS Education course. *[Part 1: Where is my data, and how can I access it?](https://github.com/james-bowden/teaching/blob/master/scraping_1.ipynb)* covers the basics of scraping, web data (HTML), inspecting, and requests. *[Part 2: But how do I extract the data I want?](https://github.com/james-bowden/teaching/blob/master/scraping_2.ipynb)* covers string parsing, BeautifulSoup (HTML parsing), and wget (downloading data files from cmd line). **[Python] [Jupyter Notebook] [Bash]**
 
