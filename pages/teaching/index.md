@@ -3,7 +3,7 @@ layout: page
 title: Teaching
 ---
 
-Much of my success can be traced back to exceptional teaching, both inside and outside of the classroom. Quite a bit of my knowledge has also come from less formal education--mentors, friends, Google, and ***lots*** of trial and error. I care deeply about passing on what I've learned in order to help make CS and data science (and related endeavors) more approachable fields for those aspiring to be both traditional computer scientists and "non"-computer scientists.
+Much of my what has gone "right" in my life can be traced back to exceptional teaching, both inside and outside of the classroom. Quite a bit of my knowledge has also come from less formal education--mentors, friends, Google, and ***lots*** of trial and error. I care deeply about passing on what I've learned in order to help make CS and data science (and related endeavors) more approachable fields for those aspiring to be both traditional computer scientists and "non"-computer scientists.
 
 **Teaching Assistant, CS 1 (Intro Programming)**: [Caltech] [Fall 2020]. TA for the first CS course that students take at Caltech. Hold weekly office hours and grade assignments. **[Python]**
 
