@@ -3,9 +3,9 @@ layout: page
 title: Teaching
 ---
 
-Quite a bit of my knowledge has come from informal education--mentors, friends, Google, and ***lots*** of trial and error. I care deeply about passing on what I've learned in order to help make CS and data science (and related endeavors) more approachable fields for both traditional computer scientists and "non"-computer scientists.
+Much of my success can be traced back to exceptional teaching, both inside and outside of the classroom. Quite a bit of my knowledge has also come from less formal education--mentors, friends, Google, and ***lots*** of trial and error. I care deeply about passing on what I've learned in order to help make CS and data science (and related endeavors) more approachable fields for those aspiring to be both traditional computer scientists and "non"-computer scientists.
 
-**Teaching Assistant, CS 1 (Intro Programming)**: [Caltech] [Fall 2020]. TA for the first CS course that students take at Caltech. Hold weekly office hours and grade assignments.**[Python]**
+**Teaching Assistant, CS 1 (Intro Programming)**: [Caltech] [Fall 2020]. TA for the first CS course that students take at Caltech. Hold weekly office hours and grade assignments. **[Python]**
 
 **Dean's Tutor**: [Caltech] [2020-2023]. Tutor for the following Caltech courses: Ma1abc, Ph1abc, Ch1ab, CS21, CS2, CS3. If you're a Caltech student and would like to book a session, either email me or sign up on my [Calendly](https://calendly.com/jcbowden/60min).
 
