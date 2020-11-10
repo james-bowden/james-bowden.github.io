@@ -17,6 +17,10 @@ I play for Caltech's D3 [Water Polo Team](https://www.gocaltech.com/sports/mwate
 
 As you can likely imagine, I did not get here alone and was supported by *many* people along the way. Here's a list of just a few of these people, whose mentorship and guidance has made a huge difference and whom I am beyond thankful to have in my corner. This is most certainly **not** all-inclusive.
 **Professors:** Yisong Yue (ML @Caltech), Yaser Abu-Mostafa (ML @Caltech), Adam Blank (CS @Caltech), Kaihang Wang (Synthetic Biology @Caltech), Jaewon Min (Cancer Genetics @Columbia), Jerry Shay (Aging and Cancer @UTSW Medical Center), Mike Regnier (Heart Failure @UW Medicine), Santosh Katiyar (Fungal Infections @Drexel Med School)
+
 **Graduate students:** Jialin Song (Yue Group), Charles Sanfiorenzo (Wang Lab), Nathan Nakatsuka (Genetics @Harvard)
+
 **Upperclassmen:** Alex Janosi, Jeff Ma, Ethan Ordentlich, Alex Cui, Kush Tirumala, Dessie DiMino, Bradley Justice, Sam Owen
+
 **Other:** Anthony Chong (IKASI), Karin Steinhauer (Amgen), Lauren Kleinberg (English @GHCHS), James Jang
+
