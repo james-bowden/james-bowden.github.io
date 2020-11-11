@@ -24,4 +24,4 @@ Graduate students: **Jialin Song** (Yue Group), **Charles Sanfiorenzo** (Wang La
 Upperclassmen: **Alex Janosi**, **Jeff Ma**, **Ethan Ordentlich**, **Alex Cui**, **Kush Tirumala**, **Dessie DiMino**, **Bradley Justice**, **Sam Owen**
 
 Other: **Anthony Chong** (IKASI), **Karin Steinhauer** (Amgen), **Lauren Kleinberg** (English @GHCHS), **James Jang**
-</div></p>
+</p></div>
