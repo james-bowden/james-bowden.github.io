@@ -13,8 +13,9 @@ I play for <a href="https://www.gocaltech.com/sports/mwaterpolo/index">Caltech's
 </p>
 </div>
 <div><p>
-As you can likely imagine, I did not get here alone and have been supported by <b>many</b> people along the way. Here's a list of just a few of these people, whose mentorship and guidance has made a huge difference and whom I am beyond thankful to have in my corner. This is most certainly <b>not</b> all-inclusive. <br><br>
+As you can likely imagine, I did not get here alone and have been supported by <b>many</b> people along the way. Here's a list of just a few of these people, whose mentorship and guidance has made a huge difference and whom I am beyond thankful to have in my corner. This is most certainly <b>not</b> all-inclusive. <br><br></p>
 
+<ul>
 <li>
 Professors: <b>Yisong Yue</b> (ML @Caltech), <b>Yaser Abu-Mostafa</b> (ML @Caltech), <b>Adam Blank</b> (CS @Caltech), <b>Kaihang Wang</b> (Synthetic Biology @Caltech), <b>Jaewon Min</b> (Cancer Genetics @Columbia), <b>Jerry Shay</b> (Aging and Cancer @UTSW Medical Center), <b>Mike Regnier</b> (Heart Failure @UW Medicine), <b>Santosh Katiyar</b> (Fungal Infections @Drexel Med School)
 <\li>
@@ -27,4 +28,5 @@ Upperclassmen: <b>Alex Janosi</b>, <b>Jeff Ma</b>, <b>Ethan Ordentlich</b>, <b>A
 <li>
 Other: <b>Anthony Chong</b> (IKASI), <b>Karin Steinhauer</b> (Amgen), <b>Lauren Kleinberg</b> (English @GHCHS), <b>James Jang</b>
 <\li>
-</p></div>
+</ul>
+</div>
