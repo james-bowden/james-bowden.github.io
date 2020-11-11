@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 <div>
-<img style="float:right; width: 20%; border-radius: 10px; border: 0px solid;" src="{{site.github_url}}/assets/img/James Bowden portrait.jpeg">
+<img style="float:right; width: 40%; border-radius: 10px; border: 0px solid;" src="{{site.github_url}}/assets/img/James Bowden portrait.jpeg">
 </div>
 <div>
 <p>
