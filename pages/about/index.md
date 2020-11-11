@@ -3,8 +3,10 @@ layout: page
 title: About
 ---
 <div>
-<img style="float:left; width: 20%; border-radius: 10px; border: 0px solid;" src="{{site.github_url}}/assets/img/James Bowden portrait.jpeg">
-<p style="float:right;">
+<img style="float:right; width: 20%; border-radius: 10px; border: 0px solid;" src="{{site.github_url}}/assets/img/James Bowden portrait.jpeg">
+</div>
+<div>
+<p style="float:left;">
 **Currently: Caltech '23. Studying CS, Data Science, Biology.**
 
 Hi, I'm a sophomore at Caltech with machine learning and bioinformatics experience (and quite a bit of biomedical research background). I’m looking to develop impactful data processing/analysis techniques and related software. My current interests include: ML, Bayesian inference, adaptive experiment design, deep learning, data science, CV, NLP, bioinformatics, biological abstractions, cell-computer interfacing. I'm open to both research and industry internship opportunities for Summer 2021 and would love to chat, so please don't hesitate to reach out! **[[Resume]](https://james-bowden.github.io/pages/resume/)** **[[Email]](jbowden@caltech.edu)**
