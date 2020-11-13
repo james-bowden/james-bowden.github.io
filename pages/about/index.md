@@ -17,7 +17,7 @@ As you can likely imagine, I did not get here alone and have been supported by <
 
 <ul>
 <li style="line-height:150%">
-Professors: <b>Yisong Yue</b> (ML @Caltech), <b>Yaser Abu-Mostafa</b> (ML @Caltech), <b>Adam Blank</b> (CS @Caltech), Shuki Bruck (IST @Caltech), <b>Kaihang Wang</b> (Synthetic Biology @Caltech), <b>Jaewon Min</b> (Cancer Genetics @Columbia), <b>Jerry Shay</b> (Aging and Cancer @UTSW Medical Center), <b>Mike Regnier</b> (Heart Failure @UW Medicine), <b>Santosh Katiyar</b> (Fungal Infections @Drexel Med School)
+Professors: <b>Yisong Yue</b> (ML @Caltech), <b>Yaser Abu-Mostafa</b> (ML @Caltech), <b>Adam Blank</b> (CS @Caltech), <b>Shuki Bruck</b> (IST @Caltech), <b>Kaihang Wang</b> (Synthetic Biology @Caltech), <b>Jaewon Min</b> (Cancer Genetics @Columbia), <b>Jerry Shay</b> (Aging and Cancer @UTSW Medical Center), <b>Mike Regnier</b> (Heart Failure @UW Medicine), <b>Santosh Katiyar</b> (Fungal Infections @Drexel Med School)
 </li>
 <li style="line-height:150%">
 Graduate students: <b>Jialin Song</b> (Yue Group), <b>Charles Sanfiorenzo</b> (Wang Lab), <b>Nathan Nakatsuka</b> (Genetics @Harvard)
