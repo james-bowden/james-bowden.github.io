@@ -24,7 +24,7 @@ Professors: <b>Yisong Yue</b> (ML @Caltech), <b>Yaser Abu-Mostafa</b> (ML @Calte
 Graduate students: <b>Jialin Song</b> (Yue Group), <b>Charles Sanfiorenzo</b> (Wang Lab), <b>Nathan Nakatsuka</b> (Genetics @Harvard)
 </li>
 <li style="line-height:150%">
-Upperclassmen: <b>Jeff Ma</b>, <b>Alex Janosi</b>, <b>Ethan Ordentlich</b>, <b>Alex Cui</b>, <b>Kush Tirumala</b>, <b>Dessie DiMino</b>, <b>Bradley Justice</b>, <b>Sam Owen</b>
+Undergrads: <b>Jeff Ma</b>, <b>Alex Janosi</b>, <b>Ethan Ordentlich</b>, <b>Dessie DiMino</b>, <b>Alex Cui</b>, <b>Kush Tirumala</b>, <b>Aadyot Bhatnagar</b>, <b>Jagath Vytheeswaran</b> <b>Bradley Justice</b>, <b>Sam Owen</b>
 </li>
 <li style="line-height:150%">
 <!--   Tom Desautels (Data Science @LLNL) -->
