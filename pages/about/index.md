@@ -13,7 +13,7 @@ I play for <a href="https://www.gocaltech.com/sports/mwaterpolo/index">Caltech's
 </p>
 </div>
 <div><p>
-As you can likely imagine, I did not get here alone and have been supported by <b>many</b> people along the way. Here's a list of just a few of these people, whose mentorship and guidance has made a huge difference and whom I am beyond thankful to have in my corner. This is most certainly <b>not</b> all-inclusive.<br></p>
+As you can likely imagine, I did not get here (wherever 'here' is, anyway) alone and have been supported by <b>many</b> people along the way. Here's a list of just a few of these people, whose mentorship and guidance has made a huge difference and whom I am beyond thankful to have in my corner. This is most certainly <b>not</b> all-inclusive.<br></p>
 
 <ul>
 <li style="line-height:150%">
