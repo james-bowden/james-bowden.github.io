@@ -7,7 +7,7 @@ Much of my what has gone "right" in my life can be traced back to exceptional te
 
 **Teaching Assistant, CS 3 (Software Design), ~120 students**: [Caltech] [Spring 2021]. TA for class in which students are introduced to software design principles/techniques and develop a significant code base & game. Hold weekly office hours and code reviews, lead lab section. Help with course vision and organization. **[C]**
 
-**Teaching Assistant, <a href="https://debuggi.ng/21wi/">CS 2 (Data Structures and Algorithms)<\a>, ~200 students**: [Caltech] [Winter 2021]. TA for second Caltech CS course, in which students code fundamental data structures and related algorithms (and learn to apply them!). Hold weekly office hours, lead lab section, help with lecture. Help with course vision and optimizing pair programming, learning in online setting. **[Java]**
+**Teaching Assistant, [CS 2 (Data Structures and Algorithms)](https://debuggi.ng/21wi/), ~200 students**: [Caltech] [Winter 2021]. TA for second Caltech CS course, in which students code fundamental data structures and related algorithms (and learn to apply them!). Hold weekly office hours, lead lab section, help with lecture. Help with course vision and optimizing pair programming, learning in online setting. **[Java]**
 
 **Teaching Assistant, CS 1 (Intro Programming), ~220 students**: [Caltech] [Fall 2020: 4.94/5 student rating]. TA for the first CS course that students take at Caltech. Hold weekly office hours during busiest times and grade assignments. **[Python]**
 
