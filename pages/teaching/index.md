@@ -5,6 +5,8 @@ title: Teaching
 
 Much of my what has gone "right" in my life can be traced back to exceptional teaching, both inside and outside of the classroom. Quite a bit of my knowledge has also come from less formal education--mentors, friends, Google, and ***lots*** of trial and error. I care deeply about passing on what I've learned in order to help make CS and data science (and related endeavors) more approachable fields for those aspiring to be both traditional computer scientists and "non"-computer scientists.
 
+**Head TA in training, CS 2 (Data Structures and Algorithms)**: [Caltech] [Winter 2022]. Will be Head TA for CS 2 next year!!
+
 **Teaching Assistant, CS 3 (Software Design), ~120 students**: [Caltech] [Spring 2021]. TA for class in which students are introduced to software design principles/techniques and develop a significant code base & game. Hold weekly office hours and code reviews, lead lab section. Help with course vision and organization. **[C]**
 
 **Teaching Assistant, [CS 2 (Data Structures and Algorithms)](https://debuggi.ng/21wi/), ~200 students**: [Caltech] [Winter 2021]. TA for second Caltech CS course, in which students code fundamental data structures and related algorithms (and learn to apply them!). Hold weekly office hours, lead lab section, help with lecture. Help with course vision and optimizing pair programming, learning in online setting. **[Java]**
