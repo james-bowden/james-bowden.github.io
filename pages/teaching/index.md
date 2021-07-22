@@ -7,7 +7,7 @@ Much of my what has gone "right" in my life can be traced back to exceptional te
 
 **Head TA in training, CS 2 (Data Structures and Algorithms)**: [Caltech] [Winter 2022]. Will be Head TA for CS 2 next year!!
 
-**Teaching Assistant, CS 24 (Computing Systems), ~100 students**: [Caltech] [Fall 2021]. **[C]**
+**Teaching Assistant, [CS 24 (Computing Systems)](https://com.puter.systems/21fa/), ~100 students**: [Caltech] [Fall 2021]. **[C]**
 
 **Teaching Assistant, [CS 3 (Software Design)](https://sof.tware.design/21sp/), ~120 students**: [Caltech] [Spring 2021]. TA for class in which students are introduced to software design principles/techniques and develop a significant code base & game. Hold weekly office hours and code reviews, lead lab section. Help with course vision and organization. **[C]**
 
