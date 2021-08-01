@@ -8,6 +8,7 @@ image: sf_symphony.jpg
 ---
 
 *I've recently gotten quite into classical music, and have been listening to it more frequently than singing as of late. Still, I've very little idea what I'm talking about and am looking for more compelling pieces, so please do recommend. I've gotten it into my head to pick up the cello again sometime soon, and plan to go to all the symphonies I can manage. Exciting times!
+
 Anyhow, here are some pieces that have stuck with me, and how they came to be so--I know it's a sorry list, but I'm keeping it to only the most compelling pieces I've come across.*
 
 <!-- * [***Archduke Trio*, Beethoven**](https://www.youtube.com/watch?v=ZFvx32SjAtE&ab_channel=Rousseau). This -->
