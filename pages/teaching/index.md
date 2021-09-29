@@ -7,7 +7,7 @@ Much of my what has gone "right" in my life can be traced back to exceptional te
 
 **Head TA in training, CS 2 (Data Structures and Algorithms)**: [Caltech] [Winter 2022]. Will be Head TA for CS 2 this year!!
 
-**Teaching Assistant, [CS 156a (Learning Systems)](https://work.caltech.edu/telecourse.html#lectures), ~200 students**: [Caltech] [Fall 2021]. TA for Caltech's introductory machine learning course, focusing on conceptual/mathematical background for common methods as well as light implementation. Hold office hours. **[Python]**
+**Teaching Assistant, [CS 156a (Learning Systems)](https://work.caltech.edu/telecourse.html#lectures), ~200 students**: [Caltech] [Fall 2021]. TA for Caltech's introductory machine learning course, focusing on conceptual/mathematical background for common methods as well as basic implementations. Hold office hours.
 
 **Teaching Assistant, [CS 24 (Computing Systems)](https://com.puter.systems/21fa/), ~100 students**: [Caltech] [Fall 2021]. TA for core CS class on computing systems and low-level programming. Hold weekly office hours and help out with course organization. **[C]**
 
