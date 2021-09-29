@@ -5,9 +5,11 @@ title: Teaching
 
 Much of my what has gone "right" in my life can be traced back to exceptional teaching, both inside and outside of the classroom. Quite a bit of my knowledge has also come from less formal education--mentors, friends, Google, and ***lots*** of trial and error. I care deeply about passing on what I've learned in order to help make CS and data science (and related endeavors) more approachable fields for those aspiring to be both traditional computer scientists and "non"-computer scientists.
 
-**Head TA in training, CS 2 (Data Structures and Algorithms)**: [Caltech] [Winter 2022]. Will be Head TA for CS 2 next year!!
+**Head TA in training, CS 2 (Data Structures and Algorithms)**: [Caltech] [Winter 2022]. Will be Head TA for CS 2 this year!!
 
-**Teaching Assistant, [CS 24 (Computing Systems)](https://com.puter.systems/21fa/), ~100 students**: [Caltech] [Fall 2021]. **[C]**
+**Teaching Assistant, [CS 156a (Learning Systems)](https://work.caltech.edu/telecourse.html#lectures), ~200 students**: [Caltech] [Fall 2021]. TA for Caltech's introductory machine learning course, focusing on conceptual/mathematical background for common methods as well as light implementation. Hold office hours. **[Python]**
+
+**Teaching Assistant, [CS 24 (Computing Systems)](https://com.puter.systems/21fa/), ~100 students**: [Caltech] [Fall 2021]. TA for core CS class on computing systems and low-level programming. Hold weekly office hours and help out with course organization. **[C]**
 
 **Teaching Assistant, [CS 3 (Software Design)](https://sof.tware.design/21sp/), ~120 students**: [Caltech] [Spring 2021]. TA for class in which students are introduced to software design principles/techniques and develop a significant code base & game. Hold weekly office hours and code reviews, lead lab section. Help with course vision and organization. **[C]**
 
