@@ -3,7 +3,7 @@ layout: page
 
 ---
 
-*Last updated: Jan. 2021*
+*Last updated: Jan. 2022*
 
 *For inquiries and opportunities, please [email](jbowden@caltech.edu) me. For more info, check out my **[CV](https://james-bowden.github.io/assets/resumes/BowdenJames_CV_01_22.pdf)**.*
 
