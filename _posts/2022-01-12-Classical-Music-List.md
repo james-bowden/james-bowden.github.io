@@ -12,7 +12,8 @@ image: sf_symphony.jpg
 *Anyhow, here are some pieces that have stuck with me, and how they came to be so--I know it's a sorry list, but I'm keeping it to only the most compelling pieces I've come across.*
 
 <!-- * [***Archduke Trio*, Beethoven**](https://www.youtube.com/watch?v=ZFvx32SjAtE&ab_channel=Rousseau). This -->
-<!-- * [***Archduke Trio*, Beethoven**](https://www.youtube.com/watch?v=ZFvx32SjAtE&ab_channel=Rousseau). This -->
+* [***Humoresque No.7 (Op. 101)*, Dvořák**](https://www.youtube.com/watch?v=JZnzjzjYkK0). I cannot describe how this piece makes me feel but it's genuinely wonderful. And then you watch Yo Yo Ma and Itzhak go at it in the video and what more do you want?
+* [***Tango*, Itzhak Perlman**](https://www.youtube.com/watch?v=dsU9zmnZ37g). Heart wrenching and sad--go listen. Not sure who this is really by, but boy does Itzhak do a lovely job of playing it.
 * [***Cello Concerto (Op. 33)*, Saint-Saëns**](https://www.youtube.com/watch?v=pfBkzWNQTpI&t=687s). Very intense and I like. Saint-Saëns is pretty good at that, and especially the turns.
 * [***Slavonic March (Op. 31)*, Tchaikovsky**](https://www.youtube.com/watch?v=F0sgKCetlb8). I'm kind of a simp for marches. This one is very nice. Patterns make brain go brrr.
 * [***Violin Concerto in A minor (Op. 53)*, Dvořák**](https://www.youtube.com/watch?v=044AF783nok). The beginning of this is quite beautiful, and there's a really good recurring rhythm throughout that has been stuck in my head for days. Not as full as the cello concerto, but very catchy and fun nonetheless!
