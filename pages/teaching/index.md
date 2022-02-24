@@ -5,7 +5,9 @@ title: Teaching
 
 Much of my what has gone "right" in my life can be traced back to exceptional teaching, both inside and outside of the classroom. Quite a bit of my knowledge has also come from less formal education--mentors, friends, Google, and ***lots*** of trial and error. I care deeply about passing on what I've learned in order to help make CS and data science (and related endeavors) more approachable fields for those aspiring to be both traditional computer scientists and "non"-computer scientists.
 
-**Head TA in training, [CS 2 (Data Structures and Algorithms)](https://debuggi.ng/22wi/)**: [Caltech] [Winter 2022]. Will be Head TA for CS 2 this year!! Involved heavily in course organization and hiring/training/supporting/managing 18 other TAs. Pioneering new office hours, ticketing system to improve learning outcomes for large core CS class. See below for general description.
+**Teaching Assistant, CS 156b (Learning Systems)**: [Caltech] [Spring 2022]. TA for Caltech's main machine learning project course, in which students apply machine learning to a dataset in teams over the course of a term. Helping organize course, dataset, competition, and holding office hours/giving feedback on final presentations.
+
+**Head TA, [CS 2 (Data Structures and Algorithms)](https://debuggi.ng/22wi/)**: [Caltech] [Winter 2022]. Will be Head TA for CS 2 this year!! Involved heavily in course organization and hiring/training/supporting/managing 18 other TAs. Pioneering new office hours, ticketing system to improve learning outcomes for large core CS class. See below for general description.
 
 **Teaching Assistant, [CS 156a (Learning Systems)](https://work.caltech.edu/telecourse.html#lectures), ~200 students**: [Caltech] [Fall 2021]. TA for Caltech's introductory machine learning course, focusing on conceptual/mathematical background for common methods as well as basic implementations. Hold office hours.
 
