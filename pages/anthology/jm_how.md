@@ -27,4 +27,4 @@ with tears in my eyes:<br/>
 analysis...
 
 ---
-<p style="text-align: center;"><a href="https://james-bowden.github.io/pages/anthology/ml_having">prev</a> / page 4 / <a href="https://james-bowden.github.io/pages/anthology/ms_eating">next</a></p>
+<p style="text-align: center;"><a href="https://james-bowden.github.io/pages/anthology/jb_having_having">prev</a> / page 6 / <a href="https://james-bowden.github.io/pages/anthology/ms_eating">next</a></p>
