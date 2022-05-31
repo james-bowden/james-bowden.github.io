@@ -6,8 +6,9 @@ title: Having a Poem with You
 ## *A Sonnet to Structure*
 #### James Bowden
 
-<img align="left" src="https://user-images.githubusercontent.com/61923965/171104156-a29cc9ec-5f73-4e98-9815-46ec98220498.png" width="400"/>
-
+<div id="image">
+<img align="left" src="https://user-images.githubusercontent.com/61923965/171104156-a29cc9ec-5f73-4e98-9815-46ec98220498.png" width="400"/><br/>
+</div>
 <!-- ![image](https://user-images.githubusercontent.com/61923965/171104156-a29cc9ec-5f73-4e98-9815-46ec98220498.png) -->
 
 
