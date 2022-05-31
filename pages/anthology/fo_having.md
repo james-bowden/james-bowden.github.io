@@ -33,6 +33,9 @@ as the horse<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;it seems they were all cheated of some marvelous experience<br/>
 which is not going to go wasted on me which is why I’m telling you about it<br/>
 
+---
+analysis...
+
 
 ---
 <p style="text-align: center;"><a href="https://james-bowden.github.io/pages/anthology/intro">prev</a> / page 1 / <a href="https://james-bowden.github.io/pages/anthology/fo_having">next</a></p>
