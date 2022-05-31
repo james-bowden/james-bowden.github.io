@@ -41,4 +41,4 @@ when I knew I wanted to be with you forever.<br/>
 analysis...
 
 ---
-<p style="text-align: center;"><a href="https://james-bowden.github.io/pages/anthology/jb_having_boba">prev</a> / page 1 / <a href="https://james-bowden.github.io/pages/anthology/jb_having_having">next</a></p>
+<p style="text-align: center;"><a href="https://james-bowden.github.io/pages/anthology/jb_having_boba">prev</a> / page 4 / <a href="https://james-bowden.github.io/pages/anthology/jb_having_having">next</a></p>
