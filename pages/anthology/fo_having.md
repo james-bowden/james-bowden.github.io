@@ -38,4 +38,4 @@ analysis...
 
 
 ---
-<p style="text-align: center;"><a href="https://james-bowden.github.io/pages/anthology/intro">prev</a> / page 2 / <a href="https://james-bowden.github.io/pages/anthology/fo_having">next</a></p>
+<p style="text-align: center;"><a href="https://james-bowden.github.io/pages/anthology/intro">prev</a> / page 2 / <a href="https://james-bowden.github.io/pages/anthology/jb_having_boba">next</a></p>
