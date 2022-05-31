@@ -7,7 +7,7 @@ Hi, welcome to my poetry anthology! This was compiled as part of a class project
 
 ## Table of Contents:
 1. [Introduction](https://james-bowden.github.io/pages/anthology/intro)
-2. ["Having a Coke with You"](https://james-bowden.github.io/pages/anthology/fo_having)
+2. ["Having a Coke with You" (Frank O'Hara)](https://james-bowden.github.io/pages/anthology/fo_having)
 3. 3asdf
 
 ---
