@@ -26,4 +26,4 @@ Hi, welcome to my poetry anthology! This was compiled as part of a class project
 18. ["A Sonnet to Structure" (James Bowden)](https://james-bowden.github.io/pages/anthology/jb_sonnet)
 
 ---
-<p style="text-align: center;"><a href="https://james-bowden.github.io/pages/anthology/">prev</a> / page 1 / <a href="https://james-bowden.github.io/pages/anthology/intro">next</a></p>
+<p style="text-align: center;"><a href="https://james-bowden.github.io/pages/anthology/">prev</a> / page 0 / <a href="https://james-bowden.github.io/pages/anthology/intro">next</a></p>
