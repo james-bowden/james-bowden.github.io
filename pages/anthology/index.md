@@ -22,8 +22,8 @@ Hi, welcome to my poetry anthology! This was compiled as part of a class project
 14. ["I Wrote a Good Omelet" (Nikki Giovanni)](https://james-bowden.github.io/pages/anthology/ng_omelet)
 15. ["A Blade of Grass" (Brian Patten)](https://james-bowden.github.io/pages/anthology/bp_grass)
 16. ["a plague upon my brain" (James Bowden)](https://james-bowden.github.io/pages/anthology/jb_plague)
-17. ["A Sonnet to Structure" (James Bowden)](https://james-bowden.github.io/pages/anthology/jb_sonnet)
-18. ["x" (y)](https://james-bowden.github.io/pages/anthology/z)
+17. ["Oatmeal" (Galway Kinnell)](https://james-bowden.github.io/pages/anthology/gk_oatmeal)
+18. ["A Sonnet to Structure" (James Bowden)](https://james-bowden.github.io/pages/anthology/jb_sonnet)
 
 ---
 <p style="text-align: center;"><a href="https://james-bowden.github.io/pages/anthology/">prev</a> / page 1 / <a href="https://james-bowden.github.io/pages/anthology/intro">next</a></p>
