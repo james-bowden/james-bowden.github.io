@@ -8,7 +8,7 @@ title: Having a Poem with You
 
 <p style="text-align: right; font-style: italic;"> Submitting someone else's text as one's own or attempting to blur the line between one's own ideas or words and those borrowed from another source<br/>
 --Kent State University<br/><br/>
- <p/>
+ </p>
 
 
 plagiarism--that nasty bastard!<br/>
