@@ -44,4 +44,4 @@ and still falling short as Frank O'Hara's impressionists.*<br/>
 analysis...
 
 ---
-<p style="text-align: center;"><a href="https://james-bowden.github.io/pages/anthology/fo_having">prev</a> / page 1 / <a href="https://james-bowden.github.io/pages/anthology/ml_having">next</a></p>
+<p style="text-align: center;"><a href="https://james-bowden.github.io/pages/anthology/fo_having">prev</a> / page 3 / <a href="https://james-bowden.github.io/pages/anthology/ml_having">next</a></p>
