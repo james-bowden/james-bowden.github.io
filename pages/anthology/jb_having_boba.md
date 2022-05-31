@@ -32,13 +32,13 @@ we perused one museum twice in just this past week,<br/>
 
 and if still you are not convinced, haven't you seen the way I grin at you?<br/>
 I mean, come on. you're the worst kept secret that ever I've had.<br/>
+<br/><br/>
 
 
-
--- --
-*P.S. if that Bon Iver album I sent you is "quite lovely" then surely I need a new vocabulary 
-so here is this poem full of poem paintings book sculpture songs a thousand words apiece
-and still falling short as Frank O'Hara's impressionists.*
+\-- \--<br/>
+*P.S. if that Bon Iver album I sent you is "quite lovely" then surely I need a new vocabulary <br/>
+so here is this poem full of poem paintings book sculpture songs a thousand words apiece<br/>
+and still falling short as Frank O'Hara's impressionists.*<br/>
 
 ---
 analysis...
