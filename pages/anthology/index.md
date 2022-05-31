@@ -14,7 +14,7 @@ Hi, welcome to my poetry anthology! This was compiled as part of a class project
 6. ["Not to Know How to Live" (Jim Moore)](https://james-bowden.github.io/pages/anthology/jm_how)
 7. ["Eating Poetry" (Mark Strand)](https://james-bowden.github.io/pages/anthology/ms_eating)
 8. ["I read to save my soul" (James Bowden)](https://james-bowden.github.io/pages/anthology/jb_read)
-9. ["The Archaic Torso of Apollo" (Ranier Maria Rilke)](https://james-bowden.github.io/pages/anthology/rr_archaic)
+9. ["Archaic Torso of Apollo" (Ranier Maria Rilke)](https://james-bowden.github.io/pages/anthology/rr_archaic)
 10. ["Listening to the Chanticleers in the Beckman Auditorium" (James Bowden)](https://james-bowden.github.io/pages/anthology/jb_chanticleers)
 11. ["What Is It You Feel I Asked Kurt" (Diane Seuss)](https://james-bowden.github.io/pages/anthology/ds_kurt)
 12. ["I write to save my soul" (James Bowden)](https://james-bowden.github.io/pages/anthology/jb_write)
