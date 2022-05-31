@@ -3,6 +3,9 @@ layout: page
 title: Having a Poem with You
 ---
 
+<p style="text-align: center;"><a href="https://james-bowden.github.io/pages/anthology/">prev</a> / page 1 / <a href="https://james-bowden.github.io/pages/anthology/fo_having">next</a></p>
+---
+
 ## Introduction
 
 I first set out to compile this anthology with but two poems, Frank O'Hara's "Having a Coke with You" [pg x], and Mark Leidner's "Having "Having a Coke with You" with You" [pg x], and a strong feeling of love for people and poetry. I knew I wanted to write some of my own poetry following from these two wonderful pieces in the character of my own experiences, and wasn't sure how I was to go about finding several other similar poems that addressed the question of how we experience the experiencing of art with others.
@@ -23,5 +26,4 @@ Having gotten that out of the way, let us go forth toward the art without furthe
 In spirit of Frank O'Hara [pg x], *it seems you've been cheated of some marvelous experience which is not going to go wasted on me which is why I'm telling you about it!!*
 
 ---
-<p style="text-align: center;"><a href="https://james-bowden.github.io/pages/anthology/">prev</a> ... <a href="https://james-bowden.github.io/pages/anthology/fo_having">next</a></p>
-<p style="text-align: center;">page 1</p>
+<p style="text-align: center;"><a href="https://james-bowden.github.io/pages/anthology/">prev</a> / page 1 / <a href="https://james-bowden.github.io/pages/anthology/fo_having">next</a></p>
