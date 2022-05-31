@@ -1,3 +1,10 @@
+---
+layout: page
+title: Having a Poem with You
+---
+
+## Introduction
+
 I first set out to compile this anthology with but two poems, Frank O'Hara's "Having a Coke with You" [pg x], and Mark Leidner's "Having "Having a Coke with You" with You" [pg x], and a strong feeling of love for people and poetry. I knew I wanted to write some of my own poetry following from these two wonderful pieces in the character of my own experiences, and wasn't sure how I was to go about finding several other similar poems that addressed the question of how we experience the experiencing of art with others.
 
 In lieu of knowing where to look, I penned out a poem of my own about my experience sharing poetry, including the duo of aforementioned poems, with the first person I'd ever truly loved. It's called "Having "Having "Having a Coke with You" with You" with You" [pg x] (I know, only so many more such poems can be written before the title becomes intractable!) and is included in this anthology as one of my own attempts to process people and art I am awfully attached to. The subject of this poem, Rachel, is in a way where all of this started--without the warm love and ensuing heartbreak she gifted me, I'm not sure when, if ever, I would have been emotionally vulnerable enough to dive headfirst into poetry, browsing poems upon poems on Instagram and sharing the ones that nicked me with friends, the ones that sliced me clean open with her.
