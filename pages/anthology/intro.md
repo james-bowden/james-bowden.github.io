@@ -15,6 +15,6 @@ One or more of these methods are present in most all of the poems I present you 
 Having gotten that out of the way, let us go forth toward the art without further ado-- 
 In spirit of Frank O'Hara [pg x], *it seems you've been cheated of some marvelous experience which is not going to go wasted on me which is why I'm telling you about it!!*
 
-
+---
 <p style="text-align: center;"><a href="https://james-bowden.github.io/pages/anthology/">prev</a> ... <a href="https://james-bowden.github.io/pages/anthology/fo_having">next</a></p>
 <p style="text-align: center;">page 1</p>
