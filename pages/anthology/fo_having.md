@@ -1,3 +1,7 @@
+---
+layout: page
+title: Having a Poem with You
+---
 
 ## *Having a Coke with You*
 # Frank O'Hara 
