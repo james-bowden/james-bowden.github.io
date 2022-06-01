@@ -12,18 +12,18 @@ us lounging around like poorly dressed Englishwomen,)<br/>
 
 is quite lovely, moreso than going to San Sebastian, Chile, New York City, Argentina<br/>
 partly because I've never been, so I am left postulating,<br/>
-partly because in your vertically-striped shirt you look like a ridiculouser version of Picasso's Head of a Woman<br/>
+partly because in your vertically-striped shirt you look like a ridiculouser version of Picasso's *Head of a Woman*<br/>
 
 and I'm glad he's dead already because otherwise I might've sliced his other ear off<br/>
 over you and everyone knows such things never go well for the muse;<br/>
-haven't you read Dorian Gray?<br/>
+haven't you read *Dorian Gray*?<br/>
 
 though knowing you, your voice would vibrate through his skull forcefully enough to flood dopamine anyway<br/>
 and maybe then he'd draw you as vibrant strokes exploding chaotically from the center,<br/>
 kinda like the canvas I have that the Blue Man Group spit paint all over.<br/>
 
 it's hard to believe when I'm with you that people visit museums in search of art<br/>
-when beside four solemn Head of Buddhas is your shaking laughing face,<br/>
+when beside four solemn *Head of Buddha*s is your shaking laughing face,<br/>
 them sacred to nations generations, this here poem your portraiture debut <br/>
 
 so forgive me for being so tired the first time we went that you thought I disliked art:<br/>
