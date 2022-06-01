@@ -24,10 +24,10 @@ and the portrait show seems to have no faces in it at all, just paint<br/>
 you suddenly wonder why in the world anyone ever did them<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I look<br/>
 at you and I would rather look at you than all the portraits in the world<br/>
-except possibly for the Polish Rider occasionally and anyway it’s in the Frick<br/>
+except possibly for the *Polish Rider* occasionally and anyway it’s in the Frick<br/>
 which thank heavens you haven’t gone to yet so we can go together for the first time<br/>
 and the fact that you move so beautifully more or less takes care of Futurism<br/>
-just as at home I never think of the Nude Descending a Staircase or<br/>
+just as at home I never think of the *Nude Descending a Staircase* or<br/>
 at a rehearsal a single drawing of Leonardo or Michelangelo that used to wow me<br/>
 and what good does all the research of the Impressionists do them<br/>
 when they never got the right person to stand near the tree when the sun sank<br/>
