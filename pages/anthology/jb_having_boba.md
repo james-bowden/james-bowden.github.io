@@ -3,6 +3,9 @@ layout: page
 title: Having a Poem with You
 ---
 
+This is a piece I wrote with respect to someone very close to me, very closely following after ["Having a Coke with You"](https://james-bowden.github.io/pages/anthology/fo_having). I'll leave off the analysis here, but link a few of the relevant art pieces.<br/>
+Tags: *art as object, art as experience, ekphrastic, writing of art, sharing of art, tercet, surprising last line*<br/>
+
 ## *Having a Boba with You*
 #### James Bowden
 
@@ -41,7 +44,8 @@ so here is this poem full of poem paintings book sculpture songs a thousand word
 and still falling short as Frank O'Hara's impressionists.*<br/>
 
 ---
-analysis...
+
+Picasso's [Head of a Woman](https://www.nortonsimon.org/art/detail/P.1953.074) in the Norton Simon; [*The Picture of Dorian Gray*](https://en.wikipedia.org/wiki/The_Picture_of_Dorian_Gray); *Head of Buddha*s in the Norton Simon (for this one just [Google "Head of Buddha Norton Simon"](https://www.google.com/search?q=Head+of+Buddha+Norton+Simon) and you'll find a multitude); said Bon Iver album, [*For Emma, Forever Ago*](https://www.youtube.com/playlist?list=OLAK5uy_mAWxeOHR1Vk1QbLM81k2wTBalzXEVrtLQ).<br/>
 
 ---
 <p style="text-align: center;"><a href="https://james-bowden.github.io/pages/anthology/fo_having">prev</a> / page 3 / <a href="https://james-bowden.github.io/pages/anthology/ml_having">next</a></p>
