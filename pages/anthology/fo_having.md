@@ -3,6 +3,9 @@ layout: page
 title: Having a Poem with You
 ---
 
+We begin with one of the more playful poems of the series and a personal favorite of mine! This poem has inspired the next 3 poems presented in some way or form, and in large part gives shape to this anthology-- </br>
+Tags: *loving of art, sharing of art, art as object, art as experience, writing of art*</br>
+
 ## *Having a Coke with You*
 #### Frank O'Hara 
 
