@@ -3,6 +3,10 @@ layout: page
 title: Having a Poem with You
 ---
 
+Now, the poem that really started it all and properly inspired the title of this anthology, "Having a Poem with You". I found and loved this poem immediately, and then of course went to read the art as object that it references and takes its name from, ["Having a Coke with You"](https://james-bowden.github.io/pages/anthology/fo_having), in order to better understand the context, though I think it stands wonderfully on its own too. By engaging with this existing work so explicitly, we get a very interesting duality, which I hope you'll be able to appreciate having already read it.<br/>
+Tags: *loving of art, sharing of art, art as object, art as experience, writing of art, ekphrastic*<br/>
+
+
 ## *Having "Having a Coke with You" with You*
 #### Mark Leidner
 
