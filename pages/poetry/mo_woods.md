@@ -3,7 +3,7 @@ layout: page
 title: Poetry
 ---
 
-## *How I go to the woods*
+## *How I Go to the Woods*
 #### Mary Oliver
 
 Ordinarily, I go to the woods alone, with not a single<br/>
