@@ -37,7 +37,9 @@ will likely happen if I visit this summer and as happened last summer though rea
 but you smiled upon me with such warmth that I knew I was at the last line of the poem.<br/>
 
 ---
-Here's a link to the poem mentioned at the beginning, Mari Evans' ["Celebration"](https://james-bowden.github.io/pages/poetry/me_celebration).
+Here's a link to the poem mentioned at the beginning, Mari Evans' ["Celebration"](https://james-bowden.github.io/pages/poetry/me_celebration).<br/>
+
+The upcoming poems will start to focus in on more specific aspects of poetry and its relation to art and sharing. The next few are very concretely about loving art, in particular.
 
 ---
 <p style="text-align: center;"><a href="https://james-bowden.github.io/pages/anthology/ml_having">prev</a> / page 5 / <a href="https://james-bowden.github.io/pages/anthology/jm_how">next</a></p>
