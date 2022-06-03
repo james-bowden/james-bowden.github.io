@@ -3,7 +3,7 @@ layout: page
 title: Having a Poem with You
 ---
 
-maybe skip this one, is long and unrefined.
+This piece is one of the longest ones I've written, and probably one of the more unrefined ones. It was a really fun piece for me to write, and for me to read, but I'm not sure it works very well as a poem for other readers. In any case, I've included it here because it deals with a number of various pieces of art, and also begins to discuss the writing of art, marking the transition to poems that focus a bit more on this aspect. Feel free to [skip](https://james-bowden.github.io/pages/anthology/da_ars) over it if you'd like and start on a poem that properly introduces how writing is wrapped into such things. 
 
 ## *I write to save my soul*
 #### James Bowden
@@ -38,7 +38,19 @@ Sometimes, we talk. She alternates between counterfactuals and gushing over how 
 
 
 ---
-analysis...
+Here are some of the various references: 
+[*Many Lives, Many Masters*](https://www.goodreads.com/book/show/34452.Many_Lives_Many_Masters), 
+Mary Oliver's ["How I Go to the Woods"](https://james-bowden.github.io/pages/poetry/mo_woods), 
+Raymond Carver's [*What We Talk About When We Talk About Love*](https://genius.com/Raymond-carver-what-we-talk-about-when-we-talk-about-love-annotated), 
+Haruki Murakami's [*What I Talk About When I Talk About Running*](https://www.goodreads.com/book/show/2195464.What_I_Talk_About_When_I_Talk_About_Running), 
+Anthony Burgess' [*A Clockwork Orange*](https://en.wikipedia.org/wiki/A_Clockwork_Orange_(novel)), which was very difficult for me to read, 
+the [Preface](https://genius.com/Oscar-wilde-the-picture-of-dorian-gray-preface-annotated) to Wilde's *The Picture of Dorian Gray*, 
+Charles Bukowski's [*Ham on Rye*](https://en.wikipedia.org/wiki/Ham_on_Rye), 
+Devin Kelly's ["As Light"](https://james-bowden.github.io/pages/poetry/dk_light), 
+Mary Oliver's ["I Don't Want to Life a Small Life"](https://james-bowden.github.io/pages/poetry/mo_small), 
+Sally Rooney's [*Conversations with Friends*](https://www.goodreads.com/book/show/32187419-conversations-with-friends), 
+Frank Heller's [*The Secret Empress*](https://www.amazon.com/Secret-Empress-Frank-Heller/dp/1532068328).
+
 
 ---
 <p style="text-align: center;"><a href="https://james-bowden.github.io/pages/anthology/ds_kurt">prev</a> / page 12 / <a href="https://james-bowden.github.io/pages/anthology/da_ars">next</a></p>
