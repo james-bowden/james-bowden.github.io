@@ -3,8 +3,9 @@ layout: page
 title: Having a Poem with You
 ---
 
-This is a piece I wrote with respect to someone very close to me, very closely following after ["Having a Coke with You"](https://james-bowden.github.io/pages/anthology/fo_having). I'll leave off the analysis here, but link a few of the relevant art pieces.<br/>
 Tags: *art as object, art as experience, ekphrastic, writing of art, sharing of art, tercet, surprising last line*<br/>
+
+This is a piece I wrote with respect to someone very close to me, very closely following after ["Having a Coke with You"](https://james-bowden.github.io/pages/anthology/fo_having). I'll leave off the analysis here, but link a few of the relevant art pieces.<br/>
 
 ## *Having a Boba with You*
 #### James Bowden
