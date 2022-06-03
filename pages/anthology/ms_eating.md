@@ -36,6 +36,7 @@ I romp with joy in the bookish dark.<br/>
 
 ---
 I think this poem is really fun, but also a little unsettling. Strand conveys his love of poetry by painting himself as rather animal and wild and maniacal from a "normal person" perspective, which we largely get through the presence of the frightened librarian. 
+Notice how information is delivered to us mostly in short, choppy lines and the progression quite surreal, creating a primal and visceral experience of "eating" poems that is surrounded by confusion. Strand does a great job of dramatizing consuming poetry as a literally transformative experience here.
 
 ---
 <p style="text-align: center;"><a href="https://james-bowden.github.io/pages/anthology/jm_how">prev</a> / page 7 / <a href="https://james-bowden.github.io/pages/anthology/jb_read">next</a></p>
