@@ -3,6 +3,9 @@ layout: page
 title: Having a Poem with You
 ---
 
+Tags: *art as poet, art as experience, loving of art, anaphora, rhyme, imagery, juxtaposition, information management* <br/>
+
+
 ## *Eating Poetry*
 #### Mark Strand
 
@@ -32,7 +35,7 @@ I romp with joy in the bookish dark.<br/>
 
 
 ---
-analysis...
+I think this poem is really fun, but also a little unsettling. Strand conveys his love of poetry by painting himself as rather animal and wild and maniacal from a "normal person" perspective, which we largely get through the presence of the frightened librarian. 
 
 ---
 <p style="text-align: center;"><a href="https://james-bowden.github.io/pages/anthology/jm_how">prev</a> / page 7 / <a href="https://james-bowden.github.io/pages/anthology/jb_read">next</a></p>
