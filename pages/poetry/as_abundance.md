@@ -1,3 +1,8 @@
+---
+layout: page
+title: Poetry
+---
+
 ## *Abundance*
 #### Amy Schmidt
 
