@@ -3,6 +3,8 @@ layout: page
 title: Having a Poem with You
 ---
 
+Tags: *sharing of art, experience of art, loving of art, syntax* <br/>
+
 ## *What Is It You Feel I Asked Kurt*
 #### Diane Seuss
 
@@ -23,7 +25,7 @@ his face, soft, I’m listening to Ravel now, its irrelevancy.<br/>
 
 
 ---
-analysis...
+I don't find the first half particularly compelling as poetry, though it's a beautiful sentiment that I share at times. The last few lines where Seuss begins paraphrasing take on the character of someone forgetting their suffering through music, the dreamy quality created by the soft syntax peppered with commas. I listened to the piece after reading this and honestly think it's a perfect piece for the poem and its message, as it is quite unlike anything I've heard elsewhere or any other classical music I've listened to: [Ravel's String Quarter in F Major](https://www.youtube.com/watch?v=ieRQyyPowH0).
 
 ---
 <p style="text-align: center;"><a href="https://james-bowden.github.io/pages/anthology/jb_chanticleers">prev</a> / page 11 / <a href="https://james-bowden.github.io/pages/anthology/jb_write">next</a></p>
