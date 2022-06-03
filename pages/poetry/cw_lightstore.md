@@ -1,3 +1,8 @@
+---
+layout: page
+title: Poetry
+---
+
 ## *A light store in the Bowery*
 #### Christian Wiman
 
