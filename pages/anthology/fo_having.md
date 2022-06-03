@@ -6,7 +6,7 @@ title: Having a Poem with You
 
 Tags: *loving of art, sharing of art, art as object, art as experience, writing of art, imagery, syntax, information management, juxtaposition, repetition*<br/>
 
-We begin with one of the more playful poems of the series and a personal favorite of mine! I really enjoy the way O'Hara creates this complex interplay between works of art, his subject, and himself as the writer and manages for it to be quite lucid. This poem has inspired the next 3 poems presented in some way or form, and in large part gives shape to this anthology-- <br/>
+We begin with one of the more playful poems of the series and a personal favorite of mine! I really enjoy the way O'Hara creates this complex interplay between works of art, his subject, and himself as the writer and manages for it to be quite lucid. This poem has inspired the next 3 poems presented in some way or form, and in large part gives shape to this anthology. This set of poems is largely focused on sharing of art. <br/>
 
 ## *Having a Coke with You*
 #### Frank O'Hara 
