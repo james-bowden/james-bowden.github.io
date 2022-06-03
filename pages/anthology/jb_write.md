@@ -3,6 +3,8 @@ layout: page
 title: Having a Poem with You
 ---
 
+Tags: *art as object, writing of art, narrative, loving of art, metaphor, imperative* <br/>
+
 This piece is one of the longest ones I've written, and probably one of the more unrefined ones. It was a really fun piece for me to write, and for me to read, but I'm not sure it works very well as a poem for other readers. In any case, I've included it here because it deals with a number of various pieces of art, and also begins to discuss the writing of art, marking the transition to poems that focus a bit more on this aspect. Feel free to [skip](https://james-bowden.github.io/pages/anthology/da_ars) over it if you'd like and start on a poem that properly introduces how writing is wrapped into such things. 
 
 ## *I write to save my soul*
