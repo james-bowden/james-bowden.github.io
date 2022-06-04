@@ -40,7 +40,7 @@ A blade of grass<br/>
 Becomes more difficult to accept.<br/>
 
 ---
-The mostly consistent quatrain structure of this poem and the repetition of lines and words and sentiments help to convey the back and forth discourse that is occuring in the poem (and through the poem itself). By taking us through the journey with him, Patten creates an ekphrastic journey of sorts, since we are indeed experiencing the art and the enoughness of this here poem as we read it. 
+The mostly consistent quatrain structure of this poem and the repetition of lines and words and sentiments help to convey the back and forth discourse that is occuring in the poem (and through the poem itself). By taking us through the journey with him, Patten creates an ekphrastic effect of sorts, since we are indeed experiencing the art and the enoughness of this here poem as we read it. 
 Again, the argument is pretty straightforward, mostly saying that things need not be complex and hard-wrought to be of value. Really, things not need be anything in particular or fit any form or expectation to be beautiful and worthy. I really like this sentiment and used it to a similar but slightly different end in the next poem in the series.
 
 ---
