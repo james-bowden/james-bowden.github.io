@@ -3,6 +3,10 @@ layout: page
 title: Having a Poem with You
 ---
 
+Tags: *loving of art, sharing of art, writing of art, imagery, narrative*<br/>
+
+This poem is really long and quite a lot is going on in it, so I won't go through and analyze the specifics. Instead, I'll just leave you with why I included it: I think it's a wonderful example of discourse with art, particularly a literal discourse here, that interacts with the other art and artists in question in funny and witty way. I continue to be impressed by Galway Kinnell.
+
 ## *Oatmeal*
 #### Galway Kinnell
 
@@ -57,7 +61,7 @@ gummy and crumbly, and therefore I’m going to invite Patrick Kavanagh to join 
 
 
 ---
-analysis...
+A few quick links to things mentioned: John Keats' rather long ["Ode to a Nightingale"](https://www.poetryfoundation.org/poems/44479/ode-to-a-nightingale) and manageable ["To Autumn"](https://www.poetryfoundation.org/poems/44484/to-autumn) (there's a trend with Keats, in case you haven't noticed--a lot of his work is obscenely, well, long), [Patrick Kavanagh](https://en.wikipedia.org/wiki/Patrick_Kavanagh).
 
 ---
 <p style="text-align: center;"><a href="https://james-bowden.github.io/pages/anthology/jb_plague">prev</a> / page 17 / <a href="https://james-bowden.github.io/pages/anthology/jb_sonnet">next</a></p>
