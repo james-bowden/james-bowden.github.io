@@ -48,7 +48,7 @@ and still falling short as Frank O'Hara's impressionists.*<br/>
 
 Picasso's [Head of a Woman](https://www.nortonsimon.org/art/detail/P.1953.074) in the Norton Simon; [*The Picture of Dorian Gray*](https://en.wikipedia.org/wiki/The_Picture_of_Dorian_Gray); *Head of Buddha*s in the Norton Simon (for this one just [Google "Head of Buddha Norton Simon"](https://www.google.com/search?q=Head+of+Buddha+Norton+Simon) and you'll find a multitude); said Bon Iver album, [*For Emma, Forever Ago*](https://www.youtube.com/playlist?list=OLAK5uy_mAWxeOHR1Vk1QbLM81k2wTBalzXEVrtLQ).<br/>
 
-This poem ended up causing me some trouble in that I got very carried away in the aesthetic of the genre and the art and ended up making what I think is a rather compelling piece, and one that conveyed feelings much stronger than I'd intended to. This to say that sometimes following powerful poems works too well--it was hard for me to recognize because I didn't quite realize I could write anything close to that powerful in the first place, though I certainly was trying to for the sake of artistic emulation.<br/>
+<!-- This poem ended up causing me some trouble in that I got very carried away in the aesthetic of the genre and the art and ended up making what I think is a rather compelling piece, and one that conveyed feelings much stronger than I'd intended to. This to say that sometimes following powerful poems works too well--it was hard for me to recognize because I didn't quite realize I could write anything close to that powerful in the first place, though I certainly was trying to for the sake of artistic emulation.<br/> -->
 Next up is the titular (to the anthology) poem!<br/>
 
 ---
