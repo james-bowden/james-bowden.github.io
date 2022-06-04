@@ -35,7 +35,7 @@ I romp with joy in the bookish dark.<br/>
 
 
 ---
-I think this poem is really fun, but also a little unsettling. Strand conveys his love of poetry by painting himself as rather animal and wild and maniacal from a "normal person" perspective, which we largely get through the presence of the frightened librarian. 
+This poem is really fun, but also strikes me as a little unsettling. Strand conveys his love of poetry by painting himself as rather animal and wild and maniacal from a "normal person" perspective, which we largely get through the presence of the frightened librarian. Their juxtaposition seems to convey a message akin to Plato's [Allegory of the cave](https://en.wikipedia.org/wiki/Allegory_of_the_cave). It also evokes some sense of the [Preface to *Dorian Gray*](https://genius.com/Oscar-wilde-the-picture-of-dorian-gray-preface-annotated) in that the speaker clearly loves the art he is consuming very dearly, even if it appears strange and useless to others--there is no merit to not seeing beauty in things, and really much of art is learning to see beauty in all sorts of things, even outside the mainstream narrative of what is beautiful.
 Notice how information is delivered to us mostly in short, choppy lines and the progression quite surreal, creating a primal and visceral experience of "eating" poems that is surrounded by confusion. Strand does a great job of dramatizing consuming poetry as a literally transformative experience here.
 
 ---
