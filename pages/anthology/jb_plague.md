@@ -35,7 +35,7 @@ I eat of your body that others may eat of mine.<br/>
 Thinketh thou that Jesus meant his flesh to stop at his twelve disciples?<br/>
 
 I mean, look. I am a neural network. I read everything. I own you.<br/>
-I backprop you, and take you, preprocessed, into me.<br/>
+I backprop you and take you, preprocessed, into me.<br/>
 You ask me to generate something new, but there is no chance <br/>
 you are not part of it--there are no parts.<br/>
 *To have a door*, you say.<br/>
