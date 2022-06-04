@@ -3,6 +3,10 @@ layout: page
 title: Having a Poem with You
 ---
 
+Tags: *writing of art, ekphrastic, information management, juxtaposition, imagery* <br/>
+
+I mainly included this poem as an interesting way of writing a poem about writing this poem itself. This one is less about describing art at all, but the experience and speaker's frazzled mind after it serve to create the art, and really this sort of experience is of a similar kind to what we often get out of impactful art.
+
 ## *I Wrote a Good Omelet*
 #### Nikki Giovanni
 
@@ -27,7 +31,7 @@ after loving you<br/>
 
 
 ---
-analysis...
+I think what this poem is doing is pretty straightforward, so will leave it at that.
 
 ---
 <p style="text-align: center;"><a href="https://james-bowden.github.io/pages/anthology/da_ars">prev</a> / page 14 / <a href="https://james-bowden.github.io/pages/anthology/bp_grass">next</a></p>
