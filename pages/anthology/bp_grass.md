@@ -3,7 +3,7 @@ layout: page
 title: Having a Poem with You
 ---
 
-Tags: *loving of art, writing of art, sharing of art, repetition, quatrain, rhetoric* <br/>
+Tags: *loving of art, writing of art, sharing of art, repetition, quatrain, rhetoric, ekphrastic* <br/>
 
 I really like the clear message this poem conveys, and it adds to it all that this poem is likely in part inspired by a line from Walt Whitman's ["Song of Myself"](https://www.poetryfoundation.org/poems/45477/song-of-myself-1892-version) from *Blades of Grass*: "A blade of grass is the journeywork of the stars". Rather poetic, yes?
 
@@ -40,7 +40,8 @@ A blade of grass<br/>
 Becomes more difficult to accept.<br/>
 
 ---
-The mostly consistent quatrain structure of this poem and the repetition of lines and words and sentiments help to convey the back and forth discourse that is occuring in the poem (and through the poem itself). Again, the argument is pretty straightforward, mostly saying that things need not be complex and hard-wrought to be of value or to serve a purpose. I really liked this sentiment and used it to a similar but slightly different end in the next poem up in the series.
+The mostly consistent quatrain structure of this poem and the repetition of lines and words and sentiments help to convey the back and forth discourse that is occuring in the poem (and through the poem itself). By taking us through the journey with him, Patten creates an ekphrastic journey of sorts, since we are indeed experiencing the art and the enoughness of this here poem as we read it. 
+Again, the argument is pretty straightforward, mostly saying that things need not be complex and hard-wrought to be of value. Really, things not need be anything in particular or fit any form or expectation to be beautiful and worthy. I really like this sentiment and used it to a similar but slightly different end in the next poem in the series.
 
 ---
 <p style="text-align: center;"><a href="https://james-bowden.github.io/pages/anthology/ng_omelet">prev</a> / page 15 / <a href="https://james-bowden.github.io/pages/anthology/jb_plague">next</a></p>
