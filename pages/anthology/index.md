@@ -9,7 +9,7 @@ Categorical breakdown:
 - 2 through 5 deal in particular with the sharing of art
 - 6 through 11 focus on the loving of art
 - 12 through 18 address the writing of art/poems
-- 16 through 18 discuss how to integrate others' art into one's own
+- 15 through 18 discuss how to integrate others' art into one's own
 
 ## Table of Contents:
 1. [Introduction](https://james-bowden.github.io/pages/anthology/intro)
