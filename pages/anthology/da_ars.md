@@ -3,6 +3,10 @@ layout: page
 title: Having a Poem with You
 ---
 
+Tags: *writing of art, imagery, metaphor, art as poet* <br/>
+
+This is a really nice, incoherent piece. Note that ["ars poetica"](https://www.poetryfoundation.org/learn/glossary-terms/ars-poetica) is usually used to refer to a poem that explains the "art of poetry" or meditates on poetry in some way. There are a number of famous examples at the aforementioned Poetry Foundation link.<br/>
+
 ## *Diary Entry #28: Ars Poetica*
 #### Diannely Antigua
 
@@ -22,7 +26,7 @@ and look like art. A long life is avant-garde—I place mine<br/>
 on the open shelf, on the edge.<br/>
 
 ---
-analysis...
+The way I read this poem, Antigua starts out as if to tell us how she begins to write poetry: she starts where she is most afraid, and allows a poem to develop around that. In this case, she is considering an addiction to beauty as a place to keep loss. Each progressive sentence in the poem describes something beautiful, but hidden behind is some implicit story of loss: a lost father referred to in the past tense ("liked"), some unnamed loss that causes crying, photographs as elegies because they hold people or things that are gone (literally or effectively), flowers which must soon wilt despite their beauty, a baby out of a window, and so on. Towards the end of the poem Antigua transitions to considering how beauty and loss ought to go together and relate to poetry, asking questions that more or less ask how to express loss, beauty in words, and how loss and death can indeed be art when in real life (not TV). We end with an answer of sorts, declaring life avant-garde (experimental, radical) and resolving to be vulnerable, sit on edge. This poem of a bunch of objects weirdly stitched together, each a strong image, does a really good job depicting the writing process and all that goes behind it and comes with it. On a similar note to Jim Moore's ["Not to Know How to Live"](https://james-bowden.github.io/pages/anthology/jm_how), Antigua puts an emphasis on writing largely being about the experiencing first and foremost, implying that the writing follows.
 
 ---
 <p style="text-align: center;"><a href="https://james-bowden.github.io/pages/anthology/jb_write">prev</a> / page 13 / <a href="https://james-bowden.github.io/pages/anthology/ng_omelet">next</a></p>
