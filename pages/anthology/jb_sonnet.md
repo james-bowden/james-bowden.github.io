@@ -5,7 +5,7 @@ title: Having a Poem with You
 
 Tags: *writing of art, loving of art, ode, sonnet, Middle English lyric, Anglo-Saxon prosody, alliteration, syntax, imagery*<br/>
 
-I want to end on this poem for a number of reasons. It was one of the first poems I wrote in this poetry class, and really brings things full circle in that it discusses the experience of being expected to write in certain forms and after certain poets (i.e. existing pieces of art) when I've already plenty of art I love. It also has myriad explicit influences, which perhaps you can identify a few of. 
+I want to end on this poem for a number of reasons. It was one of the first poems I wrote in this poetry class, and really brings things full circle in that it discusses the experience of being expected to write in certain forms and after certain poets (i.e. existing pieces of art) when there's already plenty of art that I love influencing my work (obviously, not to say that cannot or should not learn to love more!). It also has myriad explicit influences, which perhaps you can identify a few of. 
 
 ## *A Sonnet to Structure*
 #### James Bowden
