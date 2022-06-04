@@ -3,6 +3,10 @@ layout: page
 title: Having a Poem with You
 ---
 
+Tags: *loving of art, sharing of art, writing of art, poet as art, imagery, alliteration, syntax* <br/>
+
+This poem was really one of the most fun to write I've written. You'll probably notice some callbacks to other poems in this series, particularly the previous one.<br/>
+
 ## *a plague upon my brain*
 #### James Bowden
 
@@ -71,7 +75,7 @@ etcetera, etcetera.<br/>
 
 
 ---
-analysis...
+I'd list some references, but hopefully you've gotten your fill through the poem already.
 
 ---
 <p style="text-align: center;"><a href="https://james-bowden.github.io/pages/anthology/bp_grass">prev</a> / page 16 / <a href="https://james-bowden.github.io/pages/anthology/gk_oatmeal">next</a></p>
