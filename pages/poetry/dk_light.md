@@ -37,7 +37,7 @@ to himself. As you might. As I most surely would.<br/>
 He only sits in the high light of noon & makes<br/>
 a kind of wine out of the inside of his mouth.<br/>
 & smiles. Nods. Becomes, for a time, as close<br/>
-to earth as God. Which it so say, so close to earth<br/>
+to earth as God. Which is to say, so close to earth<br/>
 he transcends it & allows himself to remake<br/>
 the universe, over & over again, all of creation,<br/>
 until the story goes that the moon rises & he knows<br/>
