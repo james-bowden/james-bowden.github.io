@@ -1,0 +1,20 @@
+---
+layout: page
+title: Poetry
+---
+
+<p>
+Welcome--I'm beginning this blog of sorts as a place to organize and keep some of the poetry that I process each day. This is a personal project, and not particularly for you, so do keep that in mind, though it'd be a pretty coincidence if you do find something to love.<br/>
+I want to state here very clearly that <b>pretty much all of the poems here are not mine, and respective credit is due to their authors and publishers and such.</b> I have set them here usually because I could not find any satisfactory online version of them, and only intend to share pieces that I have loved.  
+</p>
+
+<hr>
+
+{% for page in site.categories.poetry %}
+  <a href="{{ site.github.url }} pages/poetry {{ page.url }}">
+<!--     <div class="featured-posts"> -->
+      <h5><span>"{{ page.author }}: {{ page.title }}"</span></h5>
+    
+<!--     </div> -->
+  </a>
+{% endfor %}
