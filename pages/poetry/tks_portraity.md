@@ -149,4 +149,4 @@ Between them. You feed it to me<br/>
 Until my heart grows fat. I feed you<br/>
 Tiny black eggs. I feed you<br/>
 My very own soft truth. We believe.<br/>
-We stay up talking all kinds of shit<br/>
+We stay up talking all kinds of shit.<br/>
