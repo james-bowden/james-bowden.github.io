@@ -13,7 +13,8 @@ I want to state here very clearly that <b>pretty much all of the poems here are 
 {% for post in site.categories.blog %}
   <a href="{{ site.github.url }}{{ post.url }}">
 <!--     <div class="featured-posts"> -->
-      <h5><span>{{ post.title }}</span></h5>
+      <h5><span>{{post.datetitle} { post.title }}</span></h5>
+    
 <!--     </div> -->
   </a>
 {% endfor %}
