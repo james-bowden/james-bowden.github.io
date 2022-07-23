@@ -1,8 +1,6 @@
 ---
 layout: page
-<!-- categories: poetry -->
 title: Poetry
-<!-- author: "Amy Schmidt" -->
 ---
 
 ## *Abundance*
