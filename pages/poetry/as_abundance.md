@@ -1,10 +1,12 @@
 ---
 layout: page
-title: Poetry
+categories: poetry
+title: Abundance
+author: Amy Schmidt
 ---
 
-## *Abundance*
-#### Amy Schmidt
+<!-- ## *Abundance*
+#### Amy Schmidt -->
 
 *in memory of Mary Oliver*<br/>
 
