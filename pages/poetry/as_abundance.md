@@ -1,8 +1,8 @@
 ---
-layout: page
+layout: post
 categories: poetry
-title: Abundance
-author: Amy Schmidt
+title: "Abundance"
+author: "Amy Schmidt"
 ---
 
 <!-- ## *Abundance*
