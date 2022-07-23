@@ -11,9 +11,9 @@ I want to state here very clearly that <b>pretty much all of the poems here are 
 <hr>
 
 {% for page in site.categories.poetry %}
-  <a href="{{ site.github.url }} pages/poetry {{ page.url }}">
+  <a href="{{ site.github.url }}{{ page.url }}">
 <!--     <div class="featured-posts"> -->
-      <h5><span>"{{ page.author }}: {{ page.title }}"</span></h5>
+      <h5><span>{{ page.title }}</span></h5>
     
 <!--     </div> -->
   </a>
