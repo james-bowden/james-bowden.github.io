@@ -11,7 +11,8 @@ menu:
 - {name: 'About', folder: 'about'}
 - {name: 'Resume', folder: 'resume'}
 - {name: 'Teaching', folder: 'teaching'}
-- {name: 'Bowden Bytes', folder: 'bytes'}
+- {name: 'Bytes', folder: 'bytes'}
+- {name: 'Blogs', folder: 'blog'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
