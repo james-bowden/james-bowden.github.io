@@ -1,13 +1,12 @@
 ---
-layout: post
-categories: poetry
-title: "Abundance"
-author: "Amy Schmidt"
+layout: page
+<!-- categories: poetry -->
+title: Poetry
+<!-- author: "Amy Schmidt" -->
 ---
 
-<!-- ## *Abundance*
+## *Abundance*
 #### Amy Schmidt 
-##test-->
 
 *in memory of Mary Oliver*<br/>
 
