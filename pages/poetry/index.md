@@ -3,7 +3,7 @@ layout: page
 title: Poetry
 ---
 
-I wanted to start a running list of poems I'd written and liked, so that's what I'm going to do here. Many of them are personal, some somewhat explicit, so probably don't read through if you came to this website from a research/career setting. The main idea was to have an easy way to point friends and loved ones to particular poems I'd written that I want to share with them, and as some sort of record for myself. Not particularly ordered, but probably somewhat chronological.
+I wanted to start a running list of poems I'd written and liked, so that's what I'm going to do here. Many of them are personal, some somewhat explicit, so probably don't read through if you came to this website from a research/career setting. The main idea was to have an easy way to point friends and loved ones to particular poems I'd written that I want to share with them, and as some sort of record for myself. Also in large part inspired by [Frank O'Hara's "My Heart"](https://poetrysociety.org/poetry-in-motion/my-heart). Not particularly ordered, but probably somewhat chronological.
 
 <hr>
 
