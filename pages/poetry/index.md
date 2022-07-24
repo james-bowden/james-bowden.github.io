@@ -25,6 +25,8 @@ Here is also an anthology I compiled during Spring 2022, that contains several o
 
 ["2nd grade poetry book as self portrait"](https://james-bowden.github.io/pages/poetry/jb_portrait_2ndgrade)
 
+["ramen and rachel"](https://james-bowden.github.io/pages/poetry/jb_ramenrachel)
+
 ["Having a Boba with You"](https://james-bowden.github.io/pages/poetry/jb_having_boba)
 
 ["Having “Having “Having a Coke with You” with You” with You"](https://james-bowden.github.io/pages/poetry/jb_having_having)
@@ -37,11 +39,37 @@ Here is also an anthology I compiled during Spring 2022, that contains several o
 
 ["Listening to the Chanticleers in the Beckman Auditorium"](https://james-bowden.github.io/pages/poetry/jb_chanticleers)
 
+["Rose jam"](https://james-bowden.github.io/pages/poetry/jb_rosejam)
+
+["Farewell"](https://james-bowden.github.io/pages/poetry/jb_farewell)
+
+["At the California Institute of Technology"](https://james-bowden.github.io/pages/poetry/jb_caltech)
+
+["how to live"](https://james-bowden.github.io/pages/poetry/jb_forloop)
+
+["The Game (II)"](https://james-bowden.github.io/pages/poetry/jb_game2)
+
+["The Game (I)"](https://james-bowden.github.io/pages/poetry/jb_game1)
+
+["I lick my lips and write with my tongue"](https://james-bowden.github.io/pages/poetry/jb_lips)
+
+["procreation, as jesus would have wanted it explained"](https://james-bowden.github.io/pages/poetry/jb_procreation)
+
+["studying in the shadow of baxter basement"](https://james-bowden.github.io/pages/poetry/jb_studying)
+
+["my wall full of trinkets taped to my wall (III)"](https://james-bowden.github.io/pages/poetry/jb_trinkets)
+
+["voioioioioid"](https://james-bowden.github.io/pages/poetry/jb_void)
+
 ["A Sonnet to Structure"](https://james-bowden.github.io/pages/poetry/jb_sonnet)
 
 ["Cherry communion"](https://james-bowden.github.io/pages/poetry/jb_cherry)
 
 ["Splash of Rain: a Yankee Candle scent"](https://james-bowden.github.io/pages/poetry/jb_candle)
+
+["[Winter Break] At the California Institute of Technology"](https://james-bowden.github.io/pages/poetry/jb_winterbreak)
+
+["***DO NOT LEAVE VALUABLES IN VEHICLE!***"](https://james-bowden.github.io/pages/poetry/jb_valuables)
 
 <!-- ["Purple starburst"](https://james-bowden.github.io/pages/poetry/jb_starburst) -->
 
