@@ -9,6 +9,8 @@ I wanted to start a running list of poems I'd written and liked, so that's what 
 
 ["Purple starburst"](https://james-bowden.github.io/pages/poetry/jb_starburst)
 
+["Fake mint, or *I love you*"](https://james-bowden.github.io/pages/poetry/jb_mint)
+
 ["Having a Boba with You"](https://james-bowden.github.io/pages/poetry/jb_having_boba)
 
 ["Having “Having “Having a Coke with You” with You” with You"](https://james-bowden.github.io/pages/poetry/jb_having_having)
