@@ -3,7 +3,7 @@ layout: page
 title: Poetry
 ---
 
-## *Allowables*
+## Allowables
 #### Nikki Giovanni
 
 I killed a spider<br/>

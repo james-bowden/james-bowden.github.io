@@ -7,7 +7,7 @@ Tags: *sharing of art, experience of art, loving of art, syntax* <br/>
 
 I read this poem and listened to the corresponding classical music piece and have been listening to it relatively nonstop for the past few weeks. I really love when a poem or book shares a piece of classical music or other art (not exclusive, just I happen to have read a number of pieces that point to classical music) and I can go experience it and understand the piece on a new level. Also, discovering new art that you enjoy is always, well, enjoyable.
 
-## *What Is It You Feel I Asked Kurt*
+## What Is It You Feel I Asked Kurt
 #### Diane Seuss
 
 What is it you feel I asked Kurt when you listen to<br/>

@@ -7,7 +7,7 @@ Tags: *loving of art, sharing of art, writing of art, imagery, narrative*<br/>
 
 This poem is rather long and quite a lot is going on in it, so I won't go through and analyze the specifics. Instead, I'll just leave you with why I included it: I think it's a wonderful example of discourse with art, particularly a literal discourse here, that interacts with the other art and artists in question in funny and witty way. I continue to be impressed by Galway Kinnell.
 
-## *Oatmeal*
+## Oatmeal
 #### Galway Kinnell
 
 I eat oatmeal for breakfast.<br/>

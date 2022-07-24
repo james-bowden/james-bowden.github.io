@@ -7,7 +7,7 @@ Tags: *ekphrastic, loving of art, art as experience, surprising last line, image
 
 This poem is wildly famous and for good reason. I was reading echoes of it before I read the actual original, which I find ridiculous. This reminds me a little of *Don Quixote*, which is widely considered the first "novel" and is so foundational that when you read it, you realize you've read it hundreds of times over in all sorts of books, and that this is where it started. It also made it a bit boring in my opinion, but luckily this poem is far from that.
 
-## *Archaic Torso of Apollo*
+## Archaic Torso of Apollo
 #### Ranier Maria Rilke
 
 We cannot know his legendary head<br/>

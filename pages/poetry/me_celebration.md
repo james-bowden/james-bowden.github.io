@@ -3,7 +3,7 @@ layout: page
 title: Poetry
 ---
 
-## *Celebration*
+## Celebration
 #### Mari Evans
 
 I will bring you a whole person<br/>

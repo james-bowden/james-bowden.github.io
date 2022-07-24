@@ -7,7 +7,7 @@ Tags: *loving of art, sharing of art, art as object, writing of art, narrative, 
 
 The funny thing about this poem, having read both of its precursors, is that this genuinely did mark something of a turning point in my life, like Mark Leidner describes [here](https://poetrysociety.org/features/in-their-own-words/on-having-having-a-coke-with-you-with-you). Namely, it was one of my first times genuinely engaging with art in the sense that I loved this poem and its characters so much that I found myself thinking about it often and eventually emulating it as follows. Enjoy!
 
-## *Having "Having "Having a Coke with You" with You" with You*
+## Having "Having "Having a Coke with You" with You" with You
 #### James Bowden
 
 is nothing special, but also everything special, I'm sorry, I oscillate between the two;<br/>

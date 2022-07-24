@@ -3,7 +3,7 @@ layout: page
 title: Poetry
 ---
 
-## *Self-Portrait as the Letter Y*
+## Self-Portrait as the Letter Y
 #### Tracy K. Smith
 
 1.<br/>

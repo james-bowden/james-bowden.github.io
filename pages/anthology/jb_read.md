@@ -7,7 +7,7 @@ Tags: *art as object, art as experience, writing of art, loving of art, rhyme, m
 
 Here's an attempt of mine at a poem describing some artistic experiences in a somewhat narrative progression.
 
-## *I read to save my soul*
+## I read to save my soul
 #### James Bowden
 
 

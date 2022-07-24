@@ -7,7 +7,7 @@ Tags: *writing of art, imagery, metaphor, art as poet* <br/>
 
 This is a really nice, incoherent but somehow still cohesive piece. Note that ["ars poetica"](https://www.poetryfoundation.org/learn/glossary-terms/ars-poetica) is usually used to refer to a poem that explains the "art of poetry" or meditates on poetry in some way. There are a number of famous examples at the aforementioned Poetry Foundation link.<br/>
 
-## *Diary Entry #28: Ars Poetica*
+## Diary Entry #28: Ars Poetica
 #### Diannely Antigua
 
 I start where I am most afraid: an addiction to beauty<br/>

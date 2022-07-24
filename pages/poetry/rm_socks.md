@@ -3,7 +3,7 @@ layout: page
 title: Poetry
 ---
 
-## *Watching you talk on the phone, I consider the empty space around atoms--*
+## Watching you talk on the phone, I consider the empty space around atoms--
 #### Rhiannon McGavin
 
 how the particles that seed all matter are mostly void. Each nucleus is a maypole<br/>

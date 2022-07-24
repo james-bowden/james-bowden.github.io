@@ -3,7 +3,7 @@ layout: page
 title: Poetry
 ---
 
-## *As Light*
+## As Light
 #### Devin Kelly
 
 At night the old Russian farmer plows once more<br/>

@@ -7,7 +7,7 @@ Tags: *loving of art, sharing of art, writing of art, poet as art, imagery, alli
 
 This poem was really one of the most fun to write I've written. You'll probably notice some callbacks to other poems in this series, particularly the previous one.<br/>
 
-## *a plague upon my brain*
+## a plague upon my brain
 #### James Bowden
 
 <br/>

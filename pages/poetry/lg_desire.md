@@ -3,7 +3,7 @@ layout: page
 title: Poetry
 ---
 
-## *I Thought on His Desire for Three Days*
+## I Thought on His Desire for Three Days
 #### Linda Gregg
 
 I chose this man, consciously, deliberately.<br/>

@@ -3,7 +3,7 @@ layout: page
 title: Poetry
 ---
 
-## *3 O'Clock in the Morning*
+## 3 O'Clock in the Morning
 #### Jasmine Mans
 
 You call,<br/>

@@ -7,7 +7,7 @@ Tags: *loving of art, experience of art, writing of art, imagery, metaphor* <br/
 
 This poem marks a change of pace. These next several poems are more strictly ones that I would consider as "loving of art". How do we write about art that we love? How do we attempt to describe the experience, or can we even really do that with words or any type of straightforward relation of events? Try to pay attention to how these poems hold you without you actually having experienced what the poet is relating.
 
-## *Not to Know How to Live*
+## Not to Know How to Live
 #### Jim Moore
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All modesty is false modesty<br/>

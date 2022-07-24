@@ -3,7 +3,7 @@ layout: page
 title: Poetry
 ---
 
-## *I Don't Want to Live a Small Life*
+## I Don't Want to Live a Small Life
 #### Mary Oliver
 
 I don't want to live a small life. Open your eyes,<br/>

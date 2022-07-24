@@ -7,7 +7,7 @@ Tags: *loving of art, writing of art, sharing of art, repetition, quatrain, rhet
 
 I really like the clear message this poem conveys, and it adds to it all that this poem is likely in part inspired by a line from Walt Whitman's ["Song of Myself"](https://www.poetryfoundation.org/poems/45477/song-of-myself-1892-version) from *Blades of Grass*: "A blade of grass is the journeywork of the stars". Rather poetic, yes?
 
-## *A Blade of Grass*
+## A Blade of Grass
 #### Brian Patten
 
 You ask for a poem.<br/>

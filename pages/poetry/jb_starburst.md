@@ -3,7 +3,7 @@ layout: page
 title: Poetry
 ---
 
-## *Purple starburst*
+## *Purple starburst
 #### James Bowden
 
 I mean, look -- I'm over her. I've<br/>

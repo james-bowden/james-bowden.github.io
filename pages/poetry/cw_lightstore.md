@@ -3,7 +3,7 @@ layout: page
 title: Poetry
 ---
 
-## *A light store in the Bowery*
+## A light store in the Bowery
 #### Christian Wiman
 
 Some love is like a light store<br/>

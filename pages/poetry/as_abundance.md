@@ -3,7 +3,7 @@ layout: page
 title: Poetry
 ---
 
-## *Abundance*
+## Abundance
 #### Amy Schmidt 
 
 *in memory of Mary Oliver*<br/>

@@ -3,7 +3,7 @@ layout: page
 title: Poetry
 ---
 
-## *Sun Valley Lodge*
+## Sun Valley Lodge
 #### Ellie Sawatzky
 
 Somewhere in my mind, you've become<br/>

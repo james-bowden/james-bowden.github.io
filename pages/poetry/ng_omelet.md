@@ -7,7 +7,7 @@ Tags: *writing of art, ekphrastic, information management, juxtaposition, imager
 
 I mainly included this poem as an interesting way of writing a poem about writing this poem itself. This one is less about describing art at all, but the experience and speaker's frazzled mind after it serve to create the art, and really this sort of experience is of a similar kind to what we often get out of impactful art.
 
-## *I Wrote a Good Omelet*
+## I Wrote a Good Omelet
 #### Nikki Giovanni
 
 

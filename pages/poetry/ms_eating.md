@@ -6,7 +6,7 @@ title: Having a Poem with You
 Tags: *art as poet, art as experience, loving of art, anaphora, rhyme, imagery, juxtaposition, information management* <br/>
 
 
-## *Eating Poetry*
+## Eating Poetry
 #### Mark Strand
 
 Ink runs from the corners of my mouth.<br/>

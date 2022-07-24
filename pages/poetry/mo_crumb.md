@@ -3,7 +3,7 @@ layout: page
 title: Poetry
 ---
 
-## *Don't Hesitate*
+## Don't Hesitate
 #### Mary Oliver
 
 If you suddenly and unexpectedly feel joy,<br/>

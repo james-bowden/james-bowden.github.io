@@ -7,7 +7,7 @@ Tags: *ekphrastic, loving of art, art as experience, information management*<br/
 
 I wanted to try writing my own ekphrastic poem after reading Rilke's masterpiece, but wasn't hit with the proper opportunity until I happened to be brought along to an acapella concert--I'd never really engaged with acapella at all before, and the experience, well, just read the poem.
 
-## *Listening to the Chanticleers in the Beckman Auditorium*
+## Listening to the Chanticleers in the Beckman Auditorium
 #### James Bowden
 
 
