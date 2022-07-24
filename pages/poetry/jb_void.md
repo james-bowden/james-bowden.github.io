@@ -60,3 +60,5 @@ if everything honey, you are nothing to me<br/>
 <hr>
 
 So when I wrote this, Jenny, my poetry professor, pointed out the sort of literary baggage that light and dark, black and white carry and I do agree--I don't want to contribute to that, and see where this poem can be viewed that way. Obviously, I wrote it without that intention at all, and am not sure how to particularly redo this without the use of that theme, so I'm leaving it here for the nice parts and such.
+
+This poem was written with a rather anguished tone in my head that I am not capable of recreating (or just refuse to try) in voice, but unsure how much that comes through.
