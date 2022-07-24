@@ -3,11 +3,17 @@ layout: page
 title: Poetry
 ---
 
-I wanted to start a running list of poems I'd written and liked, so that's what I'm going to do here. Many of them are personal, some somewhat explicit, so probably don't read through if you came to this website from a research/career setting. The main idea was to have an easy way to point friends and loved ones to particular poems I'd written that I want to share with them, and as some sort of record for myself. Also in large part inspired by [Frank O'Hara's "My Heart"](https://poetrysociety.org/poetry-in-motion/my-heart). Not particularly ordered, but probably somewhat chronological.
+I wanted to start a running list of poems I'd written and liked, so that's what I'm going to do here. Many of them are personal, some somewhat explicit, more of them than not still works in progress, **so probably don't read through if you came to this website from a research/career setting**. The main idea was to have an easy way to point friends and loved ones to particular poems I'd written that I want to share with them, and as some sort of record for myself. Also in large part inspired by [Frank O'Hara's "My Heart"](https://poetrysociety.org/poetry-in-motion/my-heart). Not particularly ordered, but probably somewhat chronological.
+
+Here is also an anthology I compiled during Spring 2022, that contains several of my poems along with others in a somewhat cohesive and thematic manner, plus some analysis, in case you feel so inclined: [Poetry Anthology: Having a Poem with You](https://james-bowden.github.io/poetry-anthology)
 
 <hr>
 
 ["Purple starburst"](https://james-bowden.github.io/pages/poetry/jb_starburst)
+
+["empathetic grits"](https://james-bowden.github.io/pages/poetry/jb_grits)
+
+["The world isn't ready for my love"](https://james-bowden.github.io/pages/poetry/jb_world)
 
 ["Fake mint, or *I love you*"](https://james-bowden.github.io/pages/poetry/jb_mint)
 
