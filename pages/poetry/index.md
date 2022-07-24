@@ -9,6 +9,10 @@ Here is also an anthology I compiled during Spring 2022, that contains several o
 
 <hr>
 
+<!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
+
+
+
 ["Purple starburst"](https://james-bowden.github.io/pages/poetry/jb_starburst)
 
 ["empathetic grits"](https://james-bowden.github.io/pages/poetry/jb_grits)
@@ -16,6 +20,10 @@ Here is also an anthology I compiled during Spring 2022, that contains several o
 ["The world isn't ready for my love"](https://james-bowden.github.io/pages/poetry/jb_world)
 
 ["Fake mint, or *I love you*"](https://james-bowden.github.io/pages/poetry/jb_mint)
+
+["Low-fidelity ekphrastic nod to "Lump Sum""](https://james-bowden.github.io/pages/poetry/jb_lumpsum)
+
+["2nd grade poetry book as self portrait"](https://james-bowden.github.io/pages/poetry/jb_portrait_2ndgrade)
 
 ["Having a Boba with You"](https://james-bowden.github.io/pages/poetry/jb_having_boba)
 
@@ -30,6 +38,10 @@ Here is also an anthology I compiled during Spring 2022, that contains several o
 ["Listening to the Chanticleers in the Beckman Auditorium"](https://james-bowden.github.io/pages/poetry/jb_chanticleers)
 
 ["A Sonnet to Structure"](https://james-bowden.github.io/pages/poetry/jb_sonnet)
+
+["Cherry communion"](https://james-bowden.github.io/pages/poetry/jb_cherry)
+
+["Splash of Rain: a Yankee Candle scent"](https://james-bowden.github.io/pages/poetry/jb_candle)
 
 <!-- ["Purple starburst"](https://james-bowden.github.io/pages/poetry/jb_starburst) -->
 
