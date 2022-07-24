@@ -28,7 +28,7 @@ We can’t all be great. <br/>
 We can all love and be loved. <br/>
 We all love greatness.<br/>
 
-I just want to say Fuck it, and do. And be. And love. And be loved. Is it wrong to <br/>
+I just want to say *Fuck it*, and do. And be. And love. And be loved. Is it wrong to <br/>
 love being loved? Is it wrong to be so damn human that I care and don’t care and feel and hate and desire and yearn and despise and struggle<br/>
 
 and give up?<br/>
