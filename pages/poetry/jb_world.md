@@ -6,14 +6,11 @@ title: Poetry
 ## The world isn't ready for my love
 #### James Bowden
 
-<p style="text-align: right;"><i>I've got nothing.</i><br/>
-  --The Script, <i>Nothing</i><br/><br/>
+*I've got nothing.*<br>
+<p style="text-align: right;">--The Script, <i>Nothing</i><br/><br/>
  </p>
 
-I've got nothing. 
-											--The Script, Nothing
-
-I wrote this girl I'd just met a letter. Stuck some first impressions on a Hokusai print card,
+I wrote this girl I'd just met a letter. Stuck some first impressions on a Hokusai print card,<br/>
 which I'd bought because the first girl I ever loved, Rachel, had a tapestry of the wave<br/>
 on her wall, across from where she tickled me tender. Why a letter? <br/>
 Well, the girl I most recently loved, Antonia, was quite into writing letters <br/>
