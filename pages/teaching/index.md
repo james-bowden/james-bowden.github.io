@@ -11,7 +11,7 @@ Much of my what has gone "right" in my life can be traced back to exceptional te
 
 **Teaching Assistant, [CS 156a (Learning Systems)](https://work.caltech.edu/telecourse.html#lectures), ~200 students**: [Caltech] [Fall 2021, 2022]. TA for Caltech's introductory machine learning course, focusing on conceptual/mathematical background for common methods as well as basic implementations. Hold office hours.
 
-**Teaching Assistant, FSRI Intro CS, ~50 students**: [Caltech] [Summer 2022] Summer-before-college course for incoming freshman from disadvantaged backgrounds. Helped develop assignments (including an NLP essay scorer and an autotuner!), hold daily office hours, advise students on creative capstone projects. Preparing submission for SIGCSE 2023. **[Python]**
+**Teaching Assistant, FSRI Intro CS, ~50 students**: [Caltech] [Summer 2022] Summer-before-college course for incoming freshman from disadvantaged backgrounds. Helped develop assignments (including an NLP essay scorer and an autotuner!), held daily office hours, advised students on creative capstone projects. Preparing submission for SIGCSE 2023. **[Python]**
 
 **Teaching Assistant, [CS 24 (Computing Systems)](https://com.puter.systems/21fa/), ~100 students**: [Caltech] [Fall 2021]. TA for core CS class on computing systems and low-level programming. Hold weekly office hours and help out with course organization. **[C]**
 
