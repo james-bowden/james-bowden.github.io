@@ -71,6 +71,8 @@ Here is also an anthology I compiled during Spring 2022, that contains several o
 
 ["***DO NOT LEAVE VALUABLES IN VEHICLE***"](https://james-bowden.github.io/pages/poetry/jb_valuables)
 
+["Patchwork Penitence"](https://james-bowden.github.io/pages/poetry/jb_patchwork)
+
 ["*Real* Life"](https://james-bowden.github.io/pages/poetry/jb_real_life)
 
 ["Without you"](https://james-bowden.github.io/pages/poetry/jb_without_you)
@@ -79,21 +81,37 @@ Here is also an anthology I compiled during Spring 2022, that contains several o
 
 ["Fleming Beach Initiation"](https://james-bowden.github.io/pages/poetry/jb_fleming_beach)
 
-["Him"](https://james-bowden.github.io/pages/poetry/jb_him)
-
-["God damn it."](https://james-bowden.github.io/pages/poetry/jb_nalgene)
-
 ["Prodigal lover"](https://james-bowden.github.io/pages/poetry/jb_prodigal)
 
 ["Really"](https://james-bowden.github.io/pages/poetry/jb_really)
 
+["Nineteen"](https://james-bowden.github.io/pages/poetry/jb_19)
+
+["A Dirge to Exponential Growth"](https://james-bowden.github.io/pages/poetry/jb_ecoli)
+
 ["Drip"](https://james-bowden.github.io/pages/poetry/jb_drip)
 
-["Of course"](https://james-bowden.github.io/pages/poetry/jb_pingpong)
+["Conviction as default"](https://james-bowden.github.io/pages/poetry/jb_filth)
+
+["What's your damage?"](https://james-bowden.github.io/pages/poetry/jb_damage)
+
+["I could never lie about caring a lot"](https://james-bowden.github.io/pages/poetry/jb_shelter)
+
+["~ emotions ~"](https://james-bowden.github.io/pages/poetry/jb_emotions)
 
 ["Mama"](https://james-bowden.github.io/pages/poetry/jb_mama)
 
 ["Insanity"](https://james-bowden.github.io/pages/poetry/jb_insanity)
+
+["God damn it."](https://james-bowden.github.io/pages/poetry/jb_nalgene)
+
+["Him"](https://james-bowden.github.io/pages/poetry/jb_him)
+
+["Of course"](https://james-bowden.github.io/pages/poetry/jb_pingpong)
+
+
+
+
 
 <!-- ["Purple starburst"](https://james-bowden.github.io/pages/poetry/jb_starburst) -->
 
