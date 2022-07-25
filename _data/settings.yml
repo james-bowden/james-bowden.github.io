@@ -9,7 +9,7 @@ google-ID: 'UA-177242959-1'
 menu:
 - {name: 'Home'}
 - {name: 'About', folder: 'about'}
-- {name: 'Resume', folder: 'resume'}
+- {name: 'CV', folder: 'resume'}
 - {name: 'Teaching', folder: 'teaching'}
 - {name: 'Bytes', folder: 'bytes'}
 - {name: 'Blogs', folder: 'blog'}
@@ -18,6 +18,7 @@ menu:
 social:
 # - {icon: 'twitter', link: 'https://twitter.com/paululele'}
 - {icon: 'envelope', link: 'mailto:jbowden@caltech.edu'}
+- {icon: 'graduation-cap', link: 'https://scholar.google.com/citations?hl=en&user=lfSNrMUAAAAJ'}
 - {icon: 'linkedin', link: 'https://www.linkedin.com/in/j-bowden/'}
 - {icon: 'github', link: 'https://github.com/james-bowden'}
 - {icon: 'commenting', link: 'https://m.me/BOWDEN.JC'}
