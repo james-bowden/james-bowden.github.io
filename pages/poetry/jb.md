@@ -25,7 +25,7 @@ Here is also an anthology I compiled during Spring 2022, that contains several o
 
 ["2nd grade poetry book as self portrait"](https://james-bowden.github.io/pages/poetry/jb_portrait_2ndgrade)
 
-["ramen and rachel"](https://james-bowden.github.io/pages/poetry/jb_ramenrachel)
+["ramen rachel"](https://james-bowden.github.io/pages/poetry/jb_ramenrachel)
 
 ["Having a Boba with You"](https://james-bowden.github.io/pages/poetry/jb_having_boba)
 
