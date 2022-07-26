@@ -41,6 +41,8 @@ Here is also an anthology I compiled during Spring 2022, that contains several o
 
 ["Rose jam"](https://james-bowden.github.io/pages/poetry/jb_rosejam)
 
+["burnt edges"](https://james-bowden.github.io/pages/poetry/jb_burnt)
+
 ["Farewell"](https://james-bowden.github.io/pages/poetry/jb_farewell)
 
 ["At the California Institute of Technology"](https://james-bowden.github.io/pages/poetry/jb_caltech)
