@@ -75,6 +75,8 @@ Here is also an anthology I compiled during Spring 2022, that contains several o
 
 ["*Real* Life"](https://james-bowden.github.io/pages/poetry/jb_real_life)
 
+["*House of Leaves*, as Autumn becomes February"](https://james-bowden.github.io/pages/poetry/jb_house_of_leaves)
+
 ["Without you"](https://james-bowden.github.io/pages/poetry/jb_without_you)
 
 ["So what? And?"](https://james-bowden.github.io/pages/poetry/jb_andsowhat)
@@ -85,9 +87,9 @@ Here is also an anthology I compiled during Spring 2022, that contains several o
 
 ["Really"](https://james-bowden.github.io/pages/poetry/jb_really)
 
-["Nineteen"](https://james-bowden.github.io/pages/poetry/jb_19)
-
 ["A Dirge to Exponential Growth"](https://james-bowden.github.io/pages/poetry/jb_ecoli)
+
+["Nineteen"](https://james-bowden.github.io/pages/poetry/jb_19)
 
 ["Drip"](https://james-bowden.github.io/pages/poetry/jb_drip)
 
