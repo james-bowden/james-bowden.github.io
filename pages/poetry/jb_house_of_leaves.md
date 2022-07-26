@@ -34,7 +34,7 @@ I exit, I think. The Archduke Trio.<br/>
 
 <hr>
 
-I wrote this while I was buried in Danielewski's *House of Leaves*, and I think it was in part inspired by an excerpt from the book [try the fourth quote down here, "This much I'm certain of..."](https://www.goodreads.com/work/quotes/856555-house-of-leaves). At least the tone in my head in large part mirrors that passage.
+I wrote this while I was buried in Danielewski's *House of Leaves*, and I think it was in part inspired by an excerpt from the book ([try the fourth quote down here, "This much I'm certain of..."](https://www.goodreads.com/work/quotes/856555-house-of-leaves)). At least the tone in my head in large part mirrors that passage.
 
 The ending reminds me of a poem I wrote about Matthew, ["God damn it."](https://james-bowden.github.io/pages/poetry/jb_nalgene)
 I suppose we love and lose in similar ways. Until we don't?
