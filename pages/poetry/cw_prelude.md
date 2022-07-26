@@ -9,7 +9,7 @@ title: Poetry
 Church or sermon, prayer or poem:<br/>
 the failure of religious feeling is a form.<br/><br/>
 
-<p style="text-align: center;">*</p><br/><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\*<br/><br/>
 
 The failure of religious feeling is a form<br/>
 of love that, though it could not survive<br/>
@@ -22,7 +22,7 @@ inviolate ice that the believers weather:<br/>
 
 church or sermon, prayer or poem.<br/><br/>
 
-<p style="text-align: center;">*</p><br/><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\*<br/><br/>
 
 Finer and finer the meaningless distinctions:<br/>
 theodicies, idiolects, books, books, books.<br/>
