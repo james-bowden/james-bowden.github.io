@@ -15,7 +15,7 @@ the car getting hit. Trying to walk through that garden and retain some semblanc
 okay. Knowing that they weren't, that I couldn't love someone enough to die in a car crash with them. Sitting <br/>
 on the bench anyway, fingering those slips of paper. Coming back from hikes and whatever the hell we did,<br/>
 tired and a little dirty, falling into bed, but probably showering first. Showers more necessity than affection,<br/>
-spare playfulness now and then. Where did it go? How did it lose us? Why? When did we stop the whispered<br/>
+spare playfulness now and then. Where did it go? How did it lose us? When did we stop the whispered<br/>
 words?<br/>
 
 That winter, me overly excited about machine learning, or learning, or future, and failing to see what I had in<br/>
