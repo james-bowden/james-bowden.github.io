@@ -12,6 +12,8 @@ Here is also an anthology I compiled during Spring 2022, that contains several o
 <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
 
 
+["One-Act Play In Which Everyone Takes Moral High Ground, Except My Cucumbers, & All Suffer"](https://james-bowden.github.io/pages/poetry/jb_one_act_cucumbers)
+
 ["What's a bucket?"](https://james-bowden.github.io/pages/poetry/jb_bucket)
 
 ["Purple starburst"](https://james-bowden.github.io/pages/poetry/jb_starburst)
