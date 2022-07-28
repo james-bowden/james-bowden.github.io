@@ -67,15 +67,27 @@ Here is also an anthology I compiled during Spring 2022, that contains several o
 
 ["Cherry communion"](https://james-bowden.github.io/pages/poetry/jb_cherry)
 
+["strawberry \*shit\*"](https://james-bowden.github.io/pages/poetry/jb_strawberry)
+
+["UCB Prayer"](https://james-bowden.github.io/pages/poetry/jb_ucb)
+
 ["Splash of Rain: a Yankee Candle scent"](https://james-bowden.github.io/pages/poetry/jb_candle)
 
+["Little drummer boy"](https://james-bowden.github.io/pages/poetry/jb_gifts)
+
 ["[Winter Break] At the California Institute of Technology"](https://james-bowden.github.io/pages/poetry/jb_winterbreak)
+
+["Serenity Prayer"](https://james-bowden.github.io/pages/poetry/jb_serenity)
+
+["Recognizance Prayer"](https://james-bowden.github.io/pages/poetry/jb_recognizance)
 
 ["***DO NOT LEAVE VALUABLES IN VEHICLE***"](https://james-bowden.github.io/pages/poetry/jb_valuables)
 
 ["Patchwork Penitence"](https://james-bowden.github.io/pages/poetry/jb_patchwork)
 
 ["*Real* Life"](https://james-bowden.github.io/pages/poetry/jb_real_life)
+
+["[Term Ends] At the California Institute of Technology"](https://james-bowden.github.io/pages/poetry/jb_kid)
 
 ["*House of Leaves*, as Autumn becomes February"](https://james-bowden.github.io/pages/poetry/jb_house_of_leaves)
 
