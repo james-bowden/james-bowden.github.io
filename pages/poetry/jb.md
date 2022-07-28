@@ -12,6 +12,7 @@ Here is also an anthology I compiled during Spring 2022, that contains several o
 <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
 
 
+["What's a bucket?"](https://james-bowden.github.io/pages/poetry/jb_bucket)
 
 ["Purple starburst"](https://james-bowden.github.io/pages/poetry/jb_starburst)
 
