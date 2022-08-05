@@ -24,6 +24,6 @@ I came across a bit by Herman Hesse from *Steppenwolf*, which I don't know the m
 > How lovely. Here, I realize that today's theme is shaping up rather clearly.
 
 ["For Those Who Do Not Dream", Timothy Liu](https://james-bowden.github.io/pages/poetry/tl_watermelon)
-> Really reinforcing, lol. Rather erotic. But I love this theme of hunger and how it's considered in many writing that I will not, cannot link here. My initial reaction to this, *sheeeeeesh*.
+> Really reinforcing, lol. Rather erotic. But I love this theme of hunger and how it's considered in many writing that I will not, cannot link here. My initial reaction to this, *sheeeeeesh*. Which also reminds me of this other poem he has, ["The Lovers"](https://www.poetryfoundation.org/poems/57705/the-lovers-56d23b74887b3), which I've been seeing on the NYC subway as a part of their poetry in motion campaign, which I love.
 
 Life is hard. But somtimes not. From Tara Skurtu's instagram. This was a nice day of poems. If this isn't nice, I don't know what is! *Thanks, Kurt.*
