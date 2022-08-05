@@ -10,7 +10,7 @@ Sometimes, when a poem comes to you, you must drop everything:<br/>
 the bowl you’re washing, your wet and soapy hands, the upstairs you’re about to go, <br/>
 the sleep schedule you're fixing, the fleck of food on your otherwise white Mary Oliver book,<br/>
 the papers for tomorrow morning’s reading group on Bayes (he gets enough attention as it stands) <br/>
-and neural networks (and they, far more than) combined. <br/>
+and neural networks (they, far more than) combined. <br/>
 
 You’re in Japan, your last day both here and with your already ex. You crinkle your brain <br/>
 to try to preserve this moment, break seconds into infinitesimally small chunks of you and him, <br/>
@@ -31,3 +31,5 @@ Thus begins the poem: <br/><br/>
 <hr>
 
 This was inspired by some Mary Oliver stuff, probably ["Sometimes"](https://www.best-poems.net/mary-oliver/sometimes.html) and ["Don’t Hesitate"](https://james-bowden.github.io/pages/poetry/mo_crumb) in particular. Also Clarice Lispector and this idea of the instant from *Agua Viva*. And David Foster Wallace's ["This Is Water"](https://www.youtube.com/watch?v=8CrOL-ydFMI). And Antonia. Also, the *No.* reminds me of Anne Sexton's ["Jesus Suckles"](https://james-bowden.github.io/pages/poetry/as_truck). 
+
+Though this is up to interpretation and even I haven't fully decided how I shall read it, I suppose this poem is somewhat ekphrastic in that I'm sharing the moment of inception of my poem with you. I'm uncertain about the ordering, since the poem-seed comes at the very end, but obviously all of the other things happened before it anyway so I think I feel okay about it.
