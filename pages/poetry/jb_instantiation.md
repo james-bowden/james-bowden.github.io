@@ -22,7 +22,7 @@ she still loved him. How much she still remembers those moments, as if by will. 
 You will not remember this day, this<br/>
 
 No, not the act itself, but the desire with which the act began. The instant. <br/>
-The slice of time we did, do, will call home. <br/>
+The slice of time we will do did call home. <br/>
 Thus begins the poem: <br/><br/>
 
 
