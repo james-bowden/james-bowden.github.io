@@ -30,4 +30,4 @@ Thus begins the poem: <br/><br/>
 
 <hr>
 
-This was inspired by some Mary Oliver stuff, probably ["Sometimes"](https://www.best-poems.net/mary-oliver/sometimes.html) and ["Don’t Hesitate"](https://james-bowden.github.io/pages/poetry/mo_crumb) in particular. Also Clarice Lispector and this idea of the instant from *Agua Viva*. And David Foster Wallace's ["This Is Water"](https://www.youtube.com/watch?v=8CrOL-ydFMI).
+This was inspired by some Mary Oliver stuff, probably ["Sometimes"](https://www.best-poems.net/mary-oliver/sometimes.html) and ["Don’t Hesitate"](https://james-bowden.github.io/pages/poetry/mo_crumb) in particular. Also Clarice Lispector and this idea of the instant from *Agua Viva*. And David Foster Wallace's ["This Is Water"](https://www.youtube.com/watch?v=8CrOL-ydFMI). And Antonia.
