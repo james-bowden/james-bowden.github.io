@@ -11,4 +11,4 @@ title: Poetry
 
 <hr>
 
-Eve and I have started trying out some collaborative writings and this is one of the first ones. This started as a piece she wrote, and then I came in and messed with it using a lot of the initial weirdness in content but particularly in tone and character. I quite like it! And I don't think I'd have written such a piece sans her, so quite having fun with this whole collaborating thing. I mean, to be expected, I think. Gives me some *Rosebud* vibes @ *Citizen Kane*.
+Eve and I have started trying out some collaborative writings and this is one of the first ones. This started as a piece she wrote, and then I came in and messed with it using a lot of the initial weirdness in content but particularly in tone and character. I quite like it! And I don't think I'd have written such a piece sans her, so quite having fun with this whole collaborating thing. I mean, to be expected, I think. Gives me some \*Rosebud\* vibes @ *Citizen Kane*.
