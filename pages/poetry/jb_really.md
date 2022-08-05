@@ -19,8 +19,8 @@ I’ll take it. <br/>
 And why not? <br/>
 Maybe it’ll be good <br/>
 Perhaps I’d have really wanted it <br/>
-If I really wanted anything. <br/>
+If ever I really wanted anything. <br/>
 
 <hr>
 
-I mean, gosh, this is a really depressing bit to have written. I feel this characterized a lot of my childhood under the unrelenting control of my father. I feel very distance from this today and am terribly glad for that.
+I mean, gosh, this is a really depressing bit to have written. I feel this characterized a lot of my childhood under the unrelenting control of my father. I feel very distant from this today and am terribly glad for that.
