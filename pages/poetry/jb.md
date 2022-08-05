@@ -11,6 +11,8 @@ Here is also an anthology I compiled during Spring 2022, that contains several o
 
 <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
 
+["Self-Portrait as a Sarlacc"](https://james-bowden.github.io/pages/poetry/jb_sarlacc)
+
 ["Instantiation"](https://james-bowden.github.io/pages/poetry/jb_instantiation)
 
 ["One-Act Play In Which Everyone Takes Moral High Ground, Except My Cucumbers, & All Suffer"](https://james-bowden.github.io/pages/poetry/jb_one_act_cucumbers)
