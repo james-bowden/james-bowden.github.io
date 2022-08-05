@@ -13,7 +13,7 @@ of a different quality to it, though only when I’m not blacked barfing my bed 
 *Sorry, was that too serious, I didn’t mean to kill the mood*. Fear not, young padawan:<br/>
 nothing can kill a hunger this yawning. Not even the first part of a Netflix docu-series <br/>
 on Mormons, a senile man with 30 wives and acquiring younger ones all the time.<br/>
-Not even Twilight. <br/>
+Not even *Twilight*. <br/>
 
 Trust me: the first time I made love to this girl, we’d just finished watching *Inception*<br/>
 plus a creepy *Black Mirror* episode it reminded her of. The guy died. At least in the former<br/>
