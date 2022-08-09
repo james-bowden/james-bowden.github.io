@@ -13,11 +13,11 @@ Here is also an anthology I compiled during Spring 2022, that contains several o
 
 ["And Then God Said, *Let There Be Rain*"](https://james-bowden.github.io/pages/poetry/jb_god_rain)
 
-["Poem Number One on Newton's Law of Universal Gravitation, or The Impossibility of Long Distance Relationship"](https://james-bowden.github.io/pages/poetry/jb_newton1.md)
+["Poem Number One on Newton's Law of Universal Gravitation, or The Impossibility of Long Distance Relationship"](https://james-bowden.github.io/pages/poetry/jb_newton1)
 
-["Poem Number Four on Bell’s Theorem, or The Conditionality of Long Distance Love at Caltech"](https://james-bowden.github.io/pages/poetry/jb_bell4.md)
+["Poem Number Four on Bell’s Theorem, or The Conditionality of Long Distance Love at Caltech"](https://james-bowden.github.io/pages/poetry/jb_bell4)
 
-["Poem Number Three on Bell’s Theorem, or The New New Physicality of Long Distance Love"](https://james-bowden.github.io/pages/poetry/jb_bell3.md)
+["Poem Number Three on Bell’s Theorem, or The New New Physicality of Long Distance Love"](https://james-bowden.github.io/pages/poetry/jb_bell3)
 
 ["Poem Number 5 on the Universal Approximation Theorem, or Son, You Can Be Anything You Want to Be!"](https://james-bowden.github.io/pages/poetry/jb_uni_approx)
 
