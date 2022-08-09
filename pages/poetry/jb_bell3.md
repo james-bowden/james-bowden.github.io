@@ -3,7 +3,7 @@ layout: page
 title: Poetry
 ---
 
-##Poem Number Three on Bell’s Theorem, or The New New Physicality of Long Distance Love
+## Poem Number Three on Bell’s Theorem, or The New New Physicality of Long Distance Love
 #### James Bowden
 
 We will probably fall apart--<br/>
