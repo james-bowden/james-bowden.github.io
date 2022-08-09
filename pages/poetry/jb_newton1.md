@@ -3,7 +3,7 @@ layout: page
 title: Poetry
 ---
 
-##Poem Number One on Newton's Law of Universal Gravitation, or The Impossibility of Long Distance Relationship
+## Poem Number One on Newton's Law of Universal Gravitation, or The Impossibility of Long Distance Relationship
 #### James Bowden
 
 There is no chance that we will move apart<br/>
