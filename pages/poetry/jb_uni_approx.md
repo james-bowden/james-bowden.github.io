@@ -3,7 +3,7 @@ layout: page
 title: Poetry
 ---
 
-## Poem Number 5 on the Universal Approximation Theorem, or Son, You Can Be Anything You Want to Be!
+## Poem Number Five on the Universal Approximation Theorem, or Son, You Can Be Anything You Want to Be!
 #### James Bowden
 
 Assuming you’ve sufficient neuronal complexity, a solid optimizer, either wealth or stochastic blessing, properly tuned hyperparameters, and enough time, oh, and an objective that is expressible and simple enough and continuous and differentiable everywhere, why, son, you can earn a living in any of 58 common professions enumerated in *I’m Gonna Be*, the song we sang at my elementary graduation.
