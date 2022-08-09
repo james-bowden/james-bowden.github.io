@@ -3,7 +3,7 @@ layout: page
 title: Poetry
 ---
 
-##Poem Number Four on Bell’s Theorem, or The Conditionality of Long Distance Love at Caltech
+## Poem Number Four on Bell’s Theorem, or The Conditionality of Long Distance Love at Caltech
 #### James Bowden
 
 There is no chance that we will fall apart<br/>
