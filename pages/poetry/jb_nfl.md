@@ -15,4 +15,5 @@ Xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx, ad infinitum, or to the 410 p
 <hr>
 
 This series of poems was generally inspired in form by June Jordan's short poem, ["Poem Number Two on Bell’s Theorem, or The New Physicality of Long Distance Love"](https://poets.org/poem/poem-number-two-bells-theorem-or-new-physicality-long-distance-love).<br/>
-See ["The Library of Babel"](https://en.wikipedia.org/wiki/The_Library_of_Babel).
+See ["The Library of Babel"](https://en.wikipedia.org/wiki/The_Library_of_Babel).<br/>
+Regarding *ad infinitum*, *(sic)* -- I don't think the Library of Babel included italic characters. I mean, think how much worse that'd have made it.
