@@ -11,6 +11,22 @@ Here is also an anthology I compiled during Spring 2022, that contains several o
 
 <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
 
+["And Then God Said, *Let There Be Rain*"](https://james-bowden.github.io/pages/poetry/jb_god_rain)
+
+["Poem Number One on Newton's Law of Universal Gravitation, or The Impossibility of Long Distance Relationship"](https://james-bowden.github.io/pages/poetry/jb_newton1.md)
+
+["Poem Number Four on Bell’s Theorem, or The Conditionality of Long Distance Love at Caltech"](https://james-bowden.github.io/pages/poetry/jb_bell4.md)
+
+["Poem Number Three on Bell’s Theorem, or The New New Physicality of Long Distance Love"](https://james-bowden.github.io/pages/poetry/jb_bell3.md)
+
+["Poem Number 5 on the Universal Approximation Theorem, or Son, You Can Be Anything You Want to Be!"](https://james-bowden.github.io/pages/poetry/jb_uni_approx)
+
+["Poem Number Seventeen on Representer Theorem, or The New Simplicity of Existence"](https://james-bowden.github.io/pages/poetry/jb_representer)
+
+["Poem Number 99927364832 on the No Free Lunch Theorem, or Don’t Bother Trying to Optimize, Overall Nothing Beats Random"](https://james-bowden.github.io/pages/poetry/jb_nfl)
+
+["Definition Study"](https://james-bowden.github.io/pages/poetry/jb_definitions)
+
 ["Self-Portrait as a Sarlacc"](https://james-bowden.github.io/pages/poetry/jb_sarlacc)
 
 ["Instantiation"](https://james-bowden.github.io/pages/poetry/jb_instantiation)
@@ -74,6 +90,8 @@ Here is also an anthology I compiled during Spring 2022, that contains several o
 ["Cherry communion"](https://james-bowden.github.io/pages/poetry/jb_cherry)
 
 ["strawberry \*shit\*"](https://james-bowden.github.io/pages/poetry/jb_strawberry)
+
+["sublimey"](https://james-bowden.github.io/pages/poetry/jb_sublimey)
 
 ["UCB Prayer"](https://james-bowden.github.io/pages/poetry/jb_ucb)
 
