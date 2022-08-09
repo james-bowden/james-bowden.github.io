@@ -19,7 +19,7 @@ Here is also an anthology I compiled during Spring 2022, that contains several o
 
 ["Poem Number Three on Bell’s Theorem, or The New New Physicality of Long Distance Love"](https://james-bowden.github.io/pages/poetry/jb_bell3)
 
-["Poem Number 5 on the Universal Approximation Theorem, or Son, You Can Be Anything You Want to Be!"](https://james-bowden.github.io/pages/poetry/jb_uni_approx)
+["Poem Number Five on the Universal Approximation Theorem, or Son, You Can Be Anything You Want to Be!"](https://james-bowden.github.io/pages/poetry/jb_uni_approx)
 
 ["Poem Number Seventeen on Representer Theorem, or The New Simplicity of Existence"](https://james-bowden.github.io/pages/poetry/jb_representer)
 
