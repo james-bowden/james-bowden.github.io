@@ -22,4 +22,4 @@ I wrote this line in dream-state this morning: *So I'm back alive with only 3 we
 ["Two Cures for Love", Wendy Cope](https://genius.com/Wendy-cope-two-cures-for-love-annotated)
 > This short piece is just very funny.
 
-
+I am coming into myself, but this means I feel my age in a way I could not before.
