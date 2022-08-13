@@ -91,4 +91,4 @@ Say *open*. Say *close*. I want to know that I will be held again.<br/>
 
 <hr>
 
-During this poem, I spawned the line that ended up becoming ["And Then God Said, *Let There Be Rain*](https://james-bowden.github.io/pages/poetry/jb_god_rain.md).
+During this poem, I spawned the line that ended up becoming ["And Then God Said, *Let There Be Rain*"](https://james-bowden.github.io/pages/poetry/jb_god_rain.md).
