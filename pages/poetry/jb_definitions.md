@@ -78,7 +78,7 @@ Maybe shark-girl did, too.<br/>
 
 Say *more food will equal more people. For us*.<br/>
 Call me words you haven’t used since 7th-grade history. <br/>
-Call me *arable8. Can the same raindrop fall twice? Is it the same<br/>
+Call me *arable*. Can the same raindrop fall twice? Is it the same<br/>
 raindrop? Does it even matter?<br/>
 
 I’ve changed so much already. When I say *I miss you*, <br/>
