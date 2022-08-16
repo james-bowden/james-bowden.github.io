@@ -20,13 +20,13 @@ As you can likely imagine, I did not get here (wherever 'here' is, anyway) alone
 <ul>
 <li style="line-height:150%">
 <!--   Yuxin Chen (ML @UChicago),  Tracy Dennison-->
-Professors: <b>Yisong Yue</b> (ML @Caltech), <b>Adam Blank</b> (CS @Caltech), <b>Yaser Abu-Mostafa</b> (ML @Caltech), <b>Kostia Zuev</b> (ACM/IDS @Caltech), <b>Shuki Bruck</b> (IST @Caltech), <b>Kaihang Wang</b> (Synthetic Biology @Caltech), <b>Tracy Dennison</b> (HSS @Caltech), <b>Jaewon Min</b> (Cancer Genetics @Columbia), <b>Jerry Shay</b> (Aging and Cancer @UTSW Medical Center), <b>Mike Regnier</b> (Heart Failure @UW Medicine), <b>Santosh Katiyar</b> (Opportunistic Pathogens @Drexel Med School)
+Professors: <b>Ryan Adams</b> (LIPS, ML @Princeton), <b>Yisong Yue</b> (ML @Caltech), <b>Adam Blank</b> (CS @Caltech), <b>Katie Bouman</b> (ML @Caltech), <b>Yaser Abu-Mostafa</b> (ML @Caltech), <b>Kostia Zuev</b> (ACM/IDS @Caltech), <b>Shuki Bruck</b> (IST @Caltech), <b>Kaihang Wang</b> (Synthetic Biology @Caltech), <b>Tracy Dennison</b> (HSS @Caltech), <b>Jaewon Min</b> (Cancer Genetics @Columbia), <b>Jerry Shay</b> (Aging and Cancer @UTSW Medical Center), <b>Mike Regnier</b> (Heart Failure @UW Medicine), <b>Santosh Katiyar</b> (Opportunistic Pathogens @Drexel Med School)
 </li>
 <li style="line-height:150%">
-Graduate students: <b>Jialin Song</b> (Yue Group), <b>Charles Sanfiorenzo</b> (Wang Lab), <b>Nathan Nakatsuka</b> (Genetics @Harvard)
+Graduate students: <b>Deniz Oktay</b> (LIPS @Princeton), <b>Berthy Feng</b> (Bouman Group @Caltech), <b>Jialin Song</b> (Yue Group @Caltech), <b>Charles Sanfiorenzo</b> (Wang Lab @Caltech), <b>Nathan Nakatsuka</b> (Genetics @Harvard)
 </li>
 <li style="line-height:150%">
-Undergrads: <b>Jeff Ma</b>, <b>Alex Janosi</b>, <b>Ethan Ordentlich</b>, <b>Dessie DiMino</b>, <b>Alex Cui</b>, <b>Bradley Justice</b>, <b>Kush Tirumala</b>, <b>Aadyot Bhatnagar</b>, <b>Jagath Vytheeswaran</b>, <b>Sam Owen</b>
+Undergrads: <b>Alex Pan</b>, <b>Myra Cheng</b>, <b>Jeff Ma</b>, <b>Alex Janosi</b>, <b>Ethan Ordentlich</b>, <b>Dessie DiMino</b>, <b>Alex Cui</b>, <b>Bradley Justice</b>, <b>Kush Tirumala</b>, <b>Aadyot Bhatnagar</b>, <b>Jagath Vytheeswaran</b>, <b>Sam Owen</b>
 </li>
 <li style="line-height:150%">
   Industry: <b>Yingzong Huang</b> (Uber), <b>David Morales</b>(Uber), <b>Saurabh Dingolia</b> (Uber), <b>Anthony Chong</b> (IKASI), <b>Karin Steinhauer</b> (Amgen)
