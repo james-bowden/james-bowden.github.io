@@ -1,7 +1,7 @@
 ---
 layout: post
 datetitle: "08/14/2022"
-title: "?"
+title: "Archducklings"
 author: "James Bowden"
 categories: blog
 tags: [poetry]
@@ -20,4 +20,7 @@ Isn't that beautiful? Intimacy, childishness is what I am going toward, what I a
 ["And What Good Will Your Vanity Be When The Rupture Comes", Hanif Abdurraqib](https://www.bkmag.com/2016/11/14/we-arrived-as-witness/)
 > The ambivalence here, I like it.
 
+From Susan Sontag: *How can I describe my life to you? I think a lot, listen to music. I'm fond of flowers.*<br/>
+She also writes on this idea of demolishing the barrier/distinction between thought and feeling. *Thinking is a form of feeling; feeling is a form of thinking.*
 
+I went to see the Archduke Trio live today, and the rendition was meh and kinda out of sync, but someone said somthing about Archducklings and I thought that was cute.
