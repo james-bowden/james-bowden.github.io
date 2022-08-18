@@ -14,7 +14,7 @@ tags: [poetry]
 There's this nice quote by Eric Berne (posted by Maria Popova) that goes: *Intimacy is a candid Child-to-Child relationship with no games and no mutual exploitation... This freedom of the Child is the essential part of intimacy, and it turns the whole universe, including the sun, moon, and stars, into a golden apple for both parties to enjoy.*<br/>
 Isn't that beautiful? Intimacy, childishness is what I am going toward, what I am yearning and missing. Help me fill this?
 
-["After Langugage", Chaia Heller](https://i.redd.it/1k2txhg4hqq81.jpg)
+["After Language", Chaia Heller](https://i.redd.it/1k2txhg4hqq81.jpg)
 > I enjoy the small meta aspect of this poem.
 
 ["And What Good Will Your Vanity Be When The Rupture Comes", Hanif Abdurraqib](https://www.bkmag.com/2016/11/14/we-arrived-as-witness/)
