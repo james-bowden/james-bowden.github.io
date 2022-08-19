@@ -19,8 +19,8 @@ As you can likely imagine, I did not get here (wherever 'here' is, anyway) alone
 
 <ul>
 <li style="line-height:150%">
-<!--   Yuxin Chen (ML @UChicago),  Tracy Dennison-->
-Professors: <b>Ryan Adams</b> (LIPS, ML @Princeton), <b>Yisong Yue</b> (ML @Caltech), <b>Adam Blank</b> (CS @Caltech), <b>Katie Bouman</b> (ML @Caltech), <b>Yaser Abu-Mostafa</b> (ML @Caltech), <b>Kostia Zuev</b> (ACM/IDS @Caltech), <b>Shuki Bruck</b> (IST @Caltech), <b>Kaihang Wang</b> (Synthetic Biology @Caltech), <b>Tracy Dennison</b> (HSS @Caltech), <b>Jaewon Min</b> (Cancer Genetics @Columbia), <b>Jerry Shay</b> (Aging and Cancer @UTSW Medical Center), <b>Mike Regnier</b> (Heart Failure @UW Medicine), <b>Santosh Katiyar</b> (Opportunistic Pathogens @Drexel Med School)
+<!--   Yuxin Chen (ML @UChicago),  -->
+Professors: <b>Ryan Adams</b> (LIPS, ML @Princeton), <b>Yisong Yue</b> (ML @Caltech), <b>Adam Blank</b> (CS @Caltech), <b>Katie Bouman</b> (ML @Caltech), <b>Yaser Abu-Mostafa</b> (ML @Caltech), <b>Kostia Zuev</b> (ACM/IDS @Caltech), <b>Shuki Bruck</b> (IST @Caltech), <b>Kaihang Wang</b> (Synthetic Biology @Caltech), <b>Jenny Factor</b> (Poetry @Caltech), <b>Tracy Dennison</b> (HSS @Caltech), <b>Jaewon Min</b> (Cancer Genetics @Columbia), <b>Jerry Shay</b> (Aging and Cancer @UTSW Medical Center), <b>Mike Regnier</b> (Heart Failure @UW Medicine), <b>Santosh Katiyar</b> (Opportunistic Pathogens @Drexel Med School)
 </li>
 <li style="line-height:150%">
 Graduate students: <b>Deniz Oktay</b> (LIPS @Princeton), <b>Berthy Feng</b> (Bouman Group @Caltech), <b>Jialin Song</b> (Yue Group @Caltech), <b>Charles Sanfiorenzo</b> (Wang Lab @Caltech), <b>Nathan Nakatsuka</b> (Genetics @Harvard)
