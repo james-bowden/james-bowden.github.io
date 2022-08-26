@@ -37,6 +37,8 @@ Here is also an anthology I compiled during Spring 2022, that contains several o
 
 ["Purple starburst"](https://james-bowden.github.io/pages/poetry/jb_starburst)
 
+["abundance"](https://james-bowden.github.io/pages/poetry/jb_abundance)
+
 ["empathetic grits"](https://james-bowden.github.io/pages/poetry/jb_grits)
 
 ["The world isn't ready for my love"](https://james-bowden.github.io/pages/poetry/jb_world)
