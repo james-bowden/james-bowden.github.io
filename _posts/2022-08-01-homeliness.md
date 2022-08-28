@@ -1,6 +1,7 @@
 ---
 layout: post
 datetitle: "08/01/2022"
+prev: "July 2022"
 title: "Homeliness, hedonism, hunger"
 author: "James Bowden"
 categories: blog
