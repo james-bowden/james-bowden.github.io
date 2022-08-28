@@ -1,6 +1,6 @@
 ---
 layout: post
-datetitle: "08/21/2022"
+datetitle: "08/28/2022"
 title: "Willing heartbreak"
 author: "James Bowden"
 categories: blog
