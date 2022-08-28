@@ -11,6 +11,8 @@ Here is also an anthology I compiled during Spring 2022, that contains several o
 
 <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
 
+["Things I Don't Know What To Do With"](https://james-bowden.github.io/pages/poetry/jb_abrete)
+
 ["And Then God Said, *Let There Be Rain*"](https://james-bowden.github.io/pages/poetry/jb_god_rain)
 
 ["Poem Number One on Newton's Law of Universal Gravitation, or The Impossibility of Long Distance Relationship"](https://james-bowden.github.io/pages/poetry/jb_newton1)
