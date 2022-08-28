@@ -14,3 +14,6 @@ This morning I woke, with many feelings running through my brain. A revisit to t
 > And I'm not sure this poem is the perfect place for it, but there's something here once again that I want to do something with.
 
 I've been quite fully inoculated this past week, everything flying by so quickly and people, *people* once again, and I'm not getting the proper time to read and write and love and reflect and such. I need to slow it all down, I think, but I'm reluctant to because this is the here and now. Anyhow, I am going to leave this and go read *Infinite Jest* in a coffee shop or something of the sort.
+
+["Medical History", Nicole Sealey](https://theaccountmagazine.com/article/medical-history/)
+> Was reminded of this while talking to Eve today. I quite like this poem.
