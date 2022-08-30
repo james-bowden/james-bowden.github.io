@@ -3,7 +3,9 @@ layout: page
 title: Teaching
 ---
 
-Much of my what has gone "right" in my life can be traced back to exceptional teaching, both inside and outside of the classroom. Quite a bit of my knowledge has also come from less formal education--mentors, friends, Google, and ***lots*** of trial and error. I care deeply about passing on what I've learned in order to help make CS and data science (and related endeavors) more approachable fields for those aspiring to be both traditional computer scientists and "non"-computer scientists.
+Much of my what has gone "right" in my life can be traced back to exceptional teaching, both inside and outside of the classroom. 
+I care deeply about passing on what I've learned in order to help make CS and machine learning (and related endeavors) more approachable fields for those aspiring to be both traditional computer scientists and "non-computer" scientists.
+<!-- Quite a bit of my knowledge has also come from less formal education--mentors, friends, Google, and ***lots*** of trial and error.  -->
 
 **Teaching Assistant, CS 156b (Learning Systems), ~80 students**: [Caltech] [Spring 2022, 2023]. TA for Caltech's main machine learning project course, in which students apply machine learning to a dataset in teams over the course of a term. Help organize course and competition, choose and setup new dataset, and hold technical office hours.
 
