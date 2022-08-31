@@ -11,6 +11,8 @@ Here is also an anthology I compiled during Spring 2022, that contains several o
 
 <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
 
+["Diary Entry #821: Ars Quotidiana"](https://james-bowden.github.io/pages/poetry/jb_ars_quotidiana)
+
 ["Things I Don't Know What To Do With"](https://james-bowden.github.io/pages/poetry/jb_abrete)
 
 ["And Then God Said, *Let There Be Rain*"](https://james-bowden.github.io/pages/poetry/jb_god_rain)
