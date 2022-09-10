@@ -3,9 +3,6 @@ layout: page
 title: Poetry
 ---
 
-## On Seeing and Being Seen
-#### Ama Codjoe 
-
 ## A Simple Love Poem
 #### Megan Falley
 
