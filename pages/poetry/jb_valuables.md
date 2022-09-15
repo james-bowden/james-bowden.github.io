@@ -21,9 +21,9 @@ some sort of ski mask, and I'm not even sure the other was indeed a man.<br/>
 I saw them break the car window and drive off with it, the confirmed man halfway out the window and waving <br/>
 in victory and in *fuck you*. Come to think of it, I didn't see them break the car window, but I heard the victim<br/>
 say it.<br/>
-Picture this: a rather effeminate male voice, repeatedly exclaiming, *Babe, oh my god<br/>
-and what did they get??? and they took your phone?? and they took your purse too?! what was in it? and <br/>
-another Babe, oh my god and perhaps a We need to call the cops, babe, babe! <br/>
+Picture this: a rather effeminate male voice, repeatedly exclaiming, *Babe, oh my god*<br/>
+and *what did they get???* and *they took your phone??* and *they took your purse too?! what was in it?* and <br/>
+another *Babe, oh my god* and perhaps a *We need to call the cops, babe, babe! <br/>
 Babe, oh my god!* The aforenamed Babe, a girl in a puffy white dress that isn't quite a wedding dress but could<br/>
 be. I think the car was hers, not his, but he is still the vessel for emotion, and *Babe, oh my god!* The police <br/>
 come rushing up, one car, then another, and I can't imagine what they'll say or do. In my perverse mind, they <br/>
