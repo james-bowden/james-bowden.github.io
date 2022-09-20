@@ -17,7 +17,7 @@ to send this to "new boy", the only name we dared give him, but weren't sure<br/
 if you'd stopped yourself partly because you were afraid to hand your heart on a platter to someone, <br/>
 or partly because part of you sees sharing poems as something special just between you and me<br/>
 and I, who hands my hearts on platters to anyone I possibly can, as early and as late as permitted,<br/>
-asked you if you had seen this poem and that I absolutely adored it, and you responded a minute later<br/>
+asked you if you had seen [this poem](https://poetrysociety.org/poems-essays/in-their-own-words/on-having-having-a-coke-with-you-with-you) and that I absolutely adored it, and you responded a minute later<br/>
 saying you were just about to send it to me actually, since you'd seen it independently <br/>
 (but dependently, because you'd started following poetry accounts because I'd shared so many poems)<br/>
 and you felt I'd memorize a poem just to ask someone their thoughts on it <br/>
