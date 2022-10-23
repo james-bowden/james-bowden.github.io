@@ -11,7 +11,7 @@ title: Poetry
 I, James Christopher Kapono Bowden, was born on March 28th, 2001 to two expectant parents.<br/>
 Two excited parents. I was to be a Jennifer, like my miscarried forebear. I am male, ergo James.<br/><br/>
 
-2. <br/>
+2.<br/>
 Someone must give. This is a very old story.<br/>
 There is no other version of this story.<br/><br/>
 
@@ -69,7 +69,7 @@ so<br/>
 small.<br/><br/>
 
 
-11. <br/>
+11.<br/>
 I--<br/>
 My arms are tired. I fend back the world in all its coldness.<br/>
 Who will stand behind me? <br/>
