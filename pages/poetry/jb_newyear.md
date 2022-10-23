@@ -4,7 +4,7 @@ title: Poetry
 ---
 
 ## Please don't kiss me
-#### James Bowden
+#### James Bowden and Eve Blank
 
 It is 4891 and I don't subscribe to the holiday<br/>
 traditions of yore, anymore. New year, new me, my ass--<br/>
