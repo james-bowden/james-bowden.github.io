@@ -12,4 +12,4 @@ Come, tell me what’s festering in the tall grass. What worms nibble below the 
 
 <hr>
 
-The title takes inspiration from [James Tate's *Goodtime Jesus*](https://genius.com/James-tate-goodtime-jesus-annotated). First collaborative poem between the three of us since coterie.
+The title takes inspiration from [James Tate's *Goodtime Jesus*](https://genius.com/James-tate-goodtime-jesus-annotated). First collaborative poem between the three of us since coterie. I'm honestly a huge fan / rather proud of the last set of lines. I think it draws in part from some Langston Hughes poem, perhaps [this one](https://genius.com/Langston-hughes-tired-annotated) but not really sure. The tall grass, as in Pokemon. I quite enjoy my biblical references. Funny how that works.
