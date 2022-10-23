@@ -11,6 +11,20 @@ Here is also an anthology I compiled during Spring 2022, that contains several o
 
 <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
 
+["*Choose your undoing*, Ellie Sawatzky urges."](https://james-bowden.github.io/pages/poetry/jb_undoing)
+
+["Suppertime Jesus"](https://james-bowden.github.io/pages/poetry/jb_supper)
+
+["My Father and I are no longer friends on Facebook"](https://james-bowden.github.io/pages/poetry/jb_facebook)
+
+["Please don’t kiss me"](https://james-bowden.github.io/pages/poetry/jb_newyear)
+
+["Nothings"](https://james-bowden.github.io/pages/poetry/jb_nothings)
+
+["What might've been lost"](https://james-bowden.github.io/pages/poetry/jb_tower)
+
+["Swell, softly:"](https://james-bowden.github.io/pages/poetry/jb_swell)
+
 ["Diary Entry #821: Ars Quotidiana"](https://james-bowden.github.io/pages/poetry/jb_ars_quotidiana)
 
 ["Things I Don't Know What To Do With"](https://james-bowden.github.io/pages/poetry/jb_abrete)
