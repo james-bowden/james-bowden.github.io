@@ -8,6 +8,16 @@ I wanted to start a running list of poems I'd written and liked, so that's what 
 Here is also an anthology I compiled during Spring 2022, that contains several of my poems along with others in a somewhat cohesive and thematic manner, plus some analysis, in case you feel so inclined: [Poetry Anthology: Having a Poem with You](https://james-bowden.github.io/poetry-anthology)
 
 <hr>
+First, some collections:<br/><br/>
+
+[Public Collection](https://james-bowden.github.io/pages/poetry/jb_public)
+[*Miss you* Collection](https://james-bowden.github.io/pages/poetry/jb_missyou)
+[Bell's Thm. Collection](https://james-bowden.github.io/pages/poetry/jb_bell)
+[En85 Collection](https://james-bowden.github.io/pages/poetry/jb_en85)
+
+
+<hr>
+And now, just poems:<br/><br/>
 
 <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
 
