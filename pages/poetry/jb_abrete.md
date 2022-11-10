@@ -85,4 +85,5 @@ something?<br/><br/><br/>
 The poem referenced in part 5 is Ellen Bass' ["Any Common Desolation"](https://poets.org/poem/any-common-desolation).
 Part of the opening line in part 8 is from Bon Iver's ["Re: Stacks"](https://www.youtube.com/watch?v=3w68krri0bw&ab_channel=BonIver-Topic).
 The ending of part 8 is in part inspired by an exhibit I saw at the NY MOMA that had text something to the effect of *What looks good today may not look good tomorrow / Now's the time*, and in part by Clarice Lispector's idea of the instant in *Agua Viva*.
+Ábrete is Spanish for "open", in the imperative, addressed to a singular "you".
 The ending of part 9 is in part inspired by Dermot Kennedy's new song, the refrain of which has been stuck in my head, ["Dreamer"](https://www.youtube.com/watch?v=5qHRMFQ0pLg&ab_channel=DermotKennedyVEVO). I'm not sure how I feel about this song in general, but it has a lot of little lines that I like.
