@@ -8,7 +8,7 @@ title: Poetry
 
 one green afternoon, quiet leaves 3 stories overhead<br/>
 
-this morning, a tiny green shoot poked out from the shelter of a broken mug<br/>
+this morning, a tiny shoot poked out from the shelter of a broken mug<br/>
 sown from her favorite fruit: beans<br/>
 to think that I would write this /<br/>
 
