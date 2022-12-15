@@ -3,12 +3,13 @@ layout: page
 title: Research
 ---
 
-<h2 style="font-weight: normal">Research Interests</h2><br/>
+<h2 style="font-weight: normal">Research Interests</h2>
 <!-- ## Research Interests -->
 
-ml etc etc...<br/><br/>
+My current interests include: ML and optimization, Bayesian inference, deep learning, GPs and uncertainty quantification, adaptive experiment design, ML for physics/mechanics, computational biology, AI for education. Please see my CV for more information on my past and ongoing research projects, as these have informed my current interests in no small way.
+<br/><br/>
 
-<h2 style="font-weight: normal">Publications and Technical Reports</h2><br/>
+<h2 style="font-weight: normal">Publications and Technical Reports</h2>
 <!-- ## Publications and Technical Reports<br/> -->
 
 **Learning Region of Interest for Bayesian Optimization with Adaptive Level-Set Estimation**<br/>
