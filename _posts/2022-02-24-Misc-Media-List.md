@@ -9,6 +9,7 @@ image: hyperion.jpg
 
 *A list of other miscellaneous media that I've stumbled across and enjoyed, namely short stories and poetry.*
 
+* ***[Diary Entry #28: Ars Poetica]([https://www.youtube.com/watch?v=8CrOL-ydFMI&t=3s](https://www.poetryfoundation.org/poetrymagazine/poems/156774/diary-entry-28-ars-poetica))*, Diannely Antigua**. This is one of my all-time favorite poems, and how much it gives with its tone and piercing images and all in such a quick, quaint stanza. It has certainly influenced my writing style.
 * ***[This is Water](https://www.youtube.com/watch?v=8CrOL-ydFMI&t=3s)*, David Foster Wallace**. This is a really nice speech that touches on the mundaneness of life and pushes towards active thinking and gentleness and sonder and such. I wish more people listened to this and took it to heart--this sincerity, this is the kind of world I wish to live in.
 * ***Sonny's Blues*, Baldwin**. One of my favorite short stories--the way Baldwin paints the musical conversation is beautiful and sticks with me. Would really recommend.
 * ***Lost in the Funhouse*, Barth**. This is just a really interestingly done short story with inflections about writing itself. There's a lot to unpack here and I'm still a bit baffled, frankly, but certainly a unique piece.
