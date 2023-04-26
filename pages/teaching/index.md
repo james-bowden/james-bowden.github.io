@@ -7,7 +7,7 @@ Much of my what has gone "right" in my life can be traced back to exceptional te
 I care deeply about passing on what I've learned in order to help make CS and machine learning (and related endeavors) more approachable fields for those aspiring to be both traditional computer scientists and "non-computer" scientists.
 <!-- Quite a bit of my knowledge has also come from less formal education--mentors, friends, Google, and ***lots*** of trial and error.  -->
 
-**Teaching Assistant, CS 159 (Adv. Topics in ML: Uncertainty Quantification)**: [Caltech] [Spring 2023]. TA for Caltech's advanced topics in ML course (rotates topics each spring), this year on Uncertainty Quantification. Helped with course organization and curriculum design, gave lecture, wrote homework assignment, held office hours, advised and supported students on their own independent mini-research projects on UQ-adjacent topics.
+**Teaching Assistant, [CS 159 (Adv. Topics in ML: Uncertainty Quantification)](https://sites.google.com/view/cs159spring2023/home?authuser=0)**: [Caltech] [Spring 2023]. TA for Caltech's advanced topics in ML course (rotates topics each spring), this year on Uncertainty Quantification. Helped with course organization and curriculum design, gave lecture, wrote homework assignment, held office hours, advised and supported students on their own independent mini-research projects on UQ-adjacent topics. [Lecture slides on MCMC and (deep) uncertainty models](https://james-bowden.github.io/assets/slides/159_MCMC_UQ_models_2023.pdf).
 
 **Head TA, CS 156b (Learning Systems), ~80 students**: [Caltech] [Spring 2022, 2023]. TA for Caltech's main machine learning project course, in which students apply machine learning to a dataset in teams over the course of a term. Help organize course and competition, choose and setup new dataset, and hold technical office hours. As Head TA Spring 2023, hired other TAs and delegated responsibilities.
 
@@ -32,6 +32,7 @@ I care deeply about passing on what I've learned in order to help make CS and ma
 **Teacher, Fundamentals of Investing**: [[Wave Learning Festival]](https://www.wavelf.org/) [Summer 2020: 4.5/5 student rating]. Taught 1100+ students (ranging from middle school to undergraduate) over the course of 4 waves (2-3 week long sessions) and received overwhelmingly positive feedback. [Slides](https://docs.google.com/presentation/d/1UZwIoobAfepDdWO-9U0Vv6EkG9O1V44pT2GLACMbgpU/edit?usp=sharing) available with notes covering the basics of investing, the stock market, indicators, and options. 
 
 **Miscellaneous CS teaching artifacts**:
+* [CS 159 Lecture slides on MCMC and (deep) uncertainty models](https://james-bowden.github.io/assets/slides/159_MCMC_UQ_models_2023.pdf)
 * [Linked Lists [Info Sheet]](https://github.com/james-bowden/teaching/blob/master/linked_lists.pdf)
 * [Web Scraping 1: Where is my data, and how can I access it? [Python Tutorial]](https://github.com/james-bowden/teaching/blob/master/scraping_1.ipynb)
 * [Web Scraping 2: But how do I extract the data I want? [Python Tutorial]](https://github.com/james-bowden/teaching/blob/master/scraping_2.ipynb)
