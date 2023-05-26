@@ -18,12 +18,40 @@ First, some collections:<br/>
 <hr>
 Also, a short story I wrote for a creative fiction course during winter 2023:<br/>
 
-[Blindsided](https://james-bowden.github.io/assets/hum/blindsided.pdf)<br/>
+["Blindsided"](https://james-bowden.github.io/assets/hum/blindsided.pdf)<br/>
 
 <hr>
 And now, just poems:<br/>
 
 <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
+
+*inclement:*
+
+["Humor Study"](https://james-bowden.github.io/pages/poetry/jb_humor)
+
+["Litany of Words I'll Not Say"](https://james-bowden.github.io/pages/poetry/jb_litany)
+
+["*tell them we're young mastodons*"](https://james-bowden.github.io/pages/poetry/jb_mastodons)
+
+["Elegy III (Texting You)"](https://james-bowden.github.io/pages/poetry/jb_texting)
+
+["Haiku for Wei"](https://james-bowden.github.io/pages/poetry/jb_wei)
+
+[""ablate", New Year's Day"](https://james-bowden.github.io/pages/poetry/jb_ablate)
+
+["Salty Linings Playbook"](https://james-bowden.github.io/pages/poetry/jb_salt)
+
+["Telemachus' Telemachus"](https://james-bowden.github.io/pages/poetry/jb_telemachus)
+
+["Whittling Haiku"](https://james-bowden.github.io/pages/poetry/jb_whittling)
+
+["Individuality Study"](https://james-bowden.github.io/pages/poetry/jb_individuality)
+
+["My therapist tries to touch me"](https://james-bowden.github.io/pages/poetry/jb_therapist)
+
+*incarnate:*
+
+["Narcissist: Filial Origins"](https://james-bowden.github.io/pages/poetry/jb_narc)
 
 ["*Choose your undoing*, Ellie Sawatzky urges."](https://james-bowden.github.io/pages/poetry/jb_undoing)
 
