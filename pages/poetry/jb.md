@@ -27,6 +27,10 @@ And now, just poems:<br/>
 
 *inclement:*
 
+...
+
+*incarnate:*
+
 ["The summer of my loneliness,"](https://james-bowden.github.io/pages/poetry/jb_lonely)
 
 ["That's one small step for man"](https://james-bowden.github.io/pages/poetry/jb_moon)
@@ -40,8 +44,6 @@ And now, just poems:<br/>
 ["Elegy III (Texting You)"](https://james-bowden.github.io/pages/poetry/jb_texting)
 
 ["Haiku for Wei"](https://james-bowden.github.io/pages/poetry/jb_wei)
-
-*incarnate:*
 
 [""ablate", New Year's Day"](https://james-bowden.github.io/pages/poetry/jb_ablate)
 
