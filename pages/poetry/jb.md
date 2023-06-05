@@ -27,6 +27,10 @@ And now, just poems:<br/>
 
 *inclement:*
 
+["The summer of my loneliness,"](https://james-bowden.github.io/pages/poetry/jb_lonely)
+
+["That's one small step for man"](https://james-bowden.github.io/pages/poetry/jb_moon)
+
 ["Humor Study"](https://james-bowden.github.io/pages/poetry/jb_humor)
 
 ["Litany of Words I'll Not Say"](https://james-bowden.github.io/pages/poetry/jb_litany)
@@ -36,6 +40,8 @@ And now, just poems:<br/>
 ["Elegy III (Texting You)"](https://james-bowden.github.io/pages/poetry/jb_texting)
 
 ["Haiku for Wei"](https://james-bowden.github.io/pages/poetry/jb_wei)
+
+*incarnate:*
 
 [""ablate", New Year's Day"](https://james-bowden.github.io/pages/poetry/jb_ablate)
 
@@ -48,8 +54,6 @@ And now, just poems:<br/>
 ["Individuality Study"](https://james-bowden.github.io/pages/poetry/jb_individuality)
 
 ["My therapist tries to touch me"](https://james-bowden.github.io/pages/poetry/jb_therapist)
-
-*incarnate:*
 
 ["Narcissist: Filial Origins"](https://james-bowden.github.io/pages/poetry/jb_narc)
 
