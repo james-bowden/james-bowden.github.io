@@ -50,7 +50,7 @@ am not.<br/>
 
 This is tangential, but I keep thinking lately of how I'm learning new ways<br/>
 of saying things, not the words themselves and their definitions, but the<br/>
-how, that fickle slippery little motherfucker. All of this (*do humor me*<br/>
+how, that fickle slippery little motherfucker. All of this (*do humor me*)<br/>
 because I had the impulse to start this off with *just to start this off, this<br/>
 isn't the start of anything*, a way of cautious sharing you gifted me. &<br/>
 back to where we were again, *humor me*,<br/>
