@@ -19,6 +19,10 @@ And now, just poems:<br/>
 
 <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
 
+["An Oat to Milk"](https://james-bowden.github.io/pages/poetry/jb_oatmilk)
+
+["If we are to break, can we at least continue to break?"](https://james-bowden.github.io/pages/poetry/jb_glacier)
+
 ["The summer of my loneliness,"](https://james-bowden.github.io/pages/poetry/jb_lonely)
 
 ["That's one small step for man"](https://james-bowden.github.io/pages/poetry/jb_moon)
