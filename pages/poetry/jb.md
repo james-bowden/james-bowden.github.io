@@ -27,9 +27,25 @@ And now, just poems:<br/>
 
 *inclement:*
 
+"I analyze/lament my native distribution"
+
+"Smoothness Study"
+
+"why didnt u just say so"
+
 ...
 
 *incarnate:*
+
+["An Oat to Milk"](https://james-bowden.github.io/pages/poetry/jb_oatmilk)
+
+["If we are to break, can we at least continue to break?"](https://james-bowden.github.io/pages/poetry/jb_glacier)
+
+["defense mechanism #10"](https://james-bowden.github.io/pages/poetry/jb_defense10)
+
+["lactose intolerant on a plane from newark"](https://james-bowden.github.io/pages/poetry/jb_lactose)
+
+["Needfulness Study"](https://james-bowden.github.io/pages/poetry/jb_needfulness)
 
 ["The summer of my loneliness,"](https://james-bowden.github.io/pages/poetry/jb_lonely)
 
