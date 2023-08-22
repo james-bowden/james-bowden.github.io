@@ -31,7 +31,7 @@ And now, just poems:<br/>
 
 ["*tell them we're young mastodons*"](https://james-bowden.github.io/pages/poetry/jb_mastodons)
 
-["Haiku for Wei"](https://james-bowden.github.io/pages/poetry/jb_wei)
+<!--["Haiku for Wei"](https://james-bowden.github.io/pages/poetry/jb_wei) -->
 
 [""ablate", New Year's Day"](https://james-bowden.github.io/pages/poetry/jb_ablate)
 
@@ -43,7 +43,7 @@ And now, just poems:<br/>
 
 ["My therapist tries to touch me"](https://james-bowden.github.io/pages/poetry/jb_therapist)
 
-["*Choose your undoing*, Ellie Sawatzky urges."](https://james-bowden.github.io/pages/poetry/jb_undoing)
+<!--["*Choose your undoing*, Ellie Sawatzky urges."](https://james-bowden.github.io/pages/poetry/jb_undoing) -->
 
 ["Suppertime Jesus"](https://james-bowden.github.io/pages/poetry/jb_supper)
 
@@ -93,7 +93,7 @@ And now, just poems:<br/>
 
 ["Farewell"](https://james-bowden.github.io/pages/poetry/jb_farewell)
 
-["how to live"](https://james-bowden.github.io/pages/poetry/jb_forloop)
+<!--["how to live"](https://james-bowden.github.io/pages/poetry/jb_forloop) -->
 
 ["I lick my lips and write with my tongue"](https://james-bowden.github.io/pages/poetry/jb_lips)
 
