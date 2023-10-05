@@ -36,6 +36,8 @@ xx _loading_ + see my substack :)
 
 *incarnate:*
 
+["Response to *Litany of Words I'll Not Say*"](https://james-bowden.github.io/pages/poetry/jb_alliteration)
+
 ["smallness study #1"](https://james-bowden.github.io/pages/poetry/jb_insides)
 
 ["Pray there shall be poetry in my computer science PhD"](https://james-bowden.github.io/pages/poetry/jb_phd)
