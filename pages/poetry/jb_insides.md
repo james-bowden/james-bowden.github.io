@@ -3,7 +3,7 @@ layout: page
 title: Poetry
 ---
 
-## Finally, my insides
+## smallness study #1
 #### James Bowden
 
 Remember the night we watched *Inside Out*?<br/>
