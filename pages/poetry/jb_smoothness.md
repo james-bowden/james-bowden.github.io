@@ -9,7 +9,7 @@ title: Poetry
 I wouldn't say that I'm confused, more just don't know<br/>
 which way to look with all this information consuming<br/>
 me at all times. How many Hz is my brain running at?<br/>
-Would a hummingbird, a mosquito be better equipped
+Would a hummingbird, a mosquito be better equipped<br/>
 to take my place? I would think that in every creature's<br/>
 head, it must be a smooth operator. Imagine being a bug,<br/>
 a bumblebee perhaps, all jerky and out of control. Oh.<br/>
