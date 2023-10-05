@@ -9,7 +9,7 @@ title: Poetry
 There are many things I would like to ask you.<br/>
 How have you been keeping yourself?<br/>
 Where do you hold your hurt?<br/>
-When is the last time you looked out<br/>
+When is the last time you looked through<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the window and loved, just loved, that<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;something exists out there?<br/>
 Birds sometimes dive over my office building,<br/>
@@ -35,7 +35,7 @@ I want to share. I want to post pictures on<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instagram and I’d like you to see them, smile.<br/>
 I want to reach out and touch you, the soft<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and malleable where jaw meets neck,<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;brushing the pads of my fingers.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mysterious, alive against the pads of my fingers.<br/>
 And I am scared to, too, and nervously<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gnaw at my nails.<br/>
 And but I am hopeful, too, mostly,<br/>
