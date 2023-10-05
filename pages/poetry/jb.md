@@ -27,15 +27,26 @@ And now, just poems:<br/>
 
 *inclement:*
 
-"I analyze/lament my native distribution"
+xx _loading_ + see my substack :)
 
-"Smoothness Study"
-
-"why didnt u just say so"
 
 ...
 
 *incarnate:*
+
+["smallness study #1"](https://james-bowden.github.io/pages/poetry/jb_insides)
+
+["Pray there shall be poetry in my computer science PhD"](https://james-bowden.github.io/pages/poetry/jb_phd)
+
+["and where is my redemption?"](https://james-bowden.github.io/pages/poetry/jb_but)
+
+["I analyze/lament my native distribution"](https://james-bowden.github.io/pages/poetry/jb_latent)
+
+["Smoothness Study"](https://james-bowden.github.io/pages/poetry/jb_smoothness)
+
+["why didn't u just say so"](https://james-bowden.github.io/pages/poetry/jb_say_so)
+
+["smallness study #2"](https://james-bowden.github.io/pages/poetry/jb_silly_self)
 
 ["An Oat to Milk"](https://james-bowden.github.io/pages/poetry/jb_oatmilk)
 
