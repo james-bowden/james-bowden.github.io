@@ -8,7 +8,7 @@ title: Poetry
 
 Poets love to talk about sad things. *I loved and lost her,*<br/>
 *but she is still with me.* Or *I loved and lost him, but at*<br/>
-least I did at all.* Some of the best known lines ever written:<br/>
+*least I did at all.* Some of the best known lines ever written:<br/>
 *Tonight I can write the saddest lines...* I wonder if we<br/>
 all just want to be sad and beautiful. Yes, Neruda, yes, me,<br/>
 yes, my friend whose mother died when she was 8, yes,<br/>
