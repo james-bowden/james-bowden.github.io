@@ -17,7 +17,7 @@ sass:
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title:		           "James Bowden"
-description:	       "Caltech ML, CS, Biology"
+description:	       "Berkeley ML + Science"
 author:              "James Bowden"
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
