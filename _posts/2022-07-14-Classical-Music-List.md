@@ -11,7 +11,7 @@ image: sf_symphony.jpg
 
 *Anyhow, here are some pieces that have stuck with me, and how they came to be so--I know it's a sorry list, but I'm keeping it to only the most compelling pieces I've come across.*
 
-<!-- * [***Archduke Trio*, Beethoven**](https://www.youtube.com/watch?v=ZFvx32SjAtE&ab_channel=Rousseau). This -->
+
 * [***Violin Concerto in D Major (Op. 35)*, Tchaikovsky**](https://www.youtube.com/watch?v=cbJZeNlrYKg&ab_channel=ClassicalVault1). I've not been taken with much else Tchaikovsky, but then again, maybe that's because much of it is piano. This is wonderful though! I love the base melody.
 * [***Orange*, Caroline Shaw**](https://www.youtube.com/watch?v=tQPY89YQmJQ&list=OLAK5uy_m3o5c-TkpHRhQN1T8d3AOmvGpWAeDMPlE). Ellie put me on this a while ago but I find for a lot of classical music I just need to listen to it less actively to allow my brain to pick up on the pieces it likes. Really enjoyed the second time around, and cool to see such a young composer. I also pick up echoes of Ravel's String Quartet here.
 * [***String Quartet in F Major*, Ravel**](https://www.youtube.com/watch?v=ieRQyyPowH0). This is one of the most unique, singularly wonderful pieces I've come across to date. Like, *wat*? Listen to this.
