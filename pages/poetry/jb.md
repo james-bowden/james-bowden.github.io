@@ -17,6 +17,8 @@ First, some collections:<br/>
 [Bell's Thm. Collection](https://james-bowden.github.io/pages/poetry/jb_bell)<br/>
 [En85 Collection](https://james-bowden.github.io/pages/poetry/jb_en85)<br/>
 
+[Poetry Blogs (Summer 2022)](https://james-bowden.github.io/pages/blog/)<br/>
+
 <hr>
 Also, a short story I wrote for a creative fiction course during winter 2023:<br/>
 
