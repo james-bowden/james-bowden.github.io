@@ -38,6 +38,8 @@ xx _loading_ + see my substack :)
 
 *incarnate:*
 
+["Mr. Sandman brings me a dream"](https://james-bowden.github.io/pages/poetry/jb_sandman)
+
 ["hannah, my ophelia"](https://james-bowden.github.io/pages/poetry/jb_hannah_ophelia)
 
 ["Historia ut Canem"](https://james-bowden.github.io/pages/poetry/jb_canem)
