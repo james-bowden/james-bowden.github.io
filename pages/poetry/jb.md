@@ -38,6 +38,12 @@ xx _loading_ + see my substack :)
 
 *incarnate:*
 
+
+
+["Not to Know How to Accept"](https://james-bowden.github.io/pages/poetry/jb_accept)
+
+["These will just be places to me now"](https://james-bowden.github.io/pages/poetry/jb_places)
+
 ["The Passion According to J.B."](https://james-bowden.github.io/pages/poetry/jb_lispector)
 
 ["Chicago Haikus"](https://james-bowden.github.io/pages/poetry/jb_chicago_haikus)
