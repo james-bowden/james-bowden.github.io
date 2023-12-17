@@ -24,6 +24,8 @@ Also, a short story I wrote for a creative fiction course during winter 2023:<br
 
 ["Blindsided"](https://james-bowden.github.io/assets/hum/blindsided.pdf)<br/>
 
+Update (12/17/2023): oddly, I just stumbled upon a Lispector short (one of her very first) that in tone and content is uncannily similar to the story I wrote. Perhaps interesting to witness: ["Obsession"](https://www.tabletmag.com/sections/arts-letters/articles/obsession). Lispector and modernist literature in general were hefty influencers of this story, though I hadn't read something so close to the style I wrote at the time of writing (I think). How odd and comforting. 
+
 <hr>
 And now, just poems:<br/>
 
