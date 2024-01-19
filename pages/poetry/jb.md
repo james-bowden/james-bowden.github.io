@@ -30,6 +30,7 @@ Update (12/17/2023): oddly, I just stumbled upon a Lispector short (one of her v
 And now, just poems:<br/>
 
 <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
+<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "one tab in google docs" --> 
 
 *inclement:*
 
@@ -40,7 +41,17 @@ xx _loading_ + see my substack :)
 
 *incarnate:*
 
+["Friday, Pre-Dawn: An Old Sentiment, Again."](https://james-bowden.github.io/pages/poetry/jb_predawn)
 
+["*I was in first-grade, I was a boy, I was a tender age*"](https://james-bowden.github.io/pages/poetry/jb_michicant)
+
+["For Antonia, next letter:"](https://james-bowden.github.io/pages/poetry/jb_antonia)
+
+["I break my resolve and smoke weed again for the first time in over a month."](https://james-bowden.github.io/pages/poetry/jb_addiction)
+
+["Maggie sends me a voice message upon going outside after three days of being snowed in."](https://james-bowden.github.io/pages/poetry/jb_distance)
+
+["Metempsychotic Diary: Watching My Baby Tapes"](https://james-bowden.github.io/pages/poetry/jb_baby)
 
 ["Not to Know How to Accept"](https://james-bowden.github.io/pages/poetry/jb_accept)
 
