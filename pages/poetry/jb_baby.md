@@ -3,10 +3,11 @@ layout: page
 title: Poetry
 ---
 
-<!-- <img style="float:left; width: 100%; border-radius: 10px; border: 0px solid; padding: 0px 0px 0px 10px" src="{{site.github_url}}/assets/img/daddy_n_me.jpg">
+<!-- ![daddy_n_me]({{site.github_url}}/assets/img/daddy_n_me.jpg)
+<img style="float:left; width: 100%; border-radius: 10px; border: 0px solid; padding: 0px 0px 0px 10px" src="{{site.github_url}}/assets/img/daddy_n_me.jpg">
 -->
-<div style="float:left;margin:0 10px 10px 0" markdown="1">
-    ![daddy_n_me]({{site.github_url}}/assets/img/daddy_n_me.jpg)
+<div style="float:left; width: 100%; border-radius: 10px; border: 0px solid; padding: 0px 0px 0px 10px">
+    <img src="{{site.github_url}}/assets/img/daddy_n_me.jpg">
 </div>
 <br/>
 
