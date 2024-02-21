@@ -41,7 +41,7 @@ xx _loading_ + see my substack :)
 
 *incarnate:*
 
-[\[Untitled\]](https://james-bowden.github.io/pages/poetry/jb_daddy.md)
+[\[Untitled\]](https://james-bowden.github.io/pages/poetry/jb_daddy)
 
 ["Friday, Pre-Dawn: An Old Sentiment, Again."](https://james-bowden.github.io/pages/poetry/jb_predawn)
 
