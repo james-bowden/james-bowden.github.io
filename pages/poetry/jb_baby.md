@@ -3,8 +3,10 @@ layout: page
 title: Poetry
 ---
 
-<div><img style="float:left; width: 100%; border-radius: 10px; border: 0px solid; padding: 0px 0px 0px 10px" src="{{site.github_url}}/assets/img/daddy_n_me.jpg"></div>
-<br/><br/>
+<!-- <img style="float:left; width: 100%; border-radius: 10px; border: 0px solid; padding: 0px 0px 0px 10px" src="{{site.github_url}}/assets/img/daddy_n_me.jpg">
+-->
+![daddy_n_me]({{site.github_url}}/assets/img/daddy_n_me.jpg)
+<br/>
 
 ## Metempsychotic Diary: Watching My Baby Tapes
 #### James Bowden 
