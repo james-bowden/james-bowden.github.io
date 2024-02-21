@@ -6,8 +6,8 @@ title: Poetry
 <!-- ![daddy_n_me]({{site.github_url}}/assets/img/daddy_n_me.jpg)
 <img style="float:left; width: 100%; border-radius: 10px; border: 0px solid; padding: 0px 0px 0px 10px" src="{{site.github_url}}/assets/img/daddy_n_me.jpg">
 -->
-<div style="float:left; width: 100%; border-radius: 10px; border: 0px solid; padding: 0px 0px 0px 10px">
-    <img style="float:left; width: 100%; border-radius: 10px; border: 0px solid; padding: 0px 0px 0px 10px" src="{{site.github_url}}/assets/img/daddy_n_me.jpg">
+<div style="float:left; width: 100%">
+    <img style="float:left; width: 100%; border-radius: 10px; border: 0px solid; padding: 0px 0px 20px 0px" src="{{site.github_url}}/assets/img/daddy_n_me.jpg">
 </div>
 <br/><br/>
 
