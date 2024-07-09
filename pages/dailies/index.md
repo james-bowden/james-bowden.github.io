@@ -11,6 +11,6 @@ I'm beginning this to record some reflections, hopefully at the end of each day,
 
 {% for post in site.categories.dailies %}
   <a href="{{ site.github.url }}{{ post.url }}">
-      <h5><span>{{ post.datetitle }} -- Full Month</span></h5>
+  <h5><span>{{ post.datetitle }} -- Full Month</span></h5>
   </a>
 {% endfor %}
