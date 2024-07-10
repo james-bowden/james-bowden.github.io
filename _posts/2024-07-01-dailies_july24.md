@@ -37,5 +37,15 @@ I'm going to sleep soon, and wake up without an alarm, and I'm looking forward t
 
 
 ### 07/09, Tuesday
+I spent a lot of time thinking for research today, but didn't feel like I made a ton of concrete progress. I'm wanting to learn about causal inference though and so started engaging with this and in my mind excitement and curiosity are always wins, so logging that. 
+
+I climbed again, and was surprised that I wanted to and that I enjoyed it. A bunch of routes just clicked for me and were suddenly easy and this was super cool and gratifying to experience. At the end, I was struggling to position myself properly on this white V2, and after several tries hacked it together, and then redid it calmly once more and it came together so much more gracefully. I'd like to do that a bit, this revisiting and solidifying. I was watching a pretty good climber do this on low level climbs but he moved so beautifully that: I loved it. 
+
+I called A today, and I was expecting it to be alright, but then it was actually pretty good and open for the later part and I stayed up way later than I intended (like 3am). I'm upset with myself for letting this happen, but I was also enjoying myself a lot in a way I haven't felt in a while, so I don't quite blame myself. Things seemed to fall out pretty calmly, *you're free!*, and I felt free in response. 
+
+This morning, I am stressed and tired and not enjoying my decision. 
+
+
+### 07/10, Wednesday
 ...
 
