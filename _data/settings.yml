@@ -18,7 +18,7 @@ menu:
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
 # - {icon: 'twitter', link: 'https://twitter.com/paululele'}
-- {icon: 'envelope', link: 'mailto:jbowden@caltech.edu'}
+- {icon: 'envelope', link: 'mailto:jcbowden@berkeley.edu'}
 - {icon: 'graduation-cap', link: 'https://scholar.google.com/citations?hl=en&user=lfSNrMUAAAAJ'}
 - {icon: 'linkedin', link: 'https://www.linkedin.com/in/j-bowden/'}
 - {icon: 'github', link: 'https://github.com/james-bowden'}
