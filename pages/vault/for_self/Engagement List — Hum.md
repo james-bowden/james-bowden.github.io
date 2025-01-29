@@ -1,0 +1,34 @@
+---
+date created: Monday, June 17th 2024, 11:15:02 am
+date modified: Tuesday, January 21st 2025, 2:53:30 pm
+---
+
+- a little life yanagihara re athena — writing style like mine?
+- serverance book and tv show re jackie
+- requiem for a dream (movie)
+- Barfly bukowski autobiographical movie 
+- Ask the dust (movie) re. book
+- Rimbaud: A Season in Hell re Dustin Pearson, re verlaine re hem
+- Sylvia Beach: Shakespeare and company (autobiog paris, a la moveable feast)
+- Hem: 3 stories and 10 poems (up in michigan)
+- Fitzgerald: Tender is the Night (last book)
+- Fitzgerald: Jazz Age (shorts)
+- Fitzgerald: The Beautiful and the Damned
+- Fitzgerald: This Side of Paradise (first book)
+- Ezra Pound: something? re Moveable Feast
+- Tarkovsky films (downloaded)
+- Scent of a woman (perlman)
+- Pulp Fiction rewatch
+- Kill Bill rewatch?
+- ~~Inglorious Basterds rewatch~~
+- Hesse: Steppenwolf (tried, meh?)
+- ~~Salinger: Catcher in the Rye re. Tim: love of innocence~~
+- ~~Salinger: Perfect day for bananafish re. Tim (short story)~~
+- Gertrude Stein: Melanctha re. Moveable feast (short story)
+- Gertrude Stein: The Making of Americans re. Moveable feast (long)
+- Gertrude Stein: Tender Buttons re. Kelly
+- Picasso’s nude of the girl with the basket of flowers re. Moveable feast (pic)
+- Kerouac: On the road re. Arthur
+- Dostoyevsky: notes from the underground re. Trent (short)
+- Wittgenstein: philosophical investigations re. Trent
+- ~~Fitzgerald: Great Gatsby~~

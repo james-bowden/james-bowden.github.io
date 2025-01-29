@@ -3,3 +3,7 @@ Gemfile.lock
 .sass-cache
 .jekyll-metadata
 .DS_Store
+
+**/_index_*
+.obsidian/*
+.vscode/settings.json
