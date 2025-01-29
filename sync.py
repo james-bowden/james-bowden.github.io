@@ -11,14 +11,20 @@ def sync(original_path, pub_path):
 
 def write_index(source):
 	dest = '/'.join(source.split('/')[:-1]) + '/index.md'
-	title = source.split('/')[-1].split('_')[-1] # _index_title
+	title = source.split('/')[-1].split('_')[-1].split('.')[0] # _index_title.md
 
 	try:
 		with open(source, 'r', encoding='utf-8') as source_file:
 			content = source_file.readlines()
-		
+
 		# Create new content with title
-		new_content = [f"### {title}\n\n"] + content
+		new_content = [f"### {title}\n\n"]
+
+		for line in content:
+			if '[[' in line:
+				link = line.split('|')[0].replace('[[', '').replace(']]', '').strip()
+				text = line.split('|')[1].replace('[[', '').replace(']]', '').replace('/n', '').strip()
+				new_content.append(f'[{text}]({link})\n')
 
 		# print(dest)
 
@@ -45,11 +51,13 @@ def sync_atomic(verbose=False):
 	if verbose: print(fnames)
 	for f in fnames:
 		if DIR_PATH in f: continue
-		sync(f, 'atomic')
+		# in atomic folder, don't need _a_ tag too
+		shutil.copy(f, f"{DIR_PATH}/atomic/{f.split('/')[-1].replace('_a_', '')}")
+		# sync(f, 'atomic')
 
 if __name__ == "__main__":
-	sync_index()
 	sync_atomic()
+	sync_index()
 
 	# maybe make a separate csv that gets edited?
 	sync(f'{VAULT_PATH}/__ref/yogas.md', 'lists')
