@@ -1,4 +1,5 @@
 ---
+backlink: https://james-bowden.github.io/pages/vault/atomic/index.md
 layout: obs
 ---
 

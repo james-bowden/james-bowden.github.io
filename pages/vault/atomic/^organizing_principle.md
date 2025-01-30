@@ -1,4 +1,5 @@
 ---
+backlink: https://james-bowden.github.io/pages/vault/atomic/^organizing_principle.md
 layout: obs
 date created: Wednesday, January 29th 2025, 1:36:05 pm
 date modified: Wednesday, January 29th 2025, 5:47:12 pm

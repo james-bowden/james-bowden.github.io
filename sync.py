@@ -4,6 +4,7 @@ from glob import glob
 VAULT_PATH = '/Users/jcbowden/Documents/Obsidian Vault'
 SITE_PATH = 'james-bowden.github.io'
 DIR_PATH = f'{VAULT_PATH}/{SITE_PATH}/pages/vault'
+URL = f'https://{SITE_PATH}/pages/vault'
 
 def sync(original_path, pub_path, verbose=False):
 	if verbose: print(f'{original_path} --> {pub_path}')
@@ -15,16 +16,46 @@ def edit_layout(path):
 		with open(path, 'r', encoding='utf-8') as source_file:
 			content = source_file.readlines()
 
+		insert = 'layout: obs'
+
 		# Check if layout is already set to obs
 		for line in content:
-			if 'layout: obs' in line:
+			if insert in line:
 				return
 				
 		# Create new content with desired layout
 		if '---' not in content[0]:
-			new_content = ["---\nlayout: obs\n---\n\n"] + content
+			new_content = [f"---\n{insert}\n---\n\n"] + content
 		else:
-			new_content = [content[0]] + ["layout: obs\n"] + content[1:]
+			new_content = [content[0]] + [f"{insert}\n"] + content[1:]
+		
+		# (over)Write to target file
+		with open(path, 'w', encoding='utf-8') as target_file:
+		    target_file.writelines(new_content)
+		
+	except FileNotFoundError:
+		print(f"Error: Could not find {source}")
+	except Exception as e:
+		print(f"An error occurred: {str(e)}")
+
+def add_backlink(path):
+	try:
+		with open(path, 'r', encoding='utf-8') as source_file:
+			content = source_file.readlines()
+
+		# Check if layout is already set to obs
+		for line in content:
+			if 'backlink: ' in line:
+				return
+		
+		backlink = path.replace(DIR_PATH, URL)
+		insert = f'backlink: {backlink}'
+
+		# Create new content with desired layout
+		if '---' not in content[0]:
+			new_content = [f"---\n{insert}\n---\n\n"] + content
+		else:
+			new_content = [content[0]] + [f"{insert}\n"] + content[1:]
 		
 		# (over)Write to target file
 		with open(path, 'w', encoding='utf-8') as target_file:
@@ -109,5 +140,6 @@ if __name__ == "__main__":
 
 
 	[edit_layout(f) for f in glob(f'{DIR_PATH}/**/*.md', recursive=True)]
+	[add_backlink(f) for f in glob(f'{DIR_PATH}/**/*.md', recursive=True)]
 
 	print('\tdone syncing :p')

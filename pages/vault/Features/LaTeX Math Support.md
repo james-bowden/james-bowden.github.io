@@ -1,4 +1,5 @@
 ---
+backlink: https://james-bowden.github.io/pages/vault/Features/LaTeX Math Support.md
 layout: obs
 layout: obs
 ---

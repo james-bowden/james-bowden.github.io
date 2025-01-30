@@ -1,4 +1,5 @@
 ---
+backlink: https://james-bowden.github.io/pages/vault/for_self/index.md
 layout: obs
 ---
 

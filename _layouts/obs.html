@@ -18,6 +18,10 @@ layout: default
     </div>
 {% endif %}
 
+{% if page.backlink %}
+  in: <a href="{{ page.backlink }}">{{ page.backlink | split: '/' | last }}</a>
+{% endif %}
+
 <article>
   {{ content }}
 </article>

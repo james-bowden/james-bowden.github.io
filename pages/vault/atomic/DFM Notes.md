@@ -1,4 +1,5 @@
 ---
+backlink: https://james-bowden.github.io/pages/vault/atomic/DFM Notes.md
 layout: obs
 date created: Wednesday, January 15th 2025, 8:45:43 pm
 date modified: Wednesday, January 29th 2025, 4:45:44 pm
