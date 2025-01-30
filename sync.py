@@ -21,17 +21,22 @@ def write_index(source):
 		# Create new content with title
 		new_content = [f"### {title}\n\n"]
 
-		dirs, files = [], ["---\n\n"]
+		dirs, files = [], []
 		for line in content:
 			if '|index]]' in line: continue
 			if '[[' in line:
 				link = line.split('|')[0].replace('[[', '').replace(']]', '').replace(SITE_PATH, '').strip().strip('/')
+				if '/_index_' in link:
+					link = '/'.join(link.split('/')[:-1])
 				text = line.split('|')[1].replace('[[', '').replace(']]', '').replace('/n', '').strip()
 				if '_index_' in text:
 					text = text.replace('_index_', '')
-					dirs.append(f'[**{text}**]({link})\n')
+					dirs.append(f'[**{text}**]({link})\n\n')
 				else:
-					files.append(f'[{text}]({link})\n')
+					files.append(f'[{text}]({link})\n\n')
+
+		if len(dirs) > 0 and len(files) > 0:
+			dirs.append('---\n\n')
 
 		new_content += dirs + files # dirs go first
 
