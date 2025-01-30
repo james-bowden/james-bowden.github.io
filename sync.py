@@ -115,7 +115,7 @@ def write_index(source):
 					link = link.split('/')[-1] 
 				text = line.split('|')[1].replace('[[', '').replace(']]', '').replace('/n', '').strip()
 				if text[0] == '^':
-					text = text[1:]
+					text = f'**{text[1:]}**'
 				if '_index_' in text:
 					text = text.replace('_index_', '')
 					dirs.append(f'[**{text}**]({link})\n\n')
@@ -275,6 +275,39 @@ def sync_atomic(verbose=False):
 		# in atomic folder, don't need _a_ tag too
 		shutil.copy(f, f"{DIR_PATH}/atomic/{f.split('/')[-1].replace('_a_', '')}")
 		# mine any assets that should be included, and copy over too.
+
+
+def convert_math_delimiters(text):
+    # First, replace $$ math $$ with \n$$\n math \n$$\n
+    # We need to do this first to avoid interfering with the single $ conversion
+    text = re.sub(r'\$\$(.*?)\$\$', r'\n$$\n\1\n$$\n', text, flags=re.DOTALL)
+    
+    # Then replace single $ math $ with $$ math $$
+    text = re.sub(r'(?<!\$)\$(?!\$)(.*?)(?<!\$)\$(?!\$)', r'$$\1$$', text, flags=re.DOTALL)
+    
+    return text
+
+# Example usage:
+def process_markdown_file(input_file_path, output_file_path=None):
+    # If no output path is specified, overwrite the input file
+    if output_file_path is None:
+        output_file_path = input_file_path
+    
+    # Read the file
+    with open(input_file_path, 'r', encoding='utf-8') as file:
+        content = file.read()
+    
+    # Convert the delimiters
+    converted_content = convert_math_delimiters(content)
+    
+    # Write the result
+    with open(output_file_path, 'w', encoding='utf-8') as file:
+        file.write(converted_content)
+
+# Usage example:
+# process_markdown_file('input.md', 'output.md')
+# or to overwrite the same file:
+# process_markdown_file('input.md')
 
 if __name__ == "__main__":
 	# Moving files into repo

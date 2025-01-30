@@ -11,7 +11,7 @@ ICML 2024
 # CTMC definition
 
 $S$ states and $D$ dimensions, though each dimension may have different states in general.
-Over continuous time, $t \in [0, 1]$. Instead of a transition matrix $Q$ (as in [[D3PM Notes]]), rate matrix $R_t \in \mathbb{R}^{SxS}$ w/ non-negative off-diagonal elements (b/c probabilities). $R_t(x_{t}, j) \; dt$ is the probability that $x_t$ will jump to a different state $j$ during the next time step $dt$; diagonal is negative sum of other row elements s.t. $p(x_t, x_t)$ (stay) is $1+R_t(x_t, x_t)\;dt$; and probability of transitioning anywhere from $x_t$ is thus in sum 1, while the rows sum to 0.
+Over continuous time, $t \in [0, 1]$. Instead of a transition matrix $Q$ (as in [[Discrete diffusion models]]), rate matrix $R_t \in \mathbb{R}^{SxS}$ w/ non-negative off-diagonal elements (b/c probabilities). $R_t(x_{t}, j) \; dt$ is the probability that $x_t$ will jump to a different state $j$ during the next time step $dt$; diagonal is negative sum of other row elements s.t. $p(x_t, x_t)$ (stay) is $1+R_t(x_t, x_t)\;dt$; and probability of transitioning anywhere from $x_t$ is thus in sum 1, while the rows sum to 0.
 The rate matrix is easily converted into a transition probability matrix[^1], and generally, the probability of transition to a different state is exactly that $(i,j)$ entry, and the probability of staying in the same state is just $1+R(i,i)$. Note that always, $R$ is multiplied by $dt$[^2] when converting to probabilities.
 
 We could infinitesimally simulate the sequence trajectory but generally we must use finite intervals $\Delta t$ and this leads us to the **Euler step**:

@@ -208,8 +208,8 @@ The goals are
 2) allow simple combination w/ continuous-space flows —> multimodal
 
 ## Previous work on discrete flows/diffusion in discrete time
-![[Argmax flows, multinomial diffusion notes#[Argmax Flows and Multinomial Diffusion Learning Categorical Distributions](https //proceedings.neurips.cc/paper/2021/hash/67d96d458abdef21792e6d8e590244e7-Abstract.html)]]
-![[D3PM Notes#[Structured Denoising Diffusion Models in Discrete State-Spaces](https //proceedings.neurips.cc/paper/2021/hash/958c530554f78bcd8e97125b70e6973d-Abstract.html)]]
+![[Argmax flows, multinomial diffusion#[Argmax Flows and Multinomial Diffusion Learning Categorical Distributions](https //proceedings.neurips.cc/paper/2021/hash/67d96d458abdef21792e6d8e590244e7-Abstract.html)]]
+![[Discrete diffusion models#[Structured Denoising Diffusion Models in Discrete State-Spaces](https //proceedings.neurips.cc/paper/2021/hash/958c530554f78bcd8e97125b70e6973d-Abstract.html)]]
 
 ## Previous work on continuous time diffusion / flow modeling
 
@@ -457,7 +457,7 @@ See also ![[Potential directions 01_24_2025#^f493f1]]
 [^1]: One failure mode for a sequence generative model is generating a sequence that won’t fold or be stable; this information may be much more easily learnable / accessible through a structure generation model. And a structure generated may not be fully compatible with the fact that it must then be converted into AA sequence. Or maybe we want to be able to condition / control generation through the sequence or the structure or both, and this would be difficult if only generating in the space of one or the other — either can’t do it, constrain during conditional generation stage (may be too late), etc.
 [^2]: Note also that we generally want to guide / condition toward some *function*, which for proteins we know is determined by the sequence but mediated by the structure. Therefore, having both information together should lend itself to more effective guidance.
 [^3]: In which case you generally get locked into sampling along the same time discretization scheme that you originally trained with. Unsure if there are extensions that remedy this.
-[^4]: This kind of idea, so far, seems essentially the same as [[D3PM Notes]] in that there's some underlying continuous (time-varying) diffusion process (though in that case, it's still discrete time) which represents probabilities of discrete transitions and so is tethered to a discrete diffusion process as well. I guess they're arguing here that by using the continuous-time variant, they'll get more control + get to use flows and such.
+[^4]: This kind of idea, so far, seems essentially the same as [[Discrete diffusion models]] in that there's some underlying continuous (time-varying) diffusion process (though in that case, it's still discrete time) which represents probabilities of discrete transitions and so is tethered to a discrete diffusion process as well. I guess they're arguing here that by using the continuous-time variant, they'll get more control + get to use flows and such.
 [^5]: Think of this as defining a probability mass vector.
 [^6]: b/c state space is discrete
 [^7]: It’s effectively an extra degree of freedom that gets fixed; see [[Gauges]] for somewhat relevant discussion.
