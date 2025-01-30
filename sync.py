@@ -211,7 +211,7 @@ def handle_image(path, title, s):
 	# Copy image to repo
 	os.makedirs(f'{path}/img', exist_ok=True)
 	# img_path = VAULT_PATH + path.split('/pages/vault')[-1]
-	# title = 'Discrete Flow Model Notes' # NOTE: remove
+	title = 'Discrete Flow Model Notes' # NOTE: remove
 	img_path_search = glob(f'{VAULT_PATH}/**/{title}.md', recursive=True)
 	for p in img_path_search:
 		if SITE_PATH in p:
@@ -243,10 +243,10 @@ def handle_embeds(path):
 				repl = handle_image(parent_dir, title, match.group())
 			else:
 				repl = handle_link(parent_dir, match.group())
-			new_content = content[last_match_ind:match.start()] + repl
+			new_content += content[last_match_ind:match.start()] + repl
 			last_match_ind = match.end()
 			
-		new_content = new_content + content[last_match_ind:]
+		new_content += content[last_match_ind:]
 		
 		# (over)Write to target file
 		assert len(new_content) > 0
