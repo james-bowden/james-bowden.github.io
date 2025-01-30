@@ -2,16 +2,20 @@
 layout: default
 ---
 <span class="post-date">
-  {{page['date created']}}
-  {{page['date modified']}}
+  {{Created: page['date created']}}
+  <br>
+  {{Modified: page['date modified']}}
 </span>
 
 {% if page.tags %}
     <div class="tags">
-        Tags: {{ page.tags }}
+        Tags: 
+	{% for tag in page.tags %}
+            <span class="tag">{{ tag; }}</span>
+        {% endfor %}
     </div>
 {% endif %}
-<br><br>
+
 <article>
   {{ content }}
 </article>
