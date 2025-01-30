@@ -12,6 +12,7 @@ def sync(original_path, pub_path, verbose=False):
 	shutil.copy(original_path, f'{DIR_PATH}/{pub_path}/{title}')
 
 def edit_layout(path):
+	if '_index_' in path: return
 	try:
 		with open(path, 'r', encoding='utf-8') as source_file:
 			content = source_file.readlines()
@@ -97,7 +98,7 @@ def write_index(source):
 		for line in content:
 			if '|index]]' in line: continue
 			if '[[' in line:
-				if '/img' in line: continue
+				if '/img' in line or '/javascripts' in line: continue
 				link = line.split('|')[0].replace('[[', '').replace(']]', '').replace(SITE_PATH, '').strip().strip('/')
 				if '/_index_' in link:
 					link = link.split('/')[-2]

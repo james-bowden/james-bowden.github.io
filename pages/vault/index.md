@@ -13,8 +13,6 @@ layout: obs
 
 [**for_self**](for_self)
 
-[**javascripts**](javascripts)
-
 [**lists**](lists)
 
 [**misc**](misc)
