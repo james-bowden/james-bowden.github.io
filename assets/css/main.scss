@@ -22,4 +22,13 @@ $phone-width: 480px;
 
 $header-thickness: 50px;
 
-@import "_sass/-sections-dir";
+[import "_sass/-sections-dir";
+
+
+<head>
+    <style>
+        #anchor {
+            scroll-margin-top: 100px;
+        }
+    </style>
+</head>
