@@ -1,8 +1,9 @@
 import shutil
 from glob import glob
 
-DIR_PATH = '/Users/jcbowden/Documents/Obsidian Vault/james-bowden.github.io/pages/vault'
 VAULT_PATH = '/Users/jcbowden/Documents/Obsidian Vault'
+SITE_PATH = 'james-bowden.github.io'
+DIR_PATH = f'{VAULT_PATH}/{SITE_PATH}/pages/vault'
 
 def sync(original_path, pub_path):
 	print(f'{original_path} --> {pub_path}')
@@ -20,11 +21,19 @@ def write_index(source):
 		# Create new content with title
 		new_content = [f"### {title}\n\n"]
 
+		dirs, files = [], ["---\n\n"]
 		for line in content:
+			if '|index]]' in line: continue
 			if '[[' in line:
-				link = line.split('|')[0].replace('[[', '').replace(']]', '').strip()
+				link = line.split('|')[0].replace('[[', '').replace(']]', '').replace(SITE_PATH, '').strip().strip('/')
 				text = line.split('|')[1].replace('[[', '').replace(']]', '').replace('/n', '').strip()
-				new_content.append(f'[{text}]({link})\n')
+				if '_index_' in text:
+					text = text.replace('_index_', '')
+					dirs.append(f'[**{text}**]({link})\n')
+				else:
+					files.append(f'[{text}]({link})\n')
+
+		new_content += dirs + files # dirs go first
 
 		# print(dest)
 

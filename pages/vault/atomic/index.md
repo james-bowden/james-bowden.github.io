@@ -1,6 +1,7 @@
 ### atomic
 
-[__organizing_principle](james-bowden.github.io/pages/vault/atomic/__organizing_principle)
-[DFM Notes](james-bowden.github.io/pages/vault/atomic/DFM Notes)
-[gWHT Notes](james-bowden.github.io/pages/vault/atomic/gWHT Notes)
-[index](james-bowden.github.io/pages/vault/atomic/index)
+---
+
+[__organizing_principle](pages/vault/atomic/__organizing_principle)
+[DFM Notes](pages/vault/atomic/DFM Notes)
+[gWHT Notes](pages/vault/atomic/gWHT Notes)

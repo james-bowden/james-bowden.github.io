@@ -1,4 +1,5 @@
 ### lists
 
-[index](james-bowden.github.io/pages/vault/lists/index)
-[yogas](james-bowden.github.io/pages/vault/lists/yogas)
+---
+
+[yogas](pages/vault/lists/yogas)
