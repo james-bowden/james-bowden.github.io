@@ -316,6 +316,7 @@ if __name__ == "__main__":
 	sync(f'{VAULT_PATH}/__ref/yogas.md', 'lists')
 	sync(f'{VAULT_PATH}/__ref/Engagement Queue.md', 'lists')
 	sync(f'{VAULT_PATH}/__ref/Humanities Engagement List.md', 'lists')
+	sync(f'{VAULT_PATH}/__ref/Recipes.md', 'lists')
 
 	# Formatting files
 	[edit_layout(f) for f in glob(f'{DIR_PATH}/**/*.md', recursive=True)]
