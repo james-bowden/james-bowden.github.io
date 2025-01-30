@@ -11,8 +11,6 @@ layout: obs
 
 [Discrete Flow Models](Discrete Flow Models)
 
-[dne](dne)
-
 [Flow Matching](Flow Matching)
 
 [Gauges](Gauges)

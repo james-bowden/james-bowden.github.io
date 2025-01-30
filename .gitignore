@@ -9,3 +9,5 @@ Gemfile.lock
 .vscode/settings.json
 
 __pycache__/
+
+pages/vault/zz_archived

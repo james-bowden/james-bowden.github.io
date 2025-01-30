@@ -2,13 +2,16 @@
 backlink: https://james-bowden.github.io/pages/vault/atomic
 layout: obs
 date created: Thursday, January 16th 2025, 2:12:58 pm
-date modified: Thursday, January 30th 2025, 12:18:40 am
+date modified: Thursday, January 30th 2025, 12:21:32 am
 aliases:
   - CTMC
 ---
-***(from)* [Generative Flows on Discrete State-Spaces: Enabling Multimodal Flows with Applications to Protein Co-Design](https://arxiv.org/abs/2402.04997)**
 
-# CTMC definition
+# Continuous-time Markov Chains
+
+Taken from the background section of [Generative Flows on Discrete State-Spaces: Enabling Multimodal Flows with Applications to Protein Co-Design](https://arxiv.org/abs/2402.04997).
+
+## CTMC definition
 
 A CTMC is a probability flow (or stochastic process) in continuous time ($$t \in [0, 1]$$) on a discrete space with $$D$$ dimensions, each of which has $$S_d$$ states.
 
@@ -24,7 +27,7 @@ $$
 
 A CTMC is defined in toto by a rate matrix $$R_t$$ (note that this will be a function of time[^3], and a parameterized NN) and an initial distribution $$p_0$$.
 
-# Kolmogorov equation
+## Kolmogorov equation
 
 A probability flow $$p_t$$ is defined as the marginal[^4] distribution of $$x_t$$; we'd like to obtain its dynamics (specifically its derivative wrt $$t$$) from the rate matrix somehow.
 **Why?** From [Flow Matching](dne.md), a flow $$\phi$$ is exactly a map from $$p_s$$ to $$p_t$$ where $$s < t$$ (in this case $$s=0$$).

@@ -11,7 +11,7 @@ URL = f'https://{SITE_PATH}/pages/vault'
 SKIPS_INDEX = [
 	'img',
 	'javascripts',
-	'dne.md',
+	'dne',
 ]
 
 def sync(original_path, pub_path, verbose=False):
