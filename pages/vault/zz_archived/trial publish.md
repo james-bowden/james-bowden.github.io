@@ -10,13 +10,21 @@ I'm writing a note!
 
 ![hi](img/Pasted image 20250116150311.png)
 
-here's some math $$f(x) = t^{2}$$
+here's some math 
+$$
+f(x) = t^{2}
+$$
+
+
 
 $$
+
 
 KLD \Rightarrow \frac{4}{b}
 
+
 $$
+
 
 and maybe lets just try linking to something inside of this 
 [hello-world](dne.md)

@@ -286,26 +286,16 @@ def convert_math_delimiters(text):
     return text
 
 # Example usage:
-def process_markdown_file(input_file_path, output_file_path=None):
-    # If no output path is specified, overwrite the input file
-    if output_file_path is None:
-        output_file_path = input_file_path
-    
-    # Read the file
-    with open(input_file_path, 'r', encoding='utf-8') as file:
+def edit_latex(path):    
+    with open(path, 'r', encoding='utf-8') as file:
         content = file.read()
     
     # Convert the delimiters
     converted_content = convert_math_delimiters(content)
     
     # Write the result
-    with open(output_file_path, 'w', encoding='utf-8') as file:
+    with open(path, 'w', encoding='utf-8') as file:
         file.write(converted_content)
-
-# Usage example:
-# process_markdown_file('input.md', 'output.md')
-# or to overwrite the same file:
-# process_markdown_file('input.md')
 
 if __name__ == "__main__":
 	# Moving files into repo
@@ -321,6 +311,7 @@ if __name__ == "__main__":
 	# Formatting files
 	[edit_layout(f) for f in glob(f'{DIR_PATH}/**/*.md', recursive=True)]
 	[add_backlink(f) for f in glob(f'{DIR_PATH}/**/*.md', recursive=True)]
+	[edit_latex(f) for f in glob(f'{DIR_PATH}/**/*.md', recursive=True)]
 	[handle_embeds(f) for f in glob(f'{DIR_PATH}/**/*.md', recursive=True)]
 
 	print('\tdone syncing :p')

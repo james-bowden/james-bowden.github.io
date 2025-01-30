@@ -9,5 +9,7 @@ layout: obs
 
 [Humanities Engagement List](Humanities Engagement List)
 
+[Recipes](Recipes)
+
 [yogas](yogas)
 
