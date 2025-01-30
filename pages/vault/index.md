@@ -1,5 +1,4 @@
 ---
-backlink: https://james-bowden.github.io/pages
 layout: obs
 ---
 
@@ -10,6 +9,4 @@ layout: obs
 [**lists**](lists)
 
 [**misc**](misc)
-
-[**zz_archived**](zz_archived)
 

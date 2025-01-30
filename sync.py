@@ -12,6 +12,7 @@ SKIPS_INDEX = [
 	'img',
 	'javascripts',
 	'dne',
+	'zz_archived',
 ]
 
 def sync(original_path, pub_path, verbose=False):
@@ -51,7 +52,7 @@ def edit_layout(path):
 		print(path)
 
 def add_backlink(path):
-	if '_index_' in path: return
+	if '_index_' in path or '/vault/index.md' in path: return
 	try:
 		with open(path, 'r', encoding='utf-8') as source_file:
 			content = source_file.readlines()
@@ -128,10 +129,6 @@ def write_index(source):
 			dirs.append('---\n\n')
 
 		new_content += dirs + files # dirs go first
-
-		# print(dest)
-
-		# print(new_content)
 		
 		# Write to target file
 		with open(dest, 'w', encoding='utf-8') as target_file:
