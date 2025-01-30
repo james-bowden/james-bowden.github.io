@@ -1,4 +1,2 @@
-### lists
-
 [yogas](yogas)
 

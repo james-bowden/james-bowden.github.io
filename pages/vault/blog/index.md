@@ -1,4 +1,2 @@
-### blog
-
 [**posts**](posts)
 

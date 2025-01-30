@@ -1,5 +1,3 @@
-### vault
-
 [**atomic**](atomic)
 
 [**blog**](blog)

@@ -1,4 +1,2 @@
-### posts
-
 [hello-world](hello-world)
 
