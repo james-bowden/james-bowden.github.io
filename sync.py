@@ -5,8 +5,8 @@ VAULT_PATH = '/Users/jcbowden/Documents/Obsidian Vault'
 SITE_PATH = 'james-bowden.github.io'
 DIR_PATH = f'{VAULT_PATH}/{SITE_PATH}/pages/vault'
 
-def sync(original_path, pub_path):
-	print(f'{original_path} --> {pub_path}')
+def sync(original_path, pub_path, verbose=False):
+	if verbose: print(f'{original_path} --> {pub_path}')
 	title = original_path.split('/')[-1]
 	shutil.copy(original_path, f'{DIR_PATH}/{pub_path}/{title}')
 
@@ -56,6 +56,8 @@ def write_index(source):
 				else: # relative path for files means only have to specify the file name
 					link = link.split('/')[-1] 
 				text = line.split('|')[1].replace('[[', '').replace(']]', '').replace('/n', '').strip()
+				if text[0] == '^':
+					text = text[1:]
 				if '_index_' in text:
 					text = text.replace('_index_', '')
 					dirs.append(f'[**{text}**]({link})\n\n')
@@ -107,3 +109,5 @@ if __name__ == "__main__":
 
 
 	[edit_layout(f) for f in glob(f'{DIR_PATH}/**/*.md', recursive=True)]
+
+	print('\tdone syncing :p')

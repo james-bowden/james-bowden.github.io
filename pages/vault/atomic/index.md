@@ -4,7 +4,7 @@ layout: obs
 
 ### atomic
 
-[^organizing_principle](^organizing_principle)
+[organizing_principle](^organizing_principle)
 
 [DFM Notes](DFM Notes)
 
