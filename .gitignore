@@ -7,3 +7,5 @@ Gemfile.lock
 **/_index_*
 .obsidian/*
 .vscode/settings.json
+
+__pycache__/
