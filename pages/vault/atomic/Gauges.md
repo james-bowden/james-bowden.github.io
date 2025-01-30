@@ -2,7 +2,7 @@
 backlink: https://james-bowden.github.io/pages/vault/atomic
 layout: obs
 date created: Thursday, January 23rd 2025, 1:14:11 pm
-date modified: Friday, January 24th 2025, 2:17:35 am
+date modified: Wednesday, January 29th 2025, 10:25:10 pm
 ---
 **[Gauge fixing for sequence-function relationships](https://www.biorxiv.org/content/10.1101/2024.05.12.593772v2.abstract)**
 Anna Posfai, Juannan Zhou, David M. McCandlish, and Justin B. Kinney
@@ -29,14 +29,14 @@ Each linear relation btwn multiple columns specified by the model gives a gauge 
 
 ### More general models
 Pairwise models inherit the $L$ DoFs from the additive model and additionally get $\binom{L}{2}\cdot (2\alpha-1)$ gauge freedoms from linear relations between the pair terms and the single-position terms.
-The more general principle is that summing a $K$-order feature over the whole alphabet at a chosen position gives a feature of order $K-1$ — effectively, you can marginalize (a la Stephan’s [[Selection Probabilistic Model]]; could try to think more clearly about connections).
+The more general principle is that summing a $K$-order feature over the whole alphabet at a chosen position gives a feature of order $K-1$ — effectively, you can marginalize (a la Stephan’s [Selection Probabilistic Model](dne.md); could try to think more clearly about connections).
 
 ## Parameter values depend on choice of gauge
 Cannot really interpret parameters if they can take on many different values with the same effect.
 **Strategy:** fix a gauge, meaning adopting constraints that will eliminate DoFs.
 
 ### Example (figure) in 3 different gauges
-![[Pasted image 20250123140104.png]]
+![image](img/Pasted image 20250123140104.png)
 Can see how relative to WT, most mutations are not very positive, but those that are stand out. Relative to the maximum gauge (i.e., the optimal choice at each position), every other choice is negative, but some are less negative (indicating that identity at that position is less important). The ZSG indicates certain positions that may be more important, and at each position, params all add to 0, so there’s a clean interpretation of identities that are positive vs. negative.
 
 ### Gauge interpretations
@@ -55,13 +55,13 @@ Benefit: tractable. Will focus on for rest of paper.
 Important property: for any $\theta_{1}, \theta_{2}\in \Theta$, $\theta_2-\theta_1\in\Theta$ as well. This enables model comparison within the same gauge (**??**).
 
 ### Constrained optimization view
-Can also gauge-fix via constrained optimization. Specify a penalization matrix $\Lambda$ for which there is a corresponding projection matrix as well:![[Pasted image 20250123142542.png|400]]
+Can also gauge-fix via constrained optimization. Specify a penalization matrix $\Lambda$ for which there is a corresponding projection matrix as well:![image](img/Pasted image 20250123142542.png)
 This implies that inference w/ a PD $L_2$ regularizer on the model parameters will result in gauge-fixed params. However, regularization also changes the model predictions, so this isn’t proper. Regularization can also be specified at model prediction time, but this still requires specifying a linear gauge choice.
 
 # Unified approach to gauge fixing (p 4-6)
 Focus on fixing gauge of all-order interaction model.
 Then, discussion of hierarchical gauges which can be applied to commonly-used models that are not all-order.
-![[Pasted image 20250124011827.png]]
+![image](img/Pasted image 20250124011827.png)
 Figure shows the gauge space as colored plane, where you can move the black dot around and keep predictions the same. Notably, in WTG moving around the plane involves the param for $A$ (WT) staying fixed at 0. In MG, the black point is already the maximum so all params must be negative w.r.t. it. The ZSG demonstrates how to increase along the $A$ param dimension, a decrease along $G$ or some other dimension must be incurred, such that the params continue to sum to 0.
 
 ## All-order interaction models
@@ -73,24 +73,24 @@ We can also write the full embedding then as a tensor product (**??**) over posi
 ## Parametric family of gauges
 Define two parameters, $\lambda \in \mathbb{R}_+$ (how much higher vs. lower order sequence features are penalized[^5]) and $p \in \Delta^{20^L}$ (probability distribution on sequence space governing how strongly the AAs @ each position are penalized) assumed to be of the form $p(s) = \prod_{l=1}^{L} p_l^{s_l}$.
 We can write out the gauge space and the full parametric gauge as a tensor product, but this is a bit beyond me atm. This includes an explicit formula for $P$, and we can also define $\Lambda$ similarly.
-$\lambda$ is involved in $\Lambda$ raised to the order power ($\lambda^{o(s')}$) which is how it concretely modulates penalties depending on order; $\lambda = 1$ yields equal weighting, $\lambda \lt 1$ yields more penalty on lower-order terms, and $\lambda \gt 1$ more penalty on higher-order terms. $p(s)$ provides a weight in the usual (scalar) way. ![[Pasted image 20250124005751.png|200]]
+$\lambda$ is involved in $\Lambda$ raised to the order power ($\lambda^{o(s')}$) which is how it concretely modulates penalties depending on order; $\lambda = 1$ yields equal weighting, $\lambda \lt 1$ yields more penalty on lower-order terms, and $\lambda \gt 1$ more penalty on higher-order terms. $p(s)$ provides a weight in the usual (scalar) way. ![image](img/Pasted image 20250124005751.png)
 
 ## Trivial gauge
-Choose $\lambda = 0$. Then all params of order $\lt L$ are 0, and the function value is just the full-order parameter for each sequence. $p$ plays no role. This is effectively a look up table. ![[Pasted image 20250124005824.png|150]]
+Choose $\lambda = 0$. Then all params of order $\lt L$ are 0, and the function value is just the full-order parameter for each sequence. $p$ plays no role. This is effectively a look up table. ![image](img/Pasted image 20250124005824.png)
 
 ## Euclidean gauge
 Choose $\lambda=\alpha$ (the size of alphabet), $p$ the uniform distribution.
-This makes the penalizing norm simply the standard $L_2$ norm.![[Pasted image 20250124005845.png|150]]
+This makes the penalizing norm simply the standard $L_2$ norm.![image](img/Pasted image 20250124005845.png)
 Still don’t understand comments about orthogonality.
 Corresponds to $L_2$ regularization where $\Lambda$ is a positive multiple of identity.
 *What degrees of freedom is this removing? How to think about?*
 
 ## Equitable gauge
 Choose $\lambda=1$, let $p$ vary. This gauge penalizes parameters relative to how many times they’re used, i.e., in the space of landscape contributions instead of directly in parameter space.
-![[Pasted image 20250124005910.png|400]]
+![image](img/Pasted image 20250124005910.png)
 
 ## Hierarchical gauge
-$\lambda \rightarrow \infty$, let $p$ vary. In this gauge, params obey the *marginalization* property:![[Pasted image 20250124010225.png|200]]
+$\lambda \rightarrow \infty$, let $p$ vary. In this gauge, params obey the *marginalization* property:![image](img/Pasted image 20250124010225.png)
 
 ### Implications of marginalization property
 1) The mean activity over sequences matched by regex $s'$ can be expressed as a simple sum of params. See examples for more detail. This means that the params can be expressed as differences of average values. Can interpret params as average mutational effect, given sequences are drawn from $p$, beyond lower-order epistatic effects. *This gauge corresponds to ANOVA decomposition*.
@@ -98,8 +98,8 @@ $\lambda \rightarrow \infty$, let $p$ vary. In this gauge, params obey the *marg
 3) Preserves form of OHE models (equivalent to all-order interaction models, fixing certain params to 0), “hierarchical models”, including all-up-to-order-$r$ models and nearest-neighbor interaction models (??). Guaranteed to give params where “appropriate entries” fixed to 0 still.
 
 ### Zero-sum gauge (ZSG)
-$p$ is the uniform distribution. When $p$ is uniform, Eq. 24 (shown @ [[#Hierarchical gauge]]) simply becomes the sum of params (equaling 0).
-Does this gauge have a clear interpretation, similar to [[#WT, generalized WT gauges]]?
+$p$ is the uniform distribution. When $p$ is uniform, Eq. 24 (shown @ [Hierarchical-gauge](#Hierarchical-gauge)) simply becomes the sum of params (equaling 0).
+Does this gauge have a clear interpretation, similar to [WT,-generalized-WT-gauges](#WT,-generalized-WT-gauges)?
 → I believe this can be thought of as setting $\theta_0$ to be the average, such that all params quantify the effect of mutations relative to the average (which of course, isn’t super interpretable).
 
 ### WT, generalized WT gauges
@@ -107,7 +107,7 @@ $p$ approaches delta distribution around some WT sequence → only the params ma
 The **generalization** is allowing $p$ to put mass on multiple alleles at each position, with the stipulation being that some alleles are still set to 0 mass.
 
 # Applications (p 6-?)
-![[Pasted image 20250124014435.png|400]]
+![image](img/Pasted image 20250124014435.png)
 $p$ is uniform distribution, plot in B varies $\lambda$. Hierarchical gauge corresponds to ZSG here, notice symmetry about 0. Also notice that the lower orders have more spread about zero, and higher orders have less spread about 0. Euclidean gauge has all orders distributed roughly equally about 0. Equitable gauge has most spread for highest-order (pink), decreasing to lowest order. Trivial gauge of course sets everything except the highest order terms to 0, and these are set to their function values.
 
 Fig. 5 is also cool proof of concept: converting into linear additive model in certain localities captures almost all of the variance in that locality. While uniformly sampled sequences w/ uniform additive model have $R^2=.59$, the region-specific ones have close to 1 on sequences from that region.
@@ -115,7 +115,9 @@ Fig. 5 is also cool proof of concept: converting into linear additive model in c
 # Connections
 Companion paper: [Symmetry, gauge freedoms, and the interpretability of sequence-function relationships \| bioRxiv](https://www.biorxiv.org/content/10.1101/2024.05.12.593774v2)
 
-# Misc.
+# Relevance
+See [Walsh-Hadamard Transform](dne.md). WHT generally use a WT-reference gauge by default, but there hasn’t been much discussion / awareness of gauges in this literature so far.
+
 # Footnotes
 
 [^1]: Note that $g$ is in the same space as $\theta$.

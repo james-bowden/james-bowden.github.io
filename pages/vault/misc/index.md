@@ -5,7 +5,5 @@ layout: obs
 
 ## misc
 
-[trial publish](trial publish)
-
-[yogas](yogas)
+[**img**](img)
 

@@ -7,13 +7,11 @@ layout: obs
 
 [**atomic**](atomic)
 
-[**blog**](blog)
-
-[**Features**](Features)
-
-[**for_self**](for_self)
+[**javascripts**](javascripts)
 
 [**lists**](lists)
 
 [**misc**](misc)
+
+[**zz_archived**](zz_archived)
 

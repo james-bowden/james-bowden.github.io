@@ -211,15 +211,12 @@ def handle_image(path, title, s):
 
 	# Copy image to repo
 	os.makedirs(f'{path}/img', exist_ok=True)
-	# img_path = VAULT_PATH + path.split('/pages/vault')[-1]
-	title = 'Discrete Flow Model Notes' # NOTE: remove
-	img_path_search = glob(f'{VAULT_PATH}/**/{title}.md', recursive=True)
+	img_path_search = glob(f'{VAULT_PATH}/**/{title}', recursive=True)
 	for p in img_path_search:
 		if SITE_PATH in p:
 			continue
 		else:
 			img_path = '/'.join(p.split(title)[:-1])
-	# print(img_path)
 	shutil.copy(f'{img_path}/img/{embed}', f'{path}/img/{embed}')
 
 	return f'[image](img/{embed})'
@@ -233,7 +230,7 @@ def handle_embeds(path):
 		if len(content) == 0: return
 		
 		parent_dir = '/'.join(path.split('/')[:-1])
-		title = path.split('/')[-1] #.split('.')[0]
+		title = path.split('/')[-1]
 
 		# find embeds (links, images); leave ! as is. 
 		pattern = r'\[\[.*?\]\]'
@@ -256,9 +253,8 @@ def handle_embeds(path):
 		
 	except FileNotFoundError:
 		print(f"Error: Could not find {path}")
-	# except Exception as e:
-	# 	print(f"An error occurred: {str(e)}")
-	# 	print(path)
+	except Exception as e:
+		print(f"An error occurred: {str(e)}; path: {path}")
 	
 
 def sync_index(verbose=False):
@@ -316,8 +312,8 @@ if __name__ == "__main__":
 
 	# maybe make a separate csv that gets edited?
 	sync(f'{VAULT_PATH}/__ref/yogas.md', 'lists')
-	sync(f'{VAULT_PATH}/__ref/Engagement Queue.md', 'for_self')
-	sync(f'{VAULT_PATH}/__ref/Engagement List — Hum.md', 'for_self')
+	sync(f'{VAULT_PATH}/__ref/Engagement Queue.md', 'lists')
+	sync(f'{VAULT_PATH}/__ref/Humanities Engagement List.md', 'lists')
 
 	# Formatting files
 	[edit_layout(f) for f in glob(f'{DIR_PATH}/**/*.md', recursive=True)]

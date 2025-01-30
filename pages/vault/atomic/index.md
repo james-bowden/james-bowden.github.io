@@ -5,19 +5,23 @@ layout: obs
 
 ## atomic
 
-[organizing_principle](^organizing_principle)
+[**img**](img)
 
-[CTMC Notes](CTMC Notes)
+---
 
-[DFM Notes](DFM Notes)
+[**organizing_principle**](^organizing_principle)
 
-[Discrete Flow Model Notes](Discrete Flow Model Notes)
+[Continuous Time Markov Chain](Continuous Time Markov Chain)
 
-[Flow Matching Notes](Flow Matching Notes)
+[Discrete Flow Models](Discrete Flow Models)
+
+[dne](dne)
+
+[Flow Matching](Flow Matching)
 
 [Gauges](Gauges)
 
-[gWHT Notes](gWHT Notes)
+[Generalized Walsh-Hadamard Transform](Generalized Walsh-Hadamard Transform)
 
-[WHT Notes](WHT Notes)
+[Walsh-Hadamard Transform](Walsh-Hadamard Transform)
 
