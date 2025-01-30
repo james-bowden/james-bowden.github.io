@@ -154,7 +154,7 @@ def add_anchors(path):
 		for i, line in enumerate(content):
 			if line[0] == '#':
 				sp = line.find(' ') # index of first space after #, ####...
-				anchor = line.replace('#', '').replace(' ', '-').strip()
+				anchor = line.replace('#', '').strip().replace(' ', '-')
 				# if anchor in used_anchors:
 				# 	for i in range(1, 100):
 				# 		sugg = anchor + '-' + str(i)

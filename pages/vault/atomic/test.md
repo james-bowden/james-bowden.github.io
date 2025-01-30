@@ -11,21 +11,21 @@ tags:
   - flow_model
 ---
 
-# <a name="-[Generative-Flows-on-Discrete-State-Spaces:-Enabling-Multimodal-Flows-with-Applications-to-Protein-Co-Design](https://arxiv.org/abs/2402.04997)"></a> [Generative Flows on Discrete State-Spaces: Enabling Multimodal Flows with Applications to Protein Co-Design](https://arxiv.org/abs/2402.04997)
+# <a name="[Generative-Flows-on-Discrete-State-Spaces:-Enabling-Multimodal-Flows-with-Applications-to-Protein-Co-Design](https://arxiv.org/abs/2402.04997)"></a> [Generative Flows on Discrete State-Spaces: Enabling Multimodal Flows with Applications to Protein Co-Design](https://arxiv.org/abs/2402.04997)
 Andrew Campbell, Jason Yim, Regina Barzilay, Tom Rainforth, Tommi Jaakkola
 
 ICML 2024
 
-# <a name="-Overview"></a> Overview
+# <a name="Overview"></a> Overview
 Want multimodal (i.e., continuous AND discrete together) for co-generation (of structure AND sequence at same time). Define a probability flow (continuous), $p_t$, which linearly interpolates from noise to data. To sample $x_t$, simply simulate a sequence based on $p_t$ by using a denoising NN. Can adjust CTMC stochasticity level at inference time, as opposed to prior works.
 
 ![image](img/Pasted image 20250116141624.png)![image](img/Pasted image 20250116191526.png)
 
-# <a name="-5-Min-overview-of-the-setup--->-key-idea"></a> 5 Min overview of the setup --> key idea
+# <a name="5-Min-overview-of-the-setup--->-key-idea"></a> 5 Min overview of the setup --> key idea
 Diffusion works well for modeling continuous state spaces, but we’d like to extend this to discrete spaces so we can model sequences. In particular, we have good continuous-space generative models for e.g., structure. One thing we’d like to do is have a joint generative model over structure *and* sequence (develop through time together / aware of each other)[^1]. Currently, we have to do one or the other, and then conditional generation[^2].
 Previous works on discrete diffusion are generally in discrete time[^3] as well. This paper generalizes these to increase flexibility at sampling time, which can then improve performance.
 
-# <a name="-5-Min-overview-REVISED"></a> 5 Min overview REVISED
+# <a name="5-Min-overview-REVISED"></a> 5 Min overview REVISED
 We want to use flow modeling (b/c flexible for sampling and empirically has improved over diffusion) and we want to do co-generation of protein structure and sequence at the same time. Continuous state space flow models already exist.
 
 The primary contributions of this paper is to introduce a discrete state-space flow model and then train it together with a continuous state space flow for protein co-generation.
@@ -43,7 +43,7 @@ Once we have a discrete flow model, we simply add another head to an existing st
 They show that compared to earlier co-generation attempts, they get much more designable and diverse sequences.
 On structure only generation task, does better than earlier co-generation attempts and RFdiffusion, whether you get to sample (inv-fold) more or fewer sequences. This is measured w/ self-consistency so not super surprising.
 
-# <a name="-5-Min-overview-REVISED-2"></a> 5 Min overview REVISED 2
+# <a name="5-Min-overview-REVISED-2"></a> 5 Min overview REVISED 2
 We want to use flow modeling (b/c flexible for sampling and empirically has improved over diffusion) and we want to do co-generation of protein structure and sequence at the same time. Continuous state space flow models already exist.
 
 The primary contributions of this paper is to introduce a discrete state-space flow model and then train it together with a continuous state space flow for protein co-generation.
@@ -61,7 +61,7 @@ Once we have a discrete flow model, we simply add another head to an existing st
 They show that compared to earlier co-generation attempts, they get much more designable and diverse sequences.
 On structure only generation task, does better than earlier co-generation attempts and RFdiffusion, whether you get to sample (inv-fold) more or fewer sequences. This is measured w/ self-consistency so not super surprising.
 
-# <a name="-TODO"></a> TODO
+# <a name="TODO"></a> TODO
 Think more about [Guidance-of-multimodal-model](#Guidance-of-multimodal-model).
 
 ~~scan invariant point attention~~
@@ -89,7 +89,7 @@ scan “Formulating discrete probability flow through optimal transport”; also
 
 ![Flow Matching Notes#^3953ec](dne.md)
 
-# <a name="-Plausible-questions"></a> Plausible questions
+# <a name="Plausible-questions"></a> Plausible questions
 - Explain the experiments
 - Write and explain Kolmogorov equation
 - How does detailed balance relate to the Kolmogorov equation?
@@ -142,8 +142,8 @@ scan “Formulating discrete probability flow through optimal transport”; also
 	- The Kolmogorov equations are defined for $R$, not $Q$, and easier to not convert back and forth.
 	- The rate matrix can be easily converted to $Q$ by picking a (small enough) $dt$ and multiplying, and this allows us to very flexibly choose what period / resolution we want transition probabilities over. If we parameterized $Q$, we’d need an infinite sequence, and would have to take a derivative (e.g., finite elements) on $Q$ to get $R_t$, which may not have the expressivity we’d desire. Using $R$ allows us to easily use samplers of different resolutions (if $R$ is small, can have larger time steps), whereas for $Q$ we’d have to look at the change (i.e., the rate matrix) to determine how sampling is permitted. Sort of like parameterizing the derivative instead of the function, and in practice we don’t have to integrate to get the function back because we just use FD approximations.
 
-## <a name="-From-Perplexity"></a> From Perplexity
-### <a name="-Conceptual-Questions"></a> Conceptual Questions
+## <a name="From-Perplexity"></a> From Perplexity
+### <a name="Conceptual-Questions"></a> Conceptual Questions
 
 1. What is the main contribution of Discrete Flow Models (DFMs) to the field of generative modeling?
 2. How do DFMs differ from existing discrete diffusion models?
@@ -156,7 +156,7 @@ scan “Formulating discrete probability flow through optimal transport”; also
 9. What is the rationale behind using Continuous Time Markov Chains (CTMCs) in the development of DFMs?
 10. How does the sampling flexibility of DFMs contribute to their potential advantages in multimodal problems?
 
-### <a name="-Technical-Questions"></a> Technical Questions
+### <a name="Technical-Questions"></a> Technical Questions
 
 1. Explain the mathematical relationship between the generative flow pt and the conditional flow pt|1 in DFMs1.
 2. Derive the Kolmogorov equation for a CTMC and explain its significance in the context of DFMs1.
@@ -170,9 +170,9 @@ scan “Formulating discrete probability flow through optimal transport”; also
 9. How is the denoising distribution pθ 1|t(x1|xt) approximated and used in the sampling process of DFMs1?
 10. Describe the mathematical formulation of CTMC stochasticity and how it affects the sampling process in DFMs1.
 
-## <a name="-From-chatGPT"></a> From chatGPT
+## <a name="From-chatGPT"></a> From chatGPT
 
-### <a name="-**Conceptual-Questions**"></a> **Conceptual Questions**
+### <a name="**Conceptual-Questions**"></a> **Conceptual Questions**
 
 1. What is the primary motivation behind developing Discrete Flow Models (DFMs)?
 2. How do DFMs address the limitations of discrete diffusion models such as D3PM?
@@ -185,7 +185,7 @@ scan “Formulating discrete probability flow through optimal transport”; also
 9. How does the paper address the trade-off between diversity and designability in protein generation?
 10. Discuss the implications of using data distillation and synthetic data for improving Multiflow's performance.
 
-### <a name="-**Technical-Questions**"></a> **Technical Questions**
+### <a name="**Technical-Questions**"></a> **Technical Questions**
 
 1. Derive the Kolmogorov equation for CTMCs and explain its significance in defining probability flows.
 2. How does the proposed rate matrix Rt(xt,j∣x1)R_t(x_t, j|x_1)Rt​(xt​,j∣x1​) ensure that the conditional flow pt∣1(xt∣x1)p_{t|1}(x_t|x_1)pt∣1​(xt​∣x1​) is generated correctly?
@@ -198,8 +198,8 @@ scan “Formulating discrete probability flow through optimal transport”; also
 9. How does the paper validate the effectiveness of DFMs using text modeling experiments? What metrics are used for evaluation?
 10. What modifications were made to the FrameFlow architecture to support amino acid prediction in Multiflow?
 
-# <a name="-Intro,-background-(p-1-3)"></a> Intro, background (p 1-3)
-## <a name="-Motivations"></a> Motivations
+# <a name="Intro,-background-(p-1-3)"></a> Intro, background (p 1-3)
+## <a name="Motivations"></a> Motivations
 Diffusion models are a good starting point for co-generation in that we can define them on both continuous and discrete state spaces (more on this in [Previous-work-on-discrete-flows/diffusion-in-discrete-time](#Previous-work-on-discrete-flows/diffusion-in-discrete-time)).
 Sampling flexibility is bad on diffusion models in general, hard to find optimal parameters and generally have to retrain b/c the time discretization @ training is tied to the discretization you can use @ sampling. This is hard for single modalities, so we might expect it to be even more complex for multiple modalities. Don’t want to do this if possible.
 However, we also have flow-based models as a sort of analog / alternative to diffusion. These increase sampling flexibility and so can generally improve over diffusion, and are also a simpler framework. However, there aren’t previous works defining flow-based models on discrete spaces. I think what happens here is they combine the idea from argmax flows (having an underlying continuous-space flow that gets converted to discrete trajectory somehow; however, this is in discrete time and the conversion is literal argmax operation) with flow-based modeling in continuous time of discrete probability mass functions (which discreteness makes them finite-dimensional vectors that are still continuous-valued).
@@ -207,26 +207,26 @@ The goals are
 1) allow for sampling flexibility sans retraining
 2) allow simple combination w/ continuous-space flows —> multimodal
 
-## <a name="-Previous-work-on-discrete-flows/diffusion-in-discrete-time"></a> Previous work on discrete flows/diffusion in discrete time
+## <a name="Previous-work-on-discrete-flows/diffusion-in-discrete-time"></a> Previous work on discrete flows/diffusion in discrete time
 ![Argmax flows, multinomial diffusion notes#[Argmax Flows and Multinomial Diffusion Learning Categorical Distributions](https //proceedings.neurips.cc/paper/2021/hash/67d96d458abdef21792e6d8e590244e7-Abstract.html)](dne.md)
 ![D3PM Notes#[Structured Denoising Diffusion Models in Discrete State-Spaces](https //proceedings.neurips.cc/paper/2021/hash/958c530554f78bcd8e97125b70e6973d-Abstract.html)](dne.md)
 
-## <a name="-Previous-work-on-continuous-time-diffusion-/-flow-modeling"></a> Previous work on continuous time diffusion / flow modeling
+## <a name="Previous-work-on-continuous-time-diffusion-/-flow-modeling"></a> Previous work on continuous time diffusion / flow modeling
 
 ![Flow Matching Notes#[Flow Matching for Generative Modeling](https //arxiv.org/abs/2210.02747)](dne.md)
 
 ![Flow Matching Notes#^b833ff](dne.md)
 
-## <a name="-CTMC-setup"></a> CTMC setup
+## <a name="CTMC-setup"></a> CTMC setup
 ![CTMC Notes](dne.md)
 
-# <a name="-Discrete-Flow-Models-(p-3-?)"></a> Discrete Flow Models (p 3-?)
+# <a name="Discrete-Flow-Models-(p-3-?)"></a> Discrete Flow Models (p 3-?)
 ![image](img/Pasted image 20250125175920.png)
 Map from [Flow Matching Notes](dne.md) to DFM (present).
 
 Procedure: ![image](img/Pasted image 20250125191524.png)
 
-## <a name="-DFM-Definition"></a> DFM Definition
+## <a name="DFM-Definition"></a> DFM Definition
 
 **Key idea:** parameterize a continuous-time *probability flow* (a la [CTMC Notes](dne.md); [Flow Matching Notes](dne.md)); this flow will operate on probability mass vectors (also continuous-valued) that represent transition probabilities for a discrete data distribution. In this way, we can have a discrete data generative model that’s parameterized with all continuous underlying probabilities and flows[^4].
 
@@ -239,12 +239,12 @@ Then, we can easily pair (how?) this with a continuous space flow model, meaning
 → **How:** (guess) have a single NN model that outputs both the rate matrix $R_t$ that generates the flow for the discrete space probability distribution and the vector field $u_t$ that generates the flow for the continuous space distribution.
 » No, rate matrix will actually be chosen ([Choice-of-rate-matrix](#Choice-of-rate-matrix)). We will parameterize the conditional flow $p_{1|t}(x_1|x_t)$ instead. MORE INFO…
 
-### <a name="-Previous-confusion,-cleared-up-/-no-longer-relevant"></a> Previous confusion, cleared up / no longer relevant
+### <a name="Previous-confusion,-cleared-up-/-no-longer-relevant"></a> Previous confusion, cleared up / no longer relevant
 I still really don't understand why we need both the rate matrix and the probability flow. If they're defined in terms of each other, isn't only one sufficient? Practically, are there two different things being learned, or is it just one of them and the other is always calculated from the other (even if in expectation)?
 → see [Flow Matching Notes](dne.md).
 
-## <a name="-DFM-Implementation-details"></a> DFM Implementation details
-### <a name="-How-do-we-define-$p_{t|1}$-(“noising-process”-analog)?"></a> How do we define $p_{t|1}$ (“noising process” analog)?
+## <a name="DFM-Implementation-details"></a> DFM Implementation details
+### <a name="How-do-we-define-$p_{t|1}$-(“noising-process”-analog)?"></a> How do we define $p_{t|1}$ (“noising process” analog)?
 
 Multiple choices. Two examples.
 - Common properties:
@@ -260,7 +260,7 @@ where $\delta(a,b)$ returns $a == b$.
 
 Generally, MASK is used / preferred in this paper.
 
-### <a name="-DFM-Sampling"></a> DFM Sampling
+### <a name="DFM-Sampling"></a> DFM Sampling
 
 From [CTMC Notes#Kolmogorov equation](dne.md), to define $p_t(x_t)$ we need $R_t(x_t, j)$.
 Once we have $R_t(x_t, j)$, we can simulate time forward to sample from the data distribution using Eq. 3:
@@ -279,7 +279,7 @@ Given these components, we then run from $t=0$ to $t=1$ (using fixed step size $
 
 See also Appendix G.
 
-### <a name="-DFM-Training"></a> DFM Training
+### <a name="DFM-Training"></a> DFM Training
 
 Parameterize $p_{1|t}^\theta (x_t|x_1)$ w/ NN. Use cross-entropy[^6] loss of correctly reconstructing $x_1$ from $x_0$:
 $$
@@ -290,11 +290,11 @@ Notice that $p_{t|1}$ is simply noising process and doesn’t require simulation
 See Appendix C for relation btwn $L_\text{ce}$ and ELBO — how come there’s no KLD term?  <a name="2fe915"></a><br>
 Here, $x_t$ is the latent variable in the regular ELBO written as $z$. One way to write it normally is as the reconstruction term on $p(x|z)$ minus a KL term $\text{KL}(q(z|x) \;|| \;p(z))$ keeping the encoder close to the prior. However, here there’s no learned encoder — this is a defined noise process $p_{t|1}$ and so the KL term is constant / satisfied already.
 
-### <a name="-Choice-of-rate-matrix"></a> Choice of rate matrix
+### <a name="Choice-of-rate-matrix"></a> Choice of rate matrix
 
 Need to define a conditional rate matrix $R_t(x_t, j|x_1)$ to generate the conditional flow $p_{t|1}(x_t|x_1)$. Note that there are many valid choices of $R_t$, which can be built from the base described below, which are elaborated on in [Detailed-balance](#Detailed-balance). At inference time, choose the rate matrix that performs best b/c can change them out for free.
 
-#### <a name="-Basic-rate-matrix:"></a> Basic rate matrix:
+#### <a name="Basic-rate-matrix:"></a> Basic rate matrix:
 
 Notice that we need not define the rate matrix for the $x_t=j$ case because this is just the negative sum of all the other entries in the row[^7]. Define for $x_t \neq j$:
 $$
@@ -306,7 +306,7 @@ Interpretation: if $\partial_tp_{t|1}(j|x_1) \; \gt \; \partial_tp_{t|1}(x_t|x_1
 
 How do we know that $R_t^*$ generates $p_{t|1}(x_t|x_1)$? We can plug $R_t^*$ into the [CTMC Notes#Kolmogorov equation](dne.md). Relies on assuming that any states with zero probability mass also have time-derivative of 0 (cannot recover from 0 mass state)[^9].  <a name="4b1ac6"></a><br>
 We can substitute in the forms for noising processes to get![image](img/Pasted image 20250125185616.png)  <a name="361e45"></a><br>
-#### <a name="-Detailed-balance"></a> Detailed balance
+#### <a name="Detailed-balance"></a> Detailed balance
 
 To generate other valid rate matrices from $R_t^*$:
 ![image](img/Pasted image 20250125185847.png)
@@ -342,23 +342,23 @@ Importantly, **a CTMC is reversible iff DB is satisfied for every pair of states
 
 In this work, DB is mainly to increase inference time flexibility, since it allows a set of rate matrices to be used instead of just one, and specifies what set of rate matrices is allowed. These rate matrices have to have the same stationary distribution, but can be larger or smaller absolutely such that more transitions happen or fewer.
 
-#### <a name="-What-are-other-reasonable-choices-of-rate-matrix?"></a> What are other reasonable choices of rate matrix?
+#### <a name="What-are-other-reasonable-choices-of-rate-matrix?"></a> What are other reasonable choices of rate matrix?
 
 From “A Continuous Time Framework for Discrete Denoising Models” SI:
 1) Uniform rate matrix
 2) absorbing state process rate matrix
 These just sound like the noising processes… in fact, they are. how do they differ from the formulations above in [Basic-rate-matrix](#Basic-rate-matrix)?
 
-#### <a name="-CTMC-stochasticity"></a> CTMC stochasticity
+#### <a name="CTMC-stochasticity"></a> CTMC stochasticity
 
 Large $\eta$ —> large exchanges of probability mass between states —> more frequent jumps —> short auto-correlation time; high unpredictability of future states from current states.
 
 Smaller $\eta$ may be more efficient — fewer jumps, avoiding needless exchanges of mass that will be reversed/undone later anyway[^10]. See Appendix E; unsure why statement made about assumptions is relevant.  <a name="7bb7a5"></a><br>
 Expect that there’s some optimal stochasticity level[^11], but we don’t know how to set. Probably just use empirics.
 
-# <a name="-Multimodal-protein-generative-model-(structure-+-sequence)"></a> Multimodal protein generative model (structure + sequence)
+# <a name="Multimodal-protein-generative-model-(structure-+-sequence)"></a> Multimodal protein generative model (structure + sequence)
 
-## <a name="-Multiflow-setup"></a> Multiflow setup
+## <a name="Multiflow-setup"></a> Multiflow setup
 
 Will use Frameflow, which acts on backbone atomic coordinates of each residue[^12]. Residues are represented in SE(3). Let a protein of length $D$ be represented as $\{T_d\}_{d=1}^D$ where $T_d = (x^d,\;r^d,\; a^d)$. $x \in \mathbb{R}^3$ is translation of residue’s $\alpha$-carbon (from origin in global frame?), $r \in \text{SO}(e)$ is a rotation matrix of the residue local frame w.r.t. global ref. frame, $a \in \{1,…,20, M\}$ is AA sequence + MASK token.
 
@@ -379,7 +379,7 @@ We can get unconditional velocities the same way we get unconditional rate matri
 
 We can also use different noise levels for the structure and for the sequence, which will enable flexible sampling (not always tied together). These noise levels will be sampled independently during [Multiflow-training](#Multiflow-training).
 
-## <a name="-Multiflow-training"></a> Multiflow training
+## <a name="Multiflow-training"></a> Multiflow training
 
 Network takes as input noised protein $T_t$ and predicts denoised translations $\hat{x}_1$, rotations $\hat{r}_1$, amino acid distribution $p_\theta$. (is this all one network?) We can then parameterize unconditional velocities and rate matrix in terms of these (these are different from eq 15, 16, revisit to understand).
 
@@ -389,34 +389,34 @@ which is basically denoising MSE + DFM cross-entropy.
 
 They find that designability is lower than PMPNN, and actually PMPNN produces more designable sequences than PDB. To make the comparison more fair, they “distill” PMPNN into the model by replacing each sequence in training dataset with the best fit[^15] of 8 sequences generated by PMPNN from the paired structure
 
-## <a name="-Multiflow-implementation-details"></a> Multiflow implementation details
+## <a name="Multiflow-implementation-details"></a> Multiflow implementation details
 
 Modified from Frameflow NN architecture: larger transformer, smaller IPA, extra MLP head to predict AA logits. So yes, all same NN w/ different heads.
 $$
 \hat{f}: T_t^d \mapsto [\hat{x}_1^d \;|\;\hat{r}_1^d \;|\;p_\theta(a_1^d)]
 $$
 
-## <a name="-Multiflow-sampling"></a> Multiflow sampling
+## <a name="Multiflow-sampling"></a> Multiflow sampling
 
 Take learned **un**conditional rate matrices, velocities. Plug into simulating equations below:
 ![image](img/Pasted image 20250126205742.png)
 
 Note use of exponential rate schedule for rotations (I believe following FrameFlow).
 
-### <a name="-Purity-sampling"></a> Purity sampling
+### <a name="Purity-sampling"></a> Purity sampling
 
 Also used purity sampling to decide which indices of AAs to unmask at each step.
 
 Purity sampling is used in discrete diffusion literature to decide order to unmask tokens in the reverse process. This is because the probability of unmasking any token is constant at a given timestep. This stems from the fact that in the forward noising process, the probability of going to mask is also generally constant at a given timestep (increases as time goes on). However, we have intuition that some positions will have higher confidence on what they should unmask to, and it would be better to do these first. We define purity, and then importance sample w.r.t. it. Empirically, purity correlates well w/ accuracy at various time steps during diffusion (Fig. 1 of “Improved Vector Quantized Diffusion Models”).
 ![image](img/Pasted image 20250126212548.png)
 
-### <a name="-Conditional-inpainting"></a> Conditional inpainting
+### <a name="Conditional-inpainting"></a> Conditional inpainting
 
 Because the timestep is untethered between structure and sequence, can simply set structure or sequence and $t=1$ for that model and then sample the other.
 
-# <a name="-Related-work"></a> Related work
+# <a name="Related-work"></a> Related work
 
-## <a name="-Discrete-diffusion"></a> Discrete diffusion
+## <a name="Discrete-diffusion"></a> Discrete diffusion
 
 This work generalizes them, you can write others as DFM (see Appendix H).
 
@@ -424,7 +424,7 @@ Benefit is that noising processes are more general b/c you can write down $p_{t|
 
 We can also choose the rate matrix at inference time, instead of being stuck reversing (discrete) time.
 
-## <a name="-Protein-design"></a> Protein design
+## <a name="Protein-design"></a> Protein design
 
 Class of works like RFDiffusion that only do structure or only do sequence, and have to rely on AlphaFold / inverse folding to get the other afterward.
 
@@ -433,20 +433,20 @@ Other co-generation attempts:
 2) protpardelle diffuses over structure and at each step predicts sequence
 3) some existing co-design methods but only for CDR region of antibodies / one doesn’t report standard metrics or code (I think it has two separate diffusion processes; the sequence one gets conditioned on structure)
 
-# <a name="-Experiments"></a> Experiments
+# <a name="Experiments"></a> Experiments
 
 Don’t really show concrete results for how sampling flexibility for sequence and structure buys anything.
 Shows one result which is that changing stochasticity ($\eta$) for sequence changes the alpha/beta sheets (secondary structure), which does demonstrate some seq/struct interaction.
 
-# <a name="-Connections"></a> Connections
-## <a name="-Guidance-of-multimodal-model"></a> Guidance of multimodal model
+# <a name="Connections"></a> Connections
+## <a name="Guidance-of-multimodal-model"></a> Guidance of multimodal model
 How would you do guidance properly if you have a flow for both structure and sequence? Following intuition that sequence generates function, but structure is an intermediary.
 Further in [Multimodal guidance](dne.md).
 See also ![Potential directions 01_24_2025#^f493f1](dne.md)
 
-# <a name="-Misc."></a> Misc.
+# <a name="Misc."></a> Misc.
 
-# <a name="-Footnotes"></a> Footnotes
+# <a name="Footnotes"></a> Footnotes
 
 [^1]: One failure mode for a sequence generative model is generating a sequence that won’t fold or be stable; this information may be much more easily learnable / accessible through a structure generation model. And a structure generated may not be fully compatible with the fact that it must then be converted into AA sequence. Or maybe we want to be able to condition / control generation through the sequence or the structure or both, and this would be difficult if only generating in the space of one or the other — either can’t do it, constrain during conditional generation stage (may be too late), etc.
 [^2]: Note also that we generally want to guide / condition toward some *function*, which for proteins we know is determined by the sequence but mediated by the structure. Therefore, having both information together should lend itself to more effective guidance.
