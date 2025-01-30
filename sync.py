@@ -9,8 +9,8 @@ DIR_PATH = f'{VAULT_PATH}/{SITE_PATH}/pages/vault'
 URL = f'https://{SITE_PATH}/pages/vault'
 
 SKIPS_INDEX = [
-	'/img',
-	'/javascripts',
+	'img',
+	'javascripts',
 	'dne.md',
 ]
 
@@ -106,8 +106,10 @@ def write_index(source):
 		for line in content:
 			if '|index]]' in line: continue
 			if '[[' in line:
+				skip = False
 				for pattern in SKIPS_INDEX:
-					if pattern in line: continue
+					if pattern in line: skip = True
+				if skip: continue
 				link = line.split('|')[0].replace('[[', '').replace(']]', '').replace(SITE_PATH, '').strip().strip('/')
 				if '/_index_' in link:
 					link = link.split('/')[-2]

@@ -7,8 +7,6 @@ layout: obs
 
 [**atomic**](atomic)
 
-[**javascripts**](javascripts)
-
 [**lists**](lists)
 
 [**misc**](misc)

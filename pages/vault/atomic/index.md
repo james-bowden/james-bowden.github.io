@@ -5,10 +5,6 @@ layout: obs
 
 ## atomic
 
-[**img**](img)
-
----
-
 [**organizing_principle**](^organizing_principle)
 
 [Continuous Time Markov Chain](Continuous Time Markov Chain)

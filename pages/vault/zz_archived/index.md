@@ -9,8 +9,6 @@ layout: obs
 
 [**Features**](Features)
 
-[**img**](img)
-
 ---
 
 [trial publish](trial publish)
