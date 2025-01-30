@@ -27,7 +27,9 @@ def write_index(source):
 			if '[[' in line:
 				link = line.split('|')[0].replace('[[', '').replace(']]', '').replace(SITE_PATH, '').strip().strip('/')
 				if '/_index_' in link:
-					link = '/'.join(link.split('/')[:-1])
+					link = link.split('/')[-2]
+				else: # relative path for files means only have to specify the file name
+					link = link.split('/')[-1] 
 				text = line.split('|')[1].replace('[[', '').replace(']]', '').replace('/n', '').strip()
 				if '_index_' in text:
 					text = text.replace('_index_', '')

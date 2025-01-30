@@ -1,10 +1,10 @@
 ### misc
 
-[**img**](pages/vault/misc/img)
+[**img**](img)
 
 ---
 
-[trial publish](pages/vault/misc/trial publish)
+[trial publish](trial publish)
 
-[yogas](pages/vault/misc/yogas)
+[yogas](yogas)
 

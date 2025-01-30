@@ -1,6 +1,10 @@
 ---
 date created: Thursday, January 16th 2025, 2:22:26 pm
 date modified: Monday, January 27th 2025, 4:12:56 pm
+tags:
+  - epistasis
+  - WHT
+  - atomic
 ---
 
 # [An extension of the Walsh-Hadamard transform to calculate and model epistasis in genetic landscapes of arbitrary shape and complexity \| PLOS Computational Biology](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012132)

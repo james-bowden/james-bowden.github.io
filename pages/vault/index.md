@@ -1,18 +1,18 @@
 ### vault
 
-[**atomic**](pages/vault/atomic)
+[**atomic**](atomic)
 
-[**blog**](pages/vault/blog)
+[**blog**](blog)
 
-[**Features**](pages/vault/Features)
+[**Features**](Features)
 
-[**for_self**](pages/vault/for_self)
+[**for_self**](for_self)
 
-[**javascripts**](pages/vault/javascripts)
+[**javascripts**](javascripts)
 
-[**lists**](pages/vault/lists)
+[**lists**](lists)
 
-[**misc**](pages/vault/misc)
+[**misc**](misc)
 
-[**Topic 1**](pages/vault/Topic 1)
+[**Topic 1**](Topic 1)
 

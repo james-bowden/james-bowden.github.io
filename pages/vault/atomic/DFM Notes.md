@@ -1,6 +1,12 @@
 ---
 date created: Wednesday, January 15th 2025, 8:45:43 pm
-date modified: Wednesday, January 29th 2025, 2:42:20 pm
+date modified: Wednesday, January 29th 2025, 4:45:44 pm
+tags:
+  - atomic
+  - discrete_data
+  - CTMC
+  - generation
+  - flow_model
 ---
 
 # [Generative Flows on Discrete State-Spaces: Enabling Multimodal Flows with Applications to Protein Co-Design](https://arxiv.org/abs/2402.04997)

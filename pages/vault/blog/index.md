@@ -1,4 +1,4 @@
 ### blog
 
-[**posts**](pages/vault/blog/posts)
+[**posts**](posts)
 

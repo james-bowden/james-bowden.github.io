@@ -1,10 +1,10 @@
 ### Features
 
-[LaTeX Math Support](pages/vault/Features/LaTeX Math Support)
+[LaTeX Math Support](LaTeX Math Support)
 
-[math](pages/vault/Features/math)
+[math](math)
 
-[Mermaid Diagrams](pages/vault/Features/Mermaid Diagrams)
+[Mermaid Diagrams](Mermaid Diagrams)
 
-[Text Formatting](pages/vault/Features/Text Formatting)
+[Text Formatting](Text Formatting)
 

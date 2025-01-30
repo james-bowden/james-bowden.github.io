@@ -1,4 +1,4 @@
 ### posts
 
-[hello-world](pages/vault/blog/posts/hello-world)
+[hello-world](hello-world)
 
