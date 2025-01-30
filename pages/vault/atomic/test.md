@@ -16,6 +16,8 @@ Andrew Campbell, Jason Yim, Regina Barzilay, Tom Rainforth, Tommi Jaakkola
 
 ICML 2024
 
+Did my little test work? Click here to find out: [boop](#d89e21)
+
 # <a name="Overview"></a> Overview
 Want multimodal (i.e., continuous AND discrete together) for co-generation (of structure AND sequence at same time). Define a probability flow (continuous), $p_t$, which linearly interpolates from noise to data. To sample $x_t$, simply simulate a sequence based on $p_t$ by using a denoising NN. Can adjust CTMC stochasticity level at inference time, as opposed to prior works.
 
@@ -29,6 +31,8 @@ Previous works on discrete diffusion are generally in discrete time[^3] as well.
 We want to use flow modeling (b/c flexible for sampling and empirically has improved over diffusion) and we want to do co-generation of protein structure and sequence at the same time. Continuous state space flow models already exist.
 
 The primary contributions of this paper is to introduce a discrete state-space flow model and then train it together with a continuous state space flow for protein co-generation.
+
+Let's do a little test. <a name="d89e21"></a>
 
 The discrete flow model relies on two key technical contributions: rate matrix parameterization, view as CTMC and conditional flow matching loss which makes this tractable to train.
 

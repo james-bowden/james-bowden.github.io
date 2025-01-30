@@ -163,7 +163,8 @@ def add_anchors(path):
 				# 			used_anchors.add(anchor)
 				# 			break
 
-				content[i] = f'{line[:sp+1]}<a name="{anchor}"></a>{line[sp:]}'
+				# content[i] = f'{line[:sp+1]}<a name="{anchor}"></a>{line[sp:]}'
+				content[i] = f'<a name="{anchor}"></a>\n{line}'
 				continue
 			match = re.search(pattern, line, re.MULTILINE)
 			if match:
