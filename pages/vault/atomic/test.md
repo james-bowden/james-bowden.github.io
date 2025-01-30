@@ -298,7 +298,7 @@ Here, $x_t$ is the latent variable in the regular ELBO written as $z$. One way t
 
 Need to define a conditional rate matrix $R_t(x_t, j|x_1)$ to generate the conditional flow $p_{t|1}(x_t|x_1)$. Note that there are many valid choices of $R_t$, which can be built from the base described below, which are elaborated on in [Detailed-balance](#Detailed-balance). At inference time, choose the rate matrix that performs best b/c can change them out for free.
 
-#### <a name="Basic-rate-matrix:"></a> Basic rate matrix:
+#### <a name="Basic-rate-matrix"></a> Basic rate matrix:
 
 Notice that we need not define the rate matrix for the $x_t=j$ case because this is just the negative sum of all the other entries in the row[^7]. Define for $x_t \neq j$:
 $$
