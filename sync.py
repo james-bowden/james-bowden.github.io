@@ -96,7 +96,7 @@ def sync_atomic(verbose=False):
 		if DIR_PATH in f: continue
 		# in atomic folder, don't need _a_ tag too
 		shutil.copy(f, f"{DIR_PATH}/atomic/{f.split('/')[-1].replace('_a_', '')}")
-		# sync(f, 'atomic')
+		# mine any assets that should be included, and copy over too.
 
 if __name__ == "__main__":
 	sync_atomic()

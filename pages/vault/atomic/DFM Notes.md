@@ -64,7 +64,7 @@ Think more about [[#Guidance of multimodal model]].
 
 ~~scan invariant point attention~~
 
-~~Difference btwn $Q, R$ ? — why does it matter? I think they use $R$ to be analogous to $u_t(x)$ vector field in [[Continuous Flow Matching Notes]]? Wrong.~~
+~~Difference btwn $Q, R$ ? — why does it matter? I think they use $R$ to be analogous to $u_t(x)$ vector field in [[Flow Matching Notes]]? Wrong.~~
 $R$ is used so that they can have a nice relation in the Kolmogorov equation, which is defined for rate matrices and not transition matrices.
 
 ![[#^2fe915]]
@@ -85,7 +85,7 @@ scan “Formulating discrete probability flow through optimal transport”; also
 
 ~~Note that Fokker-Planck equation is the Kolmogorov forward equation.~~
 
-![[Continuous Flow Matching Notes#^3953ec]]
+![[Flow Matching Notes#^3953ec]]
 
 # Plausible questions
 - Explain the experiments
@@ -211,24 +211,24 @@ The goals are
 
 ## Previous work on continuous time diffusion / flow modeling
 
-![[Continuous Flow Matching Notes#[Flow Matching for Generative Modeling](https //arxiv.org/abs/2210.02747)]]
+![[Flow Matching Notes#[Flow Matching for Generative Modeling](https //arxiv.org/abs/2210.02747)]]
 
-![[Continuous Flow Matching Notes#^b833ff]]
+![[Flow Matching Notes#^b833ff]]
 
 ## CTMC setup
 ![[CTMC Notes]]
 
 # Discrete Flow Models (p 3-?)
 ![[Pasted image 20250125175920.png]]
-Map from [[Continuous Flow Matching Notes]] to DFM (present).
+Map from [[Flow Matching Notes]] to DFM (present).
 
 Procedure: ![[Pasted image 20250125191524.png|500]]
 
 ## DFM Definition
 
-**Key idea:** parameterize a continuous-time *probability flow* (a la [[CTMC Notes]]; [[Continuous Flow Matching Notes]]); this flow will operate on probability mass vectors (also continuous-valued) that represent transition probabilities for a discrete data distribution. In this way, we can have a discrete data generative model that’s parameterized with all continuous underlying probabilities and flows[^4].
+**Key idea:** parameterize a continuous-time *probability flow* (a la [[CTMC Notes]]; [[Flow Matching Notes]]); this flow will operate on probability mass vectors (also continuous-valued) that represent transition probabilities for a discrete data distribution. In this way, we can have a discrete data generative model that’s parameterized with all continuous underlying probabilities and flows[^4].
 
-Define conditional flow, as in [[Continuous Flow Matching Notes]]:
+Define conditional flow, as in [[Flow Matching Notes]]:
 $$
 p_t(x_t) = \mathbb{E}_{x_1 \sim p_\text{data}(x_1)}[p_{t|1}(x_t|x_1)]
 $$
@@ -239,7 +239,7 @@ Then, we can easily pair (how?) this with a continuous space flow model, meaning
 
 ### Previous confusion, cleared up / no longer relevant
 I still really don't understand why we need both the rate matrix and the probability flow. If they're defined in terms of each other, isn't only one sufficient? Practically, are there two different things being learned, or is it just one of them and the other is always calculated from the other (even if in expectation)?
-→ see [[Continuous Flow Matching Notes]].
+→ see [[Flow Matching Notes]].
 
 ## DFM Implementation details
 ### How do we define $p_{t|1}$ (“noising process” analog)?
@@ -265,7 +265,7 @@ Once we have $R_t(x_t, j)$, we can simulate time forward to sample from the data
 $$
 x_{t+\Delta t} \sim \text{Cat}(\delta\{x_t,x_{t+\Delta t}\} + R_t(x_t, x_{t+\Delta t})\cdot \Delta t)
 $$
-Using insights from [[Continuous Flow Matching Notes#Conditional flow matching]], we can define the rate matrix as datapoint-conditional:
+Using insights from [[Flow Matching Notes#Conditional flow matching]], we can define the rate matrix as datapoint-conditional:
 $$
 R_t(x_t, j) := \mathbb{E}_{p_{1|t}(x_1|x_t)}[R_t(x_t, j \;|\;x_1)]
 $$
