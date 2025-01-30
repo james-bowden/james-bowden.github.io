@@ -8,7 +8,7 @@ layout: obs
 
 I'm writing a note!
 
-![[Pasted image 20250116150311.png|250]]
+![hi](img/Pasted image 20250116150311.png)
 
 here's some math $f(x) = t^{2}$
 $$
