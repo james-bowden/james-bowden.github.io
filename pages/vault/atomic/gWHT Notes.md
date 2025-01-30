@@ -1,4 +1,5 @@
 ---
+layout: obs
 date created: Thursday, January 16th 2025, 2:22:26 pm
 date modified: Monday, January 27th 2025, 4:12:56 pm
 tags:

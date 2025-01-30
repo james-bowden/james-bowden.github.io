@@ -1,3 +1,8 @@
+---
+layout: obs
+layout: obs
+---
+
 # hello
 
 I'm writing a note!

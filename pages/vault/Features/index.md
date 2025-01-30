@@ -1,3 +1,9 @@
+---
+layout: obs
+---
+
+### Features
+
 [LaTeX Math Support](LaTeX Math Support)
 
 [math](math)

@@ -1,3 +1,8 @@
+---
+layout: obs
+layout: obs
+---
+
 # Text Formatting 
 
 You can have lists like this

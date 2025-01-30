@@ -1,3 +1,8 @@
+---
+layout: obs
+layout: obs
+---
+
 ## LaTeX Math Support
 
 LaTeX math is supported using MathJax.

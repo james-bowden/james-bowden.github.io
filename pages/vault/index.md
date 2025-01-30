@@ -1,3 +1,9 @@
+---
+layout: obs
+---
+
+### vault
+
 [**atomic**](atomic)
 
 [**blog**](blog)

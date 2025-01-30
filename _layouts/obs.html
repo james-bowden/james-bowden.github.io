@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<span class="post-date">
+  {{page['date created']}}
+  {{page['date modified']}}
+</span>
+
+{% if page.tags %}
+    <div class="tags">
+        Tags: {{ page.tags }}
+    </div>
+{% endif %}
+<br><br>
+<article>
+  {{ content }}
+</article>

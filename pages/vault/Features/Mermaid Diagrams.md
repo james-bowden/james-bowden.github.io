@@ -1,3 +1,8 @@
+---
+layout: obs
+layout: obs
+---
+
 # Mermaid diagrams
 
 Here's the example from [MkDocs Material documentation](https://squidfunk.github.io/mkdocs-material/reference/diagrams/#using-flowcharts): 

@@ -1,3 +1,7 @@
+---
+layout: obs
+---
+
 - Upon awaking
 	- [5:20](https://youtu.be/Qtg7v1QG0PM?si=rCg-P_XxUPCuBlz_)
 	- [8:18](https://youtu.be/MD6Dfd8bAOE?si=GEh4WYaRkaB-ozOH)

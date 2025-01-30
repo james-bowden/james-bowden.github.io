@@ -10,6 +10,31 @@ def sync(original_path, pub_path):
 	title = original_path.split('/')[-1]
 	shutil.copy(original_path, f'{DIR_PATH}/{pub_path}/{title}')
 
+def edit_layout(path):
+	try:
+		with open(path, 'r', encoding='utf-8') as source_file:
+			content = source_file.readlines()
+
+		# Check if layout is already set to obs
+		for line in content:
+			if 'layout: obs' in line:
+				return
+				
+		# Create new content with desired layout
+		if '---' not in content[0]:
+			new_content = ["---\nlayout: obs\n---\n\n"] + content
+		else:
+			new_content = [content[0]] + ["layout: obs\n"] + content[1:]
+		
+		# (over)Write to target file
+		with open(path, 'w', encoding='utf-8') as target_file:
+		    target_file.writelines(new_content)
+		
+	except FileNotFoundError:
+		print(f"Error: Could not find {source}")
+	except Exception as e:
+		print(f"An error occurred: {str(e)}")
+
 def write_index(source):
 	dest = '/'.join(source.split('/')[:-1]) + '/index.md'
 	title = source.split('/')[-1].split('_')[-1].split('.')[0] # _index_title.md
@@ -19,7 +44,7 @@ def write_index(source):
 			content = source_file.readlines()
 
 		# Create new content with title
-		new_content = [] # [f"### {title}\n\n"]
+		new_content = [f"### {title}\n\n"]
 
 		dirs, files = [], []
 		for line in content:
@@ -79,3 +104,6 @@ if __name__ == "__main__":
 	sync(f'{VAULT_PATH}/__ref/yogas.md', 'lists')
 	sync(f'{VAULT_PATH}/__ref/Engagement Queue.md', 'for_self')
 	sync(f'{VAULT_PATH}/__ref/Engagement List — Hum.md', 'for_self')
+
+
+	[edit_layout(f) for f in glob(f'{DIR_PATH}/**/*.md', recursive=True)]
