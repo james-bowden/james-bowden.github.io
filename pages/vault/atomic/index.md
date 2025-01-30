@@ -1,6 +1,6 @@
 ### atomic
 
-[__organizing_principle](__organizing_principle)
+[_organizing_principle](james-bowden.github.io/pages/vault/atomic/_organizing_principle.md)
 
 [DFM Notes](DFM Notes)
 

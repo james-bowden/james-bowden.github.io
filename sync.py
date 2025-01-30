@@ -19,7 +19,7 @@ def write_index(source):
 			content = source_file.readlines()
 
 		# Create new content with title
-		new_content = [f"### {title}\n\n"]
+		# new_content = [f"### {title}\n\n"]
 
 		dirs, files = [], []
 		for line in content:
