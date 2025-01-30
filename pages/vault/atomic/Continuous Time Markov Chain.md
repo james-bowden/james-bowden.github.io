@@ -2,7 +2,7 @@
 backlink: https://james-bowden.github.io/pages/vault/atomic
 layout: obs
 date created: Thursday, January 16th 2025, 2:12:58 pm
-date modified: Thursday, January 30th 2025, 1:22:56 am
+date modified: Thursday, January 30th 2025, 1:27:09 am
 aliases:
   - CTMC
 ---
@@ -47,7 +47,11 @@ This can be written as one sum, not excluding $$j=x_t$$, observing that $$R_t(x_
 
 The first term is the incoming probability flow, and the second the outgoing. Intuitively, the Kolmogorov equation specifies that the marginal probability of being at $$x_t$$ at time $$t$$ changes according to the sum of the probabilities of transitioning in from other states (rate multiplied by probability of being in other state), minus the sum of probabilities of transitioning to any other state[^7]. $$R_t$$ *generates* $$p_t$$ if the Kolmogorov equation holds $$\forall \; t\in[0,1]$$.
 
-The rate matrix provides a crucial connection between the marginals and the probability flow. We will parameterize the rate matrix indirectly through a denoising distribution $$p^\theta (x_1|x_t)$$, and the rate matrix in turn indirectly parameterizes $$\partial_tp_t(x_t)$$. The probability flow is the core object, although we won’t directly interact with it in [Discrete Flow Models](dne.md). Because $$R_t$$ generates $$p_t$$, we can simply simulate the CTMC with $$R_t$$, as shown in [CTMC-simulation](#CTMC-simulation).
+The rate matrix provides a crucial connection between the marginals and the probability flow. We will parameterize the rate matrix indirectly through a denoising distribution 
+$$
+p_{1|t}^\theta (x_1|x_t)
+$$
+$$, and the rate matrix in turn indirectly parameterizes $$\partial_tp_t(x_t)$$. The probability flow is the core object, although we won’t directly interact with it in [Discrete Flow Models](dne.md). Because $$R_t$$ generates $$p_t$$, we can simply simulate the CTMC with $$R_t$$, as shown in [CTMC-simulation](#CTMC-simulation).
 
 # Relevance
 See [Discrete Flow Models](dne.md). CTMCs are the bridge from [Flow Matching on continuous state spaces](dne.md) to the discrete state space paradigm.
@@ -59,5 +63,5 @@ See [Discrete Flow Models](dne.md). CTMCs are the bridge from [Flow Matching on 
 [^3]: i.e., integration, a.k.a., expensive.
 [^4]: Marginalized over all of the $$x_{t-1}$$, and before them, all the way back to $$x_0$$.
 [^5]: $$R_t$$ is analogous to the vector field $$u_t(x)$$ in [Flow Matching on continuous state spaces](dne.md).
-[^6]: $$p_t$$ and its time derivative are vectors of size $$S$$.
+[^6]: $$p_t$$ and its time derivative are vectors of size $$S$.
 [^7]: If you look up the [Kolmogorov equations](https://en.m.wikipedia.org/wiki/Kolmogorov_equations), they’re generally defined as separate forward and backward equations. The above is the forward equation and its continuous-space analog (diffusion) is known as the Fokker-Planck equation. In the case of continuous state spaces we don’t have finite-dimensional probability mass vectors. Instead of using a rate matrix, we use a vector field and write an SDE. The rate matrix lets us write the probability flow as an ODE here.
