@@ -1,5 +1,5 @@
 ---
-backlink: https://james-bowden.github.io/pages/vault/index.md
+backlink: https://james-bowden.github.io/pages
 layout: obs
 ---
 
@@ -18,6 +18,4 @@ layout: obs
 [**lists**](lists)
 
 [**misc**](misc)
-
-[**Topic 1**](Topic 1)
 

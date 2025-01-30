@@ -1,5 +1,5 @@
 ---
-backlink: https://james-bowden.github.io/pages/vault/misc/yogas.md
+backlink: https://james-bowden.github.io/pages/vault/misc
 layout: obs
 layout: obs
 ---

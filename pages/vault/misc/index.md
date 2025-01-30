@@ -1,15 +1,7 @@
 ---
-backlink: https://james-bowden.github.io/pages/vault/misc/index.md
+backlink: https://james-bowden.github.io/pages/vault
 layout: obs
 ---
 
 ## misc
-
-[**img**](img)
-
----
-
-[trial publish](trial publish)
-
-[yogas](yogas)
 

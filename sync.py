@@ -15,6 +15,7 @@ def edit_layout(path):
 	try:
 		with open(path, 'r', encoding='utf-8') as source_file:
 			content = source_file.readlines()
+		if len(content) == 0: return
 
 		insert = 'layout: obs'
 
@@ -30,6 +31,7 @@ def edit_layout(path):
 			new_content = [content[0]] + [f"{insert}\n"] + content[1:]
 		
 		# (over)Write to target file
+		assert len(new_content) > 0
 		with open(path, 'w', encoding='utf-8') as target_file:
 		    target_file.writelines(new_content)
 		
@@ -37,27 +39,40 @@ def edit_layout(path):
 		print(f"Error: Could not find {source}")
 	except Exception as e:
 		print(f"An error occurred: {str(e)}")
+		print(path)
 
 def add_backlink(path):
+	if '_index_' in path: return
 	try:
 		with open(path, 'r', encoding='utf-8') as source_file:
 			content = source_file.readlines()
+		if len(content) == 0: return
 
-		# Check if layout is already set to obs
-		for line in content:
-			if 'backlink: ' in line:
-				return
-		
-		backlink = path.replace(DIR_PATH, URL)
+		if 'index' in path: # pop off index.md and current directory
+			backlink = '/'.join(path.replace(DIR_PATH, URL).split('/')[:-2])
+		else: # pop off current file
+			backlink = '/'.join(path.replace(DIR_PATH, URL).split('/')[:-1])
 		insert = f'backlink: {backlink}'
 
-		# Create new content with desired layout
-		if '---' not in content[0]:
-			new_content = [f"---\n{insert}\n---\n\n"] + content
+		# Check if layout is already set to obs
+		exists = False
+		for i, line in enumerate(content):
+			if 'backlink: ' in line:
+				content[i] = f'{insert}\n'
+				exists = True
+				break
+
+		if not exists:
+			# Create new content with desired layout
+			if '---' not in content[0]:
+				new_content = [f"---\n{insert}\n---\n\n"] + content
+			else:
+				new_content = [content[0]] + [f"{insert}\n"] + content[1:]
 		else:
-			new_content = [content[0]] + [f"{insert}\n"] + content[1:]
+			new_content = content
 		
 		# (over)Write to target file
+		assert len(new_content) > 0
 		with open(path, 'w', encoding='utf-8') as target_file:
 		    target_file.writelines(new_content)
 		
@@ -65,6 +80,7 @@ def add_backlink(path):
 		print(f"Error: Could not find {source}")
 	except Exception as e:
 		print(f"An error occurred: {str(e)}")
+		print(path)
 
 def write_index(source):
 	dest = '/'.join(source.split('/')[:-1]) + '/index.md'
@@ -81,6 +97,7 @@ def write_index(source):
 		for line in content:
 			if '|index]]' in line: continue
 			if '[[' in line:
+				if '/img' in line: continue
 				link = line.split('|')[0].replace('[[', '').replace(']]', '').replace(SITE_PATH, '').strip().strip('/')
 				if '/_index_' in link:
 					link = link.split('/')[-2]
@@ -137,7 +154,6 @@ if __name__ == "__main__":
 	sync(f'{VAULT_PATH}/__ref/yogas.md', 'lists')
 	sync(f'{VAULT_PATH}/__ref/Engagement Queue.md', 'for_self')
 	sync(f'{VAULT_PATH}/__ref/Engagement List — Hum.md', 'for_self')
-
 
 	[edit_layout(f) for f in glob(f'{DIR_PATH}/**/*.md', recursive=True)]
 	[add_backlink(f) for f in glob(f'{DIR_PATH}/**/*.md', recursive=True)]

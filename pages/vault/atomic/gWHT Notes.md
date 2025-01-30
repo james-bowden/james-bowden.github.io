@@ -1,5 +1,5 @@
 ---
-backlink: https://james-bowden.github.io/pages/vault/atomic/gWHT Notes.md
+backlink: https://james-bowden.github.io/pages/vault/atomic
 layout: obs
 date created: Thursday, January 16th 2025, 2:22:26 pm
 date modified: Wednesday, January 29th 2025, 5:50:58 pm

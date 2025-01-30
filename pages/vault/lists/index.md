@@ -1,9 +1,7 @@
 ---
-backlink: https://james-bowden.github.io/pages/vault/lists/index.md
+backlink: https://james-bowden.github.io/pages/vault
 layout: obs
 ---
 
 ## lists
-
-[yogas](yogas)
 
