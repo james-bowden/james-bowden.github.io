@@ -2,7 +2,7 @@
 layout: obs
 ---
 
-### vault
+## vault
 
 [**atomic**](atomic)
 

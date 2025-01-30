@@ -2,7 +2,7 @@
 layout: obs
 ---
 
-### atomic
+## atomic
 
 [organizing_principle](^organizing_principle)
 

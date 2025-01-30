@@ -2,7 +2,7 @@
 layout: obs
 ---
 
-### Features
+## Features
 
 [LaTeX Math Support](LaTeX Math Support)
 

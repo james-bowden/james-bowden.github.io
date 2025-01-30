@@ -2,7 +2,7 @@
 layout: obs
 ---
 
-### posts
+## posts
 
 [hello-world](hello-world)
 

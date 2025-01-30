@@ -2,7 +2,7 @@
 layout: obs
 ---
 
-### lists
+## lists
 
 [yogas](yogas)
 

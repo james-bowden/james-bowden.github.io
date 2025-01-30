@@ -2,7 +2,7 @@
 layout: obs
 ---
 
-### Topic 1
+## Topic 1
 
 [Note 1](Note 1)
 

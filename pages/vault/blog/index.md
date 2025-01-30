@@ -2,7 +2,7 @@
 layout: obs
 ---
 
-### blog
+## blog
 
 [**posts**](posts)
 
