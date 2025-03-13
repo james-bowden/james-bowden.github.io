@@ -301,7 +301,7 @@ if __name__ == "__main__":
 
 	# maybe make a separate csv that gets edited?
 	sync(f'{VAULT_PATH}/__ref/yogas.md', 'lists')
-	sync(f'{VAULT_PATH}/__ref/Engagement Queue.md', 'lists')
+	sync(f'{VAULT_PATH}/__ref/Engagement Queue -- General.md', 'lists')
 	sync(f'{VAULT_PATH}/__ref/Humanities Engagement List.md', 'lists')
 	sync(f'{VAULT_PATH}/__ref/Recipes.md', 'lists')
 
