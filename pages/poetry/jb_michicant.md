@@ -1,10 +1,11 @@
 ---
 layout: page
 title: Poetry
+number headings: off
 ---
 
-## 0.1 *I was in first-grade, I was a boy, I was a tender age*
-#### 0.1.1.1 James Bowden
+## *I was in first-grade, I was a boy, I was a tender age*
+####  James Bowden
 
 *(title to be read in cadence of first lyric of “Michicant”)* <br/>
 
