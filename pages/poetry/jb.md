@@ -41,6 +41,8 @@ xx _loading_ + see my substack :)
 
 *incarnate:*
 
+["Poem for Aileen"](https://james-bowden.github.io/pages/poetry/jb_aileen)
+
 [\[Untitled\]](https://james-bowden.github.io/pages/poetry/jb_daddy)
 
 ["Friday, Pre-Dawn: An Old Sentiment, Again."](https://james-bowden.github.io/pages/poetry/jb_predawn)
