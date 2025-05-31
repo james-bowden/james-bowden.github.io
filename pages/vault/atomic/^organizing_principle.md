@@ -5,7 +5,7 @@ date created: Wednesday, January 29th 2025, 1:36:05 pm
 date modified: Wednesday, January 29th 2025, 5:47:12 pm
 ---
 
-# [Atomic Notes](https://james-bowden.github.io/pages/vault/atomic/): Organizing principle
+# 1 [Atomic Notes](https://james-bowden.github.io/pages/vault/atomic/): Organizing principle
 
 All notes in this folder are my attempts at “atomic” notes, which I’ll hopefully update at some interval as I consume new information and shift my understandings.
 
