@@ -20,3 +20,5 @@ Anyhow, I love this story, and by the end of it I find myself shivering. I could
 And then, the corresponding poem, by Franz Wright: ["To Myself"](https://www.poetryfoundation.org/poems/47565/to-myself). I quite like the final stanza, and the sort of comedic but not at all facetious bent to it, still sweet: *it won't always be like this, I am going to buy you a sandwich, ...* Which, perhaps I am so drawn to because I have (largely subconsciously) spent a lot of time and energy attempting to comfort myself. 
 
 More generally, I think grad school thus far has been a huge identity crisis for me. Tapping into my literary side feels comforting in a way I had forgotten, and in a way that is much less incentivized and supported by my social millieu these days. For the same reasons, it's seeming likely that I'll pick up *Infinite Jest* once again.
+
+Edit, 07/14/2025: I realized today that this thing heavily smacks of *House of Leaves*, and that I must have at least subconsciously realized this, since it’s pretty obvious in retrospect. See one of main characters, Johnny Truant. 

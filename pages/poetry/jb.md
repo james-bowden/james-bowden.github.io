@@ -7,7 +7,7 @@ I wanted to start a running list of poems I'd written and liked, so that's what 
 
 Here is also an anthology I compiled during Spring 2022, that contains several of my poems along with others in a somewhat cohesive and thematic manner, plus some analysis, in case you feel so inclined: [Poetry Anthology: Having a Poem with You](https://james-bowden.github.io/poetry-anthology)
 
-See also [my substack](https://jamothy.substack.com/). I was very tempted to name this something _substackum_ so that I might feel playful in a Latin(?) manner.
+See also [my substack](https://jamothy.substack.com/).
 
 <hr>
 First, some collections:<br/>
