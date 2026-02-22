@@ -14,15 +14,19 @@
 //   $sidebar-color
 
 // --- Profile picture in sidebar ---
-// display: block is required — Just the Docs does not guarantee the logo
-// image is visible by default. margin: auto centers it horizontally.
-// Reducing size to 100px ensures it stays inside the sidebar regardless
-// of the theme's internal padding, avoiding right-side clipping.
+// margin: auto doesn't center within the full sidebar because the logo lives
+// inside a <a> tag that is only as wide as its content. Left-aligning with a
+// small indent is the reliable fix — the right side never clips.
+// margin-top: 9rem ≈ 144px, moving photo (and nav links below it) ~100px
+// lower than the previous 3rem (~48px) position.
 .site-logo {
   display: block;
   width: 100px;
   height: 100px;
   object-fit: cover;
   border-radius: 50%;
-  margin: 3rem auto 1rem;
+  margin-top: 9rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: auto;
 }
