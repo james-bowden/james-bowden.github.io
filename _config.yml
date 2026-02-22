@@ -23,7 +23,7 @@ permalink:       /:title
 # Just the Docs configuration
 # color_scheme: dark   # uncomment for dark mode; or define a custom scheme in _sass/color_schemes/
 search_enabled:  true
-logo:            "/assets/img/jbowden_polo_centered.jpg"
+logo:            "/assets/img/ci_harbor_crop.jpeg"
 
 # Files to exclude from Jekyll processing
 exclude:

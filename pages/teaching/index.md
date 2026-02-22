@@ -4,9 +4,7 @@ title: Teaching
 nav_order: 4
 ---
 
-Much of my what has gone "right" in my life can be traced back to exceptional teaching, both inside and outside of the classroom. 
-I care deeply about passing on what I've learned in order to help make CS and machine learning (and related endeavors) more approachable fields for those aspiring to be both traditional computer scientists and "non-computer" scientists.
-<!-- Quite a bit of my knowledge has also come from less formal education--mentors, friends, Google, and ***lots*** of trial and error.  -->
+Communication (of all kinds and effects) is very interesting and important to me in general. I spent a lot of time teaching and thinking about teaching (pedagogy) during undergrad and enjoyed it a lot! These days, I spend much more of my communicational effort on my research.
 
 **Teaching Assistant, [CS 159 (Adv. Topics in ML: Uncertainty Quantification)](https://sites.google.com/view/cs159spring2023/home?authuser=0)**: [Caltech] [Spring 2023]. TA for Caltech's advanced topics in ML course (rotates topics each spring), this year on Uncertainty Quantification. Helped with course organization and curriculum design, gave lecture, wrote homework assignment, held office hours, advised and supported students on their own independent mini-research projects on UQ-adjacent topics. **[[Lecture slides on MCMC and (deep) uncertainty models](https://james-bowden.github.io/assets/slides/159_MCMC_UQ_models_2023.pdf)]**
 
