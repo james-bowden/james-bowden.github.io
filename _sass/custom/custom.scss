@@ -27,7 +27,7 @@
 // padding-top pushes photo + nav links down together.
 // padding-bottom adds ~50px of space between the header block and the nav links.
 .site-header {
-  padding-top: 12rem;
+  padding-top: 6rem;
   padding-bottom: 3rem;
 }
 
@@ -36,8 +36,8 @@
 // from squashing the div, which was clipping the right side of the circle.
 // background-size/position replace object-fit, which only applies to <img>.
 .site-logo {
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   flex-shrink: 0;
   background-size: cover;
   background-position: center;
