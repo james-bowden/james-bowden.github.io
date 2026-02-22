@@ -4,9 +4,9 @@ title: About
 nav_order: 1
 ---
 <div>
-<!-- <img style="float:right; width: 25%; border-radius: 10px; border: 0px solid; padding: 0px 0px 0px 10px" src="{{site.github_url}}/assets/img/James Bowden portrait.jpeg"> -->
-<!-- <img style="float:right; width: 30%; border-radius: 10px; border: 0px solid; padding: 0px 0px 0px 10px" src="{{site.github_url}}/assets/img/jbowden_polo.jpg"> -->
-<img style="float:right; width: 50%; border-radius: 10px; border: 0px solid; padding: 0px 0px 0px 10px" src="{{site.github_url}}/assets/img/james_bike.jpg">
+<!-- <img style="float:right; width: 25%; border-radius: 10px; border: 0px solid; padding: 0px 0px 0px 10px" src="{{site.url}}/assets/img/James Bowden portrait.jpeg"> -->
+<!-- <img style="float:right; width: 30%; border-radius: 10px; border: 0px solid; padding: 0px 0px 0px 10px" src="{{site.url}}/assets/img/jbowden_polo.jpg"> -->
+<img style="float:right; width: 50%; border-radius: 10px; border: 0px solid; padding: 0px 0px 0px 10px" src="{{site.url}}/assets/img/james_bike.jpg">
 </div>
 <div>
 <p>

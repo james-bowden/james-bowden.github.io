@@ -14,7 +14,7 @@ The short story is called "The Overcoat", by Gina Berriault. It's some amount of
 Anyhow, I love this story, and by the end of it I find myself shivering. I could not find a pdf of it anywhere, so I've attached images of the pages here from a huge short story anthology (Ann Charters). I particularly love the opening paragraph, *cataclysmic rains, cold as an execution dawn*. These words in particular stick with me. Reproduced here without permission but with the purest of intents. 
 
 <center>
-<embed src="{{site.github_url}}/assets/hum/gb_overcoat.pdf#toolbar=0&navpanes=0&scrollbar=0&statusbar=0" width="790 px" height="1092px" />
+<embed src="{{site.url}}/assets/hum/gb_overcoat.pdf#toolbar=0&navpanes=0&scrollbar=0&statusbar=0" width="790 px" height="1092px" />
 </center>
 
 And then, the corresponding poem, by Franz Wright: ["To Myself"](https://www.poetryfoundation.org/poems/47565/to-myself). I quite like the final stanza, and the sort of comedic but not at all facetious bent to it, still sweet: *it won't always be like this, I am going to buy you a sandwich, ...* Which, perhaps I am so drawn to because I have (largely subconsciously) spent a lot of time and energy attempting to comfort myself. 
