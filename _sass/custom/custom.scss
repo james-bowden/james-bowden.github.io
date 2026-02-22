@@ -10,28 +10,27 @@
   overflow: visible;
 }
 
-// Stack header contents as a vertical column, centered.
+// Force a vertical column layout. JTD defaults .site-header to flex-row;
+// !important ensures our override wins regardless of specificity.
 .site-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-// Hide JTD's default logo/title link — replaced by our SVG below.
-a.site-title {
-  display: none !important;
-}
-
-// Inline SVG containing the circular photo and curved name text.
+// SVG containing the circular photo and curved name text.
+// a.site-title (the JTD logo wrapper) is hidden via JS after injection,
+// so there is no CSS rule that would hide it unconditionally.
 .sidebar-profile-svg {
   display: block;
   width: 100%;
   max-width: 220px;
+  flex-shrink: 0;
 }
 
-// Social icons row beneath the photo.
+// Social icons row, displayed beneath the profile SVG.
 .social-icons {
   display: flex;
   justify-content: center;
