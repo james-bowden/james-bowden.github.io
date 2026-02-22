@@ -31,11 +31,16 @@
   padding-bottom: 3rem;
 }
 
+// .site-logo is a <div> with a CSS background-image, not an <img>.
+// flex-shrink: 0 prevents the flex container (<a class="site-title">)
+// from squashing the div, which was clipping the right side of the circle.
+// background-size/position replace object-fit, which only applies to <img>.
 .site-logo {
-  display: block;
   width: 100px;
   height: 100px;
-  object-fit: cover;
+  flex-shrink: 0;
+  background-size: cover;
+  background-position: center;
   border-radius: 50%;
   margin-bottom: 1rem;
   margin-left: 1rem;
