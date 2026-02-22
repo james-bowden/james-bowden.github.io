@@ -23,10 +23,12 @@ permalink:       /:title
 # Just the Docs configuration
 # color_scheme: dark   # uncomment for dark mode; or define a custom scheme in _sass/color_schemes/
 search_enabled:  true
+logo:            "/assets/img/jbowden_polo_centered.jpg"
 
 # Files to exclude from Jekyll processing
 exclude:
   - sync.py
+  - TODO.md
 
 # Default front-matter values
 # Used to bulk-exclude large content sections from the sidebar nav

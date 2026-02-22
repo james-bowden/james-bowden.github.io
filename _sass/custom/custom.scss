@@ -12,5 +12,14 @@
 //   $body-text-color
 //   $body-background-color
 //   $sidebar-color
-//
-// Add your overrides below:
+
+// --- Profile picture in sidebar ---
+// The site logo (set via logo: in _config.yml) is rendered as a circular portrait.
+.site-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;      // crop to fill the circle without distortion
+  border-radius: 50%;
+  display: block;
+  margin: 1.5rem auto 1rem;
+}
