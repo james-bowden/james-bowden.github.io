@@ -12,19 +12,25 @@
 <!-- Font Awesome 6 Free — social icons in sidebar -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
 
-<!-- Inject name + social links at top of sidebar -->
+<!-- Inject name above photo, social icons below photo -->
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     var header = document.querySelector('.site-header');
     if (!header) return;
 
-    var topHtml = '<div class="sidebar-name">James Bowden</div>'
-      + '<div class="social-icons">'
-      + '<a href="mailto:jcbowden@berkeley.edu" title="Email"><i class="fas fa-envelope"></i></a>'
-      + '<a href="https://scholar.google.com/citations?user=PLACEHOLDER" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>'
-      + '<a href="https://www.linkedin.com/in/james-bowden" title="LinkedIn"><i class="fab fa-linkedin"></i></a>'
-      + '<a href="https://github.com/james-bowden" title="GitHub"><i class="fab fa-github"></i></a>'
-      + '</div>';
-    header.insertAdjacentHTML('afterbegin', topHtml);
+    // Name goes at the very top
+    header.insertAdjacentHTML('afterbegin', '<div class="sidebar-name">James Bowden</div>');
+
+    // Social icons go after the profile photo (a.site-title)
+    var siteTitle = header.querySelector('a.site-title');
+    if (siteTitle) {
+      var iconsHtml = '<div class="social-icons">'
+        + '<a href="mailto:jcbowden@berkeley.edu" title="Email"><i class="fas fa-envelope"></i></a>'
+        + '<a href="https://scholar.google.com/citations?user=lfSNrMUAAAAJ&hl=en&oi=ao" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>'
+        + '<a href="https://www.linkedin.com/in/j-bowden/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>'
+        + '<a href="https://github.com/james-bowden" title="GitHub"><i class="fab fa-github"></i></a>'
+        + '</div>';
+      siteTitle.insertAdjacentHTML('afterend', iconsHtml);
+    }
   });
 </script>

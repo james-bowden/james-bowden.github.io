@@ -3,7 +3,7 @@
 //
 // Reference: https://just-the-docs.com/docs/customization/
 
-// --- Sidebar: name, social icons, profile photo ---
+// --- Sidebar layout ---
 
 // overflow: visible prevents the circular logo from being clipped.
 .side-bar,
@@ -12,35 +12,39 @@
   overflow: visible;
 }
 
-// The site-title <a> wraps the logo div; disable pointer events so it is
-// not clickable (the logo is decorative, not a nav link).
+// Stack sidebar header contents vertically and center them.
+// JTD defaults .site-header to flex-row; override to column.
+.site-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+// The site-title <a> wraps the logo; disable pointer events so the photo
+// is not a clickable link.
 a.site-title {
   pointer-events: none;
   cursor: default;
 }
 
-// padding-top: space above the name at the very top of the sidebar.
-// padding-bottom: gap between the header block and the nav links.
-.site-header {
-  padding-top: 2rem;
-  padding-bottom: 3rem;
-}
-
-// Name displayed prominently at the top of the sidebar.
+// Name at the top of the sidebar, in link purple.
 .sidebar-name {
   font-size: 1.3rem;
   font-weight: 600;
   text-align: center;
-  padding: 0.5rem 1rem 0.25rem;
+  color: #7253ed;
+  padding: 0.5rem 1rem 0.5rem;
   letter-spacing: 0.02em;
 }
 
-// Social icons row — below the name, above the photo.
+// Social icons row — below the profile photo.
 .social-icons {
   display: flex;
   justify-content: center;
   gap: 0.9rem;
-  padding: 0.25rem 0;
+  padding: 0.5rem 0 0.25rem;
 
   a {
     color: inherit;
@@ -66,8 +70,6 @@ a.site-title {
   background-size: cover;
   background-position: center;
   border-radius: 50%;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-  margin-right: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
 }
