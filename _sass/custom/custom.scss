@@ -10,8 +10,8 @@
   overflow: visible;
 }
 
-// Force a vertical column layout. JTD defaults .site-header to flex-row;
-// !important ensures our override wins regardless of specificity.
+// Force vertical stacking. JTD sets .site-header to flex-row by default;
+// !important ensures our override wins.
 .site-header {
   display: flex !important;
   flex-direction: column !important;
@@ -20,22 +20,48 @@
   padding-bottom: 2rem;
 }
 
-// SVG containing the circular photo and curved name text.
-// a.site-title (the JTD logo wrapper) is hidden via JS after injection,
-// so there is no CSS rule that would hide it unconditionally.
-.sidebar-profile-svg {
-  display: block;
-  width: 100%;
-  max-width: 220px;
+// --- Profile photo + curved name ---
+
+// Container that positions the photo and the SVG name overlay together.
+.sb-photo-wrap {
+  position: relative;
+  width: 220px;
+  height: 250px;   // 200px photo + 50px headroom above for the name arc
   flex-shrink: 0;
+  overflow: visible;
 }
 
-// Social icons row, displayed beneath the profile SVG.
+// Standard <img> circle — reliable cross-browser image loading.
+img.sb-photo {
+  position: absolute;
+  bottom: 0;
+  left: 10px;      // (220px - 200px) / 2 = 10px each side
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+// SVG overlay: draws only the curved "James Bowden" text, no <image> element.
+// overflow:visible lets the arc endpoints extend slightly past the container.
+svg.sb-name-arc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: visible;
+}
+
+// --- Social icons ---
+
 .social-icons {
   display: flex;
   justify-content: center;
   gap: 0.9rem;
-  padding: 0.25rem 0 0.5rem;
+  padding: 0.4rem 0 0.5rem;
 
   a {
     color: inherit;

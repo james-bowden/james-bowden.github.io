@@ -12,59 +12,59 @@
 <!-- Font Awesome 6 Free — social icons in sidebar -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
 
-<!-- Replace JTD logo with SVG (circular photo + curved name) and social icons below -->
+<!-- Sidebar: circular photo + curved name (SVG text overlay) + social icons -->
 <script>
   function injectSidebar() {
-    // Prefer the sidebar-specific header; fall back to any .site-header.
     var header = document.querySelector('.side-bar .site-header')
                || document.querySelector('.site-header');
     if (!header) return;
-    // Guard against double-injection.
     if (header.dataset.sbInjected) return;
     header.dataset.sbInjected = '1';
 
-    // SVG: circular photo with "James Bowden" arcing over the top.
+    // Photo + curved name.
     //
-    // Geometry (viewBox 0 0 280 295):
-    //   Photo circle  — center (140,175) r=120; top edge y=55, bottom y=295.
-    //   Name arc      — center (140,175) r=133; top of arc y=42 (just outside photo rim).
-    //   Arc path M 7,175 A 133,133 0 0,1 273,175 is the upper semicircle
-    //   (short clockwise arc); startOffset="50%" lands exactly at the top (140,42).
+    // The container is 220x250px. The photo <img> sits at the bottom
+    // (y=50 to y=250 within the container). An absolutely-positioned SVG
+    // overlays the full container and draws ONLY the curved text — no SVG
+    // <image> element, so no cross-origin or namespace loading issues.
     //
-    // &amp; in href values because insertAdjacentHTML parses its argument as HTML.
-    var svgHtml = '<svg class="sidebar-profile-svg" viewBox="0 0 280 295"'
-      + ' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">'
-      + '<defs>'
-      + '<clipPath id="sbCircleClip"><circle cx="140" cy="175" r="120"/></clipPath>'
-      + '<path id="sbNameArc" d="M 7,175 A 133,133 0 0,1 273,175" fill="none"/>'
-      + '</defs>'
-      + '<image href="/assets/img/ci_harbor_crop.jpeg"'
-      + ' xlink:href="/assets/img/ci_harbor_crop.jpeg"'
-      + ' x="20" y="55" width="240" height="240"'
-      + ' clip-path="url(#sbCircleClip)" preserveAspectRatio="xMidYMid slice"/>'
-      + '<text font-size="17" font-weight="600" fill="#7253ed" font-family="inherit">'
-      + '<textPath href="#sbNameArc" xlink:href="#sbNameArc" startOffset="50%" text-anchor="middle">'
-      + 'James Bowden'
-      + '</textPath>'
-      + '</text>'
-      + '</svg>';
+    // SVG geometry (viewBox 0 0 220 250):
+    //   Photo circle center (110,150) r=100 matches the img position.
+    //   Text arc center (110,150) r=112 places text just outside the photo rim.
+    //   Path M -2,150 A 112,112 0 0,1 222,150 is the upper semicircle;
+    //   startOffset="50%" centres the text at the topmost point (110,38).
+    var photoWrapHtml =
+        '<div class="sb-photo-wrap">'
+      +   '<img class="sb-photo" src="/assets/img/ci_harbor_crop.jpeg" alt="James Bowden">'
+      +   '<svg class="sb-name-arc" viewBox="0 0 220 250"'
+      +     ' xmlns="http://www.w3.org/2000/svg"'
+      +     ' xmlns:xlink="http://www.w3.org/1999/xlink"'
+      +     ' overflow="visible" aria-hidden="true">'
+      +     '<defs>'
+      +       '<path id="sbArc" d="M -2,150 A 112,112 0 0,1 222,150" fill="none"/>'
+      +     '</defs>'
+      +     '<text font-size="16" font-weight="600" fill="#7253ed" font-family="inherit">'
+      +       '<textPath href="#sbArc" xlink:href="#sbArc"'
+      +         ' startOffset="50%" text-anchor="middle">James Bowden</textPath>'
+      +     '</text>'
+      +   '</svg>'
+      + '</div>';
 
-    var iconsHtml = '<div class="social-icons">'
+    var iconsHtml =
+        '<div class="social-icons">'
       + '<a href="mailto:jcbowden@berkeley.edu" title="Email"><i class="fas fa-envelope"></i></a>'
       + '<a href="https://scholar.google.com/citations?user=lfSNrMUAAAAJ&amp;hl=en&amp;oi=ao" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>'
       + '<a href="https://www.linkedin.com/in/j-bowden/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>'
       + '<a href="https://github.com/james-bowden" title="GitHub"><i class="fab fa-github"></i></a>'
       + '</div>';
 
-    // Inject SVG + icons at the top of the sidebar header.
-    header.insertAdjacentHTML('afterbegin', svgHtml + iconsHtml);
+    header.insertAdjacentHTML('afterbegin', photoWrapHtml + iconsHtml);
 
-    // Only hide JTD's default logo element AFTER we've successfully injected our own.
+    // Hide JTD's own logo element only after our content is in the DOM.
     var siteTitle = header.querySelector('a.site-title');
     if (siteTitle) siteTitle.style.display = 'none';
   }
 
-  // Run after DOM is ready; also handle the case where the event already fired.
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', injectSidebar);
   } else {
