@@ -2,39 +2,63 @@
 // This file is loaded by Just the Docs after its own stylesheets.
 //
 // Reference: https://just-the-docs.com/docs/customization/
-//
-// Common variables you can override:
-//   $body-font-family
-//   $body-line-height
-//   $content-width
-//   $nav-width
-//   $link-color
-//   $body-text-color
-//   $body-background-color
-//   $sidebar-color
 
-// --- Profile picture in sidebar ---
+// --- Sidebar: name, social icons, profile photo ---
 
-// overflow: visible on all three containers: .side-bar and .site-header were
-// already set; .site-title (the <a> wrapping the image) is the remaining
-// candidate clipping the right side of the circle.
+// overflow: visible prevents the circular logo from being clipped.
 .side-bar,
 .site-header,
 .site-title {
   overflow: visible;
 }
 
-// padding-top pushes photo + nav links down together.
-// padding-bottom adds ~50px of space between the header block and the nav links.
+// The site-title <a> wraps the logo div; disable pointer events so it is
+// not clickable (the logo is decorative, not a nav link).
+a.site-title {
+  pointer-events: none;
+  cursor: default;
+}
+
+// padding-top: space above the name at the very top of the sidebar.
+// padding-bottom: gap between the header block and the nav links.
 .site-header {
-  padding-top: 6rem;
+  padding-top: 2rem;
   padding-bottom: 3rem;
 }
 
+// Name displayed prominently at the top of the sidebar.
+.sidebar-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 0.5rem 1rem 0.25rem;
+  letter-spacing: 0.02em;
+}
+
+// Social icons row — below the name, above the photo.
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.9rem;
+  padding: 0.25rem 0;
+
+  a {
+    color: inherit;
+    opacity: 0.65;
+    font-size: 1.15rem;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 1;
+      text-decoration: none;
+    }
+  }
+}
+
 // .site-logo is a <div> with a CSS background-image, not an <img>.
-// flex-shrink: 0 prevents the flex container (<a class="site-title">)
-// from squashing the div, which was clipping the right side of the circle.
-// background-size/position replace object-fit, which only applies to <img>.
+// flex-shrink: 0 prevents the flex container from squashing the div (was
+// clipping the right side of the circle). background-size/position replace
+// object-fit, which only applies to <img>.
 .site-logo {
   width: 130px;
   height: 130px;
@@ -42,6 +66,7 @@
   background-size: cover;
   background-position: center;
   border-radius: 50%;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   margin-left: 1rem;
   margin-right: auto;

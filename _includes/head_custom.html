@@ -8,3 +8,23 @@
   };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+
+<!-- Font Awesome 6 Free — social icons in sidebar -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+
+<!-- Inject name + social links at top of sidebar -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var header = document.querySelector('.site-header');
+    if (!header) return;
+
+    var topHtml = '<div class="sidebar-name">James Bowden</div>'
+      + '<div class="social-icons">'
+      + '<a href="mailto:jcbowden@berkeley.edu" title="Email"><i class="fas fa-envelope"></i></a>'
+      + '<a href="https://scholar.google.com/citations?user=PLACEHOLDER" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>'
+      + '<a href="https://www.linkedin.com/in/james-bowden" title="LinkedIn"><i class="fab fa-linkedin"></i></a>'
+      + '<a href="https://github.com/james-bowden" title="GitHub"><i class="fab fa-github"></i></a>'
+      + '</div>';
+    header.insertAdjacentHTML('afterbegin', topHtml);
+  });
+</script>
