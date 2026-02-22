@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Dailies
+nav_exclude: true
 ---
 
 <p>

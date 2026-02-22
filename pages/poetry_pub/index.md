@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Public Poetry Collection
+nav_exclude: true
 ---
 
 *This is a subset of my poems that I hope is "suitable" for the public eye--there is much more, though I am cautious about linking it here. Do ask if you'd like more of this, though. I always enjoy discussing poetry, especially my own, as well as other related things :)*

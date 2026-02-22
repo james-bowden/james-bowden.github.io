@@ -1,6 +1,7 @@
 ---
 layout: page
-title: bridge-group
+title: Bridge Group
+nav_exclude: true
 ---
 
 Poster accepted at [RESPECT 2022](https://respect2022.stcbp.org/). This was implemented as a part of Caltech's CS 2 course.

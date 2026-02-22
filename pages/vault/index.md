@@ -1,5 +1,7 @@
 ---
 layout: obs
+title: Vault
+nav_order: 5
 ---
 
 ## vault

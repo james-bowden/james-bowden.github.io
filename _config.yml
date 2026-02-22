@@ -1,27 +1,66 @@
-# Site Build Settings
+# Site settings
+title:           "James Bowden"
+description:     "Berkeley ML + Science"
+author:          "James Bowden"
+url:             "https://james-bowden.github.io"
+baseurl:         ""
 
-# jekyll-paginate configuration
-paginate:            5
+# Theme — loaded from GitHub, no fork required
+remote_theme: just-the-docs/just-the-docs
+
+# Plugins (all whitelisted on GitHub Pages)
+plugins:
+  - jekyll-remote-theme
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
 
 # Build settings
-markdown:            kramdown
-highlighter:         rouge
-baseurl:             ""
-url:                 "james-bowden.github.io"
-permalink:           /:title
-plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
+markdown:        kramdown
+highlighter:     rouge
+permalink:       /:title
 
-sass:
-  sass_dir: assets/css
-  style: :nested
+# Just the Docs configuration
+# color_scheme: dark   # uncomment for dark mode; or define a custom scheme in _sass/color_schemes/
+search_enabled:  true
 
-# Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title:		           "James Bowden"
-description:	       "Berkeley ML + Science"
-author:              "James Bowden"
+# Files to exclude from Jekyll processing
+exclude:
+  - sync.py
 
-# RSS 2.0 can be used instead of Atom by uncommenting following two lines
-#feed:
-#  path: rss-feed.xml
-
-# theme: jekyll-theme-cayman
+# Default front-matter values
+# Used to bulk-exclude large content sections from the sidebar nav
+defaults:
+  # Posts: use post layout and hide from sidebar
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      nav_exclude: true
+  # Poetry collection — large, navigated internally
+  - scope:
+      path: "pages/poetry"
+    values:
+      nav_exclude: true
+  # Anthology — navigated internally
+  - scope:
+      path: "pages/anthology"
+    values:
+      nav_exclude: true
+  # Vault sub-sections — navigated via vault index
+  - scope:
+      path: "pages/vault/atomic"
+    values:
+      nav_exclude: true
+  - scope:
+      path: "pages/vault/lists"
+    values:
+      nav_exclude: true
+  - scope:
+      path: "pages/vault/misc"
+    values:
+      nav_exclude: true
+  - scope:
+      path: "pages/vault/javascripts"
+    values:
+      nav_exclude: true

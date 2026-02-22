@@ -1,6 +1,7 @@
 ---
 layout: page
-
+title: CV
+nav_order: 3
 ---
 
 *Last updated: Sept. 2023*

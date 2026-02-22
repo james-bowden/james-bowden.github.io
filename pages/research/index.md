@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Research
+nav_order: 2
 ---
 
 <h2 style="font-weight: normal">Research Interests</h2>

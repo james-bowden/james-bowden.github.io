@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Teaching
+nav_order: 4
 ---
 
 Much of my what has gone "right" in my life can be traced back to exceptional teaching, both inside and outside of the classroom. 
