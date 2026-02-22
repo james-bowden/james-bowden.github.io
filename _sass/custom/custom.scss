@@ -14,23 +14,15 @@
 //   $sidebar-color
 
 // --- Profile picture in sidebar ---
-// Just the Docs wraps the logo <img> and the site title text inside the same
-// <a class="site-title"> tag, laid out inline by default. That causes the
-// image to overflow the sidebar on the right. We switch it to a column layout
-// so the picture sits above the site name, both centered.
-.site-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
+// display: block is required — Just the Docs does not guarantee the logo
+// image is visible by default. margin: auto centers it horizontally.
+// Reducing size to 100px ensures it stays inside the sidebar regardless
+// of the theme's internal padding, avoiding right-side clipping.
 .site-logo {
-  width: 110px;
-  height: 110px;
+  display: block;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   border-radius: 50%;
-  // push the photo down from the top of the sidebar
-  margin-top: 2.5rem;
-  margin-bottom: 0.75rem;
+  margin: 3rem auto 1rem;
 }
