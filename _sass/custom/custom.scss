@@ -15,18 +15,20 @@
 
 // --- Profile picture in sidebar ---
 
-// padding-top on the header (not margin-top on the logo) is what actually
-// pushes the nav links down — padding expands the container, margin can
-// collapse out of it. 12rem ≈ 192px total downward shift.
-// overflow: visible on both containers prevents the circle being clipped
-// by the sidebar's or header's overflow: hidden.
-.side-bar {
+// overflow: visible on all three containers: .side-bar and .site-header were
+// already set; .site-title (the <a> wrapping the image) is the remaining
+// candidate clipping the right side of the circle.
+.side-bar,
+.site-header,
+.site-title {
   overflow: visible;
 }
 
+// padding-top pushes photo + nav links down together.
+// padding-bottom adds ~50px of space between the header block and the nav links.
 .site-header {
   padding-top: 12rem;
-  overflow: visible;
+  padding-bottom: 3rem;
 }
 
 .site-logo {
