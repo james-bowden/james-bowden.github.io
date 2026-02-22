@@ -14,12 +14,23 @@
 //   $sidebar-color
 
 // --- Profile picture in sidebar ---
-// The site logo (set via logo: in _config.yml) is rendered as a circular portrait.
+// Just the Docs wraps the logo <img> and the site title text inside the same
+// <a class="site-title"> tag, laid out inline by default. That causes the
+// image to overflow the sidebar on the right. We switch it to a column layout
+// so the picture sits above the site name, both centered.
+.site-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .site-logo {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;      // crop to fill the circle without distortion
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
   border-radius: 50%;
-  display: block;
-  margin: 1.5rem auto 1rem;
+  // push the photo down from the top of the sidebar
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
 }
