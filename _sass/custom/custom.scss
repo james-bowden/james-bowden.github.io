@@ -5,24 +5,34 @@
 
 // --- Sidebar header layout ---
 
-// JTD's <header class="side-bar"> likely has overflow-y: auto for long nav
-// lists.  Setting overflow: visible here lets the SVG arc extend above the
-// .site-header boundary without being clipped by the scroll container.
+// Reserve the window scrollbar gutter on every page so the layout never
+// shifts horizontally when navigating between short and tall pages.
+html {
+  scrollbar-gutter: stable;
+}
+
+// Allow the SVG name arc to extend above .site-header without being clipped.
+// !important beats JTD's higher-specificity rule "header.side-bar { overflow-y: auto }".
+// Scrollbar hiding is also applied here as a belt-and-suspenders measure.
 .side-bar {
-  overflow: visible;
+  overflow: visible !important;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 // Halve JTD's default padding-top ($sp-8 = 3rem) between the divider and
 // the first nav link.
-// Hide the scrollbar visually while keeping the content scrollable — this
-// prevents the ~15px horizontal shift that occurs when the scrollbar appears
-// on pages with long nav (about, vault) vs short nav (cv, teaching).
+// Hide the scrollbar on the nav scroll area — prevents the ~15px horizontal
+// shift when the nav overflows on some pages but not others.
 .site-nav {
   padding-top: 1.5rem !important;
-  scrollbar-width: none; // Firefox
+  scrollbar-width: none;
 
   &::-webkit-scrollbar {
-    display: none; // Chrome / Safari / Edge
+    display: none;
   }
 }
 

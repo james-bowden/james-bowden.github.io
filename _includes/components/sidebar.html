@@ -27,9 +27,9 @@
 
       Arc geometry (viewBox 0 0 220 220):
         Photo circle centre (110, 135) r=85.
-        Text arc centre (110, 135) r=90 — 5 px outside the photo rim.
-        Path M 20,135 A 90,90 0 0,1 200,135 is the upper semicircle.
-        startOffset="50%" places the text midpoint at the topmost point (110, 45).
+        Text arc centre (110, 135) r=95 — 10 px outside the photo rim.
+        Path M 15,135 A 95,95 0 0,1 205,135 is the upper semicircle.
+        startOffset="50%" places the text midpoint at the topmost point (110, 40).
     {%- endcomment -%}
     <div class="sb-photo-wrap">
       <img class="sb-photo"
@@ -41,7 +41,7 @@
            overflow="visible"
            aria-hidden="true">
         <defs>
-          <path id="sbArc" d="M 20,135 A 90,90 0 0,1 200,135" fill="none"/>
+          <path id="sbArc" d="M 15,135 A 95,95 0 0,1 205,135" fill="none"/>
         </defs>
         <text font-size="20" font-weight="600" fill="#7253ed" font-family="inherit">
           <textPath href="#sbArc" startOffset="50%" text-anchor="middle">James Bowden</textPath>
