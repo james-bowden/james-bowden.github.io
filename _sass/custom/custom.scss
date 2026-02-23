@@ -12,6 +12,16 @@
   overflow: visible;
 }
 
+// Halve JTD's default padding-top ($sp-8 = 3rem) between the divider and
+// the first nav link.
+// scrollbar-gutter: stable reserves the scrollbar lane even when no scrollbar
+// is showing, preventing nav content from jumping ~15px horizontally as you
+// switch between pages where the nav is/isn't tall enough to need scrolling.
+.site-nav {
+  padding-top: 1.5rem !important;
+  scrollbar-gutter: stable;
+}
+
 // Replace JTD's fixed-height flex-row header with a tall centred column.
 // !important is needed because JTD's own stylesheet sets display/flex-direction
 // and possibly a fixed height with equal or higher specificity.
