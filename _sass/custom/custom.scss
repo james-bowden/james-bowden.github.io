@@ -1,32 +1,48 @@
 // Custom styles for james-bowden.github.io
-// This file is loaded by Just the Docs after its own stylesheets.
+// Loaded by Just the Docs after its own stylesheets.
 //
 // Reference: https://just-the-docs.com/docs/customization/
 
-// --- Sidebar ---
+// --- Sidebar header layout ---
 
-.side-bar,
-.site-header {
+// JTD's <header class="side-bar"> likely has overflow-y: auto for long nav
+// lists.  Setting overflow: visible here lets the SVG arc extend above the
+// .site-header boundary without being clipped by the scroll container.
+.side-bar {
   overflow: visible;
 }
 
-// Force vertical stacking. JTD sets .site-header to flex-row by default;
-// !important ensures our override wins.
+// Replace JTD's fixed-height flex-row header with a tall centred column.
+// !important is needed because JTD's own stylesheet sets display/flex-direction
+// and possibly a fixed height with equal or higher specificity.
 .site-header {
+  position: relative !important;   // anchor for the abs-positioned hamburger
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  height: auto !important;         // JTD sets a fixed px height; unset it
+  min-height: unset !important;
+  padding: 1.5rem 0 0.75rem !important;
+  overflow: visible !important;
+}
+
+// Hamburger menu button: pin to top-right so it doesn't push the column down.
+// JTD's own CSS hides it on wide screens; on narrow screens it sits in the
+// corner of the visible sidebar header and acts as a close button.
+.site-header .site-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
 }
 
 // --- Profile photo + curved name ---
 
 // Container that positions the photo and the SVG name overlay together.
+// 50 px of headroom above the 200 px photo circle = 250 px total height.
 .sb-photo-wrap {
   position: relative;
   width: 220px;
-  height: 250px;   // 200px photo + 50px headroom above for the name arc
+  height: 250px;
   flex-shrink: 0;
   overflow: visible;
 }
@@ -35,7 +51,7 @@
 img.sb-photo {
   position: absolute;
   bottom: 0;
-  left: 10px;      // (220px - 200px) / 2 = 10px each side
+  left: 10px;     // (220 - 200) / 2 = 10 px each side
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -43,8 +59,8 @@ img.sb-photo {
   display: block;
 }
 
-// SVG overlay: draws only the curved "James Bowden" text, no <image> element.
-// overflow:visible lets the arc endpoints extend slightly past the container.
+// SVG overlay: draws only the curved "James Bowden" text.
+// overflow: visible lets the arc endpoints extend past the container edges.
 svg.sb-name-arc {
   position: absolute;
   top: 0;
@@ -61,7 +77,7 @@ svg.sb-name-arc {
   display: flex;
   justify-content: center;
   gap: 0.9rem;
-  padding: 0.4rem 0 0.5rem;
+  padding: 0.6rem 0 0.4rem;
 
   a {
     color: inherit;

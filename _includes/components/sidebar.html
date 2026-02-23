@@ -1,0 +1,74 @@
+{%- comment -%}
+  Override of just-the-docs _includes/components/sidebar.html
+  Custom sidebar header: circular photo + curved name arc + social icons.
+  No JS injection — photo and SVG are static HTML, so all rendering is reliable.
+{%- endcomment -%}
+
+<header class="side-bar">
+  <div class="site-header">
+
+    {%- comment -%}
+      Hamburger toggle — absolutely pinned to top-right so it stays out of
+      the vertical column flow on desktop and acts as a close button on mobile.
+    {%- endcomment -%}
+    <button id="menu-button" class="site-button btn-reset"
+            aria-label="Toggle menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+        <use xlink:href="#svg-menu"></use>
+      </svg>
+    </button>
+
+    {%- comment -%}
+      Profile photo (HTML <img>, not SVG <image>) + curved "James Bowden" text.
+
+      Container is 220×250 px.  Photo occupies the bottom 200×200 px, centred
+      horizontally (left: 10 px).  The SVG overlay draws only the curved text —
+      no SVG <image> element — so there are no cross-origin or namespace-parsing
+      surprises from injected SVG.
+
+      Arc geometry (viewBox 0 0 220 250):
+        Photo circle centre (110, 150) r=100.
+        Text arc centre (110, 150) r=112 — just outside the photo rim.
+        Path M -2,150 A 112,112 0 0,1 222,150 is the upper semicircle.
+        startOffset="50%" places the text midpoint at the topmost point (110, 38).
+    {%- endcomment -%}
+    <div class="sb-photo-wrap">
+      <img class="sb-photo"
+           src="{{ '/assets/img/ci_harbor_crop.jpeg' | relative_url }}"
+           alt="James Bowden" width="200" height="200">
+      <svg class="sb-name-arc"
+           viewBox="0 0 220 250"
+           xmlns="http://www.w3.org/2000/svg"
+           overflow="visible"
+           aria-hidden="true">
+        <defs>
+          <path id="sbArc" d="M -2,150 A 112,112 0 0,1 222,150" fill="none"/>
+        </defs>
+        <text font-size="16" font-weight="600" fill="#7253ed" font-family="inherit">
+          <textPath href="#sbArc" startOffset="50%" text-anchor="middle">James Bowden</textPath>
+        </text>
+      </svg>
+    </div>
+
+    <div class="social-icons">
+      <a href="mailto:jcbowden@berkeley.edu"                                               title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://scholar.google.com/citations?user=lfSNrMUAAAAJ&amp;hl=en&amp;oi=ao" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+      <a href="https://www.linkedin.com/in/j-bowden/"                                      title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/james-bowden"                                             title="GitHub"><i class="fab fa-github"></i></a>
+    </div>
+
+  </div>
+
+  {%- include_cached components/site_nav.html -%}
+
+  <div class="d-md-block d-none site-footer">
+    {%- capture nav_footer_custom -%}
+      {%- include nav_footer_custom.html -%}
+    {%- endcapture -%}
+    {%- if nav_footer_custom != "" -%}
+      {{ nav_footer_custom }}
+    {%- else -%}
+      This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
+    {%- endif -%}
+  </div>
+</header>
