@@ -21,30 +21,29 @@
     {%- comment -%}
       Profile photo (HTML <img>, not SVG <image>) + curved "James Bowden" text.
 
-      Container is 220×250 px.  Photo occupies the bottom 200×200 px, centred
-      horizontally (left: 10 px).  The SVG overlay draws only the curved text —
-      no SVG <image> element — so there are no cross-origin or namespace-parsing
-      surprises from injected SVG.
+      Container is 220×220 px.  Photo occupies the bottom 170×170 px, centred
+      horizontally (left: 25 px = (220-170)/2).  The SVG overlay draws only the
+      curved text — no SVG <image> element.
 
-      Arc geometry (viewBox 0 0 220 250):
-        Photo circle centre (110, 150) r=100.
-        Text arc centre (110, 150) r=112 — just outside the photo rim.
-        Path M -2,150 A 112,112 0 0,1 222,150 is the upper semicircle.
-        startOffset="50%" places the text midpoint at the topmost point (110, 38).
+      Arc geometry (viewBox 0 0 220 220):
+        Photo circle centre (110, 135) r=85.
+        Text arc centre (110, 135) r=100 — 15 px outside the photo rim.
+        Path M 10,135 A 100,100 0 0,1 210,135 is the upper semicircle.
+        startOffset="50%" places the text midpoint at the topmost point (110, 35).
     {%- endcomment -%}
     <div class="sb-photo-wrap">
       <img class="sb-photo"
            src="{{ '/assets/img/ci_harbor_crop.jpeg' | relative_url }}"
-           alt="James Bowden" width="200" height="200">
+           alt="James Bowden" width="170" height="170">
       <svg class="sb-name-arc"
-           viewBox="0 0 220 250"
+           viewBox="0 0 220 220"
            xmlns="http://www.w3.org/2000/svg"
            overflow="visible"
            aria-hidden="true">
         <defs>
-          <path id="sbArc" d="M -2,150 A 112,112 0 0,1 222,150" fill="none"/>
+          <path id="sbArc" d="M 10,135 A 100,100 0 0,1 210,135" fill="none"/>
         </defs>
-        <text font-size="16" font-weight="600" fill="#7253ed" font-family="inherit">
+        <text font-size="20" font-weight="600" fill="#7253ed" font-family="inherit">
           <textPath href="#sbArc" startOffset="50%" text-anchor="middle">James Bowden</textPath>
         </text>
       </svg>
