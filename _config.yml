@@ -38,16 +38,30 @@ defaults:
     values:
       layout: post
       nav_exclude: true
+      search_exclude: true
   # Poetry collection — large, navigated internally
   - scope:
       path: "pages/poetry"
     values:
       nav_exclude: true
+      search_exclude: true
   # Anthology — navigated internally
   - scope:
       path: "pages/anthology"
     values:
       nav_exclude: true
+      search_exclude: true
+  # Blog and dailies — navigated internally
+  - scope:
+      path: "pages/blog"
+    values:
+      nav_exclude: true
+      search_exclude: true
+  - scope:
+      path: "pages/dailies"
+    values:
+      nav_exclude: true
+      search_exclude: true
   # Vault sub-sections — navigated via vault index
   - scope:
       path: "pages/vault/atomic"
