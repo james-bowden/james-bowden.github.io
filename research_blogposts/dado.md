@@ -13,6 +13,9 @@ This is a short blog post introducing our paper:
 
 ---
 
+<details>
+<summary><h3>Problem setup: protein sequence design</h3></summary>
+
 Though our method can be used for any optimization problem over a discrete design space, in this blog, for concreteness, let's consider only the problem of designing a protein sequence.
 We can set this up as follows:
 1. The kind of discrete object that we'd like to design, $x$, is a protein sequence of length $L$ in which each design variable (or "position"), $x_i$, is an amino acid from an alphabet, $A_i$. For simplicity, we'll assume that every position uses the same standard amino acid alphabet of size 20, $A$.
@@ -20,15 +23,18 @@ We can set this up as follows:
 3. Specify a property function to design toward, $f(x)$, such as binding affinity to a target, or gene editing efficiency. In practice, this may be a predictive model fit on limited assay-labeled data.
 4. Putting this all together, our design problem is to find a sequence that maximizes our specification: $x^*=\arg\max_{x\in X} f(x)$.
 
-<details>
-<summary>Distributional optimization and EDA primer [expand]</summary>
+</details>
 
-**Distributional optimization** is a standard way of solving such design problems; estimation of distribution algorithms (EDAs) and policy optimization in reinforcement learning are two common instantiations.
+<details>
+<summary><h3>Primer: Distributional optimization and EDAs</h3></summary>
+
+<strong>Distributional optimization</strong> is a standard way of solving such design problems; estimation of distribution algorithms (EDAs) and policy optimization in reinforcement learning are two common instantiations.
 Compared to naively evaluating one protein, then the next, until all of $X$ has been considered, distributional optimization algorithms navigate the design space using a probability distribution, $p_\theta(x)$, often referred to as a "search distribution" or a "policy".
 Intuitively, the search distribution is a like a spotlight that moves through the design space toward regions where $f(x)$ is larger.
 In modern times, $p_\theta(x)$ is typically parameterized as a highly expressive neural network generative model, like an autoregressive model or diffusion model, allowing for pretty arbitrarily shaped spotlights.
 $p_\theta(x)$ might also be initialized as some pre-trained model, in which case an EDA implements a kind of RL fine-tuning. Alternatively, one might initialize $p_\theta(x)$ to be a uniform distribution on a certain set of designs, e.g., those tested in an initial experiment, or just completely randomly.
 In pseudocode, a standard distributional optimization workflow looks like this:
+
 <figure style="border: 1px solid #ccc; border-radius: 4px; padding: 0.75em 1em; margin: 1.5em 0;">
 <figcaption style="font-weight: bold; margin-bottom: 0.5em;">Standard EDA pseudocode</figcaption>
 <ol style="font-family: monospace; margin: 0; padding-left: 3em;">
@@ -43,19 +49,44 @@ In pseudocode, a standard distributional optimization workflow looks like this:
 </ol>
 </figure>
 
+There's much more discussion of EDAs, their derivation, relevant hyperparameters, and the important ways they can be extended in our paper.
 </details>
 
+### Decomposing the design space
+
+Although the standard EDA is great, the design space it has to search is still combinatorially large!
+Even if we use a lot of samples for the weighted maximum likelihood update, it may still take many iterations to find good designs.
+
+In protein design (and many other scientific design settings), however, we often have information that can help us <strong>decompose</strong> the design space and instead perform search in a much smaller space.
+xxx.
 
 To motivate our method, Decomposition-Aware Distributional Optimization (DADO), let's begin by considering...
+
+<div style="line-height: 0;">
+<img src="/assets/img/research/dado/titles.png" style="width: 100%; display: block;" alt="titles"/>
+<div style="position: relative;">
+  <img src="/assets/img/research/dado/aav.png" style="width: 100%; display: block;" alt="AAV"/>
+  <span style="position: absolute; top: 0.4em; left: 0.5em; line-height: 1;"><strong>a,</strong> AAV</span>
+</div>
+<div style="position: relative;">
+  <img src="/assets/img/research/dado/phot.png" style="width: 100%; display: block;" alt="CreiLOV"/>
+  <span style="position: absolute; top: 0.4em; left: 0.5em; line-height: 1;"><strong>b,</strong> CreiLOV</span>
+</div>
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Leveraging decomposition for efficient distributional optimization
 
 <img src="/assets/img/research/dado/schematic.png" style="width: 100%; display: block;" alt="DADO schematic"/>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-<div style="line-height: 0;">
-<img src="/assets/img/research/dado/titles.png" style="width: 100%; display: block;" alt="titles"/>
-<img src="/assets/img/research/dado/aav.png" style="width: 100%; display: block;" alt="AAV"/>
-<img src="/assets/img/research/dado/phot.png" style="width: 100%; display: block;" alt="CreiLOV"/>
-</div>
+### Outtakes
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Some additional considerations for practical usage... 
+
+what's still hard...
+
+
+Feel free to [email me](mailto:jcbowden@berkeley.edu) with any questions or comments! Also happy to discuss applying our method to your problem, or potential collaboration.
