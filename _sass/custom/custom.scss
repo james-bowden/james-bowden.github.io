@@ -99,6 +99,46 @@ svg.sb-name-arc {
   overflow: visible;
 }
 
+// --- Media nav section ---
+
+.sb-media-nav {
+  padding: 0 1rem 0.5rem;
+
+  .sb-media-divider {
+    border: none;
+    border-top: 1px solid $border-color;
+    margin: 0.5rem 0 0.75rem;
+  }
+
+  .sb-media-label {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: $nav-child-link-color;
+    padding: 0 0.5rem 0.25rem;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li a {
+      display: block;
+      padding: 0.2rem 0.5rem 0.2rem 1.25rem;
+      font-size: 0.8rem;
+      color: $nav-child-link-color;
+      text-decoration: none;
+
+      &:hover {
+        color: $link-color;
+      }
+    }
+  }
+}
+
 // --- Social icons ---
 
 .social-icons {
