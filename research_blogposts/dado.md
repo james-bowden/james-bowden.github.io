@@ -13,7 +13,7 @@ This is a short blog post introducing our paper:
 
 ---
 
-<details>
+<details style="margin-top: 1.5em;">
 <summary><h3 style="display: inline;">Problem setup: protein sequence design</h3></summary>
 
 Though our method can be used for any optimization problem over a discrete design space, in this blog, for concreteness, let's consider only the problem of designing a protein sequence.
@@ -27,7 +27,7 @@ We can set this up as follows:
 
 </details>
 
-<details>
+<details style="margin-top: 1.5em;">
 <summary><h3 style="display: inline;">Primer: distributional optimization and EDAs</h3></summary>
 
 Distributional optimization is a way of solving such design problems; estimation of distribution algorithms (EDAs) and policy optimization in reinforcement learning are two common instantiations.
