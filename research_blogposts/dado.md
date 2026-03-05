@@ -14,10 +14,10 @@ This is a short blog post introducing our paper:
 
 Though our method can be used for any optimization problem over a discrete design space, in this blog, for concreteness, let's consider only the problem of designing a protein sequence.
 We can set this up as follows:
-> The kind of discrete object that we'd like to design, $x$, is a protein sequence in which each design variable (or "position"), $x_i$, is an amino acid from an alphabet, $A_i$. For simplicity, we'll assume that every position uses the same standard amino acid alphabet of size 20, $A$.
-> Given the length, $L$, of the sequence we aim to design, we can write the design space as $X := A^L$. It follows that there are $|A|^L=20^L$ possible protein sequences to choose from.
-> Design is done according to a specification, $f(x)$, such as binding affinity to a target, or gene editing efficiency.
-> Putting this all together, our design problem is to find a sequence that maximizes our specification: $x^*=\arg\max_{x\in X} f(x)$.
+> The kind of discrete object that we'd like to design, $x$, is a protein sequence in which each design variable (or "position"), $x_i$, is an amino acid from an alphabet, $A_i$. For simplicity, we'll assume that every position uses the same standard amino acid alphabet of size 20, $A$.<br/>
+> Given the length, $L$, of the sequence we aim to design, we can write the design space as $X := A^L$. It follows that there are $|A|^L=20^L$ possible protein sequences to choose from.<br/>
+> Design is done according to a specification, $f(x)$, such as binding affinity to a target, or gene editing efficiency.<br/>
+> Putting this all together, our design problem is to find a sequence that maximizes our specification: $x^*=\arg\max_{x\in X} f(x)$.<br/>
 
 *Distributional optimization* is a standard way of solving such design problems; estimation of distribution algorithms (EDAs) and policy optimization in reinforcement learning are two popular instantiations. 
 Compared to naively evaluating one protein, then the next, until all of $X$ has been considered, distributional optimization algorithms navigate the design space using a probability distribution, $p_\theta(x)$, often referred to as a "search distribution" or a "policy". 
@@ -26,18 +26,17 @@ In pseudocode, a standard distributional optimization workflow looks like this:
 
 <figure style="border: 1px solid #ccc; border-radius: 4px; padding: 0.75em 1em; margin: 1.5em 0;">
 <figcaption style="font-weight: bold; margin-bottom: 0.5em;">EDA pseudocode</figcaption>
-<pre style="margin: 0;">
-Input:  objective f, iterations T, population size N
-Output: best solution x*
+<div style="font-family: monospace; white-space: pre; margin: 0;">
+Initialize $p_\theta(x)$ either randomly, to some pre-trained model, as uniform on a set of designs, or other
 
-Initialize p(x) uniformly over X
-for t = 1 to T do
-    Sample {x_1, ..., x_N} ~ p(x)
-    Evaluate f(x_i) for each x_i
-    Select elite subset S = top-k samples by f
-    Update p(x) to fit S
-return x* = argmax_{x in S} f(x)
-</pre>
+for N training iterations do
+    Sample $K$ designs $\{x^1, \ldots, x^K\} \sim p_\theta(x)$
+    Compute a weight for each sample, $w^k=f(x^k)$
+    Update $p_\theta(x)$ via weighted maximum likelihood:
+        $\theta \leftarrow \arg\max_\theta \mathbb{E}_{\{x^k\}}[w^k \log p_\theta(x^k)]
+
+Sample $p_\theta(x)$ up to your experimental budget and test in the lab!
+</div>
 </figure>
 
 

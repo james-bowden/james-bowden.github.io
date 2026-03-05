@@ -99,6 +99,18 @@ svg.sb-name-arc {
   overflow: visible;
 }
 
+// On mobile (below JTD's $md = 50rem), shrink the whole photo+name group to 50%.
+// transform: scale() scales both the <img> and the SVG text uniformly.
+// The untransformed element still occupies 220px; the negative margin-bottom
+// compensates for the 110px of unused space (220 - 220×0.5 = 110px).
+@media screen and (max-width: 49.9375rem) {
+  .sb-photo-wrap {
+    transform: scale(0.5);
+    transform-origin: top center;
+    margin-bottom: -110px;
+  }
+}
+
 // --- Media nav section ---
 
 .sb-media-nav {
