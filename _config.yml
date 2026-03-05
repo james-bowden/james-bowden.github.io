@@ -68,6 +68,12 @@ defaults:
     values:
       nav_exclude: true
       search_exclude: true
+  # Research blogposts — linked manually from nav
+  - scope:
+      path: "research_blogposts"
+    values:
+      nav_exclude: true
+      search_exclude: true
   # Vault sub-sections — navigated via vault index
   - scope:
       path: "pages/vault/atomic"
