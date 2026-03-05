@@ -30,11 +30,11 @@ For a complete list, see [my Google Scholar page](https://scholar.google.com/cit
 .sq { font-size: 0.5em; vertical-align: middle; margin-right: 0.3em; }
 .interests-list summary::marker,
 .interests-list summary::-webkit-details-marker { font-size: 0.8em; }
-.interests-list summary { padding-left: 0.15em; }
+.interests-list summary .sum-text { margin-left: 0.15em; }
 </style>
 <ul class="interests-list">
   <li><span class="sq">&#9632;</span> being outside</li>
-  <li><details><summary>looking at paintings</summary>
+  <li><details><summary><span class="sum-text">looking at paintings</span></summary>
     <ul class="interests-sub">
       <li><span class="sq">&#9632;</span> <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ5I2tXP4u9dQZjBjq1BwLZSPfWNkHg45w-Q&s">Vyšehrad, 1910 | Vincenc Beneš</a></li>
       <li><span class="sq">&#9632;</span> <a href="https://upload.wikimedia.org/wikipedia/commons/d/d0/Paul_Klee%2C_Chapel_Quaking%2C_1924%2C_Scharf-Gerstenberg_Museum%2C_Berlin_%2839307504265%29.jpg">Chapel Quaking | Paul Klee</a></li>
@@ -43,7 +43,7 @@ For a complete list, see [my Google Scholar page](https://scholar.google.com/cit
     </ul>
   </details></li>
   <li><span class="sq">&#9632;</span> creative processes (collaborative?)</li>
-  <li><details><summary>sounds</summary>
+  <li><details><summary><span class="sum-text">sounds</span></summary>
     <ul class="interests-sub">
       <li><span class="sq">&#9632;</span> <a href="https://music.youtube.com/watch?v=Fzf0JxUW2HM&si=cKmas6CvSNx_r-dk">Sound and Vision | David Bowie</a></li>
       <li><span class="sq">&#9632;</span> <a href="https://music.youtube.com/watch?v=ej6gfL4yF4E&si=Mt_eeRtXa-fZXhTJ">My Favorite Things | John Coltrane</a></li>
@@ -52,7 +52,7 @@ For a complete list, see [my Google Scholar page](https://scholar.google.com/cit
       <li><span class="sq">&#9632;</span> <a href="https://music.youtube.com/watch?v=JZnzjzjYkK0&si=XNFt393Gqp2yq_uz">Dvorak Humoresque | Yo Yo Ma + Itzhak Perlman</a></li>
     </ul>
   </details></li>
-  <li><details><summary>reading things</summary>
+  <li><details><summary><span class="sum-text">reading things</span></summary>
     <ul class="interests-sub">
       <li><span class="sq">&#9632;</span> Near to the Wild Heart | Clarice Lispector</li>
       <li><span class="sq">&#9632;</span> To the Lighthouse | Virginia Woolf</li>
