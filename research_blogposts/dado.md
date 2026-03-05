@@ -20,9 +20,12 @@ We can set this up as follows:
 3. Specify a property function to design toward, $f(x)$, such as binding affinity to a target, or gene editing efficiency. In practice, this may be a predictive model fit on limited assay-labeled data.
 4. Putting this all together, our design problem is to find a sequence that maximizes our specification: $x^*=\arg\max_{x\in X} f(x)$.
 
-**Distributional optimization** is a standard way of solving such design problems; estimation of distribution algorithms (EDAs) and policy optimization in reinforcement learning are two common instantiations. 
-Compared to naively evaluating one protein, then the next, until all of $X$ has been considered, distributional optimization algorithms navigate the design space using a probability distribution, $p_\theta(x)$, often referred to as a "search distribution" or a "policy". 
-Intuitively, the search distribution is a like a spotlight that moves through the design space toward regions where $f(x)$ is larger. 
+<details>
+<summary>Distributional optimization and EDA primer [expand]</summary>
+
+**Distributional optimization** is a standard way of solving such design problems; estimation of distribution algorithms (EDAs) and policy optimization in reinforcement learning are two common instantiations.
+Compared to naively evaluating one protein, then the next, until all of $X$ has been considered, distributional optimization algorithms navigate the design space using a probability distribution, $p_\theta(x)$, often referred to as a "search distribution" or a "policy".
+Intuitively, the search distribution is a like a spotlight that moves through the design space toward regions where $f(x)$ is larger.
 In modern times, $p_\theta(x)$ is typically parameterized as a highly expressive neural network generative model, like an autoregressive model or diffusion model, allowing for pretty arbitrarily shaped spotlights.
 $p_\theta(x)$ might also be initialized as some pre-trained model, in which case an EDA implements a kind of RL fine-tuning. Alternatively, one might initialize $p_\theta(x)$ to be a uniform distribution on a certain set of designs, e.g., those tested in an initial experiment, or just completely randomly.
 In pseudocode, a standard distributional optimization workflow looks like this:
@@ -40,5 +43,19 @@ In pseudocode, a standard distributional optimization workflow looks like this:
 </ol>
 </figure>
 
+</details>
+
 
 To motivate our method, Decomposition-Aware Distributional Optimization (DADO), let's begin by considering...
+
+<img src="/assets/img/research/dado/schematic.png" style="width: 100%; display: block;" alt="DADO schematic"/>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+<div style="line-height: 0;">
+<img src="/assets/img/research/dado/titles.png" style="width: 100%; display: block;" alt="titles"/>
+<img src="/assets/img/research/dado/aav.png" style="width: 100%; display: block;" alt="AAV"/>
+<img src="/assets/img/research/dado/phot.png" style="width: 100%; display: block;" alt="CreiLOV"/>
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
