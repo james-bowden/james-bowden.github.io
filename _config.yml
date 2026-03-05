@@ -24,6 +24,9 @@ permalink:       /:title
 # color_scheme: dark   # uncomment for dark mode; or define a custom scheme in _sass/color_schemes/
 search_enabled:  true
 
+# Pseudocode indentation shorthand (use {{ site.indent }} in pages)
+indent: "&nbsp;&nbsp;&nbsp;&nbsp;"
+
 # Files to exclude from Jekyll processing
 exclude:
   - sync.py
