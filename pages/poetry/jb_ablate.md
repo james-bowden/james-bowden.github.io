@@ -46,4 +46,4 @@ without mourning the silence their ablation will leave<br/>
 
 <hr>
 
-Draws from Maggie Smith's ["Rain, New Year's Eve"](https://www.best-poems.net/maggie-smith/rain-new-years-eve.html) and ["Good Bones"](https://www.poetryfoundation.org/poems/89897/good-bones). Kinda for some other people too, in spirit--perhaps Athena, Antonia, Sujai--perhaps everyone who has helped me feel a little bit less lonely.
+<!-- Draws from Maggie Smith's ["Rain, New Year's Eve"](https://www.best-poems.net/maggie-smith/rain-new-years-eve.html) and ["Good Bones"](https://www.poetryfoundation.org/poems/89897/good-bones). Kinda for some other people too, in spirit--perhaps Athena, Antonia, Sujai--perhaps everyone who has helped me feel a little bit less lonely. -->
