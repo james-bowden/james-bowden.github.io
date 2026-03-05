@@ -122,3 +122,6 @@ TODO.md              this file (excluded from build)
       Poetry index page linked from the sidebar
 - [ ] Vault backlinks/tags: style `.tags`, `.tag`, `.post-date` in `custom.scss`
 - [ ] Favicon: already at `favicon.ico` in repo root — Just the Docs picks it up automatically
+- [ ] Eliminate certain private content from search -- particularly, blog and poetry.
+- [ ] Make some poetry accessible somewhere. Unsure what format I want yet.
+- [ ] Add rotating random photo grids somewhere. Need to add to and commit rotate folder in assets/img. 
