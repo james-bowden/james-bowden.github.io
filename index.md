@@ -21,7 +21,9 @@ Nature Communications 2025
 
 For a complete list, see [my Google Scholar page](https://scholar.google.com/citations?user=lfSNrMUAAAAJ&hl=en&oi=ao).
 
-### Outside of work, some things I sometimes like
+<details>
+<summary><h3 style="display: inline;">Outside of work, some things I sometimes like</h3></summary>
+
 <style>
 .interests-list, .interests-list > li, .interests-sub, .interests-sub > li { list-style: none !important; }
 .interests-list li::before, .interests-sub li::before { content: none !important; }
@@ -64,3 +66,5 @@ For a complete list, see [my Google Scholar page](https://scholar.google.com/cit
   <li><span class="sq">&#9632;</span> Frankfurt school thought</li>
 </ul>
 If anything (or nothing) resonates with you, poke me and let's get coffee or hang out somewhere in the real world. I'm quite interested in people, broadly, and enjoy making a new friend :p
+
+</details>

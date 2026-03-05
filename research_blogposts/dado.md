@@ -14,21 +14,23 @@ This is a short blog post introducing our paper:
 ---
 
 <details>
-<summary><h3>Problem setup: protein sequence design</h3></summary>
+<summary><h3 style="display: inline;">Problem setup: protein sequence design</h3></summary>
 
 Though our method can be used for any optimization problem over a discrete design space, in this blog, for concreteness, let's consider only the problem of designing a protein sequence.
 We can set this up as follows:
-1. The kind of discrete object that we'd like to design, $x$, is a protein sequence of length $L$ in which each design variable (or "position"), $x_i$, is an amino acid from an alphabet, $A_i$. For simplicity, we'll assume that every position uses the same standard amino acid alphabet of size 20, $A$.
-2. Given $L$ and $A$, we can write the design space as $X := A^L$, i.e., all amino acid sequences of length $L$. It follows that there are $\lvert A\rvert^L=20^L$ possible proteins to choose from.
-3. Specify a property function to design toward, $f(x)$, such as binding affinity to a target, or gene editing efficiency. In practice, this may be a predictive model fit on limited assay-labeled data.
-4. Putting this all together, our design problem is to find a sequence that maximizes our specification: $x^*=\arg\max_{x\in X} f(x)$.
+<ol>
+<li>The kind of discrete object that we'd like to design, $x$, is a protein sequence of length $L$ in which each design variable (or "position"), $x_i$, is an amino acid from an alphabet, $A_i$. For simplicity, we'll assume that every position uses the same standard amino acid alphabet of size 20, $A$.</li>
+<li>Given $L$ and $A$, we can write the design space as $X := A^L$, i.e., all amino acid sequences of length $L$. It follows that there are $\lvert A\rvert^L=20^L$ possible proteins to choose from.</li>
+<li>Specify a property function to design toward, $f(x)$, such as binding affinity to a target, or gene editing efficiency. In practice, this may be a predictive model fit on limited assay-labeled data.</li>
+<li>Putting this all together, our design problem is to find a sequence that maximizes our specification: $x^*=\arg\max_{x\in X} f(x)$.</li>
+</ol>
 
 </details>
 
 <details>
-<summary><h3>Primer: Distributional optimization and EDAs</h3></summary>
+<summary><h3 style="display: inline;">Primer: distributional optimization and EDAs</h3></summary>
 
-<strong>Distributional optimization</strong> is a standard way of solving such design problems; estimation of distribution algorithms (EDAs) and policy optimization in reinforcement learning are two common instantiations.
+Distributional optimization is a way of solving such design problems; estimation of distribution algorithms (EDAs) and policy optimization in reinforcement learning are two common instantiations.
 Compared to naively evaluating one protein, then the next, until all of $X$ has been considered, distributional optimization algorithms navigate the design space using a probability distribution, $p_\theta(x)$, often referred to as a "search distribution" or a "policy".
 Intuitively, the search distribution is a like a spotlight that moves through the design space toward regions where $f(x)$ is larger.
 In modern times, $p_\theta(x)$ is typically parameterized as a highly expressive neural network generative model, like an autoregressive model or diffusion model, allowing for pretty arbitrarily shaped spotlights.
