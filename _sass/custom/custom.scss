@@ -102,12 +102,10 @@ svg.sb-name-arc {
 // --- Media nav section ---
 
 .sb-media-nav {
-  padding: 0 1rem 0.5rem;
-
   .sb-media-divider {
     border: none;
     border-top: 1px solid $border-color;
-    margin: 0.5rem 0 0.75rem;
+    margin: 0.5rem 0 0;
   }
 
   .sb-media-label {
@@ -117,25 +115,7 @@ svg.sb-name-arc {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     color: $nav-child-link-color;
-    padding: 0 0.5rem 0.25rem;
-  }
-
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-    li a {
-      display: block;
-      padding: 0.2rem 0.5rem 0.2rem 1.25rem;
-      font-size: 0.8rem;
-      color: $nav-child-link-color;
-      text-decoration: none;
-
-      &:hover {
-        color: $link-color;
-      }
-    }
+    padding: 0.5rem $nav-list-item-height-sm * 0.5 0.25rem;
   }
 }
 

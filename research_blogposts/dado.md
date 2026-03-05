@@ -2,6 +2,7 @@
 layout: page
 title: DADO
 permalink: /dado/
+nav_exclude: true
 ---
 
 This is a short blog post introducing my paper:
