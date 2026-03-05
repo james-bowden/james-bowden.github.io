@@ -8,10 +8,10 @@ permalink: /
 ### Hi! 
 I'm a PhD student at Berkeley and NSF GRFP fellow, working at the intersection of ML and scientific design (proteins, materials). I'm advised by [Jennifer Listgarten](http://www.jennifer.listgarten.com/) and [Sergey Levine](https://people.eecs.berkeley.edu/~svlevine/). Lately I've been interested in understanding how domain-specific aspects of the scientific design problems I work on interact with various models and design algorithms. For instance, how might we enable experimentalists to more precisely specify the details of their problem settings and design desiderata?
 
-During my undergrad (Caltech), I primarily spent time thinking about adaptive experiment design, Bayesian inference, GPs, and uncertainty quantification in [Yisong Yue's](https://www.yisongyue.com/) group. I also had a lot of fun [teaching](/pages/teaching/) for a variety of the core CS / ML courses!
+During my undergrad (Caltech), I primarily spent time thinking about adaptive experiment design, Bayesian inference, GPs, and uncertainty quantification in [Yisong Yue's](https://www.yisongyue.com/) group. I also had a lot of fun [teaching](/pages/teaching/) a variety of the core CS / ML courses.
 
 ### Selected Publications
-**[Leveraging Discrete Function Decomposability for Scientific Design](https://arxiv.org/abs/2511.03032)** \[[blogpost](/dado/)\]<br/>
+**[Leveraging Discrete Function Decomposability for Scientific Design](https://arxiv.org/abs/2511.03032)** \[[DADO blogpost](/dado/)\]<br/>
 **JC Bowden**, S Levine, J Listgarten<br/>
 International Conference on Learning Representations (ICLR) 2026
 
@@ -22,8 +22,6 @@ Nature Communications 2025
 For a complete list, see [my Google Scholar page](https://scholar.google.com/citations?user=lfSNrMUAAAAJ&hl=en&oi=ao).
 
 ### Outside of work, some things I sometimes like
-In lieu of social media; if anything (or nothing) resonates with you, poke me and let's get coffee or hang out somewhere in the real world. I'm quite interested in people, broadly, and enjoy making a new friend :p
-
 <style>
 .interests-list, .interests-list > li, .interests-sub, .interests-sub > li { list-style: none !important; }
 .interests-list li::before, .interests-sub li::before { content: none !important; }
@@ -32,8 +30,8 @@ In lieu of social media; if anything (or nothing) resonates with you, poke me an
 .sq { font-size: 0.5em; vertical-align: middle; margin-right: 0.3em; }
 .interests-list summary::marker,
 .interests-list summary::-webkit-details-marker { font-size: 0.8em; }
+.interests-list summary { padding-left: 0.15em; }
 </style>
-
 <ul class="interests-list">
   <li><span class="sq">&#9632;</span> being outside</li>
   <li><details><summary>looking at paintings</summary>
@@ -65,3 +63,4 @@ In lieu of social media; if anything (or nothing) resonates with you, poke me an
   </details></li>
   <li><span class="sq">&#9632;</span> Frankfurt school thought</li>
 </ul>
+If anything (or nothing) resonates with you, poke me and let's get coffee or hang out somewhere in the real world. I'm quite interested in people, broadly, and enjoy making a new friend :p
