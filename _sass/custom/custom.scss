@@ -79,9 +79,9 @@ html {
 img.sb-photo {
   position: absolute;
   bottom: 0;
-  left: 25px;     // (220 - 170) / 2 = 25 px each side
-  width: 170px;
-  height: 170px;
+  left: 35px;     // (220 - 150) / 2 = 35 px each side
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
   display: block;
@@ -105,9 +105,9 @@ svg.sb-name-arc {
 // compensates for the 110px of unused space (220 - 220×0.5 = 110px).
 @media screen and (max-width: 49.9375rem) {
   .sb-photo-wrap {
-    transform: scale(0.5);
+    transform: scale(0.6);
     transform-origin: top center;
-    margin-bottom: -110px;
+    margin-bottom: -88px;
   }
 }
 
