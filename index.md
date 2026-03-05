@@ -26,9 +26,12 @@ In lieu of social media; if anything (or nothing) resonates with you, poke me an
 
 <style>
 .interests-list, .interests-list > li, .interests-sub, .interests-sub > li { list-style: none !important; }
+.interests-list li::before, .interests-sub li::before { content: none !important; }
 .interests-list { padding-left: 0; }
 .interests-sub { padding-left: 1.5em; margin-top: 0.4em; }
 .sq { font-size: 0.5em; vertical-align: middle; margin-right: 0.3em; }
+.interests-list summary::marker,
+.interests-list summary::-webkit-details-marker { font-size: 0.8em; }
 </style>
 
 <ul class="interests-list">
