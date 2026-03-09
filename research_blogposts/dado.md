@@ -37,7 +37,7 @@ In modern times, $p_\theta(x)$ is typically parameterized as a highly expressive
 $p_\theta(x)$ might also be initialized as some pre-trained model, in which case we would in effect be implementing a kind of RL fine-tuning (with $f$ as the reward signal). Alternatively, one might initialize $p_\theta(x)$ to be a uniform distribution on a certain set of designs, e.g., those tested in an initial experiment, or just completely randomly.
 In pseudocode, a standard distributional optimization workflow looks like this:
 
-<figure style="border: 1px solid #ccc; border-radius: 4px; padding: 0.75em 1em; margin: 1.5em 0;">
+<figure id="eda-pseudocode" style="border: 1px solid #ccc; border-radius: 4px; padding: 0.75em 1em; margin: 1.5em 0;">
 <figcaption style="font-weight: bold; margin-bottom: 0.5em;">Standard EDA pseudocode</figcaption>
 <ol style="font-family: monospace; margin: 0; padding-left: 3em;">
 <li>Initialize $p_\theta(x)$</li>
@@ -45,7 +45,7 @@ In pseudocode, a standard distributional optimization workflow looks like this:
 <li>{{ site.indent }}Sample $K$ designs, $\{x^1, \ldots, x^K\} \sim p_\theta(x)$</li>
 <li>{{ site.indent }}Compute a weight for each sample, $w^k=f(x^k)$</li>
 <li>{{ site.indent }}Update $p_\theta(x)$ via weighted maximum likelihood:</li>
-<li id="wml-update">{{ site.indent }}{{ site.indent }}$\theta \leftarrow \arg\max_\theta \mathbb{E}_{\{x^k\}}[w^k \log p_\theta(x^k)]$</li>
+<li>{{ site.indent }}{{ site.indent }}$\theta \leftarrow \arg\max_\theta \mathbb{E}_{\{x^k\}}[w^k \log p_\theta(x^k)]$</li>
 <li style="list-style-type: none;">&nbsp;</li>
 <li>Sample from $p_\theta(x)$ up to your experimental budget and test in the lab!</li>
 </ol>
@@ -57,27 +57,20 @@ There's much more discussion of EDAs, their derivation, relevant hyperparameters
 ### Decomposing the design space
 
 Although the standard EDA is great, it still has to search a combinatorially large design space!
-Even if we use a lot of samples for the <a href="#wml-update">weighted maximum likelihood update</a>, it may still take many iterations to find good designs.
+Even if we use a lot of samples for the <a href="#eda-pseudocode">weighted maximum likelihood update</a>, it may still take many iterations to find good designs.
 
 In protein design (and many other scientific design settings), however, we often have information that can help us <strong>decompose</strong> the design space and instead perform search in a much smaller space.
 For example, many protein design workflows assume$^{\ast}$ that the active site of a protein and the scaffold can be designed separately (sometimes called a [scaffolding problem](https://www.nature.com/articles/s41586-023-06415-8#Sec4)).
 More formally, if we denote active site positions as $x_a$ and scaffold positions as $x_p$ (with no overlapping positions; $L=L_a+L_p$), this assumption amounts to asserting that $f(x_a, x_p) = f_a(x_a) + f_p(x_p)$.
 We can exploit the linear additive structure in $f$ to instead solve two separate, smaller optimization problems, $[x_a^{\ast}, x_p^{\ast}] = \arg\max_{x_a,x_p} f(x_a, x_p) = [\arg\max_{x_a} f_a(x_a), \arg\max_{x_p} f_p(x_p)]$,
 yielding a massive reduction in the size of the effective search space from $20^L$ to $20^{L_a} + 20^{L_b}$. Completely separate EDAs can be used for each. 
-Even for a tiny protein composed of two length-5 parts, this is a huge gain: $20^10 >> 20^5 + 20^5$ (7 orders of magnitude).
+Even for a tiny protein composed of two length-$5$ parts, this is a huge gain: $20^{10} \gg 20^5 + 20^5$ (7 orders of magnitude).
 
 We don't expect such clean-cut decomposability in most problems.
-Our core contribution is to generalize the EDA to be able to leverage *any* linear additive structure in $f(x)$. 
+**Our core contribution is to generalize the EDA to be able to leverage *any* linear additive structure in $f(x)$.** 
 This means, in particular, accommodating design variables that participate in multiple linear additive components, such that we can't just solve completely separate optimization problems.
-To do this, we formalize a decomposition of $f(x)$ as a graph in which nodes represent design variables and edges denote coupling. The above example corresponds to a graph with two disconnected components (no edges between them).
-Let's look at some graph decompositions derived from real protein design problems now.
-
-In the figure below, we show one way to obtain a decomposition graph for a protein design problem.
-For two proteins, AAV VP1 (which co-assembles into a virus capsid) and CreiLOV (an oxygen-independent fluorophore), we first obtain a 3D structure from AlphaFold3 (column 1 from left).
-To extract a decomposition graph from the 3D structure, we compute distances between all pairs of positions and create an edge if they're within 4.5A of each other (column 2).
-
-Notice that the decomposition graph for AAV has few edges and is relatively chain-like. This suggests that we will be able to realize a large efficiency gain by performing optimization in its decomposed design space.
-On the other hand, CreiLOV looks a lot more like a fully-connected graph. In this case, we shouldn't expect to improve over a naive optimization method considering all variables jointly.
+To do this, we formalize a decomposition of $f(x)$ as an undirected graph in which nodes represent design variables and edges denote coupling. The above example corresponds to a graph with two disconnected components, each of which is fully connected internally.
+Let's now look at some graph decompositions derived from real protein design problems.
 
 <div style="line-height: 0;">
 <img src="/assets/img/research/dado/titles.png" style="width: 100%; display: block;" alt="titles"/>
@@ -91,20 +84,36 @@ On the other hand, CreiLOV looks a lot more like a fully-connected graph. In thi
 </div>
 </div>
 
+In the figure above, we show one way to obtain a decomposition graph for a protein design problem.
+For two proteins, AAV VP1 (which co-assembles into a virus capsid) and CreiLOV (an oxygen-independent fluorophore), we first obtain a 3D structure from AlphaFold3 (column 1 from left).
+To extract a decomposition graph from the 3D structure, we compute distances between all pairs of positions and create an edge if they're within 4.5Å of each other (column 2).
+
+Notice that the decomposition graph for AAV has few edges and is relatively chain-like. This suggests that we will be able to realize a large efficiency gain by operating in its decomposed design space.
+On the other hand, CreiLOV looks a lot more like a fully-connected graph. In this case, we can't expect to improve over a naive optimization method which considers all variables jointly.
+Of course, one could choose (e.g., based on domain-knowledge) to lower the contact distance, resulting in a more sparsely-connected decomposition with a larger potential efficiency gain.
+This hints at a key tradeoff: the more decomposed the problem, the more efficiently it can be optimized, but if the chosen decomposition is too aggressive, one might preclude performant designs from being found.
+
 
 ### Leveraging decomposition for efficient distributional optimization
 
-Now that we have a sense for the decomposition graphs we're working with, we can build some intuition for how we leverage them for more efficient design.
-
-discuss junction trees here
-
-value functions
-
-To motivate our method, Decomposition-Aware Distributional Optimization (DADO), let's begin by considering...
+Now that we have a sense of the decomposition graphs we're working with, we can build some intuition for how to leverage them for more efficient design.
+Briefly, we can convert any decomposition graph into a directed *junction tree* (columns 3--5 above), which classical (non-loopy) message-passing algorithms can utilize.
+To use message-passing for optimization, one computes dynamic programming **value functions** at each junction tree node, from the leaves up to the root.
+That is, each node $\tilde{x}_i$ is associated with a value function $Q^\text{max}_i(\tilde{x}_i, \tilde{x}_p)$ which depends on its parent.
+These value functions describe the partial maximum of $f$ over a node and all its descendants, and are computed by exact maximization over variables in its children.
+By choosing the root node's assignment, $\tilde{x}_r^\ast = \arg\max_{\tilde{x}_r} Q^\text{max}_r(\tilde{x}_r)$, and backtracking down the tree, one computes a global optimizer of $f$ with the lowest possible time complexity. 
+Still, this classical message-passing will become expensive or intractable if exact maximization must be performed on nodes of multiple design variables, motivating the use of distributional optimization.
+Instead of exact message-passing, we'll maintain a search distribution at each node conditional on parent node assignment, $p_\theta(\tilde{x}_i\mid \tilde{x}_p)$, and compute *distributional* value functions, $Q^\theta_i(\tilde{x}_i, \tilde{x}_p)$ in expectation over this partial search distribution. 
+In a <a href="#eda-pseudocode">sample-based setting</a>, these distributional value functions are preferable to $Q^\text{max}_i$ because a sample mean is an unbiased estimator of an expectation, whereas unbiased estimators of maxima don't exist for arbitrary distributions.
+We call our method Decomposition-Aware Distributional Optimization, or DADO. 
+For definitions and derivations of the value functions and optimization objectives, read the paper!
 
 <img src="/assets/img/research/dado/schematic.png" style="width: 100%; display: block;" alt="DADO schematic"/>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Given some tree-decomposition of $f$ (panel a), <a href="#eda-pseudocode">standard EDAs</a> ignore this information and simply weight samples from a joint search distribution over all design variables, $p_\theta(x)$, with $f(x)$ (panel b, top).
+In contrast, DADO is infused with the decomposition---its search distribution is factorized accordingly, and value functions are used to weight corresponding dimensions of each sample (panel b, bottom).
+DADO is much more statistically efficient than a standard EDA for a fixed sample budget because it gets to use all $K$ samples to update each lower-dimensional search distribution factor (example results on a synthetic problem in panel c).
+
 
 ### Outtakes
 
