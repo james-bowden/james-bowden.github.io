@@ -8,25 +8,24 @@ I had a phase in which I wrote a lot of poetry. By that, I sort of mean that I b
 
 <hr>
 
-["Pre-Matrix Existence in Berkeley, California"](https://james-bowden.github.io/pages/poetry/jb_wasted)
+[Life as AI PhD Student](https://james-bowden.github.io/pages/poetry/jb_balcony)
 
-["Life as AI PhD Student"](https://james-bowden.github.io/pages/poetry/jb_balcony)
+[Pre-Matrix Existence in Berkeley, California](https://james-bowden.github.io/pages/poetry/jb_wasted)
 
-["An Oat to Milk"](https://james-bowden.github.io/pages/poetry/jb_oatmilk)
+[An Oat to Milk](https://james-bowden.github.io/pages/poetry/jb_oatmilk)
 
-["Whittling Haiku"](https://james-bowden.github.io/pages/poetry/jb_whittling)
+[Whittling Haiku](https://james-bowden.github.io/pages/poetry/jb_whittling)
 
-["And Then God Said, *Let There Be Rain*"](https://james-bowden.github.io/pages/poetry/jb_god_rain)
+[And Then God Said, *Let There Be Rain*](https://james-bowden.github.io/pages/poetry/jb_god_rain)
 
-["I lick my lips and write with my tongue"](https://james-bowden.github.io/pages/poetry/jb_lips)
+[I lick my lips and write with my tongue](https://james-bowden.github.io/pages/poetry/jb_lips)
 
-["A Sonnet to Structure"](https://james-bowden.github.io/pages/poetry/jb_sonnet_only)
+[A Sonnet to Structure](https://james-bowden.github.io/pages/poetry/jb_sonnet_only)
 
-["Cherry communion"](https://james-bowden.github.io/pages/poetry/jb_cherry)
+[Cherry communion](https://james-bowden.github.io/pages/poetry/jb_cherry)
 
-["[Winter Break] At the California Institute of Technology"](https://james-bowden.github.io/pages/poetry/jb_winterbreak)
+[[Winter Break] At the California Institute of Technology](https://james-bowden.github.io/pages/poetry/jb_winterbreak)
 
-["Recognizance Prayer"](https://james-bowden.github.io/pages/poetry/jb_recognizance)
+[Recognizance Prayer](https://james-bowden.github.io/pages/poetry/jb_recognizance)
 
-["A Dirge to Exponential Growth"](https://james-bowden.github.io/pages/poetry/jb_ecoli)
-
+[A Dirge to Exponential Growth](https://james-bowden.github.io/pages/poetry/jb_ecoli)

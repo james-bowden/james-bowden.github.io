@@ -32,9 +32,9 @@ We can set this up as follows:
 
 Distributional optimization is a way of solving such design problems; estimation of distribution algorithms (EDAs) and policy optimization in reinforcement learning are two common instantiations.
 Compared to naively evaluating one protein, then the next, until all of $X$ has been considered, distributional optimization algorithms navigate the design space using a probability distribution, $p_\theta(x)$, often referred to as a "search distribution" or a "policy".
-Intuitively, the search distribution is a like a spotlight that moves through the design space toward regions where $f(x)$ is larger.
+Intuitively, the search distribution is like a spotlight that moves through the design space toward regions where $f(x)$ is larger.
 In modern times, $p_\theta(x)$ is typically parameterized as a highly expressive neural network generative model, like an autoregressive model or diffusion model, allowing for pretty arbitrarily shaped spotlights.
-$p_\theta(x)$ might also be initialized as some pre-trained model, in which case an EDA implements a kind of RL fine-tuning. Alternatively, one might initialize $p_\theta(x)$ to be a uniform distribution on a certain set of designs, e.g., those tested in an initial experiment, or just completely randomly.
+$p_\theta(x)$ might also be initialized as some pre-trained model, in which case we would in effect be implementing a kind of RL fine-tuning (with $f$ as the reward signal). Alternatively, one might initialize $p_\theta(x)$ to be a uniform distribution on a certain set of designs, e.g., those tested in an initial experiment, or just completely randomly.
 In pseudocode, a standard distributional optimization workflow looks like this:
 
 <figure style="border: 1px solid #ccc; border-radius: 4px; padding: 0.75em 1em; margin: 1.5em 0;">
@@ -45,7 +45,7 @@ In pseudocode, a standard distributional optimization workflow looks like this:
 <li>{{ site.indent }}Sample $K$ designs, $\{x^1, \ldots, x^K\} \sim p_\theta(x)$</li>
 <li>{{ site.indent }}Compute a weight for each sample, $w^k=f(x^k)$</li>
 <li>{{ site.indent }}Update $p_\theta(x)$ via weighted maximum likelihood:</li>
-<li>{{ site.indent }}{{ site.indent }}$\theta \leftarrow \arg\max_\theta \mathbb{E}_{\{x^k\}}[w^k \log p_\theta(x^k)]$</li>
+<li id="wml-update">{{ site.indent }}{{ site.indent }}$\theta \leftarrow \arg\max_\theta \mathbb{E}_{\{x^k\}}[w^k \log p_\theta(x^k)]$</li>
 <li style="list-style-type: none;">&nbsp;</li>
 <li>Sample from $p_\theta(x)$ up to your experimental budget and test in the lab!</li>
 </ol>
@@ -56,13 +56,28 @@ There's much more discussion of EDAs, their derivation, relevant hyperparameters
 
 ### Decomposing the design space
 
-Although the standard EDA is great, the design space it has to search is still combinatorially large!
-Even if we use a lot of samples for the weighted maximum likelihood update, it may still take many iterations to find good designs.
+Although the standard EDA is great, it still has to search a combinatorially large design space!
+Even if we use a lot of samples for the <a href="#wml-update">weighted maximum likelihood update</a>, it may still take many iterations to find good designs.
 
 In protein design (and many other scientific design settings), however, we often have information that can help us <strong>decompose</strong> the design space and instead perform search in a much smaller space.
-xxx.
+For example, many protein design workflows assume$^*$ that the active site of a protein and the scaffold can be designed separately (sometimes called a [scaffolding problem](https://www.nature.com/articles/s41586-023-06415-8#Sec4)).
+More formally, if we denote active site positions as $x_a$ and scaffold positions as $x_p$ (with no overlapping positions; $L=L_a+L_p$), this assumption amounts to asserting that $f(x_a, x_p) = f_a(x_a) + f_p(x_p)$.
+We can exploit the linear additive structure in $f$ to instead solve two separate, smaller optimization problems, $[x_a^*, x_p*] = \arg\max_{x_a,x_p} f(x_a, x_p) = [\arg\max_{x_a} f_a(x_a), \arg\max_{x_p} f_p(x_p)$,
+yielding a massive reduction in the size of the effective search space from $20^L$ to $20^{L_a} + 20^{L_b}$. Completely separate EDAs can be used for each. 
+Even for a tiny protein composed of two length-5 parts, this is a huge gain: $20^10 >> 20^5 + 20^5$ (7 orders of magnitude).
 
-To motivate our method, Decomposition-Aware Distributional Optimization (DADO), let's begin by considering...
+We don't expect such clean-cut decomposability in most problems.
+Our core contribution is to generalize the EDA to be able to leverage *any* linear additive structure in $f(x)$. 
+This means, in particular, accommodating design variables that participate in multiple linear additive components, such that we can't just solve completely separate optimization problems.
+To do this, we formalize a decomposition of $f(x)$ as a graph in which nodes represent design variables and edges denote coupling. The above example corresponds to a graph with two disconnected components (no edges between them).
+Let's look at some graph decompositions derived from real protein design problems now.
+
+In the figure below, we show one way to obtain a decomposition graph for a protein design problem.
+For two proteins, AAV VP1 (which co-assembles into a virus capsid) and CreiLOV (an oxygen-independent fluorophore), we first obtain a 3D structure from AlphaFold3 (column 1 from left).
+To extract a decomposition graph from the 3D structure, we compute distances between all pairs of positions and create an edge if they're within 4.5A of each other (column 2).
+
+Notice that the decomposition graph for AAV has few edges and is relatively chain-like. This suggests that we will be able to realize a large efficiency gain by performing optimization in its decomposed design space.
+On the other hand, CreiLOV looks a lot more like a fully-connected graph. In this case, we shouldn't expect to improve over a naive optimization method considering all variables jointly.
 
 <div style="line-height: 0;">
 <img src="/assets/img/research/dado/titles.png" style="width: 100%; display: block;" alt="titles"/>
@@ -76,9 +91,16 @@ To motivate our method, Decomposition-Aware Distributional Optimization (DADO), 
 </div>
 </div>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 ### Leveraging decomposition for efficient distributional optimization
+
+Now that we have a sense for the decomposition graphs we're working with, we can build some intuition for how we leverage them for more efficient design.
+
+discuss junction trees here
+
+value functions
+
+To motivate our method, Decomposition-Aware Distributional Optimization (DADO), let's begin by considering...
 
 <img src="/assets/img/research/dado/schematic.png" style="width: 100%; display: block;" alt="DADO schematic"/>
 
