@@ -1,9 +1,10 @@
 ---
 layout: page
-title: DADO
+title: "DADO: Leveraging Discrete Function Decomposability for Scientific Design"
 permalink: /dado/
 nav_exclude: true
-image: /assets/img/research/dado/schematic.png
+image: /assets/img/research/dado/schematic_lowres.png
+description: "We introduce DADO, a method that leverages discrete function decomposability to efficiently search combinatorial design spaces."
 ---
 
 This is a short blog post introducing our paper:
@@ -103,9 +104,11 @@ To use message-passing for optimization, one computes dynamic programming **valu
 That is, each node $$\tilde{x}_i$$ is associated with a value function $$Q^\text{max}_i(\tilde{x}_i, \tilde{x}_p)$$ which depends on its parent.
 These value functions describe the partial maximum of $f$ over a node and all its descendants, and are computed by exact maximization over variables in its children.
 By choosing the root node's assignment, $$\tilde{x}_r^\ast = \arg\max_{\tilde{x}_r} Q^\text{max}_r(\tilde{x}_r)$$, and backtracking down the tree, one computes a global optimizer of $f$ with the lowest possible time complexity. 
-Still, this classical message-passing will become expensive or intractable if exact maximization must be performed on nodes of multiple design variables, motivating the use of distributional optimization.
-Instead of exact message-passing, we'll maintain a search distribution at each node conditional on parent node assignment, $$p_\theta(\tilde{x}_i\mid \tilde{x}_p)$$, and compute *distributional* value functions, $$Q^\theta_i(\tilde{x}_i, \tilde{x}_p)$$ in expectation over this partial search distribution. 
+Still, this classical message-passing will become expensive or intractable if exact maximization must be performed on nodes containing multiple design variables.
+Distributional optimization sidesteps this issue because it works with samples from a distribution!
+Instead of computing exact value functions, we'll maintain a search distribution at each node conditional on parent node assignment, $$p_\theta(\tilde{x}_i\mid \tilde{x}_p)$$, and compute **distributional value functions**, $$Q^\theta_i(\tilde{x}_i, \tilde{x}_p)$$ in expectation over this partial search distribution. 
 In a <a href="#eda-pseudocode">sample-based setting</a>, these distributional value functions are preferable to $Q^\text{max}_i$ because a sample mean is an unbiased estimator of an expectation, whereas unbiased estimators of maxima don't exist for arbitrary distributions.
+To produce designs for which $f(x)$ is large, one sequentially samples the partial search distributions, starting from the root, and conditioning on each parent.
 We call our method Decomposition-Aware Distributional Optimization, or DADO. 
 For definitions and derivations of the value functions and optimization objectives, read the paper!
 
@@ -113,17 +116,26 @@ For definitions and derivations of the value functions and optimization objectiv
 
 Given some tree-decomposition of $f$ (panel a), <a href="#eda-pseudocode">standard EDAs</a> ignore this information and simply weight samples from a joint search distribution over all design variables, $p_\theta(x)$, with $f(x)$ (panel b, top).
 In contrast, DADO is infused with the decomposition---its search distribution is factorized accordingly, and value functions are used to weight corresponding dimensions of each sample (panel b, bottom).
-DADO is much more statistically efficient than a standard EDA for a fixed sample budget because it gets to use all $K$ samples to update each lower-dimensional search distribution factor (example results on a synthetic problem in panel c).
+DADO is much more statistically efficient than a standard EDA for a fixed sample budget because it gets to use all $K$ samples to update each lower-dimensional search distribution factor.
+This can lead to finding the same good designs as a standard EDA in fewer iterations, or simply better designs, which may have required a much larger sample budget for a standard EDA to find (example results on a synthetic problem in panel c).
 
 
 ### Outtakes
 
-Some additional considerations for practical usage... 
+#### Some additional considerations for practical usage
+We don't mean to suggest that you should use DADO exactly as we've implemented it; depending on your problem, there are likely modifications or extensions you'll want to make.
+For instance, incorporating a prior (perhaps some foundation model) over the design space if you have one, or adding an entropy bonus if you care about designing a diverse library as opposed to a single great design.
+As for obtaining an appropriate decomposition, we expect it to be largely domain-dependent. For some problems, such as circuit design, the decomposition topology may be fixed in advance according to fabrication constraints.
 
-what's still hard...
+#### What's still hard...
+Finding an accurate decomposition for a design problem is not always straightforward. The real world is typically structured though, and even very approximate decompositions can be useful.
+One might try to infer decomposability from labeled data, use auxiliary information, run a bi-level optimization, use a distribution of decompositions, or some other creative scheme.
+This is an open and active area of research both for proteins and scientific design in general.
 
-
-Feel free to [email me](mailto:jcbowden@berkeley.edu) with any questions or comments! Also happy to discuss applying our method to your problem, or potential collaboration.
+#### Contact us
+We hope you'll read (and enjoy) our paper!
+Feel free to [email me](mailto:jcbowden@berkeley.edu) with any questions or comments.
+I'd also be happy to discuss applying our method to your problem, or potential collaboration.
 
 ---
 
