@@ -60,10 +60,10 @@ There's much more discussion of EDAs, their derivation, relevant hyperparameters
 
 ### Decomposing the design space
 
-Although the standard EDA is great, it still has to search a combinatorially large design space!
+Although the standard EDA is great for solving $$\arg\max_\theta \mathbb{E}_{p_\theta(x)}[f(x)]$$, $$p_\theta(x)$$ still has to search a combinatorially large design space!
 Even if we use a lot of samples for the <a href="#eda-pseudocode">weighted maximum likelihood update</a>, it may still take many iterations to find good designs.
 
-In protein design (and many other scientific design settings), however, we often have information that can help us <strong>decompose</strong> the design space and thereby search a much smaller space.
+In protein design (and other scientific design settings), however, we often have information that can help us <strong>decompose</strong> the design space and thereby search a much smaller space.
 For example, many protein design workflows assume, roughly, that the active site of a protein and the scaffold can be designed separately (sometimes called a [scaffolding problem](https://www.nature.com/articles/s41586-023-06415-8#Sec4)).
 More formally, if we denote active site positions as $$x_a$$ and scaffold positions as $$x_s$$ (with no overlapping positions; $$L=L_a+L_s$$), this assumption[^scaffold] amounts to asserting that $$f(x_a, x_s) = f_a(x_a) + f_s(x_s)$$.
 We can exploit the linear additive structure in $f$ to instead solve two separate, smaller optimization problems, $$[x_a^{\ast}, x_s^{\ast}] = \arg\max_{x_a,x_s} f(x_a, x_s) = [\arg\max_{x_a} f_a(x_a), \arg\max_{x_s} f_p(x_s)]$$,
@@ -76,7 +76,7 @@ This means, in particular, accommodating design variables that participate in mu
 To do this, we formalize a decomposition of $f(x)$ as an undirected graph in which nodes represent design variables and edges denote coupling. The above example corresponds to a graph with two disconnected components, each of which is fully connected internally.
 Let's now look at some graph decompositions derived from real protein design problems.
 
-<div style="line-height: 0;">
+<div id="dado-composite" style="line-height: 0; cursor: zoom-in;">
 <img src="/assets/img/research/dado/titles.png" style="width: 100%; display: block;" alt="titles"/>
 <div style="position: relative;">
   <img src="/assets/img/research/dado/aav.png" style="width: 100%; display: block;" alt="AAV"/>
@@ -133,5 +133,23 @@ Feel free to [email me](mailto:jcbowden@berkeley.edu) with any questions or comm
 I'd also be excited to discuss applying our method to your problem, or potential collaboration.
 
 ---
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/html2canvas/dist/html2canvas.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var composite = document.getElementById('dado-composite');
+  html2canvas(composite, { scale: 2 }).then(function (canvas) {
+    var lb = GLightbox({ elements: [{ href: canvas.toDataURL(), type: 'image' }] });
+    composite.addEventListener('click', function () { lb.open(); });
+  });
+
+  var schematic = document.querySelector('img[src$="schematic.png"]');
+  var lb2 = GLightbox({ elements: [{ href: schematic.src, type: 'image' }] });
+  schematic.style.cursor = 'zoom-in';
+  schematic.addEventListener('click', function () { lb2.open(); });
+});
+</script>
 
 [^scaffold]: At its strongest. People know that this assumption doesn't hold everywhere; e.g., if the scaffold is modified such that the protein no longer folds properly, then the active site probably won't be able to contribute to overall function in any way. Emphasis is more on the fact that people often break their protein design problems down into these two smaller problems, which are then much easier to tackle, even if the decomposition isn't perfect. We use the most crude version of this assumption as a didactic example.
