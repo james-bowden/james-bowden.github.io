@@ -34,7 +34,7 @@ Distributional optimization is a way of solving such design problems; estimation
 Compared to naively evaluating one protein, then the next, until all of $X$ has been considered, distributional optimization algorithms navigate the design space using a probability distribution, $p_\theta(x)$, often referred to as a "search distribution" or a "policy".
 Intuitively, the search distribution is like a spotlight that moves through the design space toward regions where $f(x)$ is larger.
 In modern times, $p_\theta(x)$ is typically parameterized as a highly expressive neural network generative model, like an autoregressive model or diffusion model, allowing for pretty arbitrarily shaped spotlights.
-$p_\theta(x)$ might also be initialized as some pre-trained model, in which case we would in effect be implementing a kind of RL fine-tuning (with $f$ as the reward signal). Alternatively, one might initialize $p_\theta(x)$ to be a uniform distribution on a certain set of designs, e.g., those tested in an initial experiment, or just completely randomly.
+\(p_\theta(x)\) might also be initialized as some pre-trained model, in which case we would in effect be implementing a kind of RL fine-tuning (with $f$ as the reward signal). Alternatively, one might initialize \(p_\theta(x)\) to be a uniform distribution on a certain set of designs, e.g., those tested in an initial experiment, or just completely randomly.
 In pseudocode, a standard distributional optimization workflow looks like this:
 
 <figure id="eda-pseudocode" style="border: 1px solid #ccc; border-radius: 4px; padding: 0.75em 1em; margin: 1.5em 0;">
@@ -60,10 +60,10 @@ Although the standard EDA is great, it still has to search a combinatorially lar
 Even if we use a lot of samples for the <a href="#eda-pseudocode">weighted maximum likelihood update</a>, it may still take many iterations to find good designs.
 
 In protein design (and many other scientific design settings), however, we often have information that can help us <strong>decompose</strong> the design space and thereby search a much smaller space.
-For example, many protein design workflows assume$^{\ast}$ that the active site of a protein and the scaffold can be designed separately (sometimes called a [scaffolding problem](https://www.nature.com/articles/s41586-023-06415-8#Sec4)).
-More formally, if we denote active site positions as $x_a$ and scaffold positions as $x_s$ (with no overlapping positions; $L=L_a+L_s$), this assumption amounts to asserting that $f(x_a, x_s) = f_a(x_a) + f_s(x_s)$.
-We can exploit the linear additive structure in $f$ to instead solve two separate, smaller optimization problems, $[x_a^{\ast}, x_s^{\ast}] = \arg\max_{x_a,x_s} f(x_a, x_s) = [\arg\max_{x_a} f_a(x_a), \arg\max_{x_s} f_p(x_s)]$,
-yielding a massive reduction in the size of the effective search space from $20^L$ to $20^{L_a} + 20^{L_s}$. Completely separate EDAs can be used for each. 
+For example, many protein design workflows assume, roughly, that the active site of a protein and the scaffold can be designed separately (sometimes called a [scaffolding problem](https://www.nature.com/articles/s41586-023-06415-8#Sec4)).
+More formally, if we denote active site positions as \(x_a\) and scaffold positions as \(x_s\) (with no overlapping positions; \(L=L_a+L_s\)), this assumption[^scaffold] amounts to asserting that \(f(x_a, x_s) = f_a(x_a) + f_s(x_s)\).
+We can exploit the linear additive structure in $f$ to instead solve two separate, smaller optimization problems, \([x_a^{\ast}, x_s^{\ast}] = \arg\max_{x_a,x_s} f(x_a, x_s) = [\arg\max_{x_a} f_a(x_a), \arg\max_{x_s} f_p(x_s)]\),
+yielding a massive reduction in the size of the effective search space from $20^L$ to \(20^{L_a} + 20^{L_s}\). Completely separate EDAs can be used for each. 
 Even for a tiny protein composed of two length-$5$ parts, this is a huge gain: $20^{10} \gg 20^5 + 20^5$ (7 orders of magnitude).
 
 We don't expect such clean-cut decomposability in most problems.
@@ -99,11 +99,11 @@ This hints at a key tradeoff: the more decomposed the problem, the more efficien
 Now that we have a sense of the decomposition graphs we're working with, we can build some intuition for how to leverage them for more efficient design.
 Briefly, we can convert any decomposition graph into a directed *junction tree* (columns 3--5 above), which classical (non-loopy) message-passing algorithms can utilize.
 To use message-passing for optimization, one computes dynamic programming **value functions** at each junction tree node, from the leaves up to the root.
-That is, each node $\tilde{x}_i$ is associated with a value function $Q^\text{max}_i(\tilde{x}_i, \tilde{x}_p)$ which depends on its parent.
+That is, each node \(\tilde{x}_i\) is associated with a value function \(Q^\text{max}_i(\tilde{x}_i, \tilde{x}_p)\) which depends on its parent.
 These value functions describe the partial maximum of $f$ over a node and all its descendants, and are computed by exact maximization over variables in its children.
-By choosing the root node's assignment, $\tilde{x}_r^\ast = \arg\max_{\tilde{x}_r} Q^\text{max}_r(\tilde{x}_r)$, and backtracking down the tree, one computes a global optimizer of $f$ with the lowest possible time complexity. 
+By choosing the root node's assignment, \(\tilde{x}_r^\ast = \arg\max_{\tilde{x}_r} Q^\text{max}_r(\tilde{x}_r)\), and backtracking down the tree, one computes a global optimizer of $f$ with the lowest possible time complexity. 
 Still, this classical message-passing will become expensive or intractable if exact maximization must be performed on nodes of multiple design variables, motivating the use of distributional optimization.
-Instead of exact message-passing, we'll maintain a search distribution at each node conditional on parent node assignment, $p_\theta(\tilde{x}_i\mid \tilde{x}_p)$, and compute *distributional* value functions, $Q^\theta_i(\tilde{x}_i, \tilde{x}_p)$ in expectation over this partial search distribution. 
+Instead of exact message-passing, we'll maintain a search distribution at each node conditional on parent node assignment, \(p_\theta(\tilde{x}_i\mid \tilde{x}_p)\), and compute *distributional* value functions, \(Q^\theta_i(\tilde{x}_i, \tilde{x}_p)\) in expectation over this partial search distribution. 
 In a <a href="#eda-pseudocode">sample-based setting</a>, these distributional value functions are preferable to $Q^\text{max}_i$ because a sample mean is an unbiased estimator of an expectation, whereas unbiased estimators of maxima don't exist for arbitrary distributions.
 We call our method Decomposition-Aware Distributional Optimization, or DADO. 
 For definitions and derivations of the value functions and optimization objectives, read the paper!
@@ -123,3 +123,6 @@ what's still hard...
 
 
 Feel free to [email me](mailto:jcbowden@berkeley.edu) with any questions or comments! Also happy to discuss applying our method to your problem, or potential collaboration.
+
+
+[^scaffold]: At its strongest. People know that this assumption doesn't hold everywhere; e.g., if the scaffold is modified such that the protein no longer folds properly, then the active site probably won't be able to contribute to overall function in any way. Emphasis is more on the fact that people often break their protein design problems down into these two smaller problems, which are then much easier to tackle, even if the decomposition isn't perfect. We use the most crude version of this assumption as a didactic example.
