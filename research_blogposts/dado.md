@@ -1,8 +1,10 @@
 ---
-layout: blogpost
+layout: page
 title: "DADO: Leveraging Discrete Function Decomposability for Scientific Design"
 permalink: /dado/
 nav_exclude: true
+nav_enabled: false
+hide_search: true
 image: /assets/img/research/dado/schematic_lowres.png
 description: "We introduce DADO, a method that leverages discrete function decomposability to efficiently search combinatorial design spaces."
 ---
