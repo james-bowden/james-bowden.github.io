@@ -17,8 +17,9 @@ html.tuesday {
   }
 
   // Nav links: hover and active states
-  .nav-list-link:hover,
-  .nav-list-link.active {
+  // (needs .nav-list-item parent to match JTD's specificity)
+  .nav-list-item .nav-list-link:hover,
+  .nav-list-item .nav-list-link.active {
     color: $weekend-accent-dark;
   }
 
@@ -29,6 +30,11 @@ html.tuesday {
 
   .nav-list-expander:hover {
     color: $weekend-accent-dark;
+  }
+
+  // Sidebar name arc SVG text — CSS fill overrides the hardcoded fill="" attribute
+  svg.sb-name-arc text {
+    fill: $weekend-accent;
   }
 
   // Anchor heading SVG icons (§ symbols on hover)
