@@ -77,13 +77,13 @@ To do this, we formalize a decomposition of $f(x)$ as an undirected graph in whi
 Let's now look at some graph decompositions derived from real protein design problems.
 
 <div id="dado-composite" style="line-height: 0; cursor: zoom-in;">
-<img src="/assets/img/research/dado/titles.png" style="width: 100%; display: block;" alt="titles"/>
+<img src="/assets/img/research/dado/titles.webp" style="width: 100%; display: block;" alt="titles"/>
 <div style="position: relative;">
-  <img src="/assets/img/research/dado/aav.png" style="width: 100%; display: block;" alt="AAV"/>
+  <img src="/assets/img/research/dado/aav.webp" style="width: 100%; display: block;" alt="AAV"/>
   <span style="position: absolute; top: 0.4em; left: 0.5em; line-height: 1;"><strong>a,</strong> AAV</span>
 </div>
 <div style="position: relative;">
-  <img src="/assets/img/research/dado/phot.png" style="width: 100%; display: block;" alt="CreiLOV"/>
+  <img src="/assets/img/research/dado/phot.webp" style="width: 100%; display: block;" alt="CreiLOV"/>
   <span style="position: absolute; top: 0.4em; left: 0.5em; line-height: 1;"><strong>b,</strong> CreiLOV</span>
 </div>
 </div>
@@ -95,12 +95,16 @@ To extract a decomposition graph from the 3D structure, we compute distances bet
 Notice that the decomposition graph for AAV has few edges and is relatively chain-like. This suggests that we will be able to realize a large efficiency gain by operating in its decomposed design space.
 On the other hand, CreiLOV looks a lot more like a fully-connected graph. In this case, we can't expect to improve over a naive optimization method which considers all variables jointly.
 Of course, one could choose (e.g., based on domain-knowledge) to lower the contact distance, resulting in a more sparsely-connected decomposition with a larger potential efficiency gain.
-This hints at a key tradeoff in practice: the more decomposed the problem, the more efficiently it can be optimized, but if the chosen decomposition is too aggressive, one might preclude performant designs from being found.
+This hints at a key tradeoff in practice: the more decomposed the problem, the more efficiently it can be optimized, but if the chosen decomposition is too aggressive, it might preclude performant designs from being found.
 
 
-### Leveraging decomposition for efficient distributional optimization
+### Leveraging decomposability for efficient distributional optimization
 
 Now that we have a sense of the decomposition graphs we're working with, we can build some intuition for how to leverage them for more efficient design.
+There are two important insights. 
+First, we will use a search distribution factorized according to the decomposition graph so that search is performed entirely within the decomposed space.
+
+The key idea is to use a factorized search distribution, whic
 Briefly, we can convert any decomposition graph into a directed *junction tree* (columns 3--5 above), which classical (non-loopy) message-passing algorithms can utilize.
 To use message-passing for optimization, one computes dynamic programming **value functions** at each junction tree node, from the leaves up to the root.
 That is, each node $$\tilde{x}_i$$ is associated with a value function $$Q^\text{max}_i(\tilde{x}_i, \tilde{x}_p)$$ which depends on its parent.
@@ -108,13 +112,13 @@ These value functions describe the partial maximum of $f$ over a node and all it
 By choosing the root node's assignment, $$\tilde{x}_r^\ast = \arg\max_{\tilde{x}_r} Q^\text{max}_r(\tilde{x}_r)$$, and backtracking down the tree, one computes a global optimizer of $f$ with the lowest possible time complexity. 
 Still, this classical message-passing will become expensive or intractable if exact maximization must be performed on nodes containing multiple design variables.
 Distributional optimization sidesteps this issue because it works with samples from a distribution!
-Instead of computing exact value functions, we'll maintain a search distribution at each node conditional on parent node assignment, $$p_\theta(\tilde{x}_i\mid \tilde{x}_p)$$, and compute **distributional value functions**, $$Q^\theta_i(\tilde{x}_i, \tilde{x}_p)$$ in expectation over this partial search distribution. 
+Instead of computing exact value functions, we'll maintain a search distribution at each node conditional on parent node assignment, $$p_\theta(\tilde{x}_i\mid \tilde{x}_p)$$, and compute **distributional value functions**, $$Q^\theta_i(\tilde{x}_i, \tilde{x}_p)$$, in expectation over this partial search distribution. 
 In a <a href="#eda-pseudocode">sample-based setting</a>, these distributional value functions are preferable to $Q^\text{max}_i$ because a sample mean is an unbiased estimator of an expectation, whereas unbiased estimators of maxima don't exist for arbitrary distributions.
 To produce designs for which $f(x)$ is large, one sequentially samples the partial search distributions, starting from the root, and conditioning on each parent.
 We call our method Decomposition-Aware Distributional Optimization, or DADO. 
 For definitions and derivations of the value functions and optimization objectives, read the paper!
 
-<img src="/assets/img/research/dado/schematic.png" style="width: 100%; display: block;" alt="DADO schematic"/>
+<img src="/assets/img/research/dado/schematic.webp" style="width: 100%; display: block;" alt="DADO schematic"/>
 
 Given some tree-decomposition of $f$ (panel a), <a href="#eda-pseudocode">standard EDAs</a> ignore this information and simply weight samples from a joint search distribution over all design variables, $p_\theta(x)$, with $f(x)$ (panel b, top).
 In contrast, DADO is infused with the decomposition---its search distribution is factorized accordingly, and value functions are used to weight corresponding dimensions of each sample (panel b, bottom).
@@ -134,21 +138,37 @@ I'd also be excited to discuss applying our method to your problem, or potential
 
 ---
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/html2canvas/dist/html2canvas.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+  function makeOverlay(inner) {
+    var ov = document.createElement('div');
+    ov.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:9999;display:flex;align-items:center;justify-content:center;cursor:zoom-out';
+    ov.appendChild(inner);
+    ov.addEventListener('click', function () { document.body.removeChild(ov); });
+    document.addEventListener('keydown', function onKey(e) {
+      if (e.key === 'Escape') { document.body.removeChild(ov); document.removeEventListener('keydown', onKey); }
+    });
+    document.body.appendChild(ov);
+  }
+
   var composite = document.getElementById('dado-composite');
-  html2canvas(composite, { scale: 2 }).then(function (canvas) {
-    var lb = GLightbox({ elements: [{ href: canvas.toDataURL(), type: 'image' }] });
-    composite.addEventListener('click', function () { lb.open(); });
+  composite.addEventListener('click', function () {
+    var rect = composite.getBoundingClientRect();
+    var scale = Math.min(window.innerWidth * 0.92 / rect.width, window.innerHeight * 0.92 / rect.height);
+    var clone = composite.cloneNode(true);
+    clone.removeAttribute('id');
+    clone.style.cssText += ';transform:scale('+scale+');transform-origin:center;width:'+rect.width+'px;cursor:default;pointer-events:none';
+    makeOverlay(clone);
   });
 
-  var schematic = document.querySelector('img[src$="schematic.png"]');
-  var lb2 = GLightbox({ elements: [{ href: schematic.src, type: 'image' }] });
+  var schematic = document.querySelector('img[src$="schematic.webp"]');
   schematic.style.cursor = 'zoom-in';
-  schematic.addEventListener('click', function () { lb2.open(); });
+  schematic.addEventListener('click', function () {
+    var img = document.createElement('img');
+    img.src = schematic.src;
+    img.style.cssText = 'max-width:92vw;max-height:92vh;object-fit:contain;cursor:default';
+    makeOverlay(img);
+  });
 });
 </script>
 
