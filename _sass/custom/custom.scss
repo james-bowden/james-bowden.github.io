@@ -139,6 +139,12 @@ a.author-link,
 a.author-link:visited {
   color: inherit;
   text-decoration: underline;
+  text-decoration-color: $border-color;
+  text-underline-offset: 2px;
+
+  &:hover {
+    text-decoration-color: rgba($link-color, 0.45);
+  }
 }
 
 // --- Social icons ---
