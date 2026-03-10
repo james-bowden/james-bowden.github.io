@@ -59,11 +59,11 @@ There's much more discussion of EDAs, their derivation, relevant hyperparameters
 Although the standard EDA is great, it still has to search a combinatorially large design space!
 Even if we use a lot of samples for the <a href="#eda-pseudocode">weighted maximum likelihood update</a>, it may still take many iterations to find good designs.
 
-In protein design (and many other scientific design settings), however, we often have information that can help us <strong>decompose</strong> the design space and instead perform search in a much smaller space.
+In protein design (and many other scientific design settings), however, we often have information that can help us <strong>decompose</strong> the design space and thereby search a much smaller space.
 For example, many protein design workflows assume$^{\ast}$ that the active site of a protein and the scaffold can be designed separately (sometimes called a [scaffolding problem](https://www.nature.com/articles/s41586-023-06415-8#Sec4)).
-More formally, if we denote active site positions as $x_a$ and scaffold positions as $x_p$ (with no overlapping positions; $L=L_a+L_p$), this assumption amounts to asserting that $f(x_a, x_p) = f_a(x_a) + f_p(x_p)$.
-We can exploit the linear additive structure in $f$ to instead solve two separate, smaller optimization problems, $[x_a^{\ast}, x_p^{\ast}] = \arg\max_{x_a,x_p} f(x_a, x_p) = [\arg\max_{x_a} f_a(x_a), \arg\max_{x_p} f_p(x_p)]$,
-yielding a massive reduction in the size of the effective search space from $20^L$ to $20^{L_a} + 20^{L_b}$. Completely separate EDAs can be used for each. 
+More formally, if we denote active site positions as $x_a$ and scaffold positions as $x_s$ (with no overlapping positions; $L=L_a+L_s$), this assumption amounts to asserting that $f(x_a, x_s) = f_a(x_a) + f_s(x_s)$.
+We can exploit the linear additive structure in $f$ to instead solve two separate, smaller optimization problems, $[x_a^{\ast}, x_s^{\ast}] = \arg\max_{x_a,x_s} f(x_a, x_s) = [\arg\max_{x_a} f_a(x_a), \arg\max_{x_s} f_p(x_s)]$,
+yielding a massive reduction in the size of the effective search space from $20^L$ to $20^{L_a} + 20^{L_s}$. Completely separate EDAs can be used for each. 
 Even for a tiny protein composed of two length-$5$ parts, this is a huge gain: $20^{10} \gg 20^5 + 20^5$ (7 orders of magnitude).
 
 We don't expect such clean-cut decomposability in most problems.

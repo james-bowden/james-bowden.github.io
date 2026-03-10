@@ -18,6 +18,8 @@ plugins:
 # Build settings
 markdown:        kramdown
 highlighter:     rouge
+kramdown:
+  math_engine:   mathjax
 permalink:       /:title
 
 # Just the Docs configuration
