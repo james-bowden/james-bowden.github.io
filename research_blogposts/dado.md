@@ -109,13 +109,13 @@ Each junction tree node (columns 4--5 above) gets its own search distribution, $
 Compared to the standard EDA, which searches all dimensions of $$x$$ together, we have multiple separate search distributions, each searching only the dimensions of $$x$$ specified by its junction tree node.
 This factorization makes it so that DADO only "sees" the smaller decomposed space[^fda].
 
-Second, we coordinate these separate search distribution factors by passing messages between them.
+Second, we globally coordinate these separate search distribution factors by passing messages between them.
 Messages called **value functions** are passed from the leaves of the junction tree to the root, communicating to each parent node the status of its children.
-These value functions, $$Q_i(\tilde{x}_i, \tilde{x}_p)$$, describe the partial value of $f$ on the subtree from a particular node, in expectation over its search distribution (and its descendants' search distributions).
+These value functions, $$Q_i(\tilde{x}_i, \tilde{x}_p)$$, describe the partial value of $f$ on the subtree from a particular node, in expectation over its descendants' search distributions.
 Each node aggregates all of its children's value functions into its own and then uses it to shift its search distribution optimally with respect to its children.
 Specifically, each search distribution factor gets its own, separate weighted maximum likelihood update, using its value function as the weight instead of $f(x)$ directly.
 This separate update step makes DADO more statistically efficient than the standard EDA: each lower-dimensional distribution is updated using the full sample budget (panel b, below).
-Decentralized updates are only possible because the value functions provide explicit coordination across all design variables (most importantly, those out of scope).
+Decentralized updates are possible because the value functions provide explicit coordination across all design variables (most importantly, those out of scope).
 The conditional dependence of each search distribution factor and value function closes the loop: each node responds to whichever partial designs are sampled from its parent's search distribution.
 As a consequence, all coordination flows through the root node, which indirectly aggregates value functions from all other nodes in the junction tree and upon whose samples all other nodes are indirectly conditioned.
 Sequential conditional sampling from the root to the leaves produces high-$f$ designs once DADO has been trained.
@@ -128,7 +128,7 @@ DADO can be much more statistically efficient than a standard EDA for a fixed sa
 This can lead to finding the same good designs as a standard EDA in fewer iterations, or simply better designs, which may have required a much larger sample budget for a standard EDA to find (example results on a synthetic problem in panel c).
 
 In summary, DADO both operates in a smaller, decomposed design space compared to the standard EDA, and uses a more statistically efficient sample-based update to its search distribution.
-For definitions and derivations of the value functions and optimization objectives, read the paper!
+For definitions and derivations of the value functions and optimization objectives, see the paper.
 
 
 ### Outtakes
@@ -184,4 +184,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
 [^scaffold]: At its strongest. People know that this assumption doesn't hold everywhere; e.g., if the scaffold is modified such that the protein no longer folds properly, then the active site probably won't be able to contribute to overall function in any way. Emphasis is more on the fact that people often break their protein design problems down into these two smaller problems, which are then much easier to tackle, even if the decomposition isn't perfect. We use the crudest version of this assumption as a didactic example.
 
-[^fda]: We include a baseline that *only* uses a factorization of the search distribution, without the message-passing coordination. That is, the factorized search distribution is updated the same way as the standard EDA, with a per-sample weight, $f(x)$, instead of a per-node weight. We call this the factorized distribution algorithm, or FDA. It's interesting that for some problems, FDA performs as well as or better than DADO, despite its search distribution update being less statistically efficient. Our hypothesis for why this happens is that there's another source of variance---the sample-based approximation of DADO's value functions---which can outweigh the benefit of a per-node update. We only observed this when the junction tree nodes were relatively large, which is exactly when estimating a value function from finite samples is most difficult. It would be interesting to more carefully characterize this behavior, and one might adapt variance-reduction techniques from RL (like learned value functions) here.
+[^fda]: In our paper, we include a baseline---a modernized version of the factorized distribution algorithm, or FDA---that *only* uses a factorization of the search distribution without the message-passing coordination. In FDA, the factorized search distribution is updated the same way as the standard EDA, with a per-sample weight, $f(x)$, instead of a per-node weight. It's interesting that for a few problems, FDA performs as well as or better than DADO, despite its search distribution update being less statistically efficient. We suspect this is due to an additional source of variance---the sample-based approximation of DADO's value functions---which can outweigh the benefit of a per-node update. We only observed this when the junction tree nodes were relatively large, which is exactly when estimating a value function from finite samples is most difficult. It would be interesting to more carefully characterize this behavior, and one might adapt variance-reduction techniques from RL (like learned value functions) here.
