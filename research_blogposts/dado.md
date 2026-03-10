@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: minimal
 title: "DADO: Leveraging Discrete Function Decomposability for Scientific Design"
 permalink: /dado/
 nav_exclude: true
@@ -122,17 +122,10 @@ This can lead to finding the same good designs as a standard EDA in fewer iterat
 
 ### Outtakes
 
-#### Some additional considerations for practical usage
-We don't mean to suggest that you should use DADO exactly as we've implemented it; depending on your problem, there are likely modifications or extensions you'll want to make.
-For instance, incorporating a prior (perhaps some foundation model) over the design space if you have one, or adding an entropy bonus if you care about designing a diverse library as opposed to a single great design.
-As for obtaining an appropriate decomposition, we expect it to be largely domain-dependent. For some problems, such as circuit design, the decomposition topology may be fixed in advance according to fabrication constraints.
-
-#### What's still hard...
-Finding an accurate decomposition for a design problem is not always straightforward. The real world is typically structured though, and even very approximate decompositions can be useful.
-One might try to infer decomposability from labeled data, use auxiliary information, run a bi-level optimization, use a distribution of decompositions, or some other creative scheme.
+Finding an accurate decomposition for a design problem is not always straightforward. The real world is often structured though, and even very approximate decompositions can be useful.
+One might try to infer decomposability from labeled data, use auxiliary information, run a bi-level optimization, or some other creative scheme.
 This is an open and active area of research both for proteins and scientific design in general.
 
-#### Contact us
 We hope you'll read (and enjoy) our paper!
 Feel free to [email me](mailto:jcbowden@berkeley.edu) with any questions or comments.
 I'd also be happy to discuss applying our method to your problem, or potential collaboration.
