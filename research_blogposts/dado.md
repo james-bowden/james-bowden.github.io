@@ -91,8 +91,9 @@ Let's now look at some graph decompositions derived from real protein design pro
 In the figure above, we show one way to obtain a decomposition graph for a protein design problem.
 For two proteins, AAV VP1 (which co-assembles into a virus capsid) and CreiLOV (an oxygen-independent fluorophore), we first obtain a 3D structure from AlphaFold3 (column 1 from left).
 To extract a decomposition graph from the 3D structure, we compute distances between all pairs of designable positions and create an edge if they're within 4.5Å of each other (column 2).
+Briefly, we can (easily) convert any undirected graph into a directed *junction tree* (column 5; also columns 3--4), which we'll need in the next section.
 
-Notice that the decomposition graph for AAV has few edges and is relatively chain-like. This suggests that we will be able to realize a large efficiency gain by operating in its decomposed design space.
+Notice that the decomposition graph for AAV (column 2) has few edges and is relatively chain-like. This suggests that we will be able to realize a large efficiency gain by operating in its decomposed design space.
 On the other hand, CreiLOV looks a lot more like a fully-connected graph. In this case, we can't expect to improve over a naive optimization method which considers all variables jointly.
 Of course, one could choose (e.g., based on domain-knowledge) to lower the contact distance, resulting in a more sparsely-connected decomposition with a larger potential efficiency gain.
 This hints at a key tradeoff in practice: the more decomposed the problem, the more efficiently it can be optimized, but if the chosen decomposition is too aggressive, it might preclude performant designs from being found.
@@ -100,29 +101,33 @@ This hints at a key tradeoff in practice: the more decomposed the problem, the m
 
 ### Leveraging decomposability for efficient distributional optimization
 
-Now that we have a sense of the decomposition graphs we're working with, we can build some intuition for how to leverage them for more efficient design.
-There are two important insights. 
-First, we will use a search distribution factorized according to the decomposition graph so that search is performed entirely within the decomposed space.
+Now that we have a sense of the decomposition graphs we're working with, we can build intuition for how a distributional optimization algorithm that's aware of them will be more efficient.
+We call our method Decomposition-Aware Distributional Optimization, or DADO, and it has two important components. 
 
-The key idea is to use a factorized search distribution, whic
-Briefly, we can convert any decomposition graph into a directed *junction tree* (columns 3--5 above), which classical (non-loopy) message-passing algorithms can utilize.
-To use message-passing for optimization, one computes dynamic programming **value functions** at each junction tree node, from the leaves up to the root.
-That is, each node $$\tilde{x}_i$$ is associated with a value function $$Q^\text{max}_i(\tilde{x}_i, \tilde{x}_p)$$ which depends on its parent.
-These value functions describe the partial maximum of $f$ over a node and all its descendants, and are computed by exact maximization over variables in its children.
-By choosing the root node's assignment, $$\tilde{x}_r^\ast = \arg\max_{\tilde{x}_r} Q^\text{max}_r(\tilde{x}_r)$$, and backtracking down the tree, one computes a global optimizer of $f$ with the lowest possible time complexity. 
-Still, this classical message-passing will become expensive or intractable if exact maximization must be performed on nodes containing multiple design variables.
-Distributional optimization sidesteps this issue because it works with samples from a distribution!
-Instead of computing exact value functions, we'll maintain a search distribution at each node conditional on parent node assignment, $$p_\theta(\tilde{x}_i\mid \tilde{x}_p)$$, and compute **distributional value functions**, $$Q^\theta_i(\tilde{x}_i, \tilde{x}_p)$$, in expectation over this partial search distribution. 
-In a <a href="#eda-pseudocode">sample-based setting</a>, these distributional value functions are preferable to $Q^\text{max}_i$ because a sample mean is an unbiased estimator of an expectation, whereas unbiased estimators of maxima don't exist for arbitrary distributions.
-To produce designs for which $f(x)$ is large, one sequentially samples the partial search distributions, starting from the root, and conditioning on each parent.
-We call our method Decomposition-Aware Distributional Optimization, or DADO. 
+First, we use a search distribution factorized according to the decomposition graph such that search is performed entirely within the decomposed space.
+Each junction tree node (columns 4--5 above) gets its own search distribution, $$p_\theta(\tilde{x}_i\mid \tilde{x}_p)$$, conditional on its parent.
+Compared to the standard EDA, which searches all dimensions of $$x$$ together, we have multiple separate search distributions, each searching only the dimensions of $$x$$ specified by its junction tree node.
+This factorization makes it so that DADO only "sees" the smaller decomposed space[^fda].
+
+Second, we coordinate these separate search distribution factors by passing messages between them.
+Messages called **value functions** are passed from the leaves of the junction tree to the root, communicating to each parent node the status of its children.
+These value functions, $$Q_i(\tilde{x}_i, \tilde{x}_p)$$, describe the partial value of $f$ on the subtree from a particular node, in expectation over its search distribution (and its descendants' search distributions).
+Each node aggregates all of its children's value functions into its own and then uses it to shift its search distribution optimally with respect to its children.
+Specifically, each search distribution factor gets its own, separate weighted maximum likelihood update, using its value function as the weight instead of $f(x)$ directly.
+It is this separate update step that makes DADO more statistically efficient than the standard EDA; each lower-dimensional distribution is updated using the full sample budget (panel b, below).
+These decentralized updates are only possible because the value functions provide explicit coordination across all design variables (most importantly, those out of scope).
+The conditional dependence of each search distribution factor and value function closes the loop: each node responds to the partial design sampled from its parent's search distribution.
+As a consequence, all coordination flows through the root note, which indirectly aggregates value functions from all other nodes in the junction tree and upon whose samples all other nodes are indirectly conditional upon.
+Sequential conditional sampling from the root to the leaves produces high-$f$ designs once DADO has been trained.
+
+In summary, DADO both operates in a smaller, decomposed design space compared to the standard EDA, and uses a more statistically efficient sample-based update to its search distribution.
 For definitions and derivations of the value functions and optimization objectives, read the paper!
 
 <img src="/assets/img/research/dado/schematic.webp" style="width: 100%; display: block;" alt="DADO schematic"/>
 
 Given some tree-decomposition of $f$ (panel a), <a href="#eda-pseudocode">standard EDAs</a> ignore this information and simply weight samples from a joint search distribution over all design variables, $p_\theta(x)$, with $f(x)$ (panel b, top).
-In contrast, DADO is infused with the decomposition---its search distribution is factorized accordingly, and value functions are used to weight corresponding dimensions of each sample (panel b, bottom).
-DADO is much more statistically efficient than a standard EDA for a fixed sample budget because it gets to use all $K$ samples to update each lower-dimensional search distribution factor.
+In contrast, DADO is infused with the decomposition---its search distribution is factorized accordingly, and value functions are used to weight dimensions of each sample corresponding to each node (panel b, bottom).
+DADO can be much more statistically efficient than a standard EDA for a fixed sample budget because it gets to use all $K$ samples to update each lower-dimensional search distribution factor.
 This can lead to finding the same good designs as a standard EDA in fewer iterations, or simply better designs, which may have required a much larger sample budget for a standard EDA to find (example results on a synthetic problem in panel c).
 
 
@@ -173,3 +178,4 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 [^scaffold]: At its strongest. People know that this assumption doesn't hold everywhere; e.g., if the scaffold is modified such that the protein no longer folds properly, then the active site probably won't be able to contribute to overall function in any way. Emphasis is more on the fact that people often break their protein design problems down into these two smaller problems, which are then much easier to tackle, even if the decomposition isn't perfect. We use the most crude version of this assumption as a didactic example.
+[^fda]: We include a baseline that *only* includes a factorization of the search distribution, without the message-passing coordination. That is, the factorized search distribution is updated the same was as the standard EDA, with a per-sample weight, $f(x)$, instead of per-node weight. We call this the factorized distribution algorithm, or FDA. It's interesting that for some problems, FDA performs as well or better than DADO, despite its search distribution update being less statistically efficient. Our hypothesis for why this happens is that there's another source of variance---the sample-based approximation of DADO's value functions---which can outweigh the benefit of a per-node update. We only observed this when the junction tree nodes were relatively large, which is exactly when estimating a value function from finite samples is most difficult. It would be interesting to more carefully characterize this behavior, and there are a variety of variance-reduction techniques from RL (like learned value functions) that one could adapt here.
