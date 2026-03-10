@@ -13,7 +13,7 @@ I'm a PhD student at Berkeley and NSF GRFP fellow, working at the intersection o
 During my undergrad (Caltech), I primarily spent time thinking about adaptive experiment design, Bayesian inference, GPs, and uncertainty quantification in [Yisong Yue's](https://www.yisongyue.com/) group. I also had a lot of fun [teaching](/pages/teaching/) a variety of the core CS / ML courses.
 
 ### Selected Publications
-**[Leveraging Discrete Function Decomposability for Scientific Design](https://arxiv.org/abs/2511.03032)** \[[DADO blogpost](/dado/)\]<br/>
+**[Leveraging Discrete Function Decomposability for Scientific Design](https://arxiv.org/abs/2511.03032)** \[[+blogpost](/dado/){:.author-link}\]<br/>
 **[JC Bowden](https://james-bowden.github.io){:.author-link}**, [S Levine](https://people.eecs.berkeley.edu/~svlevine/){:.author-link}, [J Listgarten](http://www.jennifer.listgarten.com/){:.author-link}<br/>
 International Conference on Learning Representations (ICLR), 2026
 
