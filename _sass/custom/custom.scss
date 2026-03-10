@@ -9,8 +9,7 @@ $weekend-accent:       #1a9e9e;  // replaces $purple-000 (#7253ed)
 $weekend-accent-dark:  #147a7a;  // replaces $purple-100 (#5e41d0), used for hover/active
 
 html.saturday,
-html.sunday,
-html.tuesday {
+html.sunday {
   // Plain hyperlinks
   a {
     color: $weekend-accent;
