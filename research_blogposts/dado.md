@@ -9,7 +9,7 @@ image: /assets/img/research/dado/schematic_lowres.png
 description: "We introduce DADO, a method that leverages discrete function decomposability to efficiently search combinatorial design spaces."
 ---
 
-This is a short blog post introducing our paper:
+This is a short (est. 5-10 min) blog post introducing our paper:
 
 > **[Leveraging Discrete Function Decomposability for Scientific Design](https://arxiv.org/abs/2511.03032)**<br/>
 > [JC Bowden](https://james-bowden.github.io){:.author-link}, [S Levine](https://people.eecs.berkeley.edu/~svlevine/){:.author-link}, [J Listgarten](http://www.jennifer.listgarten.com/){:.author-link}<br/>
