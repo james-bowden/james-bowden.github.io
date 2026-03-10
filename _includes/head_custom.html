@@ -2,6 +2,14 @@
 <style>.search { display: none; }</style>
 {% endif %}
 
+<!-- Stamp a weekday class on <html> before first paint so day-themed CSS applies immediately -->
+<script>
+  (function () {
+    var days = ['sunday','monday','tuesday','wednesday','thursday','friday','saturday'];
+    document.documentElement.classList.add(days[new Date().getDay()]);
+  }());
+</script>
+
 <!-- MathJax v3 — renders LaTeX in vault/atomic pages and posts -->
 <script>
   MathJax = {

@@ -1,7 +1,53 @@
 // Custom styles for james-bowden.github.io
-// Loaded by Just the Docs after its own stylesheets.
-//
-// Reference: https://just-the-docs.com/docs/customization/
+
+// --- Weekend colour theme (turquoise accent, replaces default purple) ---
+// JS in head_custom.html stamps html.saturday / html.sunday on page load
+// using the visitor's local timezone. Weekday classes are also stamped but
+// need no overrides here — they inherit the default purple.
+
+$weekend-accent:       #1a9e9e;  // replaces $purple-000 (#7253ed)
+$weekend-accent-dark:  #147a7a;  // replaces $purple-100 (#5e41d0), used for hover/active
+
+html.saturday,
+html.sunday,
+html.tuesday {
+  // Plain hyperlinks
+  a {
+    color: $weekend-accent;
+  }
+
+  // Nav links: hover and active states
+  .nav-list-link:hover,
+  .nav-list-link.active {
+    color: $weekend-accent-dark;
+  }
+
+  // Nav expander arrows
+  .nav-list-expander {
+    color: $weekend-accent;
+  }
+
+  .nav-list-expander:hover {
+    color: $weekend-accent-dark;
+  }
+
+  // Anchor heading SVG icons (§ symbols on hover)
+  .anchor-heading svg {
+    color: $weekend-accent;
+  }
+
+  // Search icon when the input is focused
+  .search-input:focus + .search-label .search-icon {
+    color: $weekend-accent;
+  }
+
+  // Primary / purple buttons
+  .btn-primary,
+  .btn-purple {
+    background-color: $weekend-accent-dark;
+    border-color: $weekend-accent-dark;
+  }
+}
 
 // --- Sidebar header layout ---
 
