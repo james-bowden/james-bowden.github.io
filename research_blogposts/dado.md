@@ -1,5 +1,5 @@
 ---
-layout: minimal
+layout: blogpost
 title: "DADO: Leveraging Discrete Function Decomposability for Scientific Design"
 permalink: /dado/
 nav_exclude: true
@@ -10,8 +10,8 @@ description: "We introduce DADO, a method that leverages discrete function decom
 This is a short blog post introducing our paper:
 
 > **[Leveraging Discrete Function Decomposability for Scientific Design](https://arxiv.org/abs/2511.03032)**<br/>
-> JC Bowden, S Levine, J Listgarten<br/>
-> International Conference on Learning Representations (ICLR) 2026
+> [JC Bowden](https://james-bowden.github.io){:.author-link}, [S Levine](https://people.eecs.berkeley.edu/~svlevine/){:.author-link}, [J Listgarten](http://www.jennifer.listgarten.com/){:.author-link}<br/>
+> International Conference on Learning Representations (ICLR), 2026
 
 ---
 
@@ -36,7 +36,7 @@ Distributional optimization is a way of solving such design problems; estimation
 Compared to naively evaluating one protein, then the next, until all of $X$ has been considered, distributional optimization algorithms navigate the design space using a probability distribution, $p_\theta(x)$, often referred to as a "search distribution" or a "policy".
 Intuitively, the search distribution is like a spotlight that moves through the design space toward regions where $f(x)$ is larger.
 In modern times, $p_\theta(x)$ is typically parameterized as a highly expressive neural network generative model, like an autoregressive model or diffusion model, allowing for pretty arbitrarily shaped spotlights.
-$$p_\theta(x)$$ might also be initialized as some pre-trained model, in which case we would in effect be implementing a kind of RL fine-tuning (with $f$ as the reward signal). Alternatively, one might initialize $$p_\theta(x)$$ to be a uniform distribution on a certain set of designs, e.g., those tested in an initial experiment, or just completely randomly.
+$p_\theta(x)$ might also be initialized as some pre-trained model, in which case we would in effect be implementing a kind of RL fine-tuning (with $f$ as the reward signal). Alternatively, one might initialize $p_\theta(x)$ to be a uniform distribution on a certain set of designs, e.g., those tested in an initial experiment, or just completely randomly.
 In pseudocode, a standard distributional optimization workflow looks like this:
 
 <figure id="eda-pseudocode" style="border: 1px solid #ccc; border-radius: 4px; padding: 0.75em 1em; margin: 1.5em 0;">
@@ -128,7 +128,7 @@ This is an open and active area of research both for proteins and scientific des
 
 We hope you'll read (and enjoy) our paper!
 Feel free to [email me](mailto:jcbowden@berkeley.edu) with any questions or comments.
-I'd also be happy to discuss applying our method to your problem, or potential collaboration.
+I'd also be excited to discuss applying our method to your problem, or potential collaboration.
 
 ---
 

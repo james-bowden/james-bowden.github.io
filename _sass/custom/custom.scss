@@ -131,6 +131,15 @@ svg.sb-name-arc {
   }
 }
 
+// --- Author links ---
+// Author name links in publication lists: inherit text colour so they don't
+// appear as coloured hyperlinks, and stay that way after visiting.
+
+a.author-link,
+a.author-link:visited {
+  color: inherit;
+}
+
 // --- Social icons ---
 
 .social-icons {

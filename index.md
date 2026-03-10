@@ -12,12 +12,12 @@ During my undergrad (Caltech), I primarily spent time thinking about adaptive ex
 
 ### Selected Publications
 **[Leveraging Discrete Function Decomposability for Scientific Design](https://arxiv.org/abs/2511.03032)** \[[DADO blogpost](/dado/)\]<br/>
-**JC Bowden**, S Levine, J Listgarten<br/>
-International Conference on Learning Representations (ICLR) 2026
+**[JC Bowden](https://james-bowden.github.io){:.author-link}**, [S Levine](https://people.eecs.berkeley.edu/~svlevine/){:.author-link}, [J Listgarten](http://www.jennifer.listgarten.com/){:.author-link}<br/>
+International Conference on Learning Representations (ICLR), 2026
 
 **[Active learning-assisted directed evolution](https://www.nature.com/articles/s41467-025-55987-8)**<br/>
-J Yang, RG Lal, **JC Bowden**, R Astudillo, MA Hameedi, S Kaur, M Hill, Y Yue, FH Arnold<br/>
-Nature Communications 2025
+[J Yang](https://jsunn-y.github.io/){:.author-link}, RG Lal, **[JC Bowden](https://james-bowden.github.io){:.author-link}**, [R Astudillo](https://raulastudillo.netlify.app/){:.author-link}, MA Hameedi, S Kaur, M Hill, [Y Yue](https://www.yisongyue.com/){:.author-link}, [FH Arnold](http://fhalab.caltech.edu){:.author-link}<br/>
+Nature Communications, 2025
 
 For a complete list, see [my Google Scholar page](https://scholar.google.com/citations?user=lfSNrMUAAAAJ&hl=en&oi=ao).
 
