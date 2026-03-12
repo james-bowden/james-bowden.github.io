@@ -45,6 +45,7 @@ If you'd primarily like to chat research or collaborate and have no desire for m
 If you're an undergrad at Berkeley (or other) and are interested in being a research mentee, please note a few things. I receive more requests than I have capacity, so I apologize if I don't respond. 
 If you're not specifically interested in working with me, but are just generally excited about the area I work in, then going to either of my advisors' websites and filling out their undergrad application is more likely to get you routed to an appropriate mentor.
 If you're specifically interested in working with me, you should tell me why in your email. For example, if you a) have carefully read one of my recent papers or a relevant paper from my advisors or someone else in the area, b) have an idea you've spent some time thinking about and feel could be interesting to work on, and c) include your thoughts about this in an email, I'm much more likely to read it and respond. We may not work on this exactly, but it signals that you can engage, and have, with something I'm interested in. 
+This isn't to say that you need to have an idea beforehand (I certainly didn't in my first research experiences), but that (perhaps sadly) it helps.
 
 </details>
 
