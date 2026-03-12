@@ -25,22 +25,30 @@ For a complete list, see [my Google Scholar page](https://scholar.google.com/cit
 
 <details>
 <summary><h3 style="display: inline;">Research Mentees</h3></summary>
-
-- Aathreya Kadambi (Berkeley undergrad)
-- Robert Yang (Berkeley undergrad)
+<br/>
+<ul>
+  <li>Aathreya Kadambi (Berkeley undergrad)</li>
+  <li>Robert Yang (Berkeley undergrad)</li>
+</ul>
 
 </details>
 
+<br/>
+
 <details>
 <summary><h3 style="display: inline;">Interested in working with me?</h3></summary>
-
+<br/>
 If you'd primarily like to chat research or collaborate and have no desire for me to mentor you, please reach out and make that clear, and I'd be happy to hop on a call.
+
+<br/>
 
 If you're an undergrad at Berkeley (or other) and are interested in being a research mentee, please note a few things. I receive more requests than I have capacity, so I apologize if I don't respond. 
 If you're not specifically interested in working with me, but are just generally excited about the area I work in, then going to either of my advisors' websites and filling out their undergrad application is more likely to get you routed to an appropriate mentor.
 If you're specifically interested in working with me, you should tell me why in your email. For example, if you a) have carefully read one of my recent papers or a relevant paper from my advisors or someone else in the area, b) have an idea you've spent some time thinking about and feel could be interesting to work on, and c) include your thoughts about this in an email, I'm much more likely to read it and respond. We may not work on this exactly, but it signals that you can engage, and have, with something I'm interested in. 
 
 </details>
+
+<br/>
 
 <details>
 <summary><h3 style="display: inline;">Outside of work, some things I sometimes like</h3></summary>
