@@ -24,7 +24,7 @@ Nature Communications, 2025
 For a complete list, see [my Google Scholar page](https://scholar.google.com/citations?user=lfSNrMUAAAAJ&hl=en&oi=ao).
 
 <details>
-<summary><h3 style="display: inline;">Research Mentees</h3></summary>
+<summary id="research-mentees" style="position: relative;"><a class="anchor-heading" href="#research-mentees" aria-labelledby="research-mentees"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a><span style="font-size: 1.1rem; font-weight: 500;">Research Mentees</span></summary>
 <div style="margin-top: 0.5em;"></div>
 <ul>
   <li>Aathreya Kadambi (Berkeley undergrad)</li>
