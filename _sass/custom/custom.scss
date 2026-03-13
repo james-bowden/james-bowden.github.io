@@ -198,6 +198,20 @@ a.author-link:visited {
   }
 }
 
+// --- Collapsible section headings ---
+// Matches just-the-docs h3 styling (fs-5 mixin + $body-heading-color)
+// Used inside <details><summary> to avoid triggering JTD's anchor-heading system
+
+.details-heading3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #27262b;
+
+  @media (min-width: 31.25rem) {
+    font-size: 1.125rem;
+  }
+}
+
 // --- Social icons ---
 
 .social-icons {

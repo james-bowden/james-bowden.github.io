@@ -24,7 +24,7 @@ Nature Communications, 2025
 For a complete list, see [my Google Scholar page](https://scholar.google.com/citations?user=lfSNrMUAAAAJ&hl=en&oi=ao).
 
 <details>
-<summary id="research-mentees" style="position: relative;"><a class="anchor-heading" href="#research-mentees" aria-labelledby="research-mentees"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a><span style="font-size: 1.1rem; font-weight: 500;">Research Mentees</span></summary>
+<summary id="research-mentees" style="position: relative;"><a class="anchor-heading" href="#research-mentees" aria-labelledby="research-mentees"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a><span class="details-heading3">Research Mentees</span></summary>
 <div style="margin-top: 0.5em;"></div>
 <ul>
   <li>Aathreya Kadambi (Berkeley undergrad)</li>
@@ -36,7 +36,7 @@ For a complete list, see [my Google Scholar page](https://scholar.google.com/cit
 <div style="margin-top: 0.5em;"></div>
 
 <details>
-<summary><h3 style="display: inline;">Interested in working with me?</h3></summary>
+<summary id="interested-in-working-with-me" style="position: relative;"><a class="anchor-heading" href="#interested-in-working-with-me" aria-labelledby="interested-in-working-with-me"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a><span class="details-heading3">Interested in working with me?</span></summary>
 <div style="margin-top: 0.5em;"></div>
 If you'd primarily like to chat research or collaborate and have no desire for me to mentor you, please reach out and make that clear, and I'd be happy to hop on a call.
 
@@ -52,7 +52,7 @@ This isn't to say that you need to have an idea beforehand (I certainly didn't i
 <div style="margin-top: 0.5em;"></div>
 
 <details>
-<summary><h3 style="display: inline;">Outside of work, some things I sometimes like</h3></summary>
+<summary id="outside-of-work" style="position: relative;"><a class="anchor-heading" href="#outside-of-work" aria-labelledby="outside-of-work"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a><span class="details-heading3">Outside of work, some things I sometimes like</span></summary>
 
 <style>
 .interests-list, .interests-list > li, .interests-sub, .interests-sub > li { list-style: none !important; }
