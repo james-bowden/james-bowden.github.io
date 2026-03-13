@@ -25,7 +25,7 @@ For a complete list, see [my Google Scholar page](https://scholar.google.com/cit
 
 <details>
 <summary><h3 style="display: inline;">Research Mentees</h3></summary>
-<br/>
+<div style="margin-top: 0.5em;"></div>
 <ul>
   <li>Aathreya Kadambi (Berkeley undergrad)</li>
   <li>Robert Yang (Berkeley undergrad)</li>
@@ -33,14 +33,14 @@ For a complete list, see [my Google Scholar page](https://scholar.google.com/cit
 
 </details>
 
-<br/>
+<div style="margin-top: 0.5em;"></div>
 
 <details>
 <summary><h3 style="display: inline;">Interested in working with me?</h3></summary>
-<br/>
+<div style="margin-top: 0.5em;"></div>
 If you'd primarily like to chat research or collaborate and have no desire for me to mentor you, please reach out and make that clear, and I'd be happy to hop on a call.
 
-<br/>
+<div style="margin-top: 0.5em;"></div>
 
 If you're an undergrad at Berkeley (or other) and are interested in being a research mentee, please note a few things. I receive more requests than I have capacity, so I apologize if I don't respond. 
 If you're not specifically interested in working with me, but are just generally excited about the area I work in, then going to either of my advisors' websites and filling out their undergrad application is more likely to get you routed to an appropriate mentor.
@@ -49,7 +49,7 @@ This isn't to say that you need to have an idea beforehand (I certainly didn't i
 
 </details>
 
-<br/>
+<div style="margin-top: 0.5em;"></div>
 
 <details>
 <summary><h3 style="display: inline;">Outside of work, some things I sometimes like</h3></summary>
