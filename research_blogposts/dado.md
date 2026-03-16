@@ -11,11 +11,6 @@ description: "We introduce DADO, a method that leverages discrete function decom
 
 <div id="dado-anim-wrapper" style="margin:2em 0;">
 <canvas id="dado-canvas" width="900" height="480" style="width:100%;height:auto;display:block;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,0.08);"></canvas>
-<div style="margin-top:0.5em;font-size:0.8em;color:#888;display:flex;gap:1em;align-items:center;flex-wrap:wrap;">
-  <button id="dado-rec-btn" style="font-size:0.9em;padding:3px 10px;cursor:pointer;border:1px solid #ccc;border-radius:4px;background:#fff;">Record&nbsp;animation</button>
-  <a id="dado-dl" style="display:none;"></a>
-  <span>Most browsers record WebM; convert with <code>ffmpeg -i dado_animation.webm dado_animation.mp4</code></span>
-</div>
 </div>
 
 <script>
@@ -338,14 +333,19 @@ function record(){
 }
 
 // ─── INIT ────────────────────────────────────────────────────────────────────
-document.addEventListener('DOMContentLoaded',function(){
+function init(){
   updateBlobs(0);
   var cv=document.getElementById('dado-canvas');
   if(cv)render(cv.getContext('2d'),0);
-  initVis();
-  var btn=document.getElementById('dado-rec-btn');
-  if(btn)btn.addEventListener('click',record);
-});
+  startA();   // start immediately — don't rely solely on IntersectionObserver
+  initVis();  // IO will still pause/resume when scrolled off-screen
+}
+// Guard against DOMContentLoaded already having fired (common with inline scripts)
+if(document.readyState==='loading'){
+  document.addEventListener('DOMContentLoaded',init);
+}else{
+  init();
+}
 })();
 </script>
 
