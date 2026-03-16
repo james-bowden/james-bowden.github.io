@@ -9,14 +9,21 @@ image: /assets/img/research/dado/schematic_lowres.png
 description: "We introduce DADO, a method that leverages discrete function decomposability to efficiently search combinatorial design spaces."
 ---
 
-<canvas id="dado-canvas" width="900" height="480" style="width:100%;height:auto;display:block;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,0.08);margin:2em 0;"></canvas>
+# **[Leveraging Discrete Function Decomposability for Scientific Design](https://arxiv.org/abs/2511.03032)**
+<strong>[JC Bowden](https://james-bowden.github.io){:.author-link}, [S Levine](https://people.eecs.berkeley.edu/~svlevine/){:.author-link}, [J Listgarten](http://www.jennifer.listgarten.com/){:.author-link}</strong>
+International Conference on Learning Representations (ICLR), 2026
+
+<canvas id="dado-canvas" width="800" height="600" style="width:100%;height:auto;display:block;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,0.08);margin:2em 0;"
+  aria-label="Animation comparing naive EDA and DADO decomposed search for protein sequence design"></canvas>
 <script src="/assets/js/dado-anim.js" defer></script>
 
-This is a short (est. 5-10 min) blog post introducing our paper:
+Read an explanation best suited to your expertise!
+I'd like to read as: (scientist / experimentalist, machine learning, reinforcement learning). Make this a button.
 
-> **[Leveraging Discrete Function Decomposability for Scientific Design](https://arxiv.org/abs/2511.03032)**<br/>
-> [JC Bowden](https://james-bowden.github.io){:.author-link}, [S Levine](https://people.eecs.berkeley.edu/~svlevine/){:.author-link}, [J Listgarten](http://www.jennifer.listgarten.com/){:.author-link}<br/>
-> International Conference on Learning Representations (ICLR), 2026
+Large text summary for each expertise:
+- 
+- 
+- 
 
 ---
 
@@ -145,7 +152,7 @@ That is, the more accurate the value functions, the more one can squeeze out of 
 The RL literature is likely a good place to look for inspiration.
 
 
-We hope you'll read (and enjoy) our paper!
+We hope you'll read (and enjoy) our paper! If you'd like, you can return to the top and re-read as someone with different expertise :)
 Feel free to [email me](mailto:jcbowden@berkeley.edu) with any questions or comments.
 I'd also be excited to discuss applying our method to your problem, or potential collaboration.
 
