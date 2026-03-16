@@ -11,19 +11,71 @@ description: "We introduce DADO, a method that leverages discrete function decom
 
 # **[Leveraging Discrete Function Decomposability for Scientific Design](https://arxiv.org/abs/2511.03032)**
 <strong>[JC Bowden](https://james-bowden.github.io){:.author-link}, [S Levine](https://people.eecs.berkeley.edu/~svlevine/){:.author-link}, [J Listgarten](http://www.jennifer.listgarten.com/){:.author-link}</strong>
+<br>
 International Conference on Learning Representations (ICLR), 2026
 
 <canvas id="dado-canvas" width="800" height="600" style="width:100%;height:auto;display:block;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,0.08);margin:2em 0;"
   aria-label="Animation comparing naive EDA and DADO decomposed search for protein sequence design"></canvas>
 <script src="/assets/js/dado-anim.js" defer></script>
 
-Read an explanation best suited to your expertise!
-I'd like to read as: (scientist / experimentalist, machine learning, reinforcement learning). Make this a button.
+<p style="text-align:center; margin-bottom:0.75em;">Read an explanation best suited to your expertise!</p>
+<div style="display:flex; justify-content:center; gap:0.9em; flex-wrap:wrap; margin-bottom:1.5em;">
+  <button id="btn-experimentalist" onclick="setExpertise('experimentalist')"
+    style="padding:0.55em 1.3em; font-size:1.05em; font-weight:600; border-radius:6px; cursor:pointer; border:2px solid #00e676; background:rgba(0,230,118,0.10); color:inherit; transition:background 0.18s, box-shadow 0.18s;">
+    Experimentalist
+  </button>
+  <button id="btn-ml" onclick="setExpertise('ml')"
+    style="padding:0.55em 1.3em; font-size:1.05em; font-weight:600; border-radius:6px; cursor:pointer; border:2px solid #00c8c8; background:rgba(0,200,200,0.10); color:inherit; transition:background 0.18s, box-shadow 0.18s;">
+    Machine Learning
+  </button>
+  <button id="btn-rl" onclick="setExpertise('rl')"
+    style="padding:0.55em 1.3em; font-size:1.05em; font-weight:600; border-radius:6px; cursor:pointer; border:2px solid #ff4d9e; background:rgba(255,77,158,0.10); color:inherit; transition:background 0.18s, box-shadow 0.18s;">
+    Reinforcement Learning
+  </button>
+</div>
 
-Large text summary for each expertise:
-- 
-- 
-- 
+<div id="expertise-summary" style="margin-bottom:1.5em; min-height:3em;">
+  <div id="summary-default" class="expertise-text" style="text-align:center; color:#888; font-style:italic;">
+    Select your background above to see a summary tailored to you.
+  </div>
+  <div id="summary-experimentalist" class="expertise-text" style="display:none; border-left:3px solid #00e676; padding:0.75em 1em; background:rgba(0,230,118,0.05); border-radius:0 6px 6px 0;">
+    You're designing molecules or proteins in the lab and want a computational tool that tells you <em>which sequences to test next</em>. DADO is an algorithm that figures out which parts of your protein interact strongly and which parts can be optimized more or less independently. By searching those independent parts separately, it drastically shrinks the number of experiments you'd need to find a high-performing sequence. Think of it as a smarter way to navigate your combinatorial design space — one that exploits the modular structure your protein already has.
+  </div>
+  <div id="summary-ml" class="expertise-text" style="display:none; border-left:3px solid #00c8c8; padding:0.75em 1em; background:rgba(0,200,200,0.05); border-radius:0 6px 6px 0;">
+    DADO is a discrete black-box optimization method for combinatorial design spaces. It frames the search problem as distributional optimization (an EDA), then exploits linear additive decomposability in the objective to factorize the search distribution over a junction tree of the dependency graph. Each factor is updated via weighted maximum likelihood using a locally-computed value function rather than the full objective — making every update statistically more efficient for a fixed sample budget. This is closely related to loopy belief propagation on a junction tree, but applied to search distribution updates rather than inference.
+  </div>
+  <div id="summary-rl" class="expertise-text" style="display:none; border-left:3px solid #ff4d9e; padding:0.75em 1em; background:rgba(255,77,158,0.05); border-radius:0 6px 6px 0;">
+    DADO can be understood as policy optimization over a factored MDP with a tree-structured dependency graph. The search distribution is a factored policy, and the value functions — passed leaf-to-root along the junction tree — are analogous to Q-values in a factored cooperative multi-agent system. Each local policy is updated via a weighted maximum likelihood objective using its local Q-value, enabling decentralized policy improvement with global coordination through message passing. The setup is closely related to QPLEX and value-decomposition methods in cooperative MARL, adapted here to the bandit (single-step) setting over discrete combinatorial action spaces.
+  </div>
+</div>
+
+<script>
+(function () {
+  var colors = { experimentalist: '#00e676', ml: '#00c8c8', rl: '#ff4d9e' };
+  var activeBg = { experimentalist: 'rgba(0,230,118,0.22)', ml: 'rgba(0,200,200,0.22)', rl: 'rgba(255,77,158,0.22)' };
+  var defaultBg = { experimentalist: 'rgba(0,230,118,0.10)', ml: 'rgba(0,200,200,0.10)', rl: 'rgba(255,77,158,0.10)' };
+  var current = null;
+
+  window.setExpertise = function (type) {
+    document.querySelectorAll('.expertise-text').forEach(function (el) { el.style.display = 'none'; });
+    ['experimentalist', 'ml', 'rl'].forEach(function (t) {
+      var btn = document.getElementById('btn-' + t);
+      btn.style.background = defaultBg[t];
+      btn.style.boxShadow = '';
+    });
+    if (current === type) {
+      document.getElementById('summary-default').style.display = '';
+      current = null;
+    } else {
+      document.getElementById('summary-' + type).style.display = '';
+      var btn = document.getElementById('btn-' + type);
+      btn.style.background = activeBg[type];
+      btn.style.boxShadow = '0 0 0 3px ' + colors[type] + '55';
+      current = type;
+    }
+  };
+})();
+</script>
 
 ---
 
