@@ -4,7 +4,7 @@ var cv=document.getElementById('dado-canvas');
 if(!cv)return;
 
 // ─── CONSTANTS ───────────────────────────────────────────────────────────────
-var W=800,H=600,DURATION=9000;
+var W=800,H=600,DURATION=11000,LEAD=1000;// LEAD: static hold at start
 var AA='ACDEFGHIKLMNPQRSTVWY';
 var MAX_P=20;
 var COL=W/2;
@@ -34,7 +34,7 @@ function rseq(n){var s='';for(var i=0;i<n;i++)s+=AA[Math.floor(rnd()*20)];return
 
 // ─── PARTICLE POOL ────────────────────────────────────────────────────────────
 function Pool(n,slen,col){
-  this.col=col;this.slen=slen;this.timer=0;this.iv=380;
+  this.col=col;this.slen=slen;this.timer=0;this.iv=475;
   this.ps=[];
   for(var i=0;i<n;i++)this.ps.push({x:0,y:0,vx:0,vy:0,op:0,age:0,ma:0,txt:'',live:false});
 }
@@ -46,11 +46,8 @@ Pool.prototype.emit=function(bx,by,mdx,mdy,dt){
     if(this.ps[i].age>mx){mx=this.ps[i].age;mi=i;}
   }
   if(!p)p=this.ps[mi];
-  var base=Math.atan2(mdy||0.001,mdx||0.001);
-  var ang=base+(rnd()-0.5)*2.2;
-  var spd=16+rnd()*22;
   p.x=bx+(rnd()-0.5)*14;p.y=by+(rnd()-0.5)*14;
-  p.vx=Math.cos(ang)*spd;p.vy=Math.sin(ang)*spd;
+  p.vx=0;p.vy=0;
   p.op=0.8;p.age=0;p.ma=1100+rnd()*900;
   p.txt=rseq(this.slen);p.live=true;
 };
@@ -331,16 +328,18 @@ function render(ctx,t){
   ctx.textBaseline='middle';
   ctx.fillText('+',DSYL.cx,plusY);
 
-  // "converged" fades in only when both blobs are at star
-  var allEase=Math.min(ey,eb);
-  if(allEase>CONV_SHOW){
-    var fa=Math.min(1,(allEase-CONV_SHOW)/0.05);
-    ctx.save();ctx.globalAlpha=fa;ctx.font='bold 14px sans-serif';
-    ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillStyle='#2a7a2a';
+  // "converged" fades in independently per circle
+  ctx.save();ctx.font='bold 14px sans-serif';
+  ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillStyle='#2a7a2a';
+  if(ey>CONV_SHOW){
+    ctx.globalAlpha=Math.min(1,(ey-CONV_SHOW)/0.05);
     ctx.fillText('\u2713 converged',DSYL.cx,DSYL.cy+6);
-    ctx.fillText('\u2713 converged',DSBL.cx,DSBL.cy+6);
-    ctx.restore();
   }
+  if(eb>CONV_SHOW){
+    ctx.globalAlpha=Math.min(1,(eb-CONV_SHOW)/0.05);
+    ctx.fillText('\u2713 converged',DSBL.cx,DSBL.cy+6);
+  }
+  ctx.restore();
 
   PT.draw(ctx);PYL.draw(ctx);PBL.draw(ctx);
 }
@@ -352,13 +351,17 @@ function tick(ts){
   if(lts===null)lts=ts;
   var dt=Math.min(50,ts-lts);lts=ts;
   atime+=dt;
-  var t=(atime%DURATION)/DURATION;
+  var phase=atime%(DURATION+LEAD);
+  var t=phase<LEAD?0:(phase-LEAD)/DURATION;
+  var moving=phase>=LEAD;
   updateBlobs(t);
   var ey=easeYL(t);
   var eb=easeBL(t);
-  PT.emit(B.top.x,B.top.y,B.top.x-B.top.px,B.top.y-B.top.py,dt);
-  if(ey<CONV_SHOW) PYL.emit(B.yl.x,B.yl.y,B.yl.x-B.yl.px,B.yl.y-B.yl.py,dt);
-  if(eb<CONV_SHOW) PBL.emit(B.bl.x,B.bl.y,B.bl.x-B.bl.px,B.bl.y-B.bl.py,dt);
+  if(moving){
+    PT.emit(B.top.x,B.top.y,B.top.x-B.top.px,B.top.y-B.top.py,dt);
+    if(ey<CONV_SHOW) PYL.emit(B.yl.x,B.yl.y,B.yl.x-B.yl.px,B.yl.y-B.yl.py,dt);
+    if(eb<CONV_SHOW) PBL.emit(B.bl.x,B.bl.y,B.bl.x-B.bl.px,B.bl.y-B.bl.py,dt);
+  }
   PT.update(dt);PYL.update(dt);PBL.update(dt);
   render(cv.getContext('2d'),t);
   raf=requestAnimationFrame(tick);
