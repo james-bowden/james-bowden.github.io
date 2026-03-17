@@ -228,12 +228,12 @@ function updateBlobs(t){
   var ey=easeYL(t);
   B.yl.x=BIYL.x+(STYL.x-BIYL.x)*ey;
   B.yl.y=BIYL.y+(STYL.y-BIYL.y)*ey;
-  B.yl.r=BIYL.r*(1-0.78*ey);
+  B.yl.r=BIYL.r*(1-0.45*ey);
 
   var eb=easeBL(t);
   B.bl.x=BIBL.x+(STBL.x-BIBL.x)*eb;
   B.bl.y=BIBL.y+(STBL.y-BIBL.y)*eb;
-  B.bl.r=BIBL.r*(1-0.78*eb);
+  B.bl.r=BIBL.r*(1-0.45*eb);
 }
 
 // ─── PARTICLE POOLS ───────────────────────────────────────────────────────────
