@@ -45,11 +45,28 @@ International Conference on Learning Representations (ICLR), 2026
 }
 .details-heading2 {
   font-size: 1.4em;
-  font-weight: 700;
+}
+.collapsible-summary {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  list-style: none;
+}
+.collapsible-summary::-webkit-details-marker { display: none; }
+.collapsible-summary::marker { content: ''; }
+.collapsible-summary::after {
+  content: '▶';
+  font-size: 0.7em;
+  margin-left: 0.55em;
+  color: #999;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+details[open] > .collapsible-summary::after {
+  transform: rotate(90deg);
 }
 </style>
 
-## Overview
 
 <canvas id="dado-canvas" width="800" height="600" style="width:100%;height:auto;display:block;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,0.08);margin:2em 0;"
   aria-label="Animation comparing naive EDA and DADO decomposed search for protein sequence design"></canvas>
@@ -118,7 +135,7 @@ International Conference on Learning Representations (ICLR), 2026
 ---
 
 <details style="margin-top: 1.5em;">
-<summary id="problem-setup" style="position: relative;"><a class="anchor-heading" href="#problem-setup" aria-labelledby="problem-setup"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a><span class="optional-box">Optional: How can we formalize protein sequence design as an optimization problem?</span></summary>
+<summary id="problem-setup" class="collapsible-summary" style="position: relative;"><a class="anchor-heading" href="#problem-setup" aria-labelledby="problem-setup"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a><span class="optional-box">Optional: How can we formalize protein sequence design as an optimization problem?</span></summary>
 
 Though our method can be used for any optimization problem over a discrete design space, in this blog, for concreteness, let's consider only the problem of designing a protein sequence.
 We can set this up as follows:
@@ -132,7 +149,7 @@ We can set this up as follows:
 </details>
 
 <details style="margin-top: 1.5em;">
-<summary id="eda-primer" style="position: relative;"><a class="anchor-heading" href="#eda-primer" aria-labelledby="eda-primer"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a><span class="optional-box">Optional: How are discrete optimization problems solved with standard distributional optimization?</span></summary>
+<summary id="eda-primer" class="collapsible-summary" style="position: relative;"><a class="anchor-heading" href="#eda-primer" aria-labelledby="eda-primer"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a><span class="optional-box">Optional: How are discrete optimization problems solved with standard distributional optimization?</span></summary>
 
 Distributional optimization is a way of solving such design problems; estimation of distribution algorithms (EDAs) and policy optimization in reinforcement learning are two common instantiations.
 Compared to naively evaluating one protein, then the next, until all of $X$ has been considered, distributional optimization algorithms navigate the design space using a probability distribution, $p_\theta(x)$, often referred to as a "search distribution" or a "policy".
@@ -288,7 +305,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 <details style="margin-top: 1.5em;">
-<summary id="footnotes" style="position: relative;"><a class="anchor-heading" href="#footnotes" aria-labelledby="footnotes"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a><span class="details-heading2">Footnotes</span></summary>
+<summary id="footnotes" class="collapsible-summary" style="position: relative;"><a class="anchor-heading" href="#footnotes" aria-labelledby="footnotes"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a><span class="details-heading2">Footnotes</span></summary>
 
 [^scaffold]: At its strongest. People know that this assumption doesn't hold everywhere; e.g., if the scaffold is modified such that the protein no longer folds properly, then the active site probably won't be able to contribute to overall function in any way. Emphasis is more on the fact that people often break their protein design problems down into these two smaller problems, which are then much easier to tackle, even if the decomposition isn't perfect. We use the crudest version of this assumption as a didactic example.
 
