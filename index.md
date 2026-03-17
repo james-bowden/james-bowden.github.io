@@ -16,10 +16,12 @@ During my undergrad (Caltech), I primarily spent time thinking about adaptive ex
 **[Leveraging Discrete Function Decomposability for Scientific Design](https://arxiv.org/abs/2511.03032)** \[[+blogpost](/dado/){:.author-link}\]<br/>
 **[JC Bowden](https://james-bowden.github.io){:.author-link}**, [S Levine](https://people.eecs.berkeley.edu/~svlevine/){:.author-link}, [J Listgarten](http://www.jennifer.listgarten.com/){:.author-link}<br/>
 International Conference on Learning Representations (ICLR), 2026
+<span id="bibtex-copy-dado" onclick="(function(){var s='@inproceedings{bowden2026dado,\n  title={Leveraging Discrete Function Decomposability for Scientific Design},\n  author={Bowden, James C. and Levine, Sergey and Listgarten, Jennifer},\n  booktitle={International Conference on Learning Representations},\n  year={2026}\n}';navigator.clipboard.writeText(s).then(function(){var el=document.getElementById('bibtex-copy-dado');el.textContent='[copied!]';setTimeout(function(){el.textContent='[copy bibtex]';},2000);});})();" style="cursor:pointer; color:#999; user-select:none;">[copy bibtex]</span>
 
 **[Active learning-assisted directed evolution](https://www.nature.com/articles/s41467-025-55987-8)**<br/>
 [J Yang](https://jsunn-y.github.io/){:.author-link}, RG Lal, **[JC Bowden](https://james-bowden.github.io){:.author-link}**, [R Astudillo](https://raulastudillo.netlify.app/){:.author-link}, MA Hameedi, S Kaur, M Hill, [Y Yue](https://www.yisongyue.com/){:.author-link}, [FH Arnold](http://fhalab.caltech.edu){:.author-link}<br/>
 Nature Communications, 2025
+<span id="bibtex-copy-alde" onclick="(function(){var s='@article{yang2025alde,\n  title={Active learning-assisted directed evolution},\n  author={Yang, Jason and Lal, Ravi G and Bowden, James C and Astudillo, Raul and Hameedi, Mikhail A and Kaur, Sukhvinder and Hill, Matthew and Yue, Yisong and Arnold, Frances H},\n  journal={Nature Communications},\n  volume={16},\n  number={1},\n  pages={714},\n  year={2025},\n  publisher={Nature Publishing Group UK London}\n}';navigator.clipboard.writeText(s).then(function(){var el=document.getElementById('bibtex-copy-alde');el.textContent='[copied!]';setTimeout(function(){el.textContent='[copy bibtex]';},2000);});})();" style="cursor:pointer; color:#999; user-select:none;">[copy bibtex]</span>
 
 For a complete list, see [my Google Scholar page](https://scholar.google.com/citations?user=lfSNrMUAAAAJ&hl=en&oi=ao).
 

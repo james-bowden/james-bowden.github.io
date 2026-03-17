@@ -13,7 +13,7 @@ description: "We introduce DADO, a method that leverages discrete function decom
 <strong>[JC Bowden](https://james-bowden.github.io){:.author-link}, [S Levine](https://people.eecs.berkeley.edu/~svlevine/){:.author-link}, [J Listgarten](http://www.jennifer.listgarten.com/){:.author-link}</strong>
 <br>
 International Conference on Learning Representations (ICLR), 2026
-<span id="bibtex-copy" onclick="(function(){var s='@inproceedings{bowden2026dado,\n  title={Leveraging Discrete Function Decomposability for Scientific Design},\n  author={Bowden, James C. and Levine, Sergey and Listgarten, Jennifer},\n  booktitle={International Conference on Learning Representations},\n  year={2026}\n}';navigator.clipboard.writeText(s).then(function(){var el=document.getElementById('bibtex-copy');el.textContent='[copied!]';setTimeout(function(){el.textContent='[copy bibtex]';},2000);});})();" style="cursor:pointer; font-size:0.82em; color:#999; user-select:none; margin-left:0.5em;">[copy bibtex]</span>
+<span id="bibtex-copy" onclick="(function(){var s='@inproceedings{bowden2026dado,\n  title={Leveraging Discrete Function Decomposability for Scientific Design},\n  author={Bowden, James C. and Levine, Sergey and Listgarten, Jennifer},\n  booktitle={International Conference on Learning Representations},\n  year={2026}\n}';navigator.clipboard.writeText(s).then(function(){var el=document.getElementById('bibtex-copy');el.textContent='[copied!]';setTimeout(function(){el.textContent='[copy bibtex]';},2000);});})();" style="cursor:pointer; color:#999; user-select:none; margin-left:0.5em;">[copy bibtex]</span>
 
 <style>
 .track-experimentalist {
@@ -33,6 +33,13 @@ International Conference on Learning Representations (ICLR), 2026
   padding: 0.75em 1em;
   background: rgba(255, 77, 158, 0.025);
   border-radius: 0 6px 6px 0;
+}
+.optional-box {
+  border: 2px solid #b08040;
+  background: rgba(176, 128, 64, 0.10);
+  border-radius: 6px;
+  padding: 0.15em 0.5em;
+  display: inline-block;
 }
 </style>
 
@@ -63,7 +70,7 @@ International Conference on Learning Representations (ICLR), 2026
     Select your background above to see a summary tailored to you.
   </div>
   <div id="summary-experimentalist" class="expertise-text track-experimentalist" style="display:none;">
-    You're designing molecules or proteins in the lab and want a computational tool that tells you <em>which sequences to test next</em>. DADO is an algorithm that figures out which parts of your protein interact strongly and which parts can be optimized more or less independently. By searching those independent parts separately, it drastically shrinks the number of experiments you'd need to find a high-performing sequence. Think of it as a smarter way to navigate your combinatorial design space — one that exploits the modular structure your protein already has.
+    Designing discrete objects (like protein sequences
   </div>
   <div id="summary-ml" class="expertise-text track-ml" style="display:none;">
     DADO is a discrete black-box optimization method for combinatorial design spaces. It frames the search problem as distributional optimization (an EDA), then exploits linear additive decomposability in the objective to factorize the search distribution over a junction tree of the dependency graph. Each factor is updated via weighted maximum likelihood using a locally-computed value function rather than the full objective — making every update statistically more efficient for a fixed sample budget. This is closely related to loopy belief propagation on a junction tree, but applied to search distribution updates rather than inference.
@@ -105,7 +112,7 @@ International Conference on Learning Representations (ICLR), 2026
 ---
 
 <details style="margin-top: 1.5em;">
-<summary><h2 style="display:inline;"><span style="color:#b08040;">[details — optional!]</span> Problem setup: protein sequence design</h2></summary>
+<summary><h2 class="optional-box">Optional: How can we formalize protein sequence design as an optimization problem?</h2></summary>
 
 Though our method can be used for any optimization problem over a discrete design space, in this blog, for concreteness, let's consider only the problem of designing a protein sequence.
 We can set this up as follows:
@@ -119,7 +126,7 @@ We can set this up as follows:
 </details>
 
 <details style="margin-top: 1.5em;">
-<summary><h2 style="display:inline;"><span style="color:#b08040;">[details — optional!]</span> Primer: distributional optimization and EDAs</h2></summary>
+<summary><h2 class="optional-box">Optional: How are discrete optimization problems solved with standard distributional optimization?</h2></summary>
 
 Distributional optimization is a way of solving such design problems; estimation of distribution algorithms (EDAs) and policy optimization in reinforcement learning are two common instantiations.
 Compared to naively evaluating one protein, then the next, until all of $X$ has been considered, distributional optimization algorithms navigate the design space using a probability distribution, $p_\theta(x)$, often referred to as a "search distribution" or a "policy".
@@ -228,6 +235,11 @@ We also expect that there are more clever ways to estimate the value functions, 
 That is, the more accurate the value functions, the more one can squeeze out of densely connected (not very tree-like!) decomposition graphs.
 The RL literature is likely a good place to look for inspiration.
 
+There's no reason why DADO can't be used for optimization in continuous design spaces; we simply didn't investigate it in our paper. Everything should extend straightforwardly.
+
+<!-- ML/RL only -->
+One place where DADO could be easily substituted is the high-dimensional Bayesian optimization literature, where existing methods (e.g., [Rolland et al., 2018](https://proceedings.mlr.press/v84/rolland18a.html), [Ziomek & Osborne, 2023](https://proceedings.mlr.press/v202/ziomek23a.html)) infer a decomposition of the objective function and optimize it using classical message-passing.
+More broadly, distributional optimization approaches similar to DADO might be used in settings in which one separately (perhaps in alternating steps) infers some sort of decomposition graph and then finds optimal parameters over it (such as finding a MAP configuration of a PGM), as an alternative to exact or loopy message-passing when variables are high-dimensional and/or junction tree nodes have an intermediate cardinality.
 
 We hope you'll read (and enjoy) our paper! If you'd like, you can return to the top and re-read as someone with different expertise :)
 Feel free to [email me](mailto:jcbowden@berkeley.edu) with any questions or comments.
@@ -269,6 +281,11 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
+<details style="margin-top: 1.5em;">
+<summary><h2 style="display:inline;">Footnotes</h2></summary>
+
 [^scaffold]: At its strongest. People know that this assumption doesn't hold everywhere; e.g., if the scaffold is modified such that the protein no longer folds properly, then the active site probably won't be able to contribute to overall function in any way. Emphasis is more on the fact that people often break their protein design problems down into these two smaller problems, which are then much easier to tackle, even if the decomposition isn't perfect. We use the crudest version of this assumption as a didactic example.
 
 [^fda]: In our paper, we include a baseline---a modernized version of the factorized distribution algorithm, or FDA---that *only* uses a factorization of the search distribution without the message-passing coordination. In FDA, the factorized search distribution is updated the same way as the standard EDA, with a per-sample weight, $f(x)$, instead of a per-node weight. It's interesting that for a few problems, FDA performs as well as or better than DADO, despite its search distribution update being less statistically efficient. We suspect this is due to an additional source of variance---the sample-based approximation of DADO's value functions---which can outweigh the benefit of a per-node update. We only observed this when the junction tree nodes were relatively large, which is exactly when estimating a value function from finite samples is most difficult. It would be interesting to more carefully characterize this behavior, and one might adapt variance-reduction techniques from RL (like learned value functions) here.
+
+</details>
