@@ -13,12 +13,36 @@ description: "We introduce DADO, a method that leverages discrete function decom
 <strong>[JC Bowden](https://james-bowden.github.io){:.author-link}, [S Levine](https://people.eecs.berkeley.edu/~svlevine/){:.author-link}, [J Listgarten](http://www.jennifer.listgarten.com/){:.author-link}</strong>
 <br>
 International Conference on Learning Representations (ICLR), 2026
+<span id="bibtex-copy" onclick="(function(){var s='@inproceedings{bowden2026dado,\n  title={Leveraging Discrete Function Decomposability for Scientific Design},\n  author={Bowden, James C. and Levine, Sergey and Listgarten, Jennifer},\n  booktitle={International Conference on Learning Representations},\n  year={2026}\n}';navigator.clipboard.writeText(s).then(function(){var el=document.getElementById('bibtex-copy');el.textContent='[copied!]';setTimeout(function(){el.textContent='[copy bibtex]';},2000);});})();" style="cursor:pointer; font-size:0.82em; color:#999; user-select:none; margin-left:0.5em;">[copy bibtex]</span>
+
+<style>
+.track-experimentalist {
+  border-left: 3px solid #00e676;
+  padding: 0.75em 1em;
+  background: rgba(0, 230, 118, 0.05);
+  border-radius: 0 6px 6px 0;
+}
+.track-ml {
+  border-left: 3px solid #00c8c8;
+  padding: 0.75em 1em;
+  background: rgba(0, 200, 200, 0.05);
+  border-radius: 0 6px 6px 0;
+}
+.track-rl {
+  border-left: 3px solid #ff4d9e;
+  padding: 0.75em 1em;
+  background: rgba(255, 77, 158, 0.025);
+  border-radius: 0 6px 6px 0;
+}
+</style>
+
+## Overview
 
 <canvas id="dado-canvas" width="800" height="600" style="width:100%;height:auto;display:block;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,0.08);margin:2em 0;"
   aria-label="Animation comparing naive EDA and DADO decomposed search for protein sequence design"></canvas>
 <script src="/assets/js/dado-anim.js" defer></script>
 
-<p style="text-align:center; margin-bottom:0.75em;">Read an explanation best suited to your expertise!</p>
+<p style="text-align:center; margin-bottom:0.75em;">Read an explanation best suited to your expertise:</p>
 <div style="display:flex; justify-content:center; gap:0.9em; flex-wrap:wrap; margin-bottom:1.5em;">
   <button id="btn-experimentalist" onclick="setExpertise('experimentalist')"
     style="padding:0.55em 1.3em; font-size:1.05em; font-weight:600; border-radius:6px; cursor:pointer; border:2px solid #00e676; background:rgba(0,230,118,0.10); color:inherit; transition:background 0.18s, box-shadow 0.18s;">
@@ -38,13 +62,13 @@ International Conference on Learning Representations (ICLR), 2026
   <div id="summary-default" class="expertise-text" style="text-align:center; color:#888; font-style:italic;">
     Select your background above to see a summary tailored to you.
   </div>
-  <div id="summary-experimentalist" class="expertise-text" style="display:none; border-left:3px solid #00e676; padding:0.75em 1em; background:rgba(0,230,118,0.05); border-radius:0 6px 6px 0;">
+  <div id="summary-experimentalist" class="expertise-text track-experimentalist" style="display:none;">
     You're designing molecules or proteins in the lab and want a computational tool that tells you <em>which sequences to test next</em>. DADO is an algorithm that figures out which parts of your protein interact strongly and which parts can be optimized more or less independently. By searching those independent parts separately, it drastically shrinks the number of experiments you'd need to find a high-performing sequence. Think of it as a smarter way to navigate your combinatorial design space — one that exploits the modular structure your protein already has.
   </div>
-  <div id="summary-ml" class="expertise-text" style="display:none; border-left:3px solid #00c8c8; padding:0.75em 1em; background:rgba(0,200,200,0.05); border-radius:0 6px 6px 0;">
+  <div id="summary-ml" class="expertise-text track-ml" style="display:none;">
     DADO is a discrete black-box optimization method for combinatorial design spaces. It frames the search problem as distributional optimization (an EDA), then exploits linear additive decomposability in the objective to factorize the search distribution over a junction tree of the dependency graph. Each factor is updated via weighted maximum likelihood using a locally-computed value function rather than the full objective — making every update statistically more efficient for a fixed sample budget. This is closely related to loopy belief propagation on a junction tree, but applied to search distribution updates rather than inference.
   </div>
-  <div id="summary-rl" class="expertise-text" style="display:none; border-left:3px solid #ff4d9e; padding:0.75em 1em; background:rgba(255,77,158,0.05); border-radius:0 6px 6px 0;">
+  <div id="summary-rl" class="expertise-text track-rl" style="display:none;">
     DADO can be understood as policy optimization over a factored MDP with a tree-structured dependency graph. The search distribution is a factored policy, and the value functions — passed leaf-to-root along the junction tree — are analogous to Q-values in a factored cooperative multi-agent system. Each local policy is updated via a weighted maximum likelihood objective using its local Q-value, enabling decentralized policy improvement with global coordination through message passing. The setup is closely related to QPLEX and value-decomposition methods in cooperative MARL, adapted here to the bandit (single-step) setting over discrete combinatorial action spaces.
   </div>
 </div>
@@ -74,13 +98,14 @@ International Conference on Learning Representations (ICLR), 2026
       current = type;
     }
   };
+  setExpertise('ml');
 })();
 </script>
 
 ---
 
 <details style="margin-top: 1.5em;">
-<summary><h3 style="display: inline;">Problem setup: protein sequence design</h3></summary>
+<summary><h2 style="display:inline;"><span style="color:#b08040;">[details — optional!]</span> Problem setup: protein sequence design</h2></summary>
 
 Though our method can be used for any optimization problem over a discrete design space, in this blog, for concreteness, let's consider only the problem of designing a protein sequence.
 We can set this up as follows:
@@ -94,7 +119,7 @@ We can set this up as follows:
 </details>
 
 <details style="margin-top: 1.5em;">
-<summary><h3 style="display: inline;">Primer: distributional optimization and EDAs</h3></summary>
+<summary><h2 style="display:inline;"><span style="color:#b08040;">[details — optional!]</span> Primer: distributional optimization and EDAs</h2></summary>
 
 Distributional optimization is a way of solving such design problems; estimation of distribution algorithms (EDAs) and policy optimization in reinforcement learning are two common instantiations.
 Compared to naively evaluating one protein, then the next, until all of $X$ has been considered, distributional optimization algorithms navigate the design space using a probability distribution, $p_\theta(x)$, often referred to as a "search distribution" or a "policy".
@@ -120,7 +145,7 @@ In pseudocode, a standard distributional optimization workflow looks like this:
 There's much more discussion of EDAs, their derivation, relevant hyperparameters, and the important ways they can be extended in our paper.
 </details>
 
-### Decomposing the design space
+## Decomposing the design space
 
 Although the standard EDA is great for solving $$\arg\max_\theta \mathbb{E}_{p_\theta(x)}[f(x)]$$, $$p_\theta(x)$$ still has to search a combinatorially large design space!
 Even if we use a lot of samples for the <a href="#eda-pseudocode">weighted maximum likelihood update</a>, it may still take many iterations to find good designs.
@@ -161,7 +186,7 @@ Of course, one could choose (e.g., based on domain-knowledge) to lower the conta
 This hints at a key tradeoff in practice: the more decomposed the problem, the more efficiently it can be optimized, but if the chosen decomposition is too aggressive, it might preclude performant designs from being found.
 
 
-### Leveraging decomposability for efficient distributional optimization
+## Leveraging decomposability for efficient distributional optimization
 
 Now that we have a sense of the decomposition graphs we're working with, we can build intuition for how a distributional optimization algorithm that's aware of them will be more efficient.
 We call our method Decomposition-Aware Distributional Optimization, or DADO, and it has two important components. 
@@ -193,7 +218,7 @@ In summary, DADO both operates in a smaller, decomposed design space compared to
 For definitions and derivations of the value functions and optimization objectives, see the paper.
 
 
-### Outtakes
+## Outtakes
 
 Finding an accurate decomposition for a design problem is not always straightforward. The real world is often structured though, and even very approximate decompositions can be useful.
 One might try to infer decomposability from labeled data, use auxiliary information, run a bi-level optimization, or some other creative scheme.
