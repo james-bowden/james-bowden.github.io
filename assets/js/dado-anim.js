@@ -12,18 +12,18 @@ var ROW=190;
 
 // Design-space circles
 var DST ={cx:195,cy:400,r:150,bg:'#f0f0f0',border:'#999'};
-var DSYL={cx:600,cy:330,r:60, bg:'#fffbe6',border:'#c8a800'};
-var DSBL={cx:600,cy:490,r:72, bg:'#e8f0ff',border:'#4060a0'};// scaffold is bigger
+var DSYL={cx:570,cy:315,r:60, bg:'#fffbe6',border:'#c8a800'};
+var DSBL={cx:570,cy:505,r:72, bg:'#e8f0ff',border:'#4060a0'};// scaffold is bigger
 
 // Stars (targets)
 var STRT={x:285,y:305};   // dist from DST  ≈ 131 < 150 ✓
-var STYL={x:639,y:291};   // dist from DSYL ≈  55 < 60  ✓
-var STBL={x:647,y:443};   // dist from DSBL ≈  67 < 72  ✓
+var STYL={x:609,y:276};   // dist from DSYL ≈  55 < 60  ✓
+var STBL={x:617,y:458};   // dist from DSBL ≈  67 < 72  ✓
 
 // Blob initial positions — all start r=22
 var BIYT={x:110,y:488,r:22};
-var BIYL={x:567,y:363,r:22};
-var BIBL={x:560,y:530,r:22};  // inside larger DSBL ✓
+var BIYL={x:537,y:348,r:22};
+var BIBL={x:530,y:545,r:22};  // inside larger DSBL ✓
 
 var CONV_SHOW=0.93;
 
