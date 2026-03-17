@@ -35,11 +35,17 @@ International Conference on Learning Representations (ICLR), 2026
   border-radius: 0 6px 6px 0;
 }
 .optional-box {
-  border: 2px solid #b08040;
-  background: rgba(176, 128, 64, 0.10);
+  border: 2px solid #e0b800;
+  background: rgba(224, 184, 0, 0.10);
   border-radius: 6px;
   padding: 0.15em 0.5em;
   display: inline-block;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+.details-heading2 {
+  font-size: 1.4em;
+  font-weight: 700;
 }
 </style>
 
@@ -112,7 +118,7 @@ International Conference on Learning Representations (ICLR), 2026
 ---
 
 <details style="margin-top: 1.5em;">
-<summary><h2 class="optional-box">Optional: How can we formalize protein sequence design as an optimization problem?</h2></summary>
+<summary id="problem-setup" style="position: relative;"><a class="anchor-heading" href="#problem-setup" aria-labelledby="problem-setup"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a><span class="optional-box">Optional: How can we formalize protein sequence design as an optimization problem?</span></summary>
 
 Though our method can be used for any optimization problem over a discrete design space, in this blog, for concreteness, let's consider only the problem of designing a protein sequence.
 We can set this up as follows:
@@ -126,7 +132,7 @@ We can set this up as follows:
 </details>
 
 <details style="margin-top: 1.5em;">
-<summary><h2 class="optional-box">Optional: How are discrete optimization problems solved with standard distributional optimization?</h2></summary>
+<summary id="eda-primer" style="position: relative;"><a class="anchor-heading" href="#eda-primer" aria-labelledby="eda-primer"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a><span class="optional-box">Optional: How are discrete optimization problems solved with standard distributional optimization?</span></summary>
 
 Distributional optimization is a way of solving such design problems; estimation of distribution algorithms (EDAs) and policy optimization in reinforcement learning are two common instantiations.
 Compared to naively evaluating one protein, then the next, until all of $X$ has been considered, distributional optimization algorithms navigate the design space using a probability distribution, $p_\theta(x)$, often referred to as a "search distribution" or a "policy".
@@ -282,7 +288,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 <details style="margin-top: 1.5em;">
-<summary><h2 style="display:inline;">Footnotes</h2></summary>
+<summary id="footnotes" style="position: relative;"><a class="anchor-heading" href="#footnotes" aria-labelledby="footnotes"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a><span class="details-heading2">Footnotes</span></summary>
 
 [^scaffold]: At its strongest. People know that this assumption doesn't hold everywhere; e.g., if the scaffold is modified such that the protein no longer folds properly, then the active site probably won't be able to contribute to overall function in any way. Emphasis is more on the fact that people often break their protein design problems down into these two smaller problems, which are then much easier to tackle, even if the decomposition isn't perfect. We use the crudest version of this assumption as a didactic example.
 
