@@ -3,8 +3,13 @@
 var cv=document.getElementById('dado-canvas');
 if(!cv)return;
 
+// ─── HiDPI / RETINA SCALING ──────────────────────────────────────────────────
+var DPR=Math.min(window.devicePixelRatio||1,2);// cap at 2× to keep perf
+cv.width=800*DPR;cv.height=600*DPR;
+// CSS display size is controlled by the existing inline styles (width:100%;height:auto)
+
 // ─── CONSTANTS ───────────────────────────────────────────────────────────────
-var W=800,H=600,DURATION=11000,LEAD=1000;// LEAD: static hold at start
+var W=800,H=600,DURATION=11000,LEAD=1500,TRAIL=1000;// LEAD: static hold at start; TRAIL: hold at end
 var AA='ACDEFGHIKLMNPQRSTVWY';
 var MAX_P=20;
 var COL=W/2;
@@ -240,6 +245,7 @@ var PBL=new Pool(MAX_P,9, '#1a4080');
 
 // ─── RENDER ───────────────────────────────────────────────────────────────────
 function render(ctx,t){
+  ctx.setTransform(DPR,0,0,DPR,0,0);
   ctx.clearRect(0,0,W,H);
   ctx.fillStyle='#f8f9fa';ctx.fillRect(0,0,W,H);
 
@@ -351,9 +357,9 @@ function tick(ts){
   if(lts===null)lts=ts;
   var dt=Math.min(50,ts-lts);lts=ts;
   atime+=dt;
-  var phase=atime%(DURATION+LEAD);
-  var t=phase<LEAD?0:(phase-LEAD)/DURATION;
-  var moving=phase>=LEAD;
+  var phase=atime%(DURATION+LEAD+TRAIL);
+  var t=phase<LEAD?0:phase>LEAD+DURATION?1:(phase-LEAD)/DURATION;
+  var moving=phase>=LEAD&&phase<LEAD+DURATION;
   updateBlobs(t);
   var ey=easeYL(t);
   var eb=easeBL(t);

@@ -1,0 +1,7 @@
+ImageMagick recipe for converting PNGs to webp:
+
+  magick input.png -background white -flatten -quality 85 output.webp
+
+- Flattens alpha/transparency onto a white background
+- Preserves original resolution (no resizing)
+- Quality 85 gives ~3-5x compression vs PNG with no perceptible loss
