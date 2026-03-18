@@ -5,7 +5,7 @@ permalink: /dado/
 nav_exclude: true
 nav_enabled: false
 hide_search: true
-image: /assets/img/research/dado/schematic_lowres.png
+image: /assets/img/research/dado/dado_animation_cap.png
 description: "We introduce DADO, a method that leverages discrete function decomposability to efficiently search combinatorial design spaces."
 ---
 
@@ -55,6 +55,23 @@ details[open] > .collapsible-summary .optional-box::after {
   transform: rotate(90deg);
 }
 .fig-ref { font-weight: 500; }
+.inline-expand {
+  cursor: pointer;
+  background: rgba(224, 184, 0, 0.13);
+  border-radius: 3px;
+  padding: 0 0em;
+  text-decoration: underline;
+  text-decoration-color: #e0b800;
+  text-underline-offset: 2px;
+}
+.inline-expand::after {
+  content: '…';
+  color: #999;
+  margin-left: 0.1em;
+}
+.inline-expand.open::after {
+  content: '';
+}
 .details-heading2 {
   font-size: 1.4em;
   font-weight: 500;
@@ -120,6 +137,8 @@ details[open] > .collapsible-summary::after {
   </div>
 </div>
 
+<p style="margin-top:0.75em;"><em>This blog post should take ~5 min to read. It will focus on protein design for concreteness. Optional details are <span class="inline-expand" onclick="toggleInline(this, event)">collapsed<span class="inline-body" style="display:none;"> (like \(m_at^h\))</span></span>.</em></p>
+
 <script>
 (function () {
   var colors = { experimentalist: '#00e676', ml: '#00c8c8', rl: '#ff4d9e' };
@@ -136,14 +155,14 @@ details[open] > .collapsible-summary::after {
       btn.style.boxShadow = '';
     });
     {
-      document.getElementById('summary-' + type).style.display = '';
+      document.querySelectorAll('.expertise-text.track-' + type).forEach(function (el) { el.style.display = ''; });
       var btn = document.getElementById('btn-' + type);
       btn.style.background = activeBg[type];
       btn.style.boxShadow = '0 0 0 3px ' + colors[type] + '55';
       current = type;
     }
   };
-  setExpertise('ml');
+  document.addEventListener('DOMContentLoaded', function () { setExpertise('ml'); });
 })();
 </script>
 
@@ -153,13 +172,13 @@ details[open] > .collapsible-summary::after {
 <summary id="problem-setup" class="collapsible-summary" style="position: relative;"><a class="anchor-heading" href="#problem-setup" aria-labelledby="problem-setup"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a><span class="optional-box"><span style="color:#888;">[optional]</span> <span style="font-weight:500;color:#27262b;">How can we formalize protein sequence design as an optimization problem?</span></span></summary>
 <div style="margin-top: 0.75em;"></div>
 
-Though our method can be used for any optimization problem over a discrete design space, in this blog, for concreteness, let's consider only the problem of designing a protein sequence.
+Though our method can be used for any optimization problem over a discrete design space, as a concrete example, let's consider only the problem of designing a protein sequence.
 We can set this up as follows:
 <ol>
-<li>The kind of discrete object that we'd like to design, $x$, is a protein sequence of length $L$ in which each design variable (or "position"), $x_i$, is an amino acid from an alphabet, $A_i$. For simplicity, we'll assume that every position uses the same standard amino acid alphabet of size 20, $A$.</li>
-<li>Given $L$ and $A$, we can write the design space as $X := A^L$, i.e., all amino acid sequences of length $L$. It follows that there are $\lvert A\rvert^L=20^L$ possible proteins to choose from.</li>
-<li>Specify a property function to design toward, $f(x)$, such as binding affinity to a target, or gene editing efficiency. In practice, this may be a predictive model fit on limited assay-labeled data.</li>
-<li>Putting this all together, our design problem is to find a sequence that maximizes our specification: $x^{\ast}=\arg\max_{x\in X} f(x)$.</li>
+<li>The kind of discrete object that we'd like to design, \(x\), is a protein sequence of length \(L\) in which each design variable (or "position"), \(x_i\), is an amino acid from an alphabet, \(A_i\). For simplicity, we'll assume that every position uses the same standard amino acid alphabet of size 20, \(A\).</li>
+<li>Given \(L\) and \(A\), we can write the design space as \(X := A^L\), i.e., all amino acid sequences of length \(L\). It follows that there are \(\lvert A\rvert^L=20^L\) possible proteins to choose from.</li>
+<li>Specify a property function to design toward, \(f(x)\), such as binding affinity to a target, or gene editing efficiency. In practice, this may be a predictive model fit on limited assay-labeled data.</li>
+<li>Putting this all together, our design problem is to find a sequence that maximizes our specification: \(x^{\ast}=\arg\max_{x\in X} f(x)\).</li>
 </ol>
 
 </details>
@@ -168,24 +187,22 @@ We can set this up as follows:
 <summary id="eda-primer" class="collapsible-summary" style="position: relative;"><a class="anchor-heading" href="#eda-primer" aria-labelledby="eda-primer"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a><span class="optional-box"><span style="color:#888;">[optional]</span> <span style="font-weight:500;color:#27262b;">How are discrete optimization problems solved with standard distributional optimization?</span></span></summary>
 <div style="margin-top: 0.75em;"></div>
 
-Distributional optimization is a way of solving such design problems; estimation of distribution algorithms (EDAs) and policy optimization in reinforcement learning are two common instantiations.
-Compared to naively evaluating one protein, then the next, until all of $X$ has been considered, distributional optimization algorithms navigate the design space using a probability distribution, $p_\theta(x)$, often referred to as a "search distribution" or a "policy".
-Intuitively, the search distribution is like a spotlight that moves through the design space toward regions where $f(x)$ is larger.
-In modern times, $p_\theta(x)$ is typically parameterized as a highly expressive neural network generative model, like an autoregressive model or diffusion model, allowing for pretty arbitrarily shaped spotlights.
-$p_\theta(x)$ might also be initialized as some pre-trained model, in which case we would in effect be implementing a kind of RL fine-tuning (with $f$ as the reward signal). Alternatively, one might initialize $p_\theta(x)$ to be a uniform distribution on a certain set of designs, e.g., those tested in an initial experiment, or initialize it completely at random.
-In pseudocode, a standard distributional optimization workflow looks like this:
-
+Distributional optimization is a way of solving design problems that can be written as \(x^{\ast}=\arg\max_{x\in X} f(x)\); estimation of distribution algorithms (EDAs) and policy optimization in reinforcement learning are two common instantiations.
+Compared to naively evaluating one protein, then the next, until all of \(X\) has been considered, distributional optimization algorithms navigate the design space using a probability distribution, \(p_\theta(x)\), often referred to as a "search distribution" or a "policy".
+Intuitively, the search distribution is like a spotlight that moves through the design space toward regions where \(f(x)\) is <span class="inline-expand" onclick="toggleInline(this, event)">larger<span class="inline-body" style="display:none;">, by maximizing \(\mathbb{E}_{p_\theta(x)}[f(x)]\)</span></span> (<a href="#dado-canvas">schematic</a>: bottom left).
+In modern times, \(p_\theta(x)\) is typically parameterized as a highly expressive neural network generative model, like an autoregressive model or diffusion model, allowing for pretty arbitrarily shaped spotlights.
+<span class="inline-expand" onclick="toggleInline(this, event)">Initializing \(p_\theta(x)\)<span class="inline-body" style="display:none;">: \(p_\theta(x)\) might also be initialized as some pre-trained model, in which case we would in effect be implementing a kind of RL fine-tuning (with \(f\) as the reward signal). Alternatively, one might initialize \(p_\theta(x)\) to be a uniform distribution on a certain set of designs, e.g., those tested in an initial experiment, or initialize it completely at random</span></span>.
 <figure id="eda-pseudocode" style="border: 1px solid #ccc; border-radius: 4px; padding: 0.75em 1em; margin: 1.5em 0;">
-<figcaption style="font-weight: bold; margin-bottom: 0.5em;">Standard EDA pseudocode</figcaption>
-<ol style="font-family: monospace; margin: 0; padding-left: 3em;">
-<li>Initialize $p_\theta(x)$</li>
-<li>for $N$ training iterations do</li>
-<li>{{ site.indent }}Sample $K$ designs, $\{x^1, \ldots, x^K\} \sim p_\theta(x)$</li>
-<li>{{ site.indent }}Compute a weight for each sample, $w^k=f(x^k)$</li>
-<li>{{ site.indent }}Update $p_\theta(x)$ via weighted maximum likelihood:</li>
-<li>{{ site.indent }}{{ site.indent }}$\theta \leftarrow \arg\max_\theta \mathbb{E}_{\{x^k\}}[w^k \log p_\theta(x^k)]$</li>
+<figcaption class="inline-expand" style="font-weight: bold; margin-bottom: 0.5em; user-select: none;" onclick="(function(el){var ol=el.closest('figure').querySelector('ol');var open=el.classList.contains('open');ol.style.display=open?'none':'';el.classList.toggle('open',!open);})(this)">Standard EDA pseudocode</figcaption>
+<ol style="font-family: monospace; margin: 0; padding-left: 3em; display: none;">
+<li>Initialize \(p_\theta(x)\)</li>
+<li>for \(N\) training iterations do</li>
+<li>{{ site.indent }}Sample \(K\) designs, \(\{x^1, \ldots, x^K\} \sim p_\theta(x)\)</li>
+<li>{{ site.indent }}Compute a weight for each sample, \(w^k=f(x^k)\)</li>
+<li>{{ site.indent }}Update \(p_\theta(x)\) via weighted maximum likelihood:</li>
+<li>{{ site.indent }}{{ site.indent }}\(\theta \leftarrow \arg\max_\theta \mathbb{E}_{\{x^k\}}[w^k \log p_\theta(x^k)]\)</li>
 <li style="list-style-type: none;">&nbsp;</li>
-<li>Sample from $p_\theta(x)$ up to your experimental budget and test in the lab!</li>
+<li>Sample from \(p_\theta(x)\) up to your experimental budget and test in the lab!</li>
 </ol>
 </figure>
 
@@ -194,60 +211,53 @@ There's much more discussion of EDAs, their derivation, relevant hyperparameters
 
 ## Decomposing the design space
 
-Although the standard EDA is great for solving $$\arg\max_\theta \mathbb{E}_{p_\theta(x)}[f(x)]$$, $$p_\theta(x)$$ still has to search a combinatorially large design space!
-Even if we use a lot of samples for the <a href="#eda-pseudocode">weighted maximum likelihood update</a>, it may still take many iterations to find good designs.
+<div class="expertise-text track-experimentalist">A crux of many difficult design problems is that there are a huge number of possible designs&mdash;far too many to consider them all. However, we often have information that can help us decompose the design space and thereby search a much smaller space. For example, protein sequence design workflows assume, roughly, that the binding interface of a protein and the scaffold can be designed separately (sometimes called a <a href="https://www.nature.com/articles/s41586-023-06415-8#Sec7">scaffolding problem</a>; <a href="#dado-canvas">schematic</a>: top right).
+We call this a decomposition, and represent it with a graph in which nodes are design variables (amino acid positions) and edges denote coupling with respect to the property function.
+So, our example decomposition would be represented by a graph in which all interface amino acids are connected by edges, and all scaffold amino acids are connected by edges, but there are no edges <em>between</em> the interface and scaffold amino acids.
+We don't expect such clean-cut decomposability in most problems. <strong>Our core contribution is a design algorithm that can leverage <em>any</em> decomposability in the property function.</strong></div>
 
-In protein design (and other scientific design settings), however, we often have information that can help us <strong>decompose</strong> the design space and thereby search a much smaller space.
-For example, many protein design workflows assume, roughly, that the active site of a protein and the scaffold can be designed separately (sometimes called a [scaffolding problem](https://www.nature.com/articles/s41586-023-06415-8#Sec4)).
-More formally, if we denote active site positions as $$x_a$$ and scaffold positions as $$x_s$$ (with no overlapping positions; $$L=L_a+L_s$$), this assumption<sup><a id="fnref-scaffold" href="#fn-scaffold">1</a></sup> amounts to asserting that $$f(x_a, x_s) = f_a(x_a) + f_s(x_s)$$.
-We can exploit the linear additive structure in $f$ to instead solve two separate, smaller optimization problems, $$[x_a^{\ast}, x_s^{\ast}] = \arg\max_{x_a,x_s} f(x_a, x_s) = [\arg\max_{x_a} f_a(x_a), \arg\max_{x_s} f_p(x_s)]$$,
-yielding a massive reduction in the size of the effective search space from $20^L$ to $$20^{L_a} + 20^{L_s}$$. Completely separate EDAs can be used for each. 
-Even for a tiny protein composed of two length-$5$ parts, this is a huge gain: $20^{10} \gg 20^5 + 20^5$ (7 orders of magnitude).
+<div class="expertise-text track-ml">A crux of many difficult design problems is that there are a huge number of possible designs&mdash;far too many to consider them all. Imagine if, however, a (particularly simple) decomposition held&mdash;yielding two completely separate, smaller design spaces representing respectively the interface amino acids and the scaffold amino acids (<a href="#dado-canvas">schematic</a>: top right). This decomposition corresponds to a linear additive form of the property function to be maximized, $f(x_i, x_s) = f_i(x_i) + f_s(x_s)$, from which we can see that this is <span class="inline-expand" onclick="toggleInline(this, event)">actually two separate optimization problems<span class="inline-body" style="display:none;">: $$[x_i^{\ast}, x_s^{\ast}] = \arg\max_{x_i,x_s} f(x_i, x_s) = [\arg\max_{x_i} f_i(x_i), \arg\max_{x_s} f_s(x_s)]$$ If \(x_i\) has \(6\) design variables and \(x_s\) has \(9\) (as in the <a href="#dado-canvas">schematic</a>), this yields a massive reduction in the size of the search space from \(20^{15}\) to \(20^6 + 20^9\)</span></span>. We don't expect such clean-cut decomposability in most problems. To allow more complex forms of decomposability, we represent a decomposition as a graph in which nodes are design variables and edges denote coupling with respect to $f(x)$; the simple example corresponds to two disconnected components. <strong>Our core contribution is a search algorithm that can leverage arbitrarily complex decomposition graphs.</strong></div>
 
-We don't expect such clean-cut decomposability in most problems.
-**Our core contribution is to generalize the EDA to be able to leverage *any* linear additive structure in $f(x)$.** 
-This means, in particular, accommodating design variables that participate in multiple linear additive components, such that we can't just solve completely separate optimization problems.
-To do this, we formalize a decomposition of $f(x)$ as an undirected graph in which nodes represent design variables and edges denote coupling. The above example corresponds to a graph with two disconnected components, each of which is fully connected internally.
-Let's now look at some graph decompositions derived from real protein design problems.
+<div class="expertise-text track-rl">Unlike in typical RL settings, for scientific design we can omit both time and the state-action distinction. There's no stochastic environment and the reward function is defined only on design variables, which you can think of as the actions. In RL, the decomposition graph would have as its nodes state-action pairs for each timestep, and edges only between subsequent timesteps, resulting in a chain. Ignoring this chain decomposition and performing policy optimization would amount to searching the space of all possible trajectories, which grows exponentially with the number of nodes in the graph (timesteps). By analogy, our decomposition graph has instead design variables for nodes (amino acid positions in the case of protein sequence design), and these variables can be coupled with respect to the reward function by arbitrarily complex graph topologies (i.e., not chains, or even trees). <strong>Our core contribution is a policy optimization algorithm that can leverage any decomposition graph topology.</strong></div>
 
-<div id="dado-composite-3d" style="line-height: 0; cursor: zoom-in;">
-<img src="/assets/img/research/dado/titles_3d.webp" style="width: 100%; display: block;" alt="3D structure titles"/>
-<div style="position: relative;">
-  <img src="/assets/img/research/dado/aav_3d.webp" style="width: 100%; display: block;" alt="AAV 3D"/>
-  <span style="position: absolute; top: 0.4em; left: 0.5em; line-height: 1;"><strong>a,</strong> AAV</span>
+What do realistic decompositions look like? Let's look at decomposition graphs derived from two real proteins, AAV and CreiLOV.
+
+In the first figure, <span class="inline-expand" onclick="toggleInline(this, event)">we show one way to obtain a decomposition graph for a protein design problem&mdash;by computing a contact graph<span class="inline-body" style="display:none;">. For two proteins, AAV VP1 (which co-assembles into a virus capsid) and CreiLOV (an oxygen-independent fluorophore), we first obtain a 3D structure from AlphaFold3 (left). To extract a decomposition graph from the 3D structure, we compute distances between all pairs of designable positions and create an edge if they're within 4.5Å of each other (right)</span></span>.
+
+<div id="dado-composite-3d" style="width:70%; line-height:0; cursor:zoom-in; margin:1.5em auto;">
+<img src="/assets/img/research/dado/titles_3d.webp" style="width:100%;display:block;" alt="3D structure titles"/>
+<div style="position:relative;">
+  <img src="/assets/img/research/dado/aav_3d.webp" style="width:100%;display:block;" alt="AAV 3D"/>
+  <span style="position:absolute;top:0.4em;left:0.5em;line-height:1;"><strong>a,</strong> AAV</span>
 </div>
-<div style="position: relative;">
-  <img src="/assets/img/research/dado/phot_3d.webp" style="width: 100%; display: block;" alt="CreiLOV 3D"/>
-  <span style="position: absolute; top: 0.4em; left: 0.5em; line-height: 1;"><strong>b,</strong> CreiLOV</span>
+<div style="position:relative;">
+  <img src="/assets/img/research/dado/phot_3d.webp" style="width:100%;display:block;" alt="CreiLOV 3D"/>
+  <span style="position:absolute;top:0.4em;left:0.5em;line-height:1;"><strong>b,</strong> CreiLOV</span>
 </div>
 </div>
 
-[filler text]
+Notice that the decomposition graph for AAV (right) has few edges and is relatively chain-like.
+This suggests that we will be able to realize a large efficiency gain by operating in its decomposed design space.
+On the other hand, CreiLOV looks a lot more like a fully-connected graph.
+In this case, we can't expect to improve over a naive optimization method which considers all variables jointly.
+<span class="inline-expand" onclick="toggleInline(this, event)">One could always choose a more sparsely-connected decomposition<span class="inline-body" style="display:none;"> (e.g., by lowering the contact distance threshold) such that it yields a larger potential efficiency gain</span></span>.
+<span class="inline-expand" onclick="toggleInline(this, event)">This hints at a key tradeoff in practice<span class="inline-body" style="display:none;">: the more decomposed the problem, the more efficiently it can be optimized, but if the chosen decomposition is too aggressive, it might preclude performant designs from being found</span></span>.
 
-<div id="dado-composite-jt" style="line-height: 0; cursor: zoom-in;">
-<img src="/assets/img/research/dado/titles_jt.webp" style="width: 100%; display: block;" alt="Junction tree titles"/>
-<div style="position: relative;">
-  <img src="/assets/img/research/dado/aav_jt.webp" style="width: 100%; display: block;" alt="AAV junction tree"/>
-  <span style="position: absolute; top: 0.4em; left: 0.5em; line-height: 1;"><strong>a,</strong> AAV</span>
+Briefly, we can (easily) convert any undirected graph into a directed junction tree, which we'll need in the next section. The corresponding junction trees for each protein are shown below (right), with additional visualizations to highlight its relationship between the original decomposition graph (left, middle).
+
+<div id="dado-composite-jt" style="line-height:0; cursor:zoom-in; margin:1.5em 0;">
+<img src="/assets/img/research/dado/titles_jt.webp" style="width:100%;display:block;" alt="Junction tree titles"/>
+<div style="position:relative;">
+  <img src="/assets/img/research/dado/aav_jt.webp" style="width:100%;display:block;" alt="AAV junction tree"/>
+  <span style="position:absolute;top:0.4em;left:0.5em;line-height:1;"><strong>a,</strong> AAV</span>
 </div>
-<div style="position: relative;">
-  <img src="/assets/img/research/dado/phot_jt.webp" style="width: 100%; display: block;" alt="CreiLOV junction tree"/>
-  <span style="position: absolute; top: 0.4em; left: 0.5em; line-height: 1;"><strong>b,</strong> CreiLOV</span>
+<div style="position:relative;">
+  <img src="/assets/img/research/dado/phot_jt.webp" style="width:100%;display:block;" alt="CreiLOV junction tree"/>
+  <span style="position:absolute;top:0.4em;left:0.5em;line-height:1;"><strong>b,</strong> CreiLOV</span>
 </div>
 </div>
 
-In the figures above, we show one way to obtain a decomposition graph for a protein design problem.
-For two proteins, AAV VP1 (which co-assembles into a virus capsid) and CreiLOV (an oxygen-independent fluorophore), we first obtain a 3D structure from AlphaFold3 (column 1 from left).
-To extract a decomposition graph from the 3D structure, we compute distances between all pairs of designable positions and create an edge if they're within 4.5Å of each other (column 2).
-Briefly, we can (easily) convert any undirected graph into a directed *junction tree* (column 5; also columns 3--4), which we'll need in the next section.
-
-Notice that the decomposition graph for AAV (column 2) has few edges and is relatively chain-like. This suggests that we will be able to realize a large efficiency gain by operating in its decomposed design space.
-On the other hand, CreiLOV looks a lot more like a fully-connected graph. In this case, we can't expect to improve over a naive optimization method which considers all variables jointly.
-Of course, one could choose (e.g., based on domain-knowledge) to lower the contact distance, resulting in a more sparsely-connected decomposition with a larger potential efficiency gain.
-This hints at a key tradeoff in practice: the more decomposed the problem, the more efficiently it can be optimized, but if the chosen decomposition is too aggressive, it might preclude performant designs from being found.
-
-
-## Leveraging decomposability for efficient distributional optimization
+## Distributional optimization in the decomposed design space
 
 Now that we have a sense of the decomposition graphs we're working with, we can build intuition for how a distributional optimization algorithm that's aware of them will be more efficient.
 We call our method Decomposition-Aware Distributional Optimization, or DADO, and it has two important components. 
@@ -271,7 +281,7 @@ Sequential conditional sampling from the root to the leaves produces high-$f$ de
 <img src="/assets/img/research/dado/schematic.webp" style="width: 100%; display: block;" alt="DADO schematic"/>
 
 Given some tree-decomposition of $f$ (panel a), <a href="#eda-pseudocode">standard EDAs</a> ignore this information and simply weight samples from a joint search distribution over all design variables, $p_\theta(x)$, with $f(x)$ (panel b, top).
-In contrast, DADO is infused with the decomposition---its search distribution is factorized accordingly, and value functions are used to weight dimensions of each sample corresponding to each node (panel b, bottom).
+In contrast, DADO is infused with the decomposition&mdash;its search distribution is factorized accordingly, and value functions are used to weight dimensions of each sample corresponding to each node (panel b, bottom).
 DADO can be much more statistically efficient than a standard EDA for a fixed sample budget because it gets to use all $K$ samples to update each lower-dimensional search distribution factor.
 This can lead to finding the same good designs as a standard EDA in fewer iterations, or simply better designs, which may have required a much larger sample budget for a standard EDA to find (example results on a synthetic problem in panel c).
 
@@ -312,7 +322,23 @@ I'd also be excited to discuss applying our method to your problem, or potential
 ---
 
 <script>
+function toggleInline(el, event) {
+  if (event && event.target.closest('a')) return;
+  var body = el.querySelector('.inline-body');
+  var open = el.classList.contains('open');
+  body.style.display = open ? 'none' : 'inline';
+  el.classList.toggle('open', !open);
+  if (!open && window.MathJax && MathJax.typesetPromise) {
+    MathJax.typesetPromise([body]);
+  }
+}
+
 document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('details').forEach(function (d) {
+    d.addEventListener('toggle', function () {
+      if (d.open && window.MathJax) { MathJax.typesetPromise([d]); }
+    });
+  });
   function makeOverlay(inner) {
     var ov = document.createElement('div');
     ov.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:9999;display:flex;align-items:center;justify-content:center;cursor:zoom-out';
@@ -338,13 +364,15 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   var schematic = document.querySelector('img[src$="schematic.webp"]');
-  schematic.style.cursor = 'zoom-in';
-  schematic.addEventListener('click', function () {
-    var img = document.createElement('img');
-    img.src = schematic.src;
-    img.style.cssText = 'max-width:92vw;max-height:92vh;object-fit:contain;cursor:default';
-    makeOverlay(img);
-  });
+  if (schematic) {
+    schematic.style.cursor = 'zoom-in';
+    schematic.addEventListener('click', function () {
+      var img = document.createElement('img');
+      img.src = schematic.src;
+      img.style.cssText = 'max-width:92vw;max-height:92vh;object-fit:contain;cursor:default';
+      makeOverlay(img);
+    });
+  }
 });
 </script>
 
@@ -353,7 +381,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <ol>
 <li id="fn-scaffold">At its strongest. People know that this assumption doesn't hold everywhere; e.g., if the scaffold is modified such that the protein no longer folds properly, then the active site probably won't be able to contribute to overall function in any way. Emphasis is more on the fact that people often break their protein design problems down into these two smaller problems, which are then much easier to tackle, even if the decomposition isn't perfect. We use the crudest version of this assumption as a didactic example. <a href="#fnref-scaffold">↩</a></li>
-<li id="fn-fda">In our paper, we include a baseline---a modernized version of the factorized distribution algorithm, or FDA---that <em>only</em> uses a factorization of the search distribution without the message-passing coordination. In FDA, the factorized search distribution is updated the same way as the standard EDA, with a per-sample weight, $f(x)$, instead of a per-node weight. It's interesting that for a few problems, FDA performs as well as or better than DADO, despite its search distribution update being less statistically efficient. We suspect this is due to an additional source of variance---the sample-based approximation of DADO's value functions---which can outweigh the benefit of a per-node update. We only observed this when the junction tree nodes were relatively large, which is exactly when estimating a value function from finite samples is most difficult. It would be interesting to more carefully characterize this behavior, and one might adapt variance-reduction techniques from RL (like learned value functions) here. <a href="#fnref-fda">↩</a></li>
+<li id="fn-fda">In our paper, we include a baseline&mdash;a modernized version of the factorized distribution algorithm, or FDA&mdash;that <em>only</em> uses a factorization of the search distribution without the message-passing coordination. In FDA, the factorized search distribution is updated the same way as the standard EDA, with a per-sample weight, \(f(x)\), instead of a per-node weight. It's interesting that for a few problems, FDA performs as well as or better than DADO, despite its search distribution update being less statistically efficient. We suspect this is due to an additional source of variance&mdash;the sample-based approximation of DADO's value functions&mdash;which can outweigh the benefit of a per-node update. We only observed this when the junction tree nodes were relatively large, which is exactly when estimating a value function from finite samples is most difficult. It would be interesting to more carefully characterize this behavior, and one might adapt variance-reduction techniques from RL (like learned value functions) here. <a href="#fnref-fda">↩</a></li>
 </ol>
 
 </details>

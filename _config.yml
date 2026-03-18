@@ -33,6 +33,7 @@ indent: "&nbsp;&nbsp;&nbsp;&nbsp;"
 exclude:
   - sync.py
   - TODO.md
+  - memory/
 
 # Default front-matter values
 # Used to bulk-exclude large content sections from the sidebar nav
