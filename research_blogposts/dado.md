@@ -324,6 +324,15 @@ DADO's optimization efficiency gain holds up for messier, real-world design prob
   </li>
 
   <li>
+    For concreteness, here are some examples of scientific design problems with <em>modularity</em> that might lend itself to decomposition.
+    <ul>
+      <li><span class="inline-expand" onclick="toggleInline(this, event)">In natural systems<span class="inline-body" style="display:none;">, useful physical models often approximate interactions as primarily local, giving rise to sparse decompositions. In designing a metal alloy for electrical conductivity, for example, one might model atoms in a crystal lattice as only directly interacting with their nearest neighbors.
+ At a more intuitive scale, consider the problem of designing a layered material for thermal or acoustic insulation. When choosing the material of each layer, we might assume that it mainly interacts with its direct neighbors&mdash;heat or sound has to pass through one layer to reach the next. As a result, one could optimize a thick stack of layers as decomposing according to a chain graph instead of a fully-connected one</span></span>.</li>
+      <li><span class="inline-expand" onclick="toggleInline(this, event)">Modularity abounds in man-made systems<span class="inline-body" style="display:none;">. In the case of circuit design, usually not all components are directly connected by wires&mdash;so if trying to choose what type of component to put in each slot (assuming a pre-fixed topology) in order to minimize latency or some other property, one might model the system as sparsely-connected according to the wires. That is, that components only indirectly interact with other components if there is no direct wire between them. Similarly, in optical design of e.g., a research telescope, one might optimize the physical parameters of a set of lenses/mirrors laid out in a pre-specified topology. Approximately, these components interact directly only with neighbors connected by a light path&mdash;and indirectly with any others. To optimize say resolution, the design variables need not be modeled as densely connected. One can imagine similar relationships between components of a mechanical system (e.g., a robot's limbs and actuators)</span></span>.</li>
+    </ul>
+  </li>
+
+  <li>
     There's no reason why DADO can't be used for optimization in continuous design spaces; we simply didn't investigate it in our paper. Everything should extend straightforwardly.
   </li>
 </ul>
