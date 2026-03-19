@@ -9,14 +9,26 @@ image: /assets/img/research/dado/dado_animation_cap.png
 description: "We introduce DADO, a method that leverages discrete function decomposability to efficiently search combinatorial design spaces."
 ---
 
-# **[Leveraging Discrete Function Decomposability for Scientific Design](https://arxiv.org/abs/2511.03032)**
+# **Leveraging Discrete Function Decomposability for Scientific Design**
 <strong>[JC Bowden](https://james-bowden.github.io){:.author-link}, [S Levine](https://people.eecs.berkeley.edu/~svlevine/){:.author-link}, [J Listgarten](http://www.jennifer.listgarten.com/){:.author-link}</strong>
 <br>
 International Conference on Learning Representations (ICLR), 2026
 <br>
-<span id="bibtex-copy" onclick="(function(){var s='@inproceedings{bowden2026dado,\n  title={Leveraging Discrete Function Decomposability for Scientific Design},\n  author={Bowden, James C. and Levine, Sergey and Listgarten, Jennifer},\n  booktitle={International Conference on Learning Representations},\n  year={2026}\n}';navigator.clipboard.writeText(s).then(function(){var el=document.getElementById('bibtex-copy');el.textContent='[copied!]';setTimeout(function(){el.textContent='[copy bibtex]';},2000);});})();" style="cursor:pointer; color:#888; user-select:none; margin-right:0.3em;">[copy bibtex]</span> 
-<a href="https://github.com/james-bowden/DADO" style="color:#888; text-decoration:none; margin-right:0.3em;">[code]</a>
-<a href="mailto:jcbowden@berkeley.edu" style="color:#888; text-decoration:none;">[email me]</a>
+<a href="https://arxiv.org/abs/2511.03032" style="text-decoration:none; margin-right:0.3em;">[paper]</a>
+<a href="https://github.com/james-bowden/DADO" style="text-decoration:none; margin-right:0.a">[code]</a>
+<a href="mailto:jcbowden@berkeley.edu" style="text-decoration:none;">[email me]</a>
+<a id="bibtex-copy"
+   onclick="(function(){
+     var s='@inproceedings{bowden2026dado,\n  title={Leveraging Discrete Function Decomposability for Scientific Design},\n  author={Bowden, James C. and Levine, Sergey and Listgarten, Jennifer},\n  booktitle={International Conference on Learning Representations},\n  year={2026}\n}';
+     navigator.clipboard.writeText(s).then(function(){
+       var el=document.getElementById('bibtex-copy');
+       el.textContent='[copied!]';
+       setTimeout(function(){el.textContent='[copy bibtex]';},2000);
+     });
+   })();"
+   style="cursor:pointer; user-select:none; margin-right:0.3em; text-decoration:none;">
+  [copy bibtex]
+</a>
 
 
 <style>
