@@ -15,7 +15,8 @@ description: "We introduce DADO, a method that leverages discrete function decom
 International Conference on Learning Representations (ICLR), 2026
 <br>
 <span id="bibtex-copy" onclick="(function(){var s='@inproceedings{bowden2026dado,\n  title={Leveraging Discrete Function Decomposability for Scientific Design},\n  author={Bowden, James C. and Levine, Sergey and Listgarten, Jennifer},\n  booktitle={International Conference on Learning Representations},\n  year={2026}\n}';navigator.clipboard.writeText(s).then(function(){var el=document.getElementById('bibtex-copy');el.textContent='[copied!]';setTimeout(function(){el.textContent='[copy bibtex]';},2000);});})();" style="cursor:pointer; color:#888; user-select:none; margin-right:0.3em;">[copy bibtex]</span> 
-<a href="https://github.com/james-bowden/DADO" style="color:#888; text-decoration:none;">[code]</a>
+<a href="https://github.com/james-bowden/DADO" style="color:#888; text-decoration:none; margin-right:0.3em;">[code]</a>
+<a href="mailto:jcbowden@berkeley.edu" style="color:#888; text-decoration:none;">[email me]</a>
 
 
 <style>
@@ -262,10 +263,9 @@ In this case, we can't expect to improve over a naive optimization method which 
 </div>
 </div>
 
-## Distributional optimization in the decomposed design space
+## DADO: Decomposition-Aware Distributional Optimization
 
-Let's now infuse distributional optimization with knowledge of a decomposition graph.
-We call our method Decomposition-Aware Distributional Optimization, or DADO, and it has two core components:
+To infuse distributional optimization with knowledge of a decomposition graph, our method has two core components:
 
 <div class="expertise-text track-experimentalist">First, we perform search with a generative model, \(p_\theta(x)\), factorized according to the decomposition junction tree. Each factor distribution searches a subset of design variables corresponding to a node in the tree. This factorization makes it so that DADO only "sees" the smaller decomposed space<sup><a id="fnref-fda" href="#fn-fda">1</a></sup>; whereas the standard <a href="#eda-pseudocode">EDA</a> searches all dimensions of \(x\) together.</div>
 <div class="expertise-text track-ml">First, we perform search with a generative model, \(p_\theta(x)\), factorized according to the decomposition junction tree. Each factor distribution searches a subset of design variables corresponding to a node in the tree. This factorization makes it so that DADO only "sees" the smaller decomposed space<sup><a id="fnref-fda" href="#fn-fda">1</a></sup>; whereas the standard <a href="#eda-pseudocode">EDA</a> searches all dimensions of \(x\) together.</div>
