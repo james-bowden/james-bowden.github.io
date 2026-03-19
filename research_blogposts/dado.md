@@ -14,9 +14,9 @@ description: "We introduce DADO, a method that leverages discrete function decom
 <br>
 International Conference on Learning Representations (ICLR), 2026
 <br>
-<a href="https://arxiv.org/abs/2511.03032" style="text-decoration:none; margin-right:0.3em;">[paper]</a>
-<a href="https://github.com/james-bowden/DADO" style="text-decoration:none; margin-right:0.a">[code]</a>
-<a href="mailto:jcbowden@berkeley.edu" style="text-decoration:none;">[email me]</a>
+<a href="https://arxiv.org/abs/2511.03032" style="text-decoration:none; margin-right:0.1em;">[paper]</a>
+<a href="https://github.com/james-bowden/DADO" style="text-decoration:none; margin-right:0.1em">[code]</a>
+<a href="mailto:jcbowden@berkeley.edu" style="text-decoration:none; margin-right:0.1em">[email me]</a>
 <a id="bibtex-copy"
    onclick="(function(){
      var s='@inproceedings{bowden2026dado,\n  title={Leveraging Discrete Function Decomposability for Scientific Design},\n  author={Bowden, James C. and Levine, Sergey and Listgarten, Jennifer},\n  booktitle={International Conference on Learning Representations},\n  year={2026}\n}';
@@ -26,7 +26,7 @@ International Conference on Learning Representations (ICLR), 2026
        setTimeout(function(){el.textContent='[copy bibtex]';},2000);
      });
    })();"
-   style="cursor:pointer; user-select:none; margin-right:0.3em; text-decoration:none;">
+   style="cursor:pointer; user-select:none; margin-right:0.1em; text-decoration:none;">
   [copy bibtex]
 </a>
 
