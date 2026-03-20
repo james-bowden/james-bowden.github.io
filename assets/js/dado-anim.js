@@ -16,19 +16,19 @@ var COL=W/2;
 var ROW=190;
 
 // Design-space circles
-var DST ={cx:195,cy:400,r:150,bg:'#f0f0f0',border:'#999'};
-var DSYL={cx:570,cy:315,r:60, bg:'#fffbe6',border:'#c8a800'};
-var DSBL={cx:570,cy:505,r:72, bg:'#e8f0ff',border:'#4060a0'};// scaffold is bigger
+var DST ={cx:135,cy:580,r:330,bg:'#f0f0f0',border:'#999'};
+var DSYL={cx:550,cy:315,r:60, bg:'#fffbe6',border:'#c8a800'};
+var DSBL={cx:550,cy:505,r:72, bg:'#e8f0ff',border:'#4060a0'};// scaffold is bigger
 
 // Stars (targets)
 var STRT={x:285,y:305};   // dist from DST  ≈ 131 < 150 ✓
-var STYL={x:609,y:276};   // dist from DSYL ≈  55 < 60  ✓
-var STBL={x:617,y:458};   // dist from DSBL ≈  67 < 72  ✓
+var STYL={x:589,y:276};   // dist from DSYL ≈  55 < 60  ✓
+var STBL={x:597,y:458};   // dist from DSBL ≈  67 < 72  ✓
 
 // Blob initial positions — all start r=22
 var BIYT={x:110,y:488,r:22};
-var BIYL={x:537,y:348,r:22};
-var BIBL={x:530,y:545,r:22};  // inside larger DSBL ✓
+var BIYL={x:517,y:348,r:22};
+var BIBL={x:510,y:545,r:22};  // inside larger DSBL ✓
 
 var CONV_SHOW=0.93;
 
@@ -99,14 +99,15 @@ function drawPtheta(ctx,cx,cy,sz,col){
 }
 
 // Draw "20^{exp} sequences" left-anchored at (x,y)
-function drawPow20seq(ctx,x,y,exp,sz,col){
+function drawPow20seq(ctx,x,y,exp,sz,col,bold){
   ctx.save();
   ctx.fillStyle=col;ctx.textBaseline='middle';ctx.textAlign='left';
   var supSz=Math.round(sz*0.72);
-  ctx.font=sz+'px sans-serif';
+  var w=bold?'bold ':'';
+  ctx.font=w+sz+'px sans-serif';
   var baseW=ctx.measureText('20').width;
   ctx.fillText('20',x,y);
-  ctx.font=supSz+'px sans-serif';
+  ctx.font=w+supSz+'px sans-serif';
   var expW=ctx.measureText(exp).width;
   ctx.fillText(exp,x+baseW,y-sz*0.35);
   ctx.font=sz+'px sans-serif';
@@ -115,11 +116,12 @@ function drawPow20seq(ctx,x,y,exp,sz,col){
 }
 
 // Measure total width of "20^{exp} sequences" at given size
-function measurePow20seq(ctx,exp,sz){
+function measurePow20seq(ctx,exp,sz,bold){
   var supSz=Math.round(sz*0.72);
-  ctx.font=sz+'px sans-serif';
+  var w=bold?'bold ':'';
+  ctx.font=w+sz+'px sans-serif';
   var baseW=ctx.measureText('20').width;
-  ctx.font=supSz+'px sans-serif';
+  ctx.font=w+supSz+'px sans-serif';
   var expW=ctx.measureText(exp).width;
   ctx.font=sz+'px sans-serif';
   return baseW+expW+ctx.measureText(' sequences').width;
@@ -291,9 +293,9 @@ function render(ctx,t){
   ctx.fillText('Standard Distributional Optimization',COL/2,ROW+24);
 
   drawCircle(ctx,DST);
-  var seqSz=15;
-  var seqW=measurePow20seq(ctx,'15',seqSz);
-  drawPow20seq(ctx,DST.cx-seqW/2,DST.cy+DST.r+20,'15',seqSz,'#aaa');
+  var seqSz=20;
+  var seqW=measurePow20seq(ctx,'15',seqSz,true);
+  drawPow20seq(ctx,DST.cx-seqW/2,570,'15',seqSz,'#111',true);
   drawStar(ctx,STRT.x,STRT.y,9,'#cc2222');
   ctx.save();ctx.beginPath();ctx.arc(DST.cx,DST.cy,DST.r,0,Math.PI*2);ctx.clip();
   drawBlob(ctx,B.top.x,B.top.y,B.top.r,'#888888',0.40);ctx.restore();
@@ -316,7 +318,7 @@ function render(ctx,t){
   var lbxYL=DSYL.cx+DSYL.r+10;
   ctx.font='13px sans-serif';ctx.fillStyle='#666';ctx.textAlign='left';ctx.textBaseline='alphabetic';
   ctx.fillText('Interface',lbxYL,DSYL.cy-5);
-  drawPow20seq(ctx,lbxYL,DSYL.cy+12,'6',13,'#888');
+  drawPow20seq(ctx,lbxYL,DSYL.cy+20,'6',20,'#111',true);
 
   // Scaffold circle (larger)
   drawCircle(ctx,DSBL);
@@ -326,7 +328,7 @@ function render(ctx,t){
   var lbxBL=DSBL.cx+DSBL.r+10;
   ctx.font='13px sans-serif';ctx.fillStyle='#666';ctx.textAlign='left';ctx.textBaseline='alphabetic';
   ctx.fillText('Scaffold',lbxBL,DSBL.cy-5);
-  drawPow20seq(ctx,lbxBL,DSBL.cy+12,'9',13,'#888');
+  drawPow20seq(ctx,lbxBL,DSBL.cy+20,'9',20,'#111',true);
 
   // "+" between stacked circles
   var plusY=Math.round((DSYL.cy+DSYL.r+DSBL.cy-DSBL.r)/2);
