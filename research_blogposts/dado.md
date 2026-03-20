@@ -314,7 +314,7 @@ DADO's optimization efficiency gain holds up for messier, real-world design prob
 </div>
 </div>
 
-## Some closing thoughts
+## What now?
 
 <ul>
   <li>
@@ -443,3 +443,14 @@ document.addEventListener('DOMContentLoaded', function () {
 </ol>
 
 </details>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('a[href^="#fn-"]').forEach(function (link) {
+    link.addEventListener('click', function () {
+      var details = document.querySelector('#footnotes').closest('details');
+      if (details) { details.open = true; }
+    });
+  });
+});
+</script>
