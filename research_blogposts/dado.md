@@ -16,6 +16,7 @@ description: "We introduce DADO, a method that leverages discrete function decom
 International Conference on Learning Representations (ICLR), 2026
 <br>
 <a href="https://arxiv.org/abs/2511.03032" style="text-decoration:none; margin-right:0.1em;">[paper]</a>
+<a href="/assets/research/DADO_poster_final.pdf" style="text-decoration:none; margin-right:0.1em;">[poster]</a>
 <a href="https://github.com/james-bowden/DADO" style="text-decoration:none; margin-right:0.1em">[code]</a>
 <a href="mailto:jcbowden@berkeley.edu" style="text-decoration:none; margin-right:0.1em">[email me]</a>
 <a id="bibtex-copy"
