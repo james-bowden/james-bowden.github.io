@@ -413,18 +413,6 @@ function render(ctx,t){
     var imgW=imgH*(protImg.naturalWidth/protImg.naturalHeight);
     var imgX=(W-imgW)/2+40;
     var imgY=135;
-    var s=imgW/(W*0.75);
-    var cw0=imgW-56*s,ch0=imgH+8*s;
-    var cx0=imgX-14*s,cy0=imgY+6*s;
-    var sc=1.1;
-    var cw=cw0*sc,ch=ch0*sc;
-    var cx=cx0+(cw0-cw)/2+5,cy=cy0+(ch0-ch)/2;
-    ctx.save();
-    ctx.shadowColor='rgba(0,0,0,0.38)';ctx.shadowBlur=36;
-    ctx.shadowOffsetX=0;ctx.shadowOffsetY=8;
-    ctx.fillStyle='#f8f9fa';
-    ctx.beginPath();ctx.roundRect(cx,cy,cw,ch,7);ctx.fill();
-    ctx.restore();
     ctx.drawImage(protImg,imgX,imgY,imgW,imgH);
     drawZoomBadge(ctx,imgX+imgW-24,imgY+16,false);
     protRect={x:imgX,y:imgY,w:imgW,h:imgH};
