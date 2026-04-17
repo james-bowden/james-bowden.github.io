@@ -124,7 +124,7 @@ details[open] > .collapsible-summary::after {
 
 <canvas id="dado-canvas" width="800" height="600" style="width:100%;height:auto;display:block;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,0.08);margin:2em 0;"
   aria-label="Animation comparing naive EDA and DADO decomposed search for protein sequence design"></canvas>
-<script src="/assets/js/dado-anim.js" defer></script>
+<script src="/assets/js/dado-anim-real_protein.js" defer></script>
 
 <p style="text-align:center; margin-bottom:0.75em;">Choose your own adventure (pick the one best suited to your expertise):</p>
 <div style="display:flex; justify-content:center; gap:0.9em; flex-wrap:wrap; margin-bottom:1.5em;">

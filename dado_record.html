@@ -17,7 +17,7 @@
 </head>
 <body>
 <h2>DADO animation — local preview &amp; recorder (open in Chrome)</h2>
-<canvas id="dado-canvas" width="800" height="600"></canvas>
+<canvas id="dado-canvas" width="600" height="530"></canvas>
 <div id="controls">
   <button id="rec-btn">&#9679;&nbsp;Record one loop (~9 s)</button>
   <span id="status">Animation should be playing above. Click Record to capture a loop.</span>
@@ -25,7 +25,8 @@
 </div>
 
 <!-- Animation (same file used by the blog post) -->
-<script src="assets/js/dado-anim.js"></script>
+<script>window.DADO_DPR=3;</script>
+<script src="assets/js/dado-anim-only-eda.js"></script>
 
 <!-- Recording-only logic -->
 <script>
