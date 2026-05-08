@@ -7,7 +7,7 @@ layout: obs
 
 I read these a long while ago, but recently was reminded of them during a call with a friend newly moved to Seattle. This short short story and poem go together quite well, I think. I would recommend first the story, then the poem.
 
-The short story is called "The Overcoat", by Gina Berriault, I imagine after Gogol's original ["The Overcoat" by Nikolai Gogol](https://www.fountainheadpress.com/expandingthearc/assets/gogolovercoat.pdf) (which is great and quite different in setting and spirit).
+The short story is called "The Overcoat", by Gina Berriault, I imagine after Gogol's original (["The Overcoat" by Nikolai Gogol](https://www.fountainheadpress.com/expandingthearc/assets/gogolovercoat.pdf); which is great and quite different in setting and spirit).
 I could not find a pdf of it anywhere, so I've attached images of the pages here from a huge short story anthology (Ann Charters). I particularly love the opening paragraph, *cataclysmic rains, cold as an execution dawn*.
 
 <center>
