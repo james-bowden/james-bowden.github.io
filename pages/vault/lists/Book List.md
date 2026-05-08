@@ -9,6 +9,8 @@ layout: obs
 
 
 ### Finished:
+* ***The Master and Margarita*, Mikhail Bulgakov**. "The moon dominates and plays, the moon dances and misbehaves." This was a fun and comic read but I wouldn't give it my highest recommendation. I read it because Kuba's mom was really excited about it when I visited them in Warsaw.
+* ***Oblivion*, David Foster Wallace**. Collection of short stories. Often voice forward. I was perhaps most surprised by one or two which were very visual-forward in a way that was accessible to me.
 * ***The Crying of Lot 49*, Thomas Pynchon**. This was a much smoother read than I expected and really stylistically felt inspirational to Infinite Jest in a way that surprised me. I also had an experience of imaginative humility reading him. I'm confused what I'll think of this experience going forward. I'd like to reread with the wiki.
 * ***Metamorphosis + various short stories*, Franz Kafka**.
 * ***Robot Dreams*, Isaac Asimov.**

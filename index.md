@@ -26,7 +26,7 @@ Nature Communications, 2025
 For a complete list, see [my Google Scholar page](https://scholar.google.com/citations?user=lfSNrMUAAAAJ&hl=en&oi=ao).
 
 <details>
-<summary id="research-mentees" style="position: relative;"><a class="anchor-heading" href="#research-mentees" aria-labelledby="research-mentees"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a><span class="details-heading3">Research Mentees</span></summary>
+<summary id="research-mentees" style="position: relative;"><a class="anchor-heading" href="#research-mentees" aria-labelledby="research-mentees"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a><span class="details-heading3">Research mentees</span></summary>
 <div style="margin-top: 0.5em;"></div>
 <ul>
   <li>Aathreya Kadambi (Berkeley undergrad, joined PhD program @ Stanford)</li>
