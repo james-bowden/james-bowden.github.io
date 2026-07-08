@@ -24,6 +24,7 @@ No headers/sections — just bullets.
 -->
 
 {:.blurb-list}
+* ***Science or bro-science?*, Ben Recht ([Substack](https://www.argmin.net/p/science-or-bro-science))**
 * ***Smart Cities Will Kill Freedom*, Matthew B. Crawford ([Independent Institute](https://www.independent.org/article/2025/11/21/smart-cities-will-kill-freedom/))**
 * ***Ownership of the Means of Thinking*, Matthew B. Crawford ([Independent Institute](https://www.independent.org/article/2025/12/15/ai-threat-knowledge-class/))**
 * ***Physical Intelligence*, Matthew B. Crawford ([Substack](https://mcrawford.substack.com/p/physical-intelligence))**
