@@ -101,6 +101,6 @@ This isn't to say that you need to have an idea beforehand (I certainly didn't i
   </details></li>
   <li><span class="sq">&#9632;</span> Frankfurt school thought</li>
 </ul>
-If anything (or nothing) resonates with you, poke me and let's get coffee or hang out somewhere in the real world. I'm quite interested in people, broadly, and enjoy making a new friend :p
+Poke me if you please.
 
 </details>

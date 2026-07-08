@@ -17,6 +17,10 @@
   To restyle, edit the CSS below — it is the single source of truth.
 -->
 <style>
+/* Labels aren't bold — only the title (an <em> inside the label) stays italic;
+   author/venue render plain. :first-child targets the label strong only, so any
+   bold *inside* a blurb is untouched. */
+.blurb-list > li > strong:first-child { font-weight: normal; }
 .blurb-list .blurb-arrow {
   cursor: pointer;
   display: inline-block;
