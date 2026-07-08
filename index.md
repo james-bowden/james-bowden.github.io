@@ -67,7 +67,11 @@ This isn't to say that you need to have an idea beforehand (I certainly didn't i
 .interests-list summary .sum-text { margin-left: 0.15em; }
 </style>
 <ul class="interests-list">
-  <li><span class="sq">&#9632;</span> being outside</li>
+  <li><details><summary><span class="sum-text">being outside</span></summary>
+    <ul class="interests-sub">
+      <li><span class="sq">&#9632;</span> urban inline skating</li>
+    </ul>
+  </details></li>
   <li><details><summary><span class="sum-text">looking at paintings</span></summary>
     <ul class="interests-sub">
       <li><span class="sq">&#9632;</span> <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ5I2tXP4u9dQZjBjq1BwLZSPfWNkHg45w-Q&s">Vyšehrad, 1910 | Vincenc Beneš</a></li>

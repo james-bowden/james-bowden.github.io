@@ -45,14 +45,15 @@
     document.querySelectorAll('.blurb-list > li').forEach(function (li) {
       if (li.dataset.blurbInit) { return; }
       li.dataset.blurbInit = '1';
-      /* Label is the first <strong> child; blurb is everything after it. */
-      var strong = null;
+      /* Label is the first emphasis element: <strong> (bold, e.g. Book List)
+         or <em> (italic, e.g. Essays List). Blurb is everything after it. */
+      var label = null;
       for (var n = li.firstChild; n; n = n.nextSibling) {
-        if (n.nodeType === 1 && n.tagName === 'STRONG') { strong = n; break; }
+        if (n.nodeType === 1 && (n.tagName === 'STRONG' || n.tagName === 'EM')) { label = n; break; }
       }
-      if (!strong) { return; }
+      if (!label) { return; }
       var nodes = [];
-      for (var m = strong.nextSibling; m; m = m.nextSibling) { nodes.push(m); }
+      for (var m = label.nextSibling; m; m = m.nextSibling) { nodes.push(m); }
       var text = nodes.map(function (x) { return x.textContent || ''; }).join('');
       if (!text.replace(/^[\s.]+/, '').trim()) { return; } /* no blurb -> no arrow */
       var body = document.createElement('span');
@@ -78,9 +79,9 @@
       arrow.addEventListener('keydown', function (e) {
         if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
       });
-      /* Resulting order: <strong> <arrow> <body> */
-      strong.insertAdjacentElement('afterend', body);
-      strong.insertAdjacentElement('afterend', arrow);
+      /* Resulting order: <label> <arrow> <body> */
+      label.insertAdjacentElement('afterend', body);
+      label.insertAdjacentElement('afterend', arrow);
     });
   }
   if (document.readyState === 'loading') {
