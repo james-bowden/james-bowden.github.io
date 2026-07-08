@@ -7,6 +7,8 @@ layout: obs
 
 [Book List](Book List)
 
+[Essays List](Essays List)
+
 [Engagement Queue](Engagement Queue)
 
 [Humanities Engagement List](Humanities Engagement List)
