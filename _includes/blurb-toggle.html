@@ -1,0 +1,92 @@
+<!--
+  Reusable collapsible blurbs for list pages (e.g. Book List, Essays List).
+
+  This component is loaded on every page via _includes/head_custom.html, so a
+  page opts in simply by tagging a list. Usage in a markdown page:
+    1. Put `{:.blurb-list}` on its own line, preceded by a blank line and
+       immediately before the list, to tag that <ul> as a blurb list.
+    2. Write each item as:  * ***Title*, Author**. Blurb text here.
+       (The bold/italic "Title, Author" chunk is the toggle label; everything
+       after it is the blurb.)
+
+  Behavior: an arrow appears to the right of the label only when a blurb
+  exists. Click it to reveal the blurb inline to the right; click again to
+  hide. Items with no blurb get no arrow. All inline formatting (italics,
+  links, etc.) inside the blurb is preserved, since real DOM nodes are moved.
+
+  To restyle, edit the CSS below — it is the single source of truth.
+-->
+<style>
+.blurb-list .blurb-arrow {
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 0.4em;
+  color: #888;
+  font-size: 0.85em;
+  line-height: 1;
+  transition: transform 0.2s;
+  user-select: none;
+}
+.blurb-list .blurb-arrow:hover { color: #555; }
+.blurb-list .blurb-arrow.open { transform: rotate(90deg); }
+.blurb-list .blurb-body {
+  display: none;
+  margin-left: 0.4em;
+  color: #444;
+}
+.blurb-list .blurb-body.open { display: inline; }
+</style>
+<script>
+/* NOTE: no // line comments below — the site minifies HTML onto one line,
+   which would turn a // comment into a comment swallowing the whole script.
+   Use block comments only. */
+(function () {
+  function initBlurbs() {
+    document.querySelectorAll('.blurb-list > li').forEach(function (li) {
+      if (li.dataset.blurbInit) { return; }
+      li.dataset.blurbInit = '1';
+      /* Label is the first <strong> child; blurb is everything after it. */
+      var strong = null;
+      for (var n = li.firstChild; n; n = n.nextSibling) {
+        if (n.nodeType === 1 && n.tagName === 'STRONG') { strong = n; break; }
+      }
+      if (!strong) { return; }
+      var nodes = [];
+      for (var m = strong.nextSibling; m; m = m.nextSibling) { nodes.push(m); }
+      var text = nodes.map(function (x) { return x.textContent || ''; }).join('');
+      if (!text.replace(/^[\s.]+/, '').trim()) { return; } /* no blurb -> no arrow */
+      var body = document.createElement('span');
+      body.className = 'blurb-body';
+      nodes.forEach(function (x) { body.appendChild(x); });
+      /* Drop the leading ". " that separated label from blurb in the source. */
+      var walker = document.createTreeWalker(body, NodeFilter.SHOW_TEXT, null);
+      var firstText = walker.nextNode();
+      if (firstText) { firstText.nodeValue = firstText.nodeValue.replace(/^[\s.]+/, ''); }
+      var arrow = document.createElement('span');
+      arrow.className = 'blurb-arrow';
+      arrow.textContent = '▶';
+      arrow.setAttribute('role', 'button');
+      arrow.setAttribute('tabindex', '0');
+      arrow.setAttribute('aria-expanded', 'false');
+      arrow.setAttribute('aria-label', 'Toggle note');
+      function toggle() {
+        var open = arrow.classList.toggle('open');
+        body.classList.toggle('open', open);
+        arrow.setAttribute('aria-expanded', open ? 'true' : 'false');
+      }
+      arrow.addEventListener('click', toggle);
+      arrow.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+      });
+      /* Resulting order: <strong> <arrow> <body> */
+      strong.insertAdjacentElement('afterend', body);
+      strong.insertAdjacentElement('afterend', arrow);
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initBlurbs);
+  } else {
+    initBlurbs();
+  }
+})();
+</script>

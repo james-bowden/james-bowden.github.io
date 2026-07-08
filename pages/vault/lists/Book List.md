@@ -7,7 +7,7 @@ layout: obs
 
 *Blurb v2: this list has great value solely for its historical role. To know what I have read is to know myself slightly better.*
 
-
+{:.blurb-list}
 * ***The Master and Margarita*, Mikhail Bulgakov**. "The moon dominates and plays, the moon dances and misbehaves." This was a fun and comic read but I wouldn't give it my highest recommendation. I read it because Kuba's mom was really excited about it when I visited them in Warsaw.
 * ***Oblivion*, David Foster Wallace**. Collection of short stories. Often voice forward. I was perhaps most surprised by one or two which were very visual-forward in a way that was accessible to me.
 * ***The Crying of Lot 49*, Thomas Pynchon**. This was a much smoother read than I expected and really stylistically felt inspirational to Infinite Jest in a way that surprised me. I also had an experience of imaginative humility reading him. I'm confused what I'll think of this experience going forward. I'd like to reread with the wiki.
@@ -122,6 +122,8 @@ layout: obs
 * ***A Farewell to Arms*, Ernest Hemingway**. Because life isn't sad enough already. I ought to read more Hemingway. I could fall for the way the words are strung together alone.
 
 ### Partials:
+
+{:.blurb-list}
 * ***Death in the Afternoon*, Ernest Hemingway**. First of all, what a sick title. It's kinda like Moby Dick but bulls, and Spain! I am enjoying this and really just Hemingway's lovely prose and am getting excited and wanting to go to Spain soon and see myself a bullfight before they are gone (+ rest of Spain stuff :).
 * ***King James Bible***. After reading way too many books with biblical allusions, I figured it was about time I got some context. I remember an english teacher at my high school being ridiculed for bringing the Bible into everything, and perhaps that was a little unfair.
 * ***Penguin Anthology of Japanese Short Stories*, various authors**. I'm enjoying getting outside of my America-centric bubble and seeing other ways of living, thinking, writing and narrativizing.
