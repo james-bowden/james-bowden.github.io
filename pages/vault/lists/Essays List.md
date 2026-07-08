@@ -29,6 +29,12 @@ No headers/sections — just bullets.
 * ***Physical Intelligence*, Matthew B. Crawford ([Substack](https://mcrawford.substack.com/p/physical-intelligence))**
 * ***Welcome to Archedelia*, Matthew B. Crawford ([Substack](https://mcrawford.substack.com/p/welcome-to-archedelia))**
 * ***Individual Experience vs. The Cochrane Review*, Ben Recht ([Substack](https://www.argmin.net/p/individual-experience-vs-the-cochrane))**
+* ***Only One Company Makes the Game Monopoly*, Ben Recht ([Substack](https://www.argmin.net/p/only-one-company-makes-the-game-monopoly))**
+* ***The Quantification Trap*, Ben Recht ([Substack](https://www.argmin.net/p/the-quantification-trap))**
+* ***The Rationality of the Language Machines*, Ben Recht ([Substack](https://www.argmin.net/p/the-rationality-of-the-language-machines))**
+* ***Freedom From Choice*, Ben Recht ([Substack](https://www.argmin.net/p/freedom-from-choice))**
+* ***The Objective Pursuit of Knowledge*, Ben Recht ([Substack](https://www.argmin.net/p/the-objective-pursuit-of-knowledge))**
+* ***Language Models and Automated Reification*, Ben Recht ([Substack](https://www.argmin.net/p/language-models-and-automated-reification))**
 * ***Excursus 1: Odysseus or Myth and Enlightenment*, Max Horkheimer and Theodor Adorno**
 * ***The Concept of Enlightenment*, Max Horkheimer and Theodor Adorno**
 * ***On Some Motifs in Baudelaire*, Walter Benjamin**

@@ -21,6 +21,8 @@
    author/venue render plain. :first-child targets the label strong only, so any
    bold *inside* a blurb is untouched. */
 .blurb-list > li > strong:first-child { font-weight: normal; }
+/* ...but the title itself (the <em> inside the label) stays bold. */
+.blurb-list > li > strong:first-child > em { font-weight: bold; }
 .blurb-list .blurb-arrow {
   cursor: pointer;
   display: inline-block;

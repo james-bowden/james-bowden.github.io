@@ -101,6 +101,6 @@ This isn't to say that you need to have an idea beforehand (I certainly didn't i
   </details></li>
   <li><span class="sq">&#9632;</span> Frankfurt school thought</li>
 </ul>
-Poke me if you please.
+(poke me if you please)
 
 </details>
