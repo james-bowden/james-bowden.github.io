@@ -24,6 +24,7 @@ No headers/sections — just bullets.
 -->
 
 {:.blurb-list}
+* ***Love in the Time of Mass Migration*, Matthew B. Crawford ([First Things](https://firstthings.com/love-in-the-time-of-mass-migration/))**
 * ***Science or bro-science?*, Ben Recht ([Substack](https://www.argmin.net/p/science-or-bro-science))**
 * ***Smart Cities Will Kill Freedom*, Matthew B. Crawford ([Independent Institute](https://www.independent.org/article/2025/11/21/smart-cities-will-kill-freedom/))**
 * ***Ownership of the Means of Thinking*, Matthew B. Crawford ([Independent Institute](https://www.independent.org/article/2025/12/15/ai-threat-knowledge-class/))**
