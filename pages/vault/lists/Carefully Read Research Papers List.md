@@ -1,6 +1,7 @@
 ---
 backlink: https://james-bowden.github.io/pages/vault/lists
 layout: obs
+title: An index of research papers carefully read
 ---
 
 *As a record...*
@@ -32,3 +33,5 @@ No headers/sections — just bullets.
 * **[Optimal trade-off control in machine learning–based library design, with application to adeno-associated virus (AAV) for gene therapy](https://www.science.org/doi/10.1126/sciadv.adj3786), Danqing Zhu ... David V. Schaffer (Science Advances 2024)**
 * **[A view of estimation of distribution algorithms through the lens of expectation-maximization](https://dl.acm.org/doi/abs/10.1145/3377929.3389938), David H. Brookes ... Jennifer Listgarten (GECCO 2020)**
 * **[Reinforcement Learning and Control as Probabilistic Inference: Tutorial and Review](https://arxiv.org/abs/1805.00909), Sergey Levine (arxiv preprint 2018)**
+* **[Generative Flows on Discrete State-Spaces: Enabling Multimodal Flows with Applications to Protein Co-Design](https://arxiv.org/abs/2402.04997), Andrew Campbell ... Tommi Jaakkola (ICML 2024)**
+* **[Reinforcement learning by reward-weighted regression for operational space control](https://dl.acm.org/doi/abs/10.1145/1273496.1273590), Jan Peters and Stefan Schaal (ICML 2007)**

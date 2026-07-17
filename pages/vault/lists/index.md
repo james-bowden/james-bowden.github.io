@@ -5,11 +5,11 @@ layout: obs
 
 ## lists
 
-[Book List](Book List)
+[An index of books read](Book List)
 
-[Essays List](Essays List)
+[An index of essays read](Essays List)
 
-[Carefully Read Research Papers List](Carefully Read Research Papers List)
+[An index of research papers carefully read](Carefully Read Research Papers List)
 
 [Engagement Queue](Engagement Queue)
 

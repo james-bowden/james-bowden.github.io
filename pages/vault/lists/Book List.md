@@ -1,6 +1,7 @@
 ---
 backlink: https://james-bowden.github.io/pages/vault/lists
 layout: obs
+title: An index of books read
 ---
 
 *Who'd have expected that it would be difficult to find time to read during ~~college~~ life? Anyhow, I'm trying to read whenever I have a chance, and I'd like to continue even as my academics and life pick up. I would say I read to learn and broaden my perspective, but the truth is more that I read to feel, and the former benefits seem to stem from the impressionability of emotion. Book recommendations always appreciated!*

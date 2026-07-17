@@ -1,6 +1,7 @@
 ---
 backlink: https://james-bowden.github.io/pages/vault/lists
 layout: obs
+title: An index of essays read
 ---
 
 *In pursuit of history.*
