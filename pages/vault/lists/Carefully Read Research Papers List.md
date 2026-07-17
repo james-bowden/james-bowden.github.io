@@ -24,7 +24,7 @@ No headers/sections — just bullets.
 -->
 
 {:.blurb-list}
-* **[An Information-Theoretic Analysis on the Interactions of Variables in Combinatorial Optimization Problems](https://direct.mit.edu/evco/article-abstract/15/2/169/1262/An-Information-Theoretic-Analysis-on-the), Dong-Il Seo and Byung-Ro Moon (Evolutionary Computation 2007)**
+* **[An Information-Theoretic Analysis on the Interactions of Variables in Combinatorial Optimization Problems](https://openurl.ebsco.com/viewer?sid=ebsco:plink:scholar-a&id=ebsco:gcd:25338856&crl=c&jrnl=10636560), Dong-Il Seo and Byung-Ro Moon (Evolutionary Computation 2007)**
 * **[Junction Tree Variational Autoencoder for Molecular Graph Generation](https://arxiv.org/abs/1802.04364), Wengong Jin ... Tommi Jaakkola (ICML 2018)**
 * **[Functional Graphical Models: Structure Enables Offline Data-Driven Optimization](https://proceedings.mlr.press/v238/grudzien24a.html), Kuba Grudzien ... Pieter Abbeel (AISTATS 2024)**
 * **[The Context-Dependence of Mutations: A Linkage of Formalisms](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004771), Frank J. Poelwijk ... Rama Ranganathan (PLOS Computational Biology 2016)**
