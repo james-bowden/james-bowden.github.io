@@ -9,6 +9,8 @@ layout: obs
 
 [Essays List](Essays List)
 
+[Carefully Read Research Papers List](Carefully Read Research Papers List)
+
 [Engagement Queue](Engagement Queue)
 
 [Humanities Engagement List](Humanities Engagement List)
