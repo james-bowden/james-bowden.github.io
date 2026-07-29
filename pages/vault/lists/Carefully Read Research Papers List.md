@@ -8,6 +8,8 @@ title: An index of research papers carefully read
 
 <!--
 FORMAT NOTE (for future additions):
+ORDERING: newest first. ALWAYS insert a new paper as the FIRST bullet of the
+list (immediately after the `{:.blurb-list}` line), never appended at the end.
 One bullet per paper. Same collapse mechanism as the other lists.
     * **[Title](url), First Author ... Last Author (Venue Year)**
 - Title is a markdown link; nothing is bold or italic. The ** only marks the
@@ -24,6 +26,7 @@ No headers/sections — just bullets.
 -->
 
 {:.blurb-list}
+* **[Biophysics-based protein language models for protein engineering](https://www.nature.com/articles/s41592-025-02776-2), Sam Gelman ... Philip A. Romero (Nature Methods 2025)**
 * **[An Information-Theoretic Analysis on the Interactions of Variables in Combinatorial Optimization Problems](https://openurl.ebsco.com/viewer?sid=ebsco:plink:scholar-a&id=ebsco:gcd:25338856&crl=c&jrnl=10636560), Dong-Il Seo and Byung-Ro Moon (Evolutionary Computation 2007)**
 * **[Junction Tree Variational Autoencoder for Molecular Graph Generation](https://arxiv.org/abs/1802.04364), Wengong Jin ... Tommi Jaakkola (ICML 2018)**
 * **[Functional Graphical Models: Structure Enables Offline Data-Driven Optimization](https://proceedings.mlr.press/v238/grudzien24a.html), Kuba Grudzien ... Pieter Abbeel (AISTATS 2024)**
