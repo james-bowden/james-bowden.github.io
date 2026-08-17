@@ -9,6 +9,8 @@ title: An index of books read
 *Blurb v2: this list has great value solely for its historical role. To know what I have read is to know myself slightly better.*
 
 {:.blurb-list}
+* ***The Irrational Decision: How We Gave Computers the Power to Choose for Us*, Benjamin Recht**.
+* ***'Tis Pity She's a Whore*, John Ford**. See David Bowie; *in a season of crime, none need atone*
 * ***The Master and Margarita*, Mikhail Bulgakov**. "The moon dominates and plays, the moon dances and misbehaves." This was a fun and comic read but I wouldn't give it my highest recommendation. I read it because Kuba's mom was really excited about it when I visited them in Warsaw.
 * ***Oblivion*, David Foster Wallace**. Collection of short stories. Often voice forward. I was perhaps most surprised by one or two which were very visual-forward in a way that was accessible to me.
 * ***The Crying of Lot 49*, Thomas Pynchon**. This was a much smoother read than I expected and really stylistically felt inspirational to Infinite Jest in a way that surprised me. I also had an experience of imaginative humility reading him. I'm confused what I'll think of this experience going forward. I'd like to reread with the wiki.
