@@ -4,7 +4,7 @@ title: About
 nav_order: 1
 permalink: /
 description: "This is James Bowden's website. Learn about James Bowden here."
-image: /assets/img/ci_harbor_crop.jpeg
+image: /assets/img/sf_cafe_crop.jpeg
 ---
 
 ### Hi! 
