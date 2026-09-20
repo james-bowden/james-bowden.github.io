@@ -9,6 +9,7 @@ title: An index of books read
 *Blurb v2: this list has great value solely for its historical role. To know what I have read is to know myself slightly better.*
 
 {:.blurb-list}
+* ***Player Piano*, Kurt Vonnegut**.
 * ***White Noise*, Don DeLillo**.
 * ***The Irrational Decision: How We Gave Computers the Power to Choose for Us*, Benjamin Recht**.
 * ***'Tis Pity She's a Whore*, John Ford**. See David Bowie; *in a season of crime, none need atone*
